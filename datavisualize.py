@@ -90,6 +90,8 @@ else:
     popular_vote_margin = int(SIMULATION_ELE_TRUMP - SIMULATION_ELE_HARRIS)
 # Initialize Dash app
 app = Dash(__name__)
+server = app.server
+
 
 # Define layout
 app.layout = html.Div([
