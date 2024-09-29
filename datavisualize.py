@@ -103,7 +103,7 @@ app.layout = html.Div([
         style={'font-family': 'Aldrich','textAlign': 'center', 'color': 'gray', 'fontSize': '15px', 'marginBottom': '10px'}  # Style for the updated header
     ),
     html.H1(
-        "Sahil Shuklaaa Predicts The Election.",
+        "Sahil Shuklaa Predicts The Election.",
         style={'font-family': 'Aldrich','textAlign': 'center',  'fontSize': '36px','marginTop': '0px', 'marginBottom': '5px'}),
     html.P(f"Kamala Harris Wins {harris_wins} times", 
             style={'font-family': 'Aldrich','textAlign': 'center', 'fontSize': '24px', 'marginTop': '5px', 'marginBottom': '0px', 'color': 'blue','opacity':'0.8'}),
