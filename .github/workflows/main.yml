@@ -1,0 +1,24 @@
+name: Deploy Dash App
+
+on:
+  push:
+    branches:
+      - main  # Change to your main branch name if it's different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.6'  # Change to the Python version you need
+
+      - name: Run deployment script
+        run: |
+          ssh -o StrictHostKeyChecking=no ubuntu@129.153.59.179 'cd USA-2024-Prediction-Model && git pull && ./restart_gunicorn.sh'
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
