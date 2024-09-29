@@ -360,7 +360,7 @@ def update_bar_graph(_):
             yanchor='bottom'  # Position text at the bottom
         )
         fig.add_annotation(
-            x=15,  # Position on the left side of the bar
+            x=25,  # Position on the left side of the bar
             y=y_positions[i] + 1,  # Position slightly above the bar
             text=f"Kamala: {harris_averages[i]:.2f}",  # Text to display
             showarrow=False,  # Do not show arrow
@@ -371,7 +371,7 @@ def update_bar_graph(_):
 
         # Donald Trump annotation (right)
         fig.add_annotation(
-            x=85,  # Position on the right side of the bar
+            x=75,  # Position on the right side of the bar
             y=y_positions[i] + 1,  # Position slightly above the bar
             text=f"Trump: {trump_averages[i]:.2f}",  # Text to display
             showarrow=False,  # Do not show arrow
