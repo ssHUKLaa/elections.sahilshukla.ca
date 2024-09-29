@@ -102,6 +102,15 @@ app.layout = html.Div([
         f"UPDATED: {latest_simulation_date}",  # Dynamically show latest time
         style={'font-family': 'Aldrich','textAlign': 'center', 'color': 'gray', 'fontSize': '15px', 'marginBottom': '10px'}  # Style for the updated header
     ),
+    html.H2(
+        html.A(
+            "Read my article for more details on the model.",
+            href="https://medium.com/@sahilshukla_9303/how-do-you-predict-the-unpredictable-an-electoral-simulation-model-for-the-2024-election-182279531246",
+            target="_blank",  # Opens the link in a new tab
+            style={'font-family': 'Aldrich', 'color': 'blue', 'textDecoration': 'underline'}  # Style for the clickable link
+        ),
+        style={'textAlign': 'center', 'fontSize': '15px', 'marginBottom': '10px'}  # Style for the header
+    ),
     html.H1(
         "Sahil Shukla Predicts The Election.",
         style={'font-family': 'Aldrich','textAlign': 'center',  'fontSize': '36px','marginTop': '0px', 'marginBottom': '5px'}),
