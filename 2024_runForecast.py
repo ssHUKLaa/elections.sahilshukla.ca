@@ -340,4 +340,3 @@ if __name__ == '__main__':
 
     print(f"Harris wins: {harris_wins} times")
     print(f"Trump wins: {trump_wins} times")
-
