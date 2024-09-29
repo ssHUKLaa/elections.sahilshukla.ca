@@ -68,6 +68,7 @@ def dbPullP_E_Winner():
     return avg_harris,avg_trump, avg_harris_e,avg_trump_e
 
 latest_data, harris_wins, trump_wins = get_data()
+none_wins = 1000 - harris_wins - trump_wins
 latest_simulation_date = latest_data['simulation_date'].values[0] if not latest_data.empty else "No data available"
 SIMULATION_NAT_HARRIS, SIMULATION_NAT_TRUMP, SIMULATION_ELE_HARRIS, SIMULATION_ELE_TRUMP = dbPullP_E_Winner()
 P_Winner=""
@@ -120,6 +121,8 @@ app.layout = html.Div([
             style={'font-family': 'Aldrich','textAlign': 'center', 'fontSize': '24px', 'marginTop': '5px', 'marginBottom': '0px', 'color': 'red','opacity':'0.8'}),
     html.P("Out of 1000 simulations of the 2024 elections.", 
             style={'font-family': 'Aldrich','textAlign': 'center', 'fontSize': '24px', 'marginTop': '5px', 'marginBottom': '0px', 'color': 'gray','opacity':'0.8'}),
+    html.P(f"There is a tie {none_wins} times.", 
+            style={'font-family': 'Aldrich','textAlign': 'center', 'fontSize': '20px', 'marginTop': '5px', 'marginBottom': '0px', 'color': 'gray','opacity':'0.8'}),
     dcc.Graph(
         id='electoral-votes-graph',
         config={
