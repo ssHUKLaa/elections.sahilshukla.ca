@@ -611,6 +611,7 @@ def update_line_graph(_):
         legend_title='Candidates',
         showlegend=False,
         hovermode='x unified',
+        dragmode=False,
         margin=dict(l=10, r=10, t=0, b=0)
     )
     fig.add_shape(
