@@ -395,7 +395,7 @@ def update_bar_graph(_):
         # Add a translucent box around each bar
         fig.add_shape(
             type='rect',
-            x0=harris_averages[i] - 3, x1=harris_averages[i] + 3,
+            x0=47,x1=53,
             y0=y_positions[i] - 1, y1=y_positions[i] + 1,  # Box centered on each bar
             fillcolor='purple',  # Purple fill color
             opacity=0.75,  # 20% opacity for translucence
