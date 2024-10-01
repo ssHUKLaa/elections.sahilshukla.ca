@@ -475,21 +475,22 @@ state_abbreviations = {
     "Wyoming": "WY",
     "District_of_Columbia": "DC"
 }
+electoral_votes_key_map = {
+    'Alabama': 9, 'Alaska': 3, 'Arizona': 11, 'Arkansas': 6, 'California': 54,
+    'Colorado': 10, 'Connecticut': 7, 'Delaware': 3, 'Florida': 30, 'Georgia': 16,
+    'Hawaii': 4, 'Idaho': 4, 'Illinois': 19, 'Indiana': 11, 'Iowa': 6,
+    'Kansas': 6, 'Kentucky': 8, 'Louisiana': 8, 'Maine': 2, 'Maine_CD_1': 1, 'Maine_CD_2': 1,
+    'Maryland': 10, 'Massachusetts': 11, 'Michigan': 15, 'Minnesota': 10, 'Mississippi': 6,
+    'Missouri': 10, 'Montana': 4, 'Nebraska': 4, 'Nebraska_CD_2': 1, 'Nevada': 6, 'New_Hampshire': 4,
+    'New_Jersey': 14, 'New_Mexico': 5, 'New_York': 28, 'North_Carolina': 16,
+    'North_Dakota': 3, 'Ohio': 17, 'Oklahoma': 7, 'Oregon': 8, 'Pennsylvania': 19,
+    'Rhode_Island': 4, 'South_Carolina': 9, 'South_Dakota': 3, 'Tennessee': 11,
+    'Texas': 40, 'Utah': 6, 'Vermont': 3, 'Virginia': 13, 'Washington': 12,
+    'West_Virginia': 4, 'Wisconsin': 10, 'Wyoming': 3, 'national': 0,  # Added national as 0 votes
+    'District_of_Columbia': 3
+}
 def get_map_data():
-    electoral_votes = {
-        'Alabama': 9, 'Alaska': 3, 'Arizona': 11, 'Arkansas': 6, 'California': 54,
-        'Colorado': 10, 'Connecticut': 7, 'Delaware': 3, 'Florida': 30, 'Georgia': 16,
-        'Hawaii': 4, 'Idaho': 4, 'Illinois': 19, 'Indiana': 11, 'Iowa': 6,
-        'Kansas': 6, 'Kentucky': 8, 'Louisiana': 8, 'Maine': 2, 'Maine_CD_1': 1, 'Maine_CD_2': 1,
-        'Maryland': 10, 'Massachusetts': 11, 'Michigan': 15, 'Minnesota': 10, 'Mississippi': 6,
-        'Missouri': 10, 'Montana': 4, 'Nebraska': 4, 'Nebraska_CD_2': 1, 'Nevada': 6, 'New_Hampshire': 4,
-        'New_Jersey': 14, 'New_Mexico': 5, 'New_York': 28, 'North_Carolina': 16,
-        'North_Dakota': 3, 'Ohio': 17, 'Oklahoma': 7, 'Oregon': 8, 'Pennsylvania': 19,
-        'Rhode_Island': 4, 'South_Carolina': 9, 'South_Dakota': 3, 'Tennessee': 11,
-        'Texas': 40, 'Utah': 6, 'Vermont': 3, 'Virginia': 13, 'Washington': 12,
-        'West_Virginia': 4, 'Wisconsin': 10, 'Wyoming': 3, 'national': 0,  # Added national as 0 votes
-        'District_of_Columbia': 3
-    }
+    
     # Create an empty dictionary to hold the Harris percentages
     avg_diff = {}
     final_data = {
@@ -504,7 +505,7 @@ def get_map_data():
     cursor = conn.cursor()
 
     # Iterate over the states and append '_Harris' to access the correct columns
-    for state in electoral_votes.keys():
+    for state in electoral_votes_key_map.keys():
         harris_column = state + '_Harris'
         trump_column = state + '_Trump'
         
@@ -544,12 +545,15 @@ def update_map(_):
         [0.55,'blue'],
         [1, 'darkblue']
     ]
+    abbr_to_full_state = {v: k for k, v in state_abbreviations.items()}
 
     max_value = 100  
     df=pd.DataFrame(df)
     df['normalized_value'] = (((df['value'] / max_value) + 1)/2)
     df['custom_tooltip'] = [
         f"<span style='color: {'blue' if value > 0 else 'red'};'>{'Harris' if value > 0 else 'Trump'}</span> leads in {state} by {abs(value):.2f}%<br>"
+        f"Which grants {electoral_votes_key_map[abbr_to_full_state[state]]} electoral votes<br>"
+        f"----------------------------------------<br>"
         f"<span style='color: blue;'>Harris</span>: {harris_avg:.2f}% of the vote<br>"
         f"<span style='color: red;'>Trump</span>: {trump_avg:.2f}% of the vote"
         for state, value, harris_avg, trump_avg in zip(df['state'], df['value'], df['harris_avg'], df['trump_avg'])
