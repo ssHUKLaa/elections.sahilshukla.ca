@@ -88,7 +88,7 @@ if SIMULATION_ELE_HARRIS>SIMULATION_ELE_TRUMP:
 
 else:
     E_Winner = "Trump"
-    popular_vote_margin = int(SIMULATION_ELE_TRUMP - SIMULATION_ELE_HARRIS)
+    electoral_vote_margin = int(SIMULATION_ELE_TRUMP - SIMULATION_ELE_HARRIS)
 # Initialize Dash app
 app = Dash(__name__,title="Shuklas Election Predictions")
 server = app.server
