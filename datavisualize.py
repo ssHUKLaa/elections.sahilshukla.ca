@@ -475,7 +475,6 @@ state_abbreviations = {
     "Wyoming": "WY",
     "District_of_Columbia": "DC"
 }
-
 def get_map_data():
     electoral_votes = {
         'Alabama': 9, 'Alaska': 3, 'Arizona': 11, 'Arkansas': 6, 'California': 54,
@@ -495,7 +494,9 @@ def get_map_data():
     avg_diff = {}
     final_data = {
         'state': [],
-        'value': []
+        'value': [],
+        'harris_avg': [],
+        'trump_avg': []
     }
 
     # Connect to the database
@@ -519,6 +520,8 @@ def get_map_data():
         if state_abbr:  
             final_data['state'].append(state_abbr)
             final_data['value'].append(avg_diff[state])
+            final_data['harris_avg'].append(harris_avg)
+            final_data['trump_avg'].append(trump_avg)
 
     # Close the connection
     conn.close()
@@ -535,16 +538,22 @@ def update_map(_):
 
     custom_color_scale = [
         [0, 'darkred'],
-        [0.47, 'red'],
+        [0.45, 'red'],
         [0.5, 'purple'],
-        [0.53, 'blue'],
-        [1, 'blue']
+        [0.53, 'rgba(3, 138, 255, 1)'],
+        [0.55,'blue'],
+        [1, 'darkblue']
     ]
 
     max_value = 100  
     df=pd.DataFrame(df)
     df['normalized_value'] = (((df['value'] / max_value) + 1)/2)
-    df['custom_tooltip'] = 'test'
+    df['custom_tooltip'] = [
+        f"<span style='color: {'blue' if value > 0 else 'red'};'>{'Harris' if value > 0 else 'Trump'}</span> leads in {state} by {abs(value):.2f}%<br>"
+        f"<span style='color: blue;'>Harris</span>: {harris_avg:.2f}% of the vote<br>"
+        f"<span style='color: red;'>Trump</span>: {trump_avg:.2f}% of the vote"
+        for state, value, harris_avg, trump_avg in zip(df['state'], df['value'], df['harris_avg'], df['trump_avg'])
+    ]
 
     fig = px.choropleth(
         df,
@@ -554,9 +563,16 @@ def update_map(_):
         color_continuous_scale=custom_color_scale,  # Choose a color scale
         range_color=(0,1),
         scope='usa',  # Focus on the USA
-        hover_data={'state':False, 'normalized_value':False}
     )
-    fig.update_traces(hoverinfo='none')
+    fig.update_traces(
+        hovertemplate='%{customdata[0]}<extra></extra>',
+        customdata=df[['custom_tooltip']],
+        hoverlabel=dict(
+            bgcolor='white',  # Set background color to white
+            font_size=14,     # Set font size
+            font_color='black'  # Set font color to black
+        )
+    )
 
     fig.update_layout(
         title_text='Election Results by State',
