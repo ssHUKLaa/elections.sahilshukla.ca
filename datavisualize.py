@@ -589,6 +589,7 @@ def update_line_graph(_):
         SELECT DATE(simulation_date) AS simulation_date, 
             AVG(national_harris) AS avg_harris, 
             AVG(national_trump) AS avg_trump,
+            MIN(simulation_date) AS earliest_time,
             COUNT(*) AS count_entries  -- Count the number of entries for each date
         FROM simulations
         GROUP BY DATE(simulation_date)  -- Group by date to get averages
@@ -603,9 +604,9 @@ def update_line_graph(_):
         x='simulation_date', 
         y=['avg_harris', 'avg_trump'],
         labels={'value': 'Average Votes', 'simulation_date': 'Date'},
+        range_x=['earliest_time',datetime.now()]
     )
     fig.update_yaxes(range=[0, 100])
-    fig.update_xaxes(range=[start_date, end_date])
     fig.update_layout(
         xaxis_title='Date',
         legend_title='Candidates',
@@ -614,6 +615,7 @@ def update_line_graph(_):
         dragmode=False,
         margin=dict(l=10, r=10, t=0, b=0)
     )
+    '''
     fig.add_shape(
         type='line',
         xref='x', yref='y',
@@ -625,6 +627,7 @@ def update_line_graph(_):
             width=2,
         ),
     )
+    '''
 
     return fig
 
