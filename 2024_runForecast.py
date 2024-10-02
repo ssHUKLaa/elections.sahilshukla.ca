@@ -22,7 +22,7 @@ import sqlite3
 from datetime import datetime, timedelta
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-WEEKS_TIME_DELTA = 3
+WEEKS_TIME_DELTA = 1
 NUM_SIMULATIONS = 1000
 NUM_WORKERS = 10
 
