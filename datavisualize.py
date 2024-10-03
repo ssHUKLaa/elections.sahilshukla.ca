@@ -100,7 +100,7 @@ app.layout = html.Div([
     html.Link(rel="preconnect", href="https://fonts.gstatic.com", crossOrigin=""),
     html.Link(href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap", rel="stylesheet"),
     html.H2(
-        f"UPDATED: {latest_simulation_date} - Polling has been bad for Harris in the last 2 days in key swing states.",  # Dynamically show latest time
+        f"UPDATED: {latest_simulation_date} - VP debate swung it back to the middle a little, model stabilizing.",  # Dynamically show latest time
         style={'font-family': 'Aldrich','textAlign': 'center', 'color': 'gray', 'fontSize': '15px', 'marginBottom': '10px'}  # Style for the updated header
     ),
     html.H2(
