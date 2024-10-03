@@ -22,12 +22,12 @@ import sqlite3
 from datetime import datetime, timedelta
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-WEEKS_TIME_DELTA = 1
+WEEKS_TIME_DELTA = 3
 NUM_SIMULATIONS = 1000
 NUM_WORKERS = 10
 
-TRUMP_TRAILOFF_PCT_MAX = 0.4
-DAYS_SINCE_MAJOR_EVENT = 18
+TRUMP_TRAILOFF_PCT_MAX = 0.9
+DAYS_SINCE_MAJOR_EVENT = 1
 UNCOMMITED_TRUMP_BREAKOFF = 0.5
 UNCOMMITED_HARRIS_BREAKOFF = 0.45
 import sqlite3
