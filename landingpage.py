@@ -113,13 +113,13 @@ def home():
     </head>
     <body>
         <div class="container">
-            <div class="usa-flag">🇺🇸</div>
-            <h1>US 2024 Dashboard</h1>
-            <p>Access comprehensive data and analytics for the 2024 US elections. Click below to explore the dashboard.</p>
+            <div class="usa-flag">US Elections</div>
+            <h1>US General 2024</h1>
+            <p>My prediction for the United States general election which took place in 2024.</p>
             <form action="/redirect-to-dash" method="get">
-                <button type="submit" class="btn">View Dashboard</button>
+                <button type="submit" class="btn">View Prediction</button>
             </form>
-            <div class="status">Status: Work in Progress</div>
+            <div class="status">Status: Finished</div>
         </div>
     </body>
     </html>
