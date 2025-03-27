@@ -90,7 +90,7 @@ else:
     E_Winner = "Trump"
     electoral_vote_margin = int(SIMULATION_ELE_TRUMP - SIMULATION_ELE_HARRIS)
 # Initialize Dash app
-app = Dash(__name__,title="Shuklas Election Predictions")
+app = Dash(__name__, title="Shukla's Election Predictions", requests_pathname_prefix="/old/us2024/")
 server = app.server
 
 
@@ -651,6 +651,3 @@ def update_line_graph(_):
 
     return fig
 
-
-if __name__ == '__main__':
-    app.run_server(debug=False, host="0.0.0.0", port=8050)
