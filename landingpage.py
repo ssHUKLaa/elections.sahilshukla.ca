@@ -116,7 +116,7 @@ def home():
             <div class="usa-flag">Canadian Elections</div>
             <h1>Canadian Federal 2025</h1>
             <p>Analytics for the Canadian Federal election, which is set to take place in 2025.</p>
-            <form action="/redirect-to-dash" method="get">
+            <form action="/redirect-to-can2025" method="get">
                 <button type="submit" class="btn">View Prediction</button>
             </form>
             <div class="status">Status: WIP</div>
