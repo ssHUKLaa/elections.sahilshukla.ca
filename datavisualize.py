@@ -90,7 +90,7 @@ else:
     E_Winner = "Trump"
     electoral_vote_margin = int(SIMULATION_ELE_TRUMP - SIMULATION_ELE_HARRIS)
 # Initialize Dash app
-app = Dash(__name__, title="Shukla's Election Predictions", requests_pathname_prefix="/old/us2024/")
+app = Dash(__name__,title="Shuklas Election Predictions")
 server = app.server
 
 
