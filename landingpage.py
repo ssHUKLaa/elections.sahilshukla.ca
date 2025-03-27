@@ -19,5 +19,5 @@ def redirect_to_us2024():
     return redirect('/old/us2024')
 
 server.wsgi_app = DispatcherMiddleware(server.wsgi_app, {
-    "/old/us2024": us2024server.server  # Mount Dash under /old/us2024
+    "/old/us2024": us2024server 
 })
