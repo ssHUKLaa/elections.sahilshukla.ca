@@ -12,7 +12,7 @@ def home():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>US 2024 Dashboard</title>
+        <title>Sahil Shukla's Election Predictions</title>
         <style>
             :root {
                 --primary-color: #3a86ff;
@@ -134,9 +134,11 @@ def home():
     </html>
     ''')
 
+@server.route('/redirect-to-can2025')
+def redirect_to_dash():
+    return redirect('/can2025')
 
-# Redirect to Dash app at /old/us2024 when the button is clicked
-@server.route('/redirect-to-dash')
+@server.route('/redirect-to-us2024')
 def redirect_to_dash():
     return redirect('/old/us2024')
 
