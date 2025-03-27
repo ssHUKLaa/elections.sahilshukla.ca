@@ -1,4 +1,6 @@
 from flask import Flask, redirect, render_template
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
+from datavisualize import server as us2024server
 
 # Initialize Flask app
 server = Flask(__name__)
@@ -16,5 +18,6 @@ def redirect_to_can2025():
 def redirect_to_us2024():
     return redirect('/old/us2024')
 
-if __name__ == "__main__":
-    server.run(debug=True)
+server.wsgi_app = DispatcherMiddleware(server.wsgi_app, {
+    "/old/us2024": us2024server.server  # Mount Dash under /old/us2024
+})
