@@ -125,6 +125,7 @@ def home():
     </html>
     ''')
 
+
 # Redirect to Dash app at /old/us2024 when the button is clicked
 @server.route('/redirect-to-dash')
 def redirect_to_dash():
