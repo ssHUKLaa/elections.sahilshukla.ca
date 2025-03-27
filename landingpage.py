@@ -125,7 +125,7 @@ def home():
             <div class="usa-flag">US Elections</div>
             <h1>US General 2024</h1>
             <p>My prediction for the United States general election which took place in 2024.</p>
-            <form action="/redirect-to-dash" method="get">
+            <form action="/redirect-to-us2024" method="get">
                 <button type="submit" class="btn">View Prediction</button>
             </form>
             <div class="status">Status: Finished</div>
