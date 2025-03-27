@@ -113,6 +113,15 @@ def home():
     </head>
     <body>
         <div class="container">
+            <div class="usa-flag">Canadian Elections</div>
+            <h1>Canadian Federal 2025</h1>
+            <p>Analytics for the Canadian Federal election, which is set to take place in 2025.</p>
+            <form action="/redirect-to-dash" method="get">
+                <button type="submit" class="btn">View Prediction</button>
+            </form>
+            <div class="status">Status: WIP</div>
+        </div>                        
+        <div class="container">
             <div class="usa-flag">US Elections</div>
             <h1>US General 2024</h1>
             <p>My prediction for the United States general election which took place in 2024.</p>
