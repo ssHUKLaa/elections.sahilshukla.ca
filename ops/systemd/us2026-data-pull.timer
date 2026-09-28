@@ -2,8 +2,12 @@
 Description=Daily 2026 election forecast live data pull
 
 [Timer]
-OnCalendar=*-*-* 06:20:00 UTC
-Persistent=true
+# November 3 is Election Day. The last nowcast runs November 2.
+OnCalendar=2026-09-* 06:20:00 UTC
+OnCalendar=2026-10-* 06:20:00 UTC
+OnCalendar=2026-11-01 06:20:00 UTC
+OnCalendar=2026-11-02 06:20:00 UTC
+Persistent=false
 RandomizedDelaySec=15m
 Unit=us2026-data-pull.service
 

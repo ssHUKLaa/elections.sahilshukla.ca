@@ -1,0 +1,21 @@
+[Unit]
+Description=Elections website (2024 archive and 2026 nowcast)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=forecast
+Group=forecast
+WorkingDirectory=/opt/us2026forecast
+ExecStart=/opt/us2026forecast/.venv/bin/gunicorn --workers 2 --bind 127.0.0.1:8000 --timeout 120 landingpage:server
+Restart=on-failure
+RestartSec=5
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

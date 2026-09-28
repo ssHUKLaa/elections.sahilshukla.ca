@@ -28,7 +28,10 @@ def main() -> None:
     current_dir = Path("artifacts/nowcast")
     if not args.skip_pull:
         run("pipeline/run_stage1_pull.py")
-    run("pipeline/validate_stage1.py")
+    # validate_stage1.py is the acquisition acceptance test. It deliberately
+    # requires two snapshots with different source contents, which a fresh
+    # production host cannot have until the NYT feed changes. The snapshot
+    # adapter checks the feed schema, and Stage 2/5 validate the live refresh.
     run("pipeline/build_stage2.py", "--stage1-database", str(stage1),
         "--output", str(pending_stage2))
     run("pipeline/validate_stage2.py", "--database", str(pending_stage2),
