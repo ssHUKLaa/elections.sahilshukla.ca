@@ -1,0 +1,97 @@
+{
+  "rows": [
+    {
+      "year": 1996,
+      "date": "1996-09-23",
+      "poll_margin": 0.04478484796617514,
+      "actual_margin": -0.004106776180698137,
+      "days_old": 0,
+      "error": 0.04889162414687328
+    },
+    {
+      "year": 1998,
+      "date": "1998-09-21",
+      "poll_margin": 0.017375076771733996,
+      "actual_margin": -0.009463722397476327,
+      "days_old": 0,
+      "error": 0.026838799169210323
+    },
+    {
+      "year": 2000,
+      "date": "2000-09-25",
+      "poll_margin": 0.031395930030131095,
+      "actual_margin": -0.003181336161187669,
+      "days_old": 0,
+      "error": 0.03457726619131876
+    },
+    {
+      "year": 2002,
+      "date": "2002-09-23",
+      "poll_margin": -0.001371041840656565,
+      "actual_margin": -0.04862579281183934,
+      "days_old": 0,
+      "error": 0.04725475097118278
+    },
+    {
+      "year": 2004,
+      "date": "2004-09-20",
+      "poll_margin": 0.03325572610179349,
+      "actual_margin": -0.027139874739039678,
+      "days_old": 0,
+      "error": 0.06039560084083317
+    },
+    {
+      "year": 2006,
+      "date": "2006-09-25",
+      "poll_margin": 0.10895427879391431,
+      "actual_margin": 0.06557377049180327,
+      "days_old": 0,
+      "error": 0.04338050830211104
+    },
+    {
+      "year": 2008,
+      "date": "2008-09-22",
+      "poll_margin": 0.08967927085482587,
+      "actual_margin": 0.11134453781512609,
+      "days_old": 0,
+      "error": -0.021665266960300217
+    },
+    {
+      "year": 2010,
+      "date": "2010-09-20",
+      "poll_margin": -0.03814371995648925,
+      "actual_margin": -0.06860706860706862,
+      "days_old": 0,
+      "error": 0.030463348650579376
+    },
+    {
+      "year": 2012,
+      "date": "2012-09-24",
+      "poll_margin": 0.03277285645068219,
+      "actual_margin": 0.014705882352941164,
+      "days_old": 0,
+      "error": 0.018066974097741023
+    },
+    {
+      "year": 2014,
+      "date": "2014-09-22",
+      "poll_margin": -0.019307469477842613,
+      "actual_margin": -0.05306971904266391,
+      "days_old": 0,
+      "error": 0.033762249564821295
+    },
+    {
+      "year": 2016,
+      "date": "2016-09-26",
+      "poll_margin": 0.02838416407996163,
+      "actual_margin": -0.009424083769633567,
+      "days_old": 0,
+      "error": 0.037808247849595196
+    }
+  ],
+  "cycles": 11,
+  "mean_error": 0.032706736620360555,
+  "rmse": 0.0385675040301864,
+  "error_sd": 0.02143580932554896,
+  "note": "538's historical reconstructed trendline may embed retrospective methodology; verify no future-poll smoothing before using as an as-of likelihood."
+}

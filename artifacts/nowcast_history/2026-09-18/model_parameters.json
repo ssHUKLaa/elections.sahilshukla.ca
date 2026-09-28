@@ -1,0 +1,1306 @@
+{
+  "metadata": {
+    "model_version": "nowcast-2026-0.18",
+    "stage": 5,
+    "estimand": "office winner if voting occurred at information cutoff, after jurisdiction-specific counting",
+    "information_cutoff_utc": "2026-09-19T03:59:59Z",
+    "random_seed": 20260921,
+    "simulation_draws": 75000,
+    "data_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+    "stage1_data_sha256": "45b515db04678bdf5b75b490df305b9330e7c55ad6d147b075c278dea57fae32",
+    "model_code_sha256": "4ec5f1cd96d64c7dcbcbe43a00038ca0fc70e5b014c792c0b9841f9b05c0f3b9",
+    "stage3_model_code_sha256": "20c7c6ea40f585fc0e0df77fd754ffd0bc1a00ab142f23c728d1d7c6b089449f",
+    "house_population_crosswalk_sha256": "1215616c8e1a2c6495db99ef31f6cf1b7a2c8969dbe9437bb821891c69619e3c",
+    "house_official_resolutions_sha256": "ace9b699b3bdd30368f2e3acb6d7068986f77fbc8569b9921c5d6885029bbb5f",
+    "stage4_model_code_sha256": "d769b83631afdfdd896aaa47e3b52b172b00b4df8d2363be404406f065d94541",
+    "senate_minor_share_code_sha256": "2a327aec9537799588739d81b219ff03a6d950c7c65c8a50e3f263c19d442686",
+    "senate_minor_share_fit_sha256": "ca86e1635291665a7e07e2568739cad17bea4c99447fe376f45ad12761ba641a",
+    "structural_model_code_sha256": "4a93dec264e97fa730ae7bc9c71f7c8e3c6d610177aca09bcc050d3d2a0c373a",
+    "national_model_code_sha256": "fc141a1fae6d5b01196de27ca98bec15a41fe8e7ebbeded87c36d9664b4475ce",
+    "generic_error_calibration_sha256": "fac01329c34eec767631c27276234cf86aae279c07413f55d1e077623ee7f500",
+    "national_source_manifest_sha256": "362b8b62de62e9e7c6465666e0592887204d5947aa059c26c3c96ca8afce3f0a",
+    "pollster_quality_code_sha256": "5f7b9c70e6bd031ddea776c9fc4a9394057121343171cd0a3b9853ecec93110a",
+    "fundamentals_features_code_sha256": "cc213f137bb5f5029ba9e593f9387bec399fb31d6d63934b2dd8b64273254c8a",
+    "pollster_ratings_sha256": "75215795f59d6dd9c725c794b2222db140048aff27510847d1c5b145af3c04ef",
+    "silver_ratings_sha256": "aed8416918043f85519921e7ee076ddd3ae0e3682d8e0929104a9dc582932c56",
+    "input_snapshot_ids": {
+      "live_source_snapshot": "nyt:20260927T021102Z:514baa69d96b1fa7",
+      "historical_snapshot": "20260921T204524Z"
+    },
+    "reconstruction": {
+      "kind": "retrospective_poll_cutoff",
+      "source_snapshot_retrieved_at_utc": "2026-09-27T02:11:02Z",
+      "limitation": "Uses a later saved poll feed and the currently reviewed candidate and map inputs; not a forecast recorded at the cutoff."
+    }
+  },
+  "runoff_model": {
+    "intercept": 0.0,
+    "slope": 0.0,
+    "residual_sd": 0.3076714130953507,
+    "selected_ridge": "uninformed_fallback",
+    "ridge_cv_brier": {
+      "0.1": 0.27503631898106917,
+      "1.0": 0.27247790174140524,
+      "4.0": 0.2674900413885522,
+      "10.0": 0.26309018557984604,
+      "40.0": 0.25674609388633074,
+      "100.0": 0.2535744672066382
+    },
+    "pairs": 37,
+    "leave_one_pair_out_winner_accuracy": 0.5675675675675675,
+    "leave_one_pair_out_brier": 0.25,
+    "uninformed_brier": 0.25,
+    "training_pairs": [
+      {
+        "cycle": 2016,
+        "office": "senate",
+        "state": "LA",
+        "district": "S",
+        "first_race_id": "90",
+        "runoff_race_id": "1469",
+        "x": -0.35661781348873456,
+        "y": -0.43281683656687986
+      },
+      {
+        "cycle": 2018,
+        "office": "senate",
+        "state": "MS",
+        "district": "S",
+        "first_race_id": "130",
+        "runoff_race_id": "6209",
+        "x": -0.008376114486610032,
+        "y": -0.14558686540697213
+      },
+      {
+        "cycle": 2014,
+        "office": "senate",
+        "state": "LA",
+        "district": "S",
+        "first_race_id": "25",
+        "runoff_race_id": "1470",
+        "x": -0.02675770091594827,
+        "y": 0.23851490613065554
+      },
+      {
+        "cycle": 2015,
+        "office": "governor",
+        "state": "LA",
+        "district": "G",
+        "first_race_id": "1218",
+        "runoff_race_id": "1219",
+        "x": 0.5506396660719517,
+        "y": 0.24581073719565993
+      },
+      {
+        "cycle": 2003,
+        "office": "governor",
+        "state": "LA",
+        "district": "G",
+        "first_race_id": "1377",
+        "runoff_race_id": "1378",
+        "x": -0.5724427186270887,
+        "y": 0.0779942837627758
+      },
+      {
+        "cycle": 2008,
+        "office": "senate",
+        "state": "GA",
+        "district": "S",
+        "first_race_id": "1550",
+        "runoff_race_id": "1551",
+        "x": 0.06055335730326858,
+        "y": 0.29980900076398875
+      },
+      {
+        "cycle": 2002,
+        "office": "senate",
+        "state": "LA",
+        "district": "S",
+        "first_race_id": "1659",
+        "runoff_race_id": "1660",
+        "x": 0.5239994981734043,
+        "y": 0.06804556815061924
+      },
+      {
+        "cycle": 2017,
+        "office": "house",
+        "state": "GA",
+        "district": "06",
+        "first_race_id": "8723",
+        "runoff_race_id": "1762",
+        "x": 0.8896243305592555,
+        "y": -0.07134357248752395
+      },
+      {
+        "cycle": 2013,
+        "office": "house",
+        "state": "LA",
+        "district": "05",
+        "first_race_id": "9453",
+        "runoff_race_id": "1780",
+        "x": -0.5861176091637,
+        "y": 0.39069863799186344
+      },
+      {
+        "cycle": 2007,
+        "office": "house",
+        "state": "GA",
+        "district": "10",
+        "first_race_id": "9455",
+        "runoff_race_id": "1817",
+        "x": -0.7427103031172986,
+        "y": 0.016887080539676122
+      },
+      {
+        "cycle": 1999,
+        "office": "house",
+        "state": "LA",
+        "district": "01",
+        "first_race_id": "9457",
+        "runoff_race_id": "1839",
+        "x": 0.1456851116778961,
+        "y": -0.029826916869371087
+      },
+      {
+        "cycle": 2008,
+        "office": "house",
+        "state": "MS",
+        "district": "01",
+        "first_race_id": "8747",
+        "runoff_race_id": "1807",
+        "x": 0.06599686641482522,
+        "y": 0.15152076353273444
+      },
+      {
+        "cycle": 2003,
+        "office": "house",
+        "state": "TX",
+        "district": "19",
+        "first_race_id": "9456",
+        "runoff_race_id": "1827",
+        "x": -0.06476771247514196,
+        "y": -0.020777669860676633
+      },
+      {
+        "cycle": 2002,
+        "office": "house",
+        "state": "LA",
+        "district": "05",
+        "first_race_id": "2892",
+        "runoff_race_id": "2893",
+        "x": 0.15656457950850752,
+        "y": 0.011295361942265538
+      },
+      {
+        "cycle": 2022,
+        "office": "house",
+        "state": "CA",
+        "district": "22",
+        "first_race_id": "9498",
+        "runoff_race_id": "9499",
+        "x": -0.5920498050899883,
+        "y": -0.4953986636020118
+      },
+      {
+        "cycle": 2004,
+        "office": "house",
+        "state": "LA",
+        "district": "03",
+        "first_race_id": "3326",
+        "runoff_race_id": "3327",
+        "x": -0.29055187684650924,
+        "y": 0.009925683086245814
+      },
+      {
+        "cycle": 2004,
+        "office": "house",
+        "state": "LA",
+        "district": "07",
+        "first_race_id": "3331",
+        "runoff_race_id": "3332",
+        "x": -0.42593105422551486,
+        "y": -0.19908463118701797
+      },
+      {
+        "cycle": 2006,
+        "office": "house",
+        "state": "LA",
+        "district": "02",
+        "first_race_id": "3762",
+        "runoff_race_id": "3763",
+        "x": 0.32849228139875614,
+        "y": 0.26346577267722604
+      },
+      {
+        "cycle": 2022,
+        "office": "senate",
+        "state": "GA",
+        "district": "S",
+        "first_race_id": "8925",
+        "runoff_race_id": "9552",
+        "x": 0.01954890290395538,
+        "y": 0.05613695760147029
+      },
+      {
+        "cycle": 2012,
+        "office": "house",
+        "state": "LA",
+        "district": "03",
+        "first_race_id": "5071",
+        "runoff_race_id": "5072",
+        "x": 0.39710826926876386,
+        "y": 0.44304622767361707
+      },
+      {
+        "cycle": 2014,
+        "office": "house",
+        "state": "LA",
+        "district": "05",
+        "first_race_id": "5509",
+        "runoff_race_id": "5510",
+        "x": 0.19758588879430605,
+        "y": -0.5848581705376643
+      },
+      {
+        "cycle": 2014,
+        "office": "house",
+        "state": "LA",
+        "district": "06",
+        "first_race_id": "5511",
+        "runoff_race_id": "5512",
+        "x": 0.0963316861330125,
+        "y": -0.5077701495121053
+      },
+      {
+        "cycle": 2016,
+        "office": "house",
+        "state": "LA",
+        "district": "03",
+        "first_race_id": "5944",
+        "runoff_race_id": "5945",
+        "x": -0.07507321183173837,
+        "y": 0.24551736375437744
+      },
+      {
+        "cycle": 2016,
+        "office": "house",
+        "state": "LA",
+        "district": "04",
+        "first_race_id": "5946",
+        "runoff_race_id": "5947",
+        "x": 0.13266497885866183,
+        "y": -0.6290021785256498
+      },
+      {
+        "cycle": 2019,
+        "office": "governor",
+        "state": "LA",
+        "district": "G",
+        "first_race_id": "6206",
+        "runoff_race_id": "6299",
+        "x": 0.5303530361296319,
+        "y": 0.053316479043540546
+      },
+      {
+        "cycle": 2020,
+        "office": "senate",
+        "state": "GA",
+        "district": "S",
+        "first_race_id": "6271",
+        "runoff_race_id": "8737",
+        "x": -0.03642971496617874,
+        "y": 0.024502987573630758
+      },
+      {
+        "cycle": 2020,
+        "office": "senate",
+        "state": "GA",
+        "district": "S",
+        "first_race_id": "7780",
+        "runoff_race_id": "7781",
+        "x": -0.23904981310121595,
+        "y": -0.041599289633170895
+      },
+      {
+        "cycle": 2020,
+        "office": "house",
+        "state": "LA",
+        "district": "05",
+        "first_race_id": "8010",
+        "runoff_race_id": "8011",
+        "x": 0.6936642209542687,
+        "y": 0.4902258390951615
+      },
+      {
+        "cycle": 1992,
+        "office": "senate",
+        "state": "GA",
+        "district": "S",
+        "first_race_id": "8459",
+        "runoff_race_id": "15634",
+        "x": 0.032210725466894054,
+        "y": -0.02589796499186814
+      },
+      {
+        "cycle": 1996,
+        "office": "senate",
+        "state": "LA",
+        "district": "S",
+        "first_race_id": "11389",
+        "runoff_race_id": "8493",
+        "x": -0.19834528281777924,
+        "y": 0.006809029531577205
+      },
+      {
+        "cycle": 2015,
+        "office": "house",
+        "state": "MS",
+        "district": "01",
+        "first_race_id": "8520",
+        "runoff_race_id": "8722",
+        "x": 0.0649155827916183,
+        "y": -0.8460088206390308
+      },
+      {
+        "cycle": 2006,
+        "office": "house",
+        "state": "TX",
+        "district": "23",
+        "first_race_id": "3980",
+        "runoff_race_id": "8748",
+        "x": -0.8947544729188802,
+        "y": 0.17180614717177986
+      },
+      {
+        "cycle": 2020,
+        "office": "house",
+        "state": "GA",
+        "district": "05",
+        "first_race_id": "9437",
+        "runoff_race_id": "9438",
+        "x": -0.10602115650345115,
+        "y": -0.17134852407957804
+      },
+      {
+        "cycle": 2010,
+        "office": "house",
+        "state": "GA",
+        "district": "09",
+        "first_race_id": "9454",
+        "runoff_race_id": "1796",
+        "x": -0.4218688446737651,
+        "y": -0.259385537924618
+      },
+      {
+        "cycle": 2021,
+        "office": "house",
+        "state": "LA",
+        "district": "02",
+        "first_race_id": "9433",
+        "runoff_race_id": "9434",
+        "x": 0.462047456017934,
+        "y": 0.4068574566058169
+      },
+      {
+        "cycle": 2021,
+        "office": "house",
+        "state": "TX",
+        "district": "06",
+        "first_race_id": "9439",
+        "runoff_race_id": "9442",
+        "x": 0.32762379008838854,
+        "y": -0.13193798475460813
+      },
+      {
+        "cycle": 1986,
+        "office": "senate",
+        "state": "LA",
+        "district": "S",
+        "first_race_id": "15445",
+        "runoff_race_id": "15446",
+        "x": -0.16457582817076005,
+        "y": 0.11293859354427299
+      }
+    ]
+  },
+  "ranked_choice_model": {
+    "transfer_profiles": {
+      "D": {
+        "D": 0.27055547038683636,
+        "R": 0.3572586636819927,
+        "O": 0.11301037355000254,
+        "exhausted": 0.25917549238116844,
+        "concentration": 22.0
+      },
+      "R": {
+        "D": 0.1689158516024719,
+        "R": 0.5629710359726114,
+        "O": 0.03333333333333333,
+        "exhausted": 0.23477977909158323,
+        "concentration": 30.0
+      },
+      "O": {
+        "D": 0.592264169621387,
+        "R": 0.30200390328952703,
+        "O": 0.023036419482229047,
+        "exhausted": 0.08269550760685694,
+        "concentration": 130.22857142857143
+      }
+    },
+    "evidence": {
+      "recorded_rcv_races": 7,
+      "elimination_events": 10,
+      "events": [
+        {
+          "race_id": "364",
+          "from_round": 1,
+          "to_round": 3
+        },
+        {
+          "race_id": "8918",
+          "from_round": 1,
+          "to_round": 2
+        },
+        {
+          "race_id": "8918",
+          "from_round": 2,
+          "to_round": 3
+        },
+        {
+          "race_id": "8998",
+          "from_round": 1,
+          "to_round": 2
+        },
+        {
+          "race_id": "8998",
+          "from_round": 2,
+          "to_round": 3
+        },
+        {
+          "race_id": "9177",
+          "from_round": 1,
+          "to_round": 2
+        },
+        {
+          "race_id": "9496",
+          "from_round": 1,
+          "to_round": 2
+        },
+        {
+          "race_id": "9988",
+          "from_round": 1,
+          "to_round": 2
+        },
+        {
+          "race_id": "9988",
+          "from_round": 2,
+          "to_round": 3
+        },
+        {
+          "race_id": "9993",
+          "from_round": 1,
+          "to_round": 2
+        }
+      ]
+    },
+    "uncertainty": "Dirichlet transfer profile sampled per draw; historical elimination events receive equal weight."
+  },
+  "vermont_joint_assembly": {
+    "default": "plurality-winner convention",
+    "sensitivity": "conditional D-, R-, and O-preferring assembly scenarios are stored on the race"
+  },
+  "senate_accounting": {
+    "current_chamber": {
+      "R": 53,
+      "D": 45,
+      "I_caucusing_D": 2
+    },
+    "seats_in_2026_universe": {
+      "R_caucus": 22,
+      "D_caucus": 13
+    },
+    "not_up_baseline": {
+      "R_caucus": 31,
+      "D_caucus": 34
+    }
+  },
+  "national_signal_update": {
+    "prior": {
+      "national_D_R_logratio_mean": 0.040686842969995994,
+      "national_D_R_logratio_sd": 0.12709128994032087,
+      "implied_D_two_party_margin": 0.020340615541970433
+    },
+    "approval_conditioned_prior": {
+      "national_D_R_logratio_mean": 0.17249642158715198,
+      "national_D_R_logratio_sd": 0.10614691684485132,
+      "implied_D_two_party_margin": 0.0860349854862085
+    },
+    "generic_ballot": {
+      "raw_logratio_mean": 0.13447731204190885,
+      "raw_implied_D_two_party_margin": 0.06713750945112454,
+      "observation_sd_logratio": 0.07992399707261787,
+      "poll_count_last_180_days": 215,
+      "effective_poll_count": 73.21117932289916,
+      "half_life_days": 30,
+      "historical_error_calibration": {
+        "training_cycles": [
+          2020,
+          2022,
+          2024
+        ],
+        "cutoff_days_before_election": 7,
+        "estimand_warning": "Terminal House vote includes changes after the cutoff and is only a noisy proxy for current generic-ballot survey error.",
+        "use": "RMS magnitude enters 2026 national generic-ballot variance; historical mean signed error is not subtracted.",
+        "snapshot_sha256": "b9584eb2c39013e21d948511a06635243d1578685ac7990434c2b3c98b324ca9",
+        "source_manifest_sha256": "8bf82a6c2549573a93dad7a8c75b2a1315639d6f32367006914f651930b6fcfc",
+        "rows": [
+          {
+            "cycle": 2020,
+            "poll_count": 346,
+            "generic_mean_logratio": 0.14342917112453915,
+            "terminal_house_logratio": 0.06187540371808745,
+            "terminal_proxy_error_logratio": 0.0815537674064517
+          },
+          {
+            "cycle": 2022,
+            "poll_count": 444,
+            "generic_mean_logratio": 0.03546112065115757,
+            "terminal_house_logratio": -0.053400776727115414,
+            "terminal_proxy_error_logratio": 0.08886189737827299
+          },
+          {
+            "cycle": 2024,
+            "poll_count": 144,
+            "generic_mean_logratio": 0.015401761495160244,
+            "terminal_house_logratio": -0.05161104051107335,
+            "terminal_proxy_error_logratio": 0.0670128020062336
+          }
+        ],
+        "rms_error_logratio": 0.07966213951553777,
+        "mean_signed_error_logratio_diagnostic_only": 0.07914282226365277
+      },
+      "nowcast_quality_weighted": true,
+      "FLIPR_likely_voter_adjusted_context": {
+        "implied_D_two_party_margin": 0.086,
+        "source": "User-supplied Nate Silver/FLIPR description",
+        "use_in_likelihood": "sensitivity case only; it is an adjusted view of the same generic-ballot evidence and is not counted as an independent observation"
+      }
+    },
+    "historical_fundamentals": {
+      "margin": 0.0860349854862085,
+      "margin_sd": 0.05268060768924372,
+      "approval_date": "2026-09-19",
+      "approve": 38.4,
+      "disapprove": 58.6,
+      "previous_house_margin": -0.025799793601651185,
+      "training_cycles": 39,
+      "approval_observations": 1918,
+      "half_life_years": 24,
+      "ridge_alpha": 0.001,
+      "rolling_tuning_rmse": 0.05268060768924372,
+      "later_cycle_rmse": 0.02950762670171688,
+      "later_cycle_predictions": [
+        {
+          "year": 2018,
+          "predicted": 0.10076318321727763,
+          "actual": 0.08904810644831118,
+          "error": 0.011715076768966451
+        },
+        {
+          "year": 2020,
+          "predicted": 0.07973706284191079,
+          "actual": 0.030927835051546393,
+          "error": 0.048809227790364396
+        },
+        {
+          "year": 2022,
+          "predicted": -0.05140794469304851,
+          "actual": -0.026694045174538,
+          "error": -0.02471389951851051
+        },
+        {
+          "year": 2024,
+          "predicted": -0.007026419806139401,
+          "actual": -0.025799793601651185,
+          "error": 0.018773373795511784
+        }
+      ],
+      "coefficients": {
+        "intercept": 0.014560428670035262,
+        "previous_margin": 0.5079826397573346,
+        "president_party_midterm": -0.06815796697199084,
+        "signed_approval_net": 0.08210159576505462,
+        "president_party": 0.00016208524139747364
+      },
+      "nowcast_interpretation": "Approval-conditioned historical House-vote prediction used as a national prior proxy; its target is the eventual election result, so this remains provisional for voting at the cutoff."
+    },
+    "senate_local_lean": {
+      "training_races": 361,
+      "selected": {
+        "specification": "combined",
+        "alpha": 0.1,
+        "tuning_rmse": 0.1477673915758039,
+        "later_rmse": 0.09785907559457481
+      },
+      "grid": [
+        {
+          "specification": "previous",
+          "alpha": 0.01,
+          "tuning_rmse": 0.17208000564910939,
+          "later_rmse": 0.11584355543501897
+        },
+        {
+          "specification": "previous",
+          "alpha": 0.1,
+          "tuning_rmse": 0.17170240059396652,
+          "later_rmse": 0.11604506873744276
+        },
+        {
+          "specification": "previous",
+          "alpha": 1.0,
+          "tuning_rmse": 0.17003535526558305,
+          "later_rmse": 0.11820099515509778
+        },
+        {
+          "specification": "previous",
+          "alpha": 10.0,
+          "tuning_rmse": 0.1916711809470773,
+          "later_rmse": 0.1426161802075587
+        },
+        {
+          "specification": "presidential",
+          "alpha": 0.01,
+          "tuning_rmse": 0.18271932255639914,
+          "later_rmse": 0.11882502746936216
+        },
+        {
+          "specification": "presidential",
+          "alpha": 0.1,
+          "tuning_rmse": 0.18234770474888698,
+          "later_rmse": 0.1189800896964988
+        },
+        {
+          "specification": "presidential",
+          "alpha": 1.0,
+          "tuning_rmse": 0.1842222225335818,
+          "later_rmse": 0.12150257629501672
+        },
+        {
+          "specification": "presidential",
+          "alpha": 10.0,
+          "tuning_rmse": 0.22011131572338255,
+          "later_rmse": 0.1605660196673632
+        },
+        {
+          "specification": "combined",
+          "alpha": 0.01,
+          "tuning_rmse": 0.14789029340638563,
+          "later_rmse": 0.09779948010406572
+        },
+        {
+          "specification": "combined",
+          "alpha": 0.1,
+          "tuning_rmse": 0.1477673915758039,
+          "later_rmse": 0.09785907559457481
+        },
+        {
+          "specification": "combined",
+          "alpha": 1.0,
+          "tuning_rmse": 0.14844848966618784,
+          "later_rmse": 0.09875975986800058
+        },
+        {
+          "specification": "combined",
+          "alpha": 10.0,
+          "tuning_rmse": 0.1648973393521075,
+          "later_rmse": 0.11376379299686444
+        }
+      ],
+      "coefficients": {
+        "intercept": 0.005309280723613644,
+        "features": {
+          "previous_senate_lean": 0.40599843434700095,
+          "presidential_lean": 0.4587282913100102,
+          "recurring_candidate": 0.07399172108985429
+        }
+      },
+      "current_predictions": {
+        "S-2026-AK-II-regular": {
+          "predicted_lean": -0.11849930105391916,
+          "inputs": {
+            "previous_senate_lean": -0.16451820221448607,
+            "presidential_lean": -0.12428805970098233,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-AL-II-regular": {
+          "predicted_lean": -0.22590355402236495,
+          "inputs": {
+            "previous_senate_lean": -0.23485734329221883,
+            "presidential_lean": -0.29616904744736183,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-CO-II-regular": {
+          "predicted_lean": 0.0891021067116681,
+          "inputs": {
+            "previous_senate_lean": 0.0645038638062043,
+            "presidential_lean": 0.1255740257678463,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-DE-II-regular": {
+          "predicted_lean": 0.1570186317305592,
+          "inputs": {
+            "previous_senate_lean": 0.1903722164281819,
+            "presidential_lean": 0.16222790397648043,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-GA-II-regular": {
+          "predicted_lean": 0.05501767285816754,
+          "inputs": {
+            "previous_senate_lean": -0.049140678353864126,
+            "presidential_lean": -0.009444131881445751,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-IA-II-regular": {
+          "predicted_lean": -0.09073117678296773,
+          "inputs": {
+            "previous_senate_lean": -0.0989202985791686,
+            "presidential_lean": -0.12181278594944528,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-ID-II-regular": {
+          "predicted_lean": -0.2979754114111051,
+          "inputs": {
+            "previous_senate_lean": -0.3373441104819063,
+            "presidential_lean": -0.36257522065601366,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-IL-II-regular": {
+          "predicted_lean": 0.11918073251261588,
+          "inputs": {
+            "previous_senate_lean": 0.14036958582435557,
+            "presidential_lean": 0.12399849931195131,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-KS-II-regular": {
+          "predicted_lean": -0.19959720419100796,
+          "inputs": {
+            "previous_senate_lean": -0.1513071832891654,
+            "presidential_lean": -0.15147154779898614,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-KY-II-regular": {
+          "predicted_lean": -0.22639720630443694,
+          "inputs": {
+            "previous_senate_lean": -0.23441324566410354,
+            "presidential_lean": -0.2976382291755246,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MA-II-regular": {
+          "predicted_lean": 0.25292099023628406,
+          "inputs": {
+            "previous_senate_lean": 0.30283522576969507,
+            "presidential_lean": 0.2717536379303173,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-ME-II-regular": {
+          "predicted_lean": -0.08030243250526978,
+          "inputs": {
+            "previous_senate_lean": -0.12299862373665284,
+            "presidential_lean": 0.08352930754600627,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MI-II-regular": {
+          "predicted_lean": -0.0010924667410743619,
+          "inputs": {
+            "previous_senate_lean": -0.013754984503423075,
+            "presidential_lean": -0.0017815454318222557,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MN-II-regular": {
+          "predicted_lean": 0.041535350372730415,
+          "inputs": {
+            "previous_senate_lean": 0.025866739178881513,
+            "presidential_lean": 0.05607723466840663,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MS-II-regular": {
+          "predicted_lean": -0.2228422098361164,
+          "inputs": {
+            "previous_senate_lean": -0.1324802313372221,
+            "presidential_lean": -0.21880709096531978,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MT-II-regular": {
+          "predicted_lean": -0.13654372369209647,
+          "inputs": {
+            "previous_senate_lean": -0.13117105004666724,
+            "presidential_lean": -0.19313777925511996,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NC-II-regular": {
+          "predicted_lean": -0.02382122838726552,
+          "inputs": {
+            "previous_senate_lean": -0.049193874444062535,
+            "presidential_lean": -0.019963610879490994,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NE-II-regular": {
+          "predicted_lean": -0.27549313062509095,
+          "inputs": {
+            "previous_senate_lean": -0.47044538659355095,
+            "presidential_lean": -0.19576364189246087,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NH-II-regular": {
+          "predicted_lean": 0.0765726947275669,
+          "inputs": {
+            "previous_senate_lean": 0.1293654441595804,
+            "presidential_lean": 0.04085478609361341,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NJ-II-regular": {
+          "predicted_lean": 0.09366060716325147,
+          "inputs": {
+            "previous_senate_lean": 0.13522356127219054,
+            "presidential_lean": 0.0729206654788522,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NM-II-regular": {
+          "predicted_lean": 0.12617948655087668,
+          "inputs": {
+            "previous_senate_lean": 0.03178451905824055,
+            "presidential_lean": 0.07406131343299013,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-OK-II-regular": {
+          "predicted_lean": -0.28971872807709614,
+          "inputs": {
+            "previous_senate_lean": -0.34617805618751024,
+            "presidential_lean": -0.3367576469768991,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-OR-II-regular": {
+          "predicted_lean": 0.2149345062812812,
+          "inputs": {
+            "previous_senate_lean": 0.1518198829130002,
+            "presidential_lean": 0.161304351844269,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-RI-II-regular": {
+          "predicted_lean": 0.27222077278379625,
+          "inputs": {
+            "previous_senate_lean": 0.30087066078068075,
+            "presidential_lean": 0.1542672538254238,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-SC-II-regular": {
+          "predicted_lean": -0.12687270284669747,
+          "inputs": {
+            "previous_senate_lean": -0.13508615986661435,
+            "presidential_lean": -0.16859046112386436,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-SD-II-regular": {
+          "predicted_lean": -0.2663320994707124,
+          "inputs": {
+            "previous_senate_lean": -0.3456327865173297,
+            "presidential_lean": -0.2862587995920135,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-TN-II-regular": {
+          "predicted_lean": -0.32636047765608817,
+          "inputs": {
+            "previous_senate_lean": -0.3086312911319346,
+            "presidential_lean": -0.28856780540341626,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-TX-II-regular": {
+          "predicted_lean": -0.10530016149429491,
+          "inputs": {
+            "previous_senate_lean": -0.1299182556722999,
+            "presidential_lean": -0.1261374868696675,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-VA-II-regular": {
+          "predicted_lean": 0.07468633683233963,
+          "inputs": {
+            "previous_senate_lean": 0.09003044907558887,
+            "presidential_lean": 0.07155615941353916,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-WV-II-regular": {
+          "predicted_lean": -0.4518976535081293,
+          "inputs": {
+            "previous_senate_lean": -0.4758492682701121,
+            "presidential_lean": -0.41423465445395896,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-WY-II-regular": {
+          "predicted_lean": -0.4047207243670042,
+          "inputs": {
+            "previous_senate_lean": -0.4936437167052054,
+            "presidential_lean": -0.45694026933563126,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        }
+      }
+    },
+    "national_center_source": "generic_ballot_with_small_approval_blend",
+    "approval_blend_weight": 0.05,
+    "combination_limitation": "Nowcast blends 95% of the current generic-ballot D/R log ratio with 5% of the approval-and-previous-vote fit. This 5% weight is a stated modeling choice, not historically calibrated. The SD uses a perfect-positive-correlation upper bound, so the approval signal does not create false precision. Generic-ballot uncertainty uses the RMS of three recent seven-day terminal-proxy misses; current-support uncertainty is not fully validated, and economic sentiment is not an input.",
+    "posterior": {
+      "national_D_R_logratio_mean": 0.136378267519171,
+      "national_D_R_logratio_sd": 0.08123514306122954,
+      "implied_D_two_party_margin": 0.06808364230324421
+    },
+    "sensitivity": {
+      "generic_only": {
+        "national_D_R_logratio_mean": 0.13447731204190885,
+        "national_D_R_logratio_sd": 0.07992399707261787,
+        "implied_D_two_party_margin": 0.06713750945112454
+      },
+      "structural_prior_plus_generic": {
+        "national_D_R_logratio_mean": 0.10789710306269615,
+        "national_D_R_logratio_sd": 0.06765745063052649,
+        "implied_D_two_party_margin": 0.053896274271410936
+      },
+      "approval_prior_plus_generic_legacy": {
+        "national_D_R_logratio_mean": 0.14823318902129634,
+        "national_D_R_logratio_sd": 0.06384847889877807,
+        "implied_D_two_party_margin": 0.07398117791011159
+      },
+      "approval_prior_only": {
+        "national_D_R_logratio_mean": 0.17249642158715198,
+        "national_D_R_logratio_sd": 0.10614691684485132,
+        "implied_D_two_party_margin": 0.08603498548620848
+      },
+      "generic_error_doubled": {
+        "national_D_R_logratio_mean": 0.136378267519171,
+        "national_D_R_logratio_sd": 0.15716294028021652,
+        "implied_D_two_party_margin": 0.06808364230324421
+      },
+      "FLIPR_adjusted_generic_D_plus_8_6": {
+        "national_D_R_logratio_mean": 0.17242945366710183,
+        "national_D_R_logratio_sd": 0.08123514306122954,
+        "implied_D_two_party_margin": 0.08600174927934841
+      }
+    }
+  },
+  "additional_fundamentals": {
+    "fit": {
+      "house": {
+        "coefficients": [
+          -0.1430964347127814,
+          0.0877959617216095
+        ],
+        "selected_ridge": 10.0,
+        "leave_cycle_out_mse": {
+          "0.1": 0.059145077162627735,
+          "1.0": 0.05913759766980753,
+          "10.0": 0.05909304508693513,
+          "100.0": 0.05911819711268994,
+          "1000.0": 0.06046200433077119
+        },
+        "training_rows": 2455,
+        "training_cycles": [
+          2012,
+          2014,
+          2016,
+          2018,
+          2020,
+          2022,
+          2024
+        ],
+        "feature_names": [
+          "open_seat_prior_winner_signed",
+          "other_prior_elected_winner_signed"
+        ]
+      },
+      "senate": {
+        "coefficients": [
+          -0.13744949482343033,
+          0.14476886081267804
+        ],
+        "selected_ridge": 1.0,
+        "leave_cycle_out_mse": {
+          "0.1": 0.05278767212527019,
+          "1.0": 0.05278167460986527,
+          "10.0": 0.05340994561921783,
+          "100.0": 0.0575310432796471,
+          "1000.0": 0.05955369271393507
+        },
+        "training_rows": 151,
+        "training_cycles": [
+          2016,
+          2018,
+          2020,
+          2022,
+          2024
+        ],
+        "feature_names": [
+          "open_seat_prior_winner_signed",
+          "other_prior_elected_winner_signed"
+        ]
+      },
+      "governor": {
+        "coefficients": [
+          -0.25549869368970773,
+          -0.011821515851016552
+        ],
+        "selected_ridge": 1.0,
+        "leave_cycle_out_mse": {
+          "0.1": 0.1677493112842175,
+          "1.0": 0.16772787680657053,
+          "10.0": 0.16776528009121372,
+          "100.0": 0.17370229708807616,
+          "1000.0": 0.18954313319982785
+        },
+        "training_rows": 256,
+        "training_cycles": [
+          2004,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "feature_names": [
+          "open_seat_prior_winner_signed",
+          "other_prior_elected_winner_signed"
+        ]
+      }
+    },
+    "sources": {
+      "map": {
+        "source": "The Downballot, 2024 presidential votes by 2024 and 2026 House boundaries",
+        "old_url": "https://docs.google.com/spreadsheets/d/1ng1i_Dm_RMDnEvauH44pgE6JCUsapcuu8F2pCfeLWFo/edit?gid=1491069057",
+        "new_url": "https://docs.google.com/spreadsheets/d/1eZfaFI-c-PFOoKx1-zZA2MP0_dxRq_LVK0re3BOQqy0/edit?gid=1491069057",
+        "old_sha256": "938410ae6b42104eb6ee73ff1fcb4de13f39c2aefa607c73b5664eec9ade974e",
+        "new_sha256": "cc1d51ab58dfbdeb0f7ddaa8daf9e15f32e15845f2c3cc6c28bd2c84c79d9348",
+        "districts": 435,
+        "changed_over_one_point_log_odds": 98
+      },
+      "approval_source": "Morning Consult, October-December 2025 three-month registered-voter rollup",
+      "approval_url": "https://pro.morningconsult.com/trackers/governor-approval-ratings",
+      "governor_approval_forecast_effect": "disabled_pending_dated_historical_validation",
+      "approval_survey_end": "2025-12-31",
+      "approval_observations": 50,
+      "approval_sha256": "7eb8f45b4426768fbedbaef889db5d3e0b2f55f3a096c95e5af66de01d53cb5a",
+      "historical_approval_source": "Singer State Executive Approval Dataset v1, UNC Dataverse doi:10.15139/S3/QHHQEF",
+      "historical_approval_sha256": "5264cb92de01f67ababa7658626d56f00b4511127f11b804f262d717a9700741",
+      "coverage": {
+        "open_seat_races": 121,
+        "other_prior_officeholder_races": 35,
+        "returning_winner_races": 362,
+        "sitting_incumbent_source_matches": 46,
+        "changed_house_map": 136
+      }
+    }
+  },
+  "structural_prior": {
+    "other_debut": {
+      "0": {
+        "local_sd_multiplier": 1.214047118553888,
+        "unconstrained_sd_ratio": 1.214047118553888,
+        "debut_count": 271,
+        "comparison_count": 2591
+      },
+      "1": {
+        "local_sd_multiplier": 1.066048021410502,
+        "unconstrained_sd_ratio": 1.066048021410502,
+        "debut_count": 271,
+        "comparison_count": 1633
+      }
+    },
+    "one_major_plus_other": {
+      "coefficient": [
+        2.572299954659299,
+        -0.004753814843497508,
+        -2.6641916461938218,
+        -2.4867931302835444
+      ],
+      "residual_sd": 1.7083373199255736,
+      "ridge": 0.1,
+      "ridge_cycle_cv_mse": {
+        "0.1": 2.9915842113683255,
+        "1.0": 3.0006733546276436,
+        "10.0": 3.0837383702085908,
+        "100.0": 3.1427445382402808,
+        "1000.0": 3.1335347736931145,
+        "inf": 3.122443455430132
+      },
+      "training_count": 196,
+      "office_counts": {
+        "house": 190,
+        "senate": 5,
+        "governor": 1
+      }
+    }
+  },
+  "pollster_quality": {
+    "silver_rows": 540,
+    "538_rows": 540,
+    "silver_reference_expected_error_margin_points": 5.390156670603084,
+    "538_reference_grade": 2.059228187919463,
+    "feed_coverage": {
+      "governor_total": 773,
+      "governor_silver": 622,
+      "governor_rated": 627,
+      "governor_unrated": 143,
+      "governor_silver_banned": 3,
+      "governor_538_fallback": 5,
+      "house_total": 1104,
+      "house_silver": 907,
+      "house_rated": 918,
+      "house_unrated": 170,
+      "house_538_fallback": 11,
+      "house_silver_banned": 16,
+      "other_total": 167,
+      "other_silver": 139,
+      "other_rated": 140,
+      "other_unrated": 27,
+      "other_538_fallback": 1,
+      "president_approval_polls_total": 1036,
+      "president_approval_polls_silver": 871,
+      "president_approval_polls_rated": 900,
+      "president_approval_polls_unrated": 120,
+      "president_approval_polls_538_fallback": 29,
+      "president_approval_polls_silver_banned": 16,
+      "senate_total": 664,
+      "senate_silver": 532,
+      "senate_rated": 541,
+      "senate_538_fallback": 9,
+      "senate_unrated": 119,
+      "senate_silver_banned": 4
+    },
+    "unrated_weight": 1.0,
+    "silver_weight_formula": "(reference_expected_error / (reference_expected_error + predictive_plus_minus))^2",
+    "538_fallback_weight_formula": "sqrt(numeric_grade / mean_grade_of_matched_live_polls)",
+    "silver_banned_weight": 0.0,
+    "silver_path": "data\\reference\\pollster_ratings\\silver_2026.csv",
+    "538_path": "data\\reference\\pollster_ratings\\ratings.csv",
+    "live_snapshot_id": "nyt:20260927T021102Z:514baa69d96b1fa7"
+  },
+  "nowcast_limitations": "Provisional: race poll variance and structural prior covariance have not been refitted to terminal current-support error; generic-ballot uncertainty uses three recent seven-day terminal-proxy cycles. The 5% approval blend weight is a stated policy choice rather than a backtested optimum; its uncertainty uses a worst-case positive-correlation bound. Economic sentiment is not an input.",
+  "current_poll_half_life_days": 30.0,
+  "identity_assertion": {
+    "race_id": "S-2026-AK-II-regular",
+    "people": [
+      {
+        "candidate_id": "PERSON-AK-DAN-S-SULLIVAN",
+        "name": "Dan S. Sullivan"
+      },
+      {
+        "candidate_id": "PERSON-AK-DAN-J-SULLIVAN",
+        "name": "Daniel J. Sullivan Jr."
+      }
+    ],
+    "distinct": true
+  }
+}

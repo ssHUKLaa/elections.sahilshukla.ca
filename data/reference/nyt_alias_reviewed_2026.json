@@ -1,0 +1,72 @@
+{
+  "version": "0.3-partial",
+  "feed": "senate",
+  "feed_sha256": "6b8b179ab1e4778def77f2d12a7cc3ad6534cee23e68f242c998be25f864b904",
+  "reviewed_at_utc": "2026-09-21T02:05:29Z",
+  "scope": "Current named, printed-ballot candidates reviewed in South Dakota, Montana, and Idaho, plus the two distinct Alaska candidates named Dan Sullivan. Missing IDs do not imply invalidity elsewhere.",
+  "matches": [
+    {
+      "state": "AK",
+      "source_candidate_id": "2b1d0cbf-bfeb-4358-80e4-0fadc1ba901b",
+      "source_name": "Dan J. Sullivan",
+      "source_party": "REP",
+      "ballot_entry_id": "S-2026-AK-II-regular:DAN-J-SULLIVAN"
+    },
+    {
+      "state": "AK",
+      "source_candidate_id": "cbe57fdb-832c-4d33-b7d7-ccd8ee1312a6",
+      "source_name": "Dan Sullivan",
+      "source_party": "REP",
+      "ballot_entry_id": "S-2026-AK-II-regular:DAN-S-SULLIVAN"
+    },
+    {
+      "state": "SD",
+      "source_candidate_id": "43b8272b-7ffc-44a8-bb4e-ac4caeb7592c",
+      "source_name": "Mike Rounds",
+      "source_party": "REP",
+      "ballot_entry_id": "S-2026-SD-II-regular:MIKE-ROUNDS"
+    },
+    {
+      "state": "SD",
+      "source_candidate_id": "60bae334-3494-425a-928b-354da42b0e1f",
+      "source_name": "Brian Bengs",
+      "source_party": "IND",
+      "ballot_entry_id": "S-2026-SD-II-regular:BRIAN-BENGS"
+    },
+    {
+      "state": "MT",
+      "source_candidate_id": "2e43d94c-c39b-481a-bec9-3f82c944469e",
+      "source_name": "Kurt Alme",
+      "source_party": "REP",
+      "ballot_entry_id": "S-2026-MT-II-regular:KURT-ALME"
+    },
+    {
+      "state": "MT",
+      "source_candidate_id": "e9d54aff-c354-4cce-9a14-3812fc0f00e8",
+      "source_name": "Seth Bodnar",
+      "source_party": "IND",
+      "ballot_entry_id": "S-2026-MT-II-regular:SETH-BODNAR"
+    },
+    {
+      "state": "MT",
+      "source_candidate_id": "5d835090-d562-4956-9244-870d425277c7",
+      "source_name": "Alani Bankhead",
+      "source_party": "DEM",
+      "ballot_entry_id": "S-2026-MT-II-regular:ALANI-BANKHEAD"
+    },
+    {
+      "state": "MT",
+      "source_candidate_id": "9939b696-cfc3-40d6-9872-1cfa1a57a71e",
+      "source_name": "Kyle Austin",
+      "source_party": "LIB",
+      "ballot_entry_id": "S-2026-MT-II-regular:KYLE-AUSTIN"
+    },
+    {
+      "state": "ID",
+      "source_candidate_id": "bc8bc0b0-45a8-4b8e-bb09-b8df2efc72fb",
+      "source_name": "James Risch",
+      "source_party": "REP",
+      "ballot_entry_id": "S-2026-ID-II-regular:JIM-RISCH"
+    }
+  ]
+}

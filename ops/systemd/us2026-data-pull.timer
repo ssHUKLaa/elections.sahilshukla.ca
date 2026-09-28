@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily 2026 election forecast live data pull
+
+[Timer]
+OnCalendar=*-*-* 06:20:00 UTC
+Persistent=true
+RandomizedDelaySec=15m
+Unit=us2026-data-pull.service
+
+[Install]
+WantedBy=timers.target

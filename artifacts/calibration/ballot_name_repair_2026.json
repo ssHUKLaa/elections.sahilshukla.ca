@@ -1,0 +1,201 @@
+{
+  "before_sha256": "df33f10c1c9da7729c6b5c3634c76e7167e7f2c8b5ea5ace867acd8c0a0bf840",
+  "after_sha256": "6d853c583d4dd495d8c23f095a4eedd09fcca8080badcd8ed29c9b16bc063b98",
+  "source_snapshot": "data/raw/wikipedia/20260921T073329Z",
+  "names_repaired": 37,
+  "candidates_recovered": 1,
+  "changes": [
+    {
+      "race_id": "G-2026-PA",
+      "old_name": "Ken Krawchuk (Libertarian)  ▌Josh Shapiro",
+      "new_name": "Josh Shapiro"
+    },
+    {
+      "race_id": "H-2026-NY-01",
+      "old_name": "▌Nick LaLota",
+      "new_name": "Nick LaLota"
+    },
+    {
+      "race_id": "H-2026-NY-02",
+      "old_name": "▌Andrew Garbarino",
+      "new_name": "Andrew Garbarino"
+    },
+    {
+      "race_id": "H-2026-NY-02",
+      "old_name": "▌Patrick Halpin",
+      "new_name": "Patrick Halpin"
+    },
+    {
+      "race_id": "H-2026-NY-03",
+      "old_name": "▌Mike LiPetri",
+      "new_name": "Mike LiPetri"
+    },
+    {
+      "race_id": "H-2026-NY-04",
+      "old_name": "▌Jeanine Driscoll",
+      "new_name": "Jeanine Driscoll"
+    },
+    {
+      "race_id": "H-2026-NY-06",
+      "old_name": "▌Joseph Chou",
+      "new_name": "Joseph Chou"
+    },
+    {
+      "race_id": "H-2026-NY-07",
+      "old_name": "▌Claire Valdez",
+      "new_name": "Claire Valdez"
+    },
+    {
+      "race_id": "H-2026-NY-07",
+      "old_name": "▌Melvin Rivera",
+      "new_name": "Melvin Rivera"
+    },
+    {
+      "race_id": "H-2026-NY-08",
+      "old_name": "▌Lewis Mizrahi",
+      "new_name": "Lewis Mizrahi"
+    },
+    {
+      "race_id": "H-2026-NY-09",
+      "old_name": "▌Joel Azumah",
+      "new_name": "Joel Azumah"
+    },
+    {
+      "race_id": "H-2026-NY-10",
+      "old_name": "▌Brad Lander",
+      "new_name": "Brad Lander"
+    },
+    {
+      "race_id": "H-2026-NY-10",
+      "old_name": "▌Jennifer Moore",
+      "new_name": "Jennifer Moore"
+    },
+    {
+      "race_id": "H-2026-NY-11",
+      "old_name": "▌Nicole Malliotakis",
+      "new_name": "Nicole Malliotakis"
+    },
+    {
+      "race_id": "H-2026-NY-12",
+      "old_name": "▌Caroline Shinkle",
+      "new_name": "Caroline Shinkle"
+    },
+    {
+      "race_id": "H-2026-NY-13",
+      "old_name": "▌Darializa Avila Chevalier",
+      "new_name": "Darializa Avila Chevalier"
+    },
+    {
+      "race_id": "H-2026-NY-13",
+      "old_name": "▌Jomo Williams",
+      "new_name": "Jomo Williams"
+    },
+    {
+      "race_id": "H-2026-NY-14",
+      "old_name": "▌Alexandria Ocasio-Cortez",
+      "new_name": "Alexandria Ocasio-Cortez"
+    },
+    {
+      "race_id": "H-2026-NY-14",
+      "old_name": "▌Diamant Hysenaj",
+      "new_name": "Diamant Hysenaj"
+    },
+    {
+      "race_id": "H-2026-NY-17",
+      "old_name": "▌Cait Conley",
+      "new_name": "Cait Conley"
+    },
+    {
+      "race_id": "H-2026-NY-17",
+      "old_name": "▌Mike Lawler",
+      "new_name": "Mike Lawler"
+    },
+    {
+      "race_id": "H-2026-NY-18",
+      "old_name": "▌Jacqueline Auringer",
+      "new_name": "Jacqueline Auringer"
+    },
+    {
+      "race_id": "H-2026-NY-18",
+      "old_name": "▌Pat Ryan",
+      "new_name": "Pat Ryan"
+    },
+    {
+      "race_id": "H-2026-NY-19",
+      "old_name": "▌Josh Riley",
+      "new_name": "Josh Riley"
+    },
+    {
+      "race_id": "H-2026-NY-19",
+      "old_name": "▌Peter Oberacker",
+      "new_name": "Peter Oberacker"
+    },
+    {
+      "race_id": "H-2026-NY-20",
+      "old_name": "▌Paul Tonko",
+      "new_name": "Paul Tonko"
+    },
+    {
+      "race_id": "H-2026-NY-20",
+      "old_name": "▌Ralph Ambrosio",
+      "new_name": "Ralph Ambrosio"
+    },
+    {
+      "race_id": "H-2026-NY-22",
+      "old_name": "▌John Mannion",
+      "new_name": "John Mannion"
+    },
+    {
+      "race_id": "H-2026-NY-22",
+      "old_name": "▌Kailee Buller",
+      "new_name": "Kailee Buller"
+    },
+    {
+      "race_id": "H-2026-NY-23",
+      "old_name": "▌Aaron Gies",
+      "new_name": "Aaron Gies"
+    },
+    {
+      "race_id": "H-2026-NY-23",
+      "old_name": "▌Nick Langworthy",
+      "new_name": "Nick Langworthy"
+    },
+    {
+      "race_id": "H-2026-NY-24",
+      "old_name": "▌Alissa Ellman",
+      "new_name": "Alissa Ellman"
+    },
+    {
+      "race_id": "H-2026-NY-24",
+      "old_name": "▌Claudia Tenney",
+      "new_name": "Claudia Tenney"
+    },
+    {
+      "race_id": "H-2026-NY-25",
+      "old_name": "▌Joseph Morelle",
+      "new_name": "Joseph Morelle"
+    },
+    {
+      "race_id": "H-2026-NY-25",
+      "old_name": "▌Virginia McIntyre",
+      "new_name": "Virginia McIntyre"
+    },
+    {
+      "race_id": "H-2026-NY-26",
+      "old_name": "▌Dennis Hannon",
+      "new_name": "Dennis Hannon"
+    },
+    {
+      "race_id": "S-2026-OH-III-special",
+      "old_name": "▌Greg Levy",
+      "new_name": "Greg Levy"
+    }
+  ],
+  "recovered": [
+    {
+      "race_id": "G-2026-PA",
+      "name": "Ken Krawchuk",
+      "party": "LIB"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "senate_polls": {
+    "url": "https://raw.githubusercontent.com/Jack-Whitcomb/All-US-Senate-polls-2006-2024/main/2006_to_2024_senate_polls.csv",
+    "path": "senate_polls_2006_2024.csv",
+    "sha256": "34232aa4c3aba30023a9d8f08445ea0abca0d7eb9e396c40d22df5b86afa6403",
+    "description": "Historical Senate poll compilation derived from RealClearPolling; used internally for model calibration, not redistributed.",
+    "license_status": "No explicit license found in source repository; verify before publishing or redistributing raw rows."
+  }
+}

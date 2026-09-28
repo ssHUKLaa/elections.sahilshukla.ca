@@ -1,0 +1,3988 @@
+{
+  "design": {
+    "estimand": "winner if election occurred at each historical cutoff",
+    "validation_target": "terminal certified winners, an imperfect proxy at earlier cutoffs",
+    "shared_draws": "global, office, state and race residuals are aligned across races",
+    "source_database_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+    "national_snapshot_sha256": "b9584eb2c39013e21d948511a06635243d1578685ac7990434c2b3c98b324ca9",
+    "historical_house_map_shifts_sha256": "53161d06eb14ccbd7bf647e4562d5db95a5a790f150998789185115ee1da6b8e",
+    "historical_house_map_shifts_enabled": true,
+    "governor_approval_enabled": true,
+    "forensic_national_logratio_sd_floor": 0.07994100533894001,
+    "source_code_sha256": "fbc5a3b120c198368215eaf545511987703093b9da6ce72a796c48e03a53eb62",
+    "stage3_code_sha256": "20c7c6ea40f585fc0e0df77fd754ffd0bc1a00ab142f23c728d1d7c6b089449f",
+    "stage4_code_sha256": "d769b83631afdfdd896aaa47e3b52b172b00b4df8d2363be404406f065d94541",
+    "stage5_code_sha256": "b15d7f85cd2cdfc00f0d4e19d5fe7d777c4821bc00b6fb98630e51b2ca061aed",
+    "poll_source": {
+      "source_manifest_sha256": "8bf82a6c2549573a93dad7a8c75b2a1315639d6f32367006914f651930b6fcfc",
+      "raw_questions_accepted": 4255,
+      "deduplicated_questions": 3923,
+      "files": {
+        "house_polls.csv": {
+          "general_questions_in_used_cycles": 297,
+          "accepted_questions_before_deduplication": 253,
+          "sha256": "0b7e5f2d293dd1343c052a4a1263f68fbb2629f97181f4a774bf7dcf84167225"
+        },
+        "senate_polls.csv": {
+          "general_questions_in_used_cycles": 1142,
+          "accepted_questions_before_deduplication": 944,
+          "sha256": "eabff005edb5068b61bb074c42f9a1e833bcf09539f5755ce2299354c8ed1429"
+        },
+        "governor_polls.csv": {
+          "general_questions_in_used_cycles": 219,
+          "accepted_questions_before_deduplication": 163,
+          "sha256": "09dc4eb4a2d2652d367085d3041e1292d1a3367c52e2f5840eaaf4a9adf8f448"
+        },
+        "house_polls_historical.csv": {
+          "general_questions_in_used_cycles": 740,
+          "accepted_questions_before_deduplication": 624,
+          "sha256": "a08a26c33087392ca340d04faacdcb4af6261146d20b3414973cad24aa70dc2c"
+        },
+        "senate_polls_historical.csv": {
+          "general_questions_in_used_cycles": 1735,
+          "accepted_questions_before_deduplication": 1362,
+          "sha256": "0ac54cbdac66e3e10ebbcba86c914ba3751ce3fe800a49f9596eb548a029eccc"
+        },
+        "governor_polls_historical.csv": {
+          "general_questions_in_used_cycles": 1215,
+          "accepted_questions_before_deduplication": 909,
+          "sha256": "bbb50ee2d91c52bc288a87a1ed6a247317785d66984e864cf337940146728c7d"
+        }
+      },
+      "exclusions": {
+        "outside_cycle_use": 5668,
+        "unmatched_race": 246,
+        "ranked_choice_reallocated": 50,
+        "hypothetical": 234,
+        "unmapped_candidate_or_pct": 563,
+        "non_general": 1433
+      },
+      "availability_rule": "created_at calendar date plus one full day"
+    },
+    "counting_rule_training_pairs": {
+      "2020": 29
+    },
+    "limitations": [
+      "Verified unopposed House winners in 2020, 2022, and 2024 are included as certain seat outcomes without invented vote shares.",
+      "Races use final ballot candidate rosters at all cutoffs.",
+      "Historical runoff and ranked-choice rules use only pre-cycle fitted transfers; final candidate rosters are still retrospectively applied at early cutoffs.",
+      "Historical governor-approval quarters may contain retrospective smoothing revisions.",
+      "Historical presidential map shifts are computed from rounded district vote percentages and population-weighted old-map overlaps, not ballot-level retabulations.",
+      "Archived polls could contain retrospective row revisions."
+    ]
+  },
+  "cells": [
+    {
+      "cycle": 2020,
+      "lead_days": 7,
+      "draws": 2000,
+      "national": {
+        "center_logratio": 0.14403213148421617,
+        "variance": 0.0063905643346004355,
+        "generic_mean_logratio": 0.14342917112453915,
+        "generic_sd_logratio": 0.002944752064234226,
+        "approval_prior_margin": 0.07758793417463457,
+        "generic_training_cycles": [
+          2018
+        ],
+        "generic_poll_count": 346,
+        "approval_poll_count": 911,
+        "forensic_sd_floor": 0.07994100533894001
+      },
+      "pollster_rating_edition": "2019",
+      "local_feature_coverage": {
+        "vermont_assembly_rule": 1,
+        "runoff_rule": 2,
+        "house_presidential_map_shift": 434
+      },
+      "office_seats": {
+        "house": {
+          "race_count": 435,
+          "actual_D_wins": 222,
+          "predicted_D_wins_mean": 244.2125,
+          "predicted_D_wins_sd": 20.977282162698454,
+          "interval80": [
+            218,
+            271
+          ],
+          "interval95": [
+            202,
+            286
+          ],
+          "actual_percentile": 0.1465,
+          "point_probability": 0.009,
+          "poll_updated_races": 102
+        },
+        "senate": {
+          "race_count": 33,
+          "actual_D_wins": 13,
+          "predicted_D_wins_mean": 14.0855,
+          "predicted_D_wins_sd": 2.3062630323940274,
+          "interval80": [
+            11,
+            17
+          ],
+          "interval95": [
+            10,
+            19
+          ],
+          "actual_percentile": 0.422,
+          "point_probability": 0.168,
+          "poll_updated_races": 29
+        },
+        "governor": {
+          "race_count": 11,
+          "actual_D_wins": 3,
+          "predicted_D_wins_mean": 3.2305,
+          "predicted_D_wins_sd": 0.6313232409132888,
+          "interval80": [
+            3,
+            4
+          ],
+          "interval95": [
+            2,
+            5
+          ],
+          "actual_percentile": 0.7295,
+          "point_probability": 0.66,
+          "poll_updated_races": 11
+        }
+      },
+      "house_senate_D_wins_correlation": 0.38077455876922534,
+      "races": [
+        {
+          "race_id": "6285",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15613",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "6287",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14564",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "6279",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13456",
+          "winner_probability": 0.6975
+        },
+        {
+          "race_id": "6278",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13487",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "6280",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13453",
+          "winner_probability": 0.915
+        },
+        {
+          "race_id": "6281",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15691",
+          "winner_probability": 0.8125
+        },
+        {
+          "race_id": "6282",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13652",
+          "winner_probability": 0.887
+        },
+        {
+          "race_id": "6292",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13458",
+          "winner_probability": 0.8135
+        },
+        {
+          "race_id": "6283",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14518",
+          "winner_probability": 0.7685
+        },
+        {
+          "race_id": "6288",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13626",
+          "winner_probability": 0.944
+        },
+        {
+          "race_id": "6291",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14764",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "6265",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13462",
+          "winner_probability": 0.7025
+        },
+        {
+          "race_id": "6294",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13694",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "6295",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13444",
+          "winner_probability": 0.9755
+        },
+        {
+          "race_id": "7826",
+          "office": "governor",
+          "counting_rule": "majority_then_legislative_selection",
+          "actual_group": "R",
+          "actual_winner": "14096",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7822",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13503",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "6296",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14760",
+          "winner_probability": 0.948
+        },
+        {
+          "race_id": "7821",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14689",
+          "winner_probability": 0.823
+        },
+        {
+          "race_id": "7818",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16092",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "6297",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14765",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "7819",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14560",
+          "winner_probability": 0.9945
+        },
+        {
+          "race_id": "7820",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13484",
+          "winner_probability": 0.8605
+        },
+        {
+          "race_id": "7824",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13404",
+          "winner_probability": 0.9615
+        },
+        {
+          "race_id": "7823",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13390",
+          "winner_probability": 0.9965
+        },
+        {
+          "race_id": "7825",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15707",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "8729",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13635",
+          "winner_probability": 0.949
+        },
+        {
+          "race_id": "7828",
+          "office": "governor",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13493",
+          "winner_probability": 0.9835
+        },
+        {
+          "race_id": "6298",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14769",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "6284",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13461",
+          "winner_probability": 0.2585
+        },
+        {
+          "race_id": "6270",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14761",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "6276",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13471",
+          "winner_probability": 0.982
+        },
+        {
+          "race_id": "6266",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13614",
+          "winner_probability": 0.987
+        },
+        {
+          "race_id": "6267",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15607",
+          "winner_probability": 0.898
+        },
+        {
+          "race_id": "6271",
+          "office": "senate",
+          "counting_rule": "majority_then_runoff",
+          "actual_group": "D",
+          "actual_winner": "14567",
+          "winner_probability": 0.3815
+        },
+        {
+          "race_id": "6273",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14766",
+          "winner_probability": 0.9955
+        },
+        {
+          "race_id": "6274",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13501",
+          "winner_probability": 0.7535
+        },
+        {
+          "race_id": "6272",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13467",
+          "winner_probability": 0.5415
+        },
+        {
+          "race_id": "6275",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14604",
+          "winner_probability": 0.966
+        },
+        {
+          "race_id": "6277",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14768",
+          "winner_probability": 0.974
+        },
+        {
+          "race_id": "6286",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13448",
+          "winner_probability": 0.9915
+        },
+        {
+          "race_id": "6289",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14511",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "6290",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14763",
+          "winner_probability": 0.9955
+        },
+        {
+          "race_id": "6293",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15672",
+          "winner_probability": 0.9895
+        },
+        {
+          "race_id": "8267",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15599",
+          "winner_probability": 0.7925
+        },
+        {
+          "race_id": "7836",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14618",
+          "winner_probability": 0.7635
+        },
+        {
+          "race_id": "7829",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14799",
+          "winner_probability": 0.8725
+        },
+        {
+          "race_id": "7830",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14801",
+          "winner_probability": 0.8105
+        },
+        {
+          "race_id": "7831",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14803",
+          "winner_probability": 0.966
+        },
+        {
+          "race_id": "7832",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14805",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7833",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14779",
+          "winner_probability": 0.868
+        },
+        {
+          "race_id": "7834",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14806",
+          "winner_probability": 0.8925
+        },
+        {
+          "race_id": "7835",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14778",
+          "winner_probability": 0.9195
+        },
+        {
+          "race_id": "7846",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14807",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7847",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14810",
+          "winner_probability": 0.613
+        },
+        {
+          "race_id": "7848",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14813",
+          "winner_probability": 0.978
+        },
+        {
+          "race_id": "7849",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14816",
+          "winner_probability": 0.9915
+        },
+        {
+          "race_id": "7837",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15711",
+          "winner_probability": 0.656
+        },
+        {
+          "race_id": "7838",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15713",
+          "winner_probability": 0.71
+        },
+        {
+          "race_id": "7839",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14818",
+          "winner_probability": 0.952
+        },
+        {
+          "race_id": "7840",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15716",
+          "winner_probability": 0.9925
+        },
+        {
+          "race_id": "7841",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14777",
+          "winner_probability": 0.898
+        },
+        {
+          "race_id": "7842",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14821",
+          "winner_probability": 0.642
+        },
+        {
+          "race_id": "7843",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14822",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "7844",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14824",
+          "winner_probability": 0.7785
+        },
+        {
+          "race_id": "7845",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14825",
+          "winner_probability": 0.914
+        },
+        {
+          "race_id": "7850",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14660",
+          "winner_probability": 0.781
+        },
+        {
+          "race_id": "7851",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14846",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7852",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14863",
+          "winner_probability": 0.833
+        },
+        {
+          "race_id": "7853",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14884",
+          "winner_probability": 0.7585
+        },
+        {
+          "race_id": "7854",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14901",
+          "winner_probability": 0.9975
+        },
+        {
+          "race_id": "7855",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14907",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "7856",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14773",
+          "winner_probability": 0.6995
+        },
+        {
+          "race_id": "7857",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14911",
+          "winner_probability": 0.9755
+        },
+        {
+          "race_id": "7858",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14912",
+          "winner_probability": 0.7695
+        },
+        {
+          "race_id": "7859",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14827",
+          "winner_probability": 0.569
+        },
+        {
+          "race_id": "7860",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14829",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "7861",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14832",
+          "winner_probability": 0.673
+        },
+        {
+          "race_id": "7862",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14833",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "7863",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14835",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7864",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14837",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "7865",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14839",
+          "winner_probability": 0.8125
+        },
+        {
+          "race_id": "7866",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14841",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7867",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14843",
+          "winner_probability": 0.6795
+        },
+        {
+          "race_id": "7868",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14845",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "7869",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14848",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "7870",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13426",
+          "winner_probability": 0.804
+        },
+        {
+          "race_id": "7871",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14851",
+          "winner_probability": 0.755
+        },
+        {
+          "race_id": "7872",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14853",
+          "winner_probability": 0.969
+        },
+        {
+          "race_id": "7873",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14854",
+          "winner_probability": 0.8395
+        },
+        {
+          "race_id": "7874",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13793",
+          "winner_probability": 0.461
+        },
+        {
+          "race_id": "7875",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14856",
+          "winner_probability": 0.93
+        },
+        {
+          "race_id": "7876",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14858",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "7877",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14771",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7878",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14862",
+          "winner_probability": 0.6975
+        },
+        {
+          "race_id": "7879",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14865",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7880",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14867",
+          "winner_probability": 0.8475
+        },
+        {
+          "race_id": "7881",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14869",
+          "winner_probability": 0.9915
+        },
+        {
+          "race_id": "7882",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14871",
+          "winner_probability": 0.995
+        },
+        {
+          "race_id": "7883",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14874",
+          "winner_probability": 0.684
+        },
+        {
+          "race_id": "7884",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14875",
+          "winner_probability": 0.9935
+        },
+        {
+          "race_id": "7885",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14877",
+          "winner_probability": 0.855
+        },
+        {
+          "race_id": "7886",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14879",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7887",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14881",
+          "winner_probability": 0.6725
+        },
+        {
+          "race_id": "7888",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13506",
+          "winner_probability": 0.4935
+        },
+        {
+          "race_id": "7889",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14885",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "7890",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14887",
+          "winner_probability": 0.9665
+        },
+        {
+          "race_id": "7891",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14890",
+          "winner_probability": 0.813
+        },
+        {
+          "race_id": "6269",
+          "office": "senate",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13474",
+          "winner_probability": 0.935
+        },
+        {
+          "race_id": "7892",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14891",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7893",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14893",
+          "winner_probability": 0.6595
+        },
+        {
+          "race_id": "7894",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13399",
+          "winner_probability": 0.564
+        },
+        {
+          "race_id": "7895",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14895",
+          "winner_probability": 0.9925
+        },
+        {
+          "race_id": "7896",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14897",
+          "winner_probability": 0.9705
+        },
+        {
+          "race_id": "7897",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13508",
+          "winner_probability": 0.356
+        },
+        {
+          "race_id": "7898",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14899",
+          "winner_probability": 0.9915
+        },
+        {
+          "race_id": "7899",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13395",
+          "winner_probability": 0.5015
+        },
+        {
+          "race_id": "7900",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14903",
+          "winner_probability": 0.9965
+        },
+        {
+          "race_id": "7901",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14905",
+          "winner_probability": 0.9555
+        },
+        {
+          "race_id": "7902",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13674",
+          "winner_probability": 0.78
+        },
+        {
+          "race_id": "7903",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14914",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "7904",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14916",
+          "winner_probability": 0.944
+        },
+        {
+          "race_id": "7905",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14919",
+          "winner_probability": 0.4175
+        },
+        {
+          "race_id": "7906",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14921",
+          "winner_probability": 0.9185
+        },
+        {
+          "race_id": "7907",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14923",
+          "winner_probability": 0.8935
+        },
+        {
+          "race_id": "7908",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14924",
+          "winner_probability": 0.744
+        },
+        {
+          "race_id": "7909",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14926",
+          "winner_probability": 0.5045
+        },
+        {
+          "race_id": "7910",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14928",
+          "winner_probability": 0.9535
+        },
+        {
+          "race_id": "7911",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14929",
+          "winner_probability": 0.944
+        },
+        {
+          "race_id": "7912",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14930",
+          "winner_probability": 0.9495
+        },
+        {
+          "race_id": "7913",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15859",
+          "winner_probability": 0.8995
+        },
+        {
+          "race_id": "7914",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14933",
+          "winner_probability": 0.7315
+        },
+        {
+          "race_id": "7915",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16062",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7916",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15942",
+          "winner_probability": 0.981
+        },
+        {
+          "race_id": "7917",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14946",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7918",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15970",
+          "winner_probability": 0.6755
+        },
+        {
+          "race_id": "7919",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15971",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7920",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15972",
+          "winner_probability": 0.9815
+        },
+        {
+          "race_id": "7921",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14954",
+          "winner_probability": 0.826
+        },
+        {
+          "race_id": "7922",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13628",
+          "winner_probability": 0.781
+        },
+        {
+          "race_id": "7923",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15976",
+          "winner_probability": 0.9195
+        },
+        {
+          "race_id": "7924",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14957",
+          "winner_probability": 0.8155
+        },
+        {
+          "race_id": "7926",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14940",
+          "winner_probability": 0.9805
+        },
+        {
+          "race_id": "7927",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14942",
+          "winner_probability": 0.896
+        },
+        {
+          "race_id": "7928",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13566",
+          "winner_probability": 0.969
+        },
+        {
+          "race_id": "7930",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15951",
+          "winner_probability": 0.6945
+        },
+        {
+          "race_id": "7931",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13649",
+          "winner_probability": 0.9585
+        },
+        {
+          "race_id": "7932",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14945",
+          "winner_probability": 0.94
+        },
+        {
+          "race_id": "7933",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15954",
+          "winner_probability": 0.7155
+        },
+        {
+          "race_id": "7934",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "16011",
+          "winner_probability": 0.847
+        },
+        {
+          "race_id": "7935",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15958",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "7937",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14948",
+          "winner_probability": 0.9265
+        },
+        {
+          "race_id": "7938",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15964",
+          "winner_probability": 0.911
+        },
+        {
+          "race_id": "7941",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14741",
+          "winner_probability": 0.565
+        },
+        {
+          "race_id": "7942",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15968",
+          "winner_probability": 0.2815
+        },
+        {
+          "race_id": "7943",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14958",
+          "winner_probability": 0.8555
+        },
+        {
+          "race_id": "7944",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14970",
+          "winner_probability": 0.86
+        },
+        {
+          "race_id": "7945",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14973",
+          "winner_probability": 0.9845
+        },
+        {
+          "race_id": "7946",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14974",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7947",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14976",
+          "winner_probability": 0.9905
+        },
+        {
+          "race_id": "7948",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13427",
+          "winner_probability": 0.5525
+        },
+        {
+          "race_id": "7949",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14648",
+          "winner_probability": 0.7005
+        },
+        {
+          "race_id": "7950",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14980",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "7951",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15867",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7952",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14960",
+          "winner_probability": 0.957
+        },
+        {
+          "race_id": "7953",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14962",
+          "winner_probability": 0.9485
+        },
+        {
+          "race_id": "7954",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14965",
+          "winner_probability": 0.9035
+        },
+        {
+          "race_id": "7955",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14966",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "7956",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15865",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7957",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14981",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "7958",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15721",
+          "winner_probability": 0.992
+        },
+        {
+          "race_id": "7988",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13692",
+          "winner_probability": 0.0915
+        },
+        {
+          "race_id": "7989",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14985",
+          "winner_probability": 0.1365
+        },
+        {
+          "race_id": "7990",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14726",
+          "winner_probability": 0.837
+        },
+        {
+          "race_id": "7991",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14986",
+          "winner_probability": 0.8385
+        },
+        {
+          "race_id": "7959",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14989",
+          "winner_probability": 0.966
+        },
+        {
+          "race_id": "7960",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14993",
+          "winner_probability": 0.92
+        },
+        {
+          "race_id": "7961",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14770",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7962",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15017",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7963",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15019",
+          "winner_probability": 0.9585
+        },
+        {
+          "race_id": "7964",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15021",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7965",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15023",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "7966",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13619",
+          "winner_probability": 0.6345
+        },
+        {
+          "race_id": "7967",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15025",
+          "winner_probability": 0.992
+        },
+        {
+          "race_id": "7968",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15028",
+          "winner_probability": 0.8715
+        },
+        {
+          "race_id": "7969",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15029",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "7970",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14995",
+          "winner_probability": 0.9735
+        },
+        {
+          "race_id": "7971",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15004",
+          "winner_probability": 0.9485
+        },
+        {
+          "race_id": "7972",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15007",
+          "winner_probability": 0.681
+        },
+        {
+          "race_id": "7973",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15009",
+          "winner_probability": 0.442
+        },
+        {
+          "race_id": "7974",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13517",
+          "winner_probability": 0.599
+        },
+        {
+          "race_id": "7975",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15011",
+          "winner_probability": 0.9875
+        },
+        {
+          "race_id": "7976",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15013",
+          "winner_probability": 0.8925
+        },
+        {
+          "race_id": "7977",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15014",
+          "winner_probability": 0.897
+        },
+        {
+          "race_id": "7978",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15016",
+          "winner_probability": 0.991
+        },
+        {
+          "race_id": "7979",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15031",
+          "winner_probability": 0.8805
+        },
+        {
+          "race_id": "7980",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15034",
+          "winner_probability": 0.7545
+        },
+        {
+          "race_id": "7981",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15036",
+          "winner_probability": 0.9795
+        },
+        {
+          "race_id": "7982",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15038",
+          "winner_probability": 0.967
+        },
+        {
+          "race_id": "7983",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14662",
+          "winner_probability": 0.4355
+        },
+        {
+          "race_id": "7984",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15048",
+          "winner_probability": 0.973
+        },
+        {
+          "race_id": "7985",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14767",
+          "winner_probability": 0.965
+        },
+        {
+          "race_id": "7986",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15052",
+          "winner_probability": 0.9615
+        },
+        {
+          "race_id": "7987",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15055",
+          "winner_probability": 0.8035
+        },
+        {
+          "race_id": "7992",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15770",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "7993",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14712",
+          "winner_probability": 0.7685
+        },
+        {
+          "race_id": "7994",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15056",
+          "winner_probability": 0.9795
+        },
+        {
+          "race_id": "7995",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15059",
+          "winner_probability": 0.9735
+        },
+        {
+          "race_id": "7996",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15061",
+          "winner_probability": 0.9935
+        },
+        {
+          "race_id": "7997",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15063",
+          "winner_probability": 0.9905
+        },
+        {
+          "race_id": "7998",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15066",
+          "winner_probability": 0.926
+        },
+        {
+          "race_id": "7999",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15068",
+          "winner_probability": 0.97
+        },
+        {
+          "race_id": "8000",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15070",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8001",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14708",
+          "winner_probability": 0.533
+        },
+        {
+          "race_id": "8002",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15071",
+          "winner_probability": 0.9965
+        },
+        {
+          "race_id": "8004",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15072",
+          "winner_probability": 0.6685
+        },
+        {
+          "race_id": "8006",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15076",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "8008",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15079",
+          "winner_probability": 0.649
+        },
+        {
+          "race_id": "8010",
+          "office": "house",
+          "counting_rule": "majority_then_runoff",
+          "actual_group": "R",
+          "actual_winner": "15082",
+          "winner_probability": 0.145
+        },
+        {
+          "race_id": "8012",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15085",
+          "winner_probability": 0.9945
+        },
+        {
+          "race_id": "8024",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16014",
+          "winner_probability": 0.9155
+        },
+        {
+          "race_id": "8025",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15087",
+          "winner_probability": 0.9775
+        },
+        {
+          "race_id": "8026",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15089",
+          "winner_probability": 0.872
+        },
+        {
+          "race_id": "8027",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16055",
+          "winner_probability": 0.9805
+        },
+        {
+          "race_id": "8028",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15090",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8029",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16016",
+          "winner_probability": 0.9705
+        },
+        {
+          "race_id": "8030",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15094",
+          "winner_probability": 0.9325
+        },
+        {
+          "race_id": "8031",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16017",
+          "winner_probability": 0.9395
+        },
+        {
+          "race_id": "8032",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15095",
+          "winner_probability": 0.8515
+        },
+        {
+          "race_id": "8016",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15098",
+          "winner_probability": 0.936
+        },
+        {
+          "race_id": "8017",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15099",
+          "winner_probability": 0.982
+        },
+        {
+          "race_id": "8018",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15102",
+          "winner_probability": 0.993
+        },
+        {
+          "race_id": "8019",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15104",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "8020",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15106",
+          "winner_probability": 0.9955
+        },
+        {
+          "race_id": "8021",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15109",
+          "winner_probability": 0.892
+        },
+        {
+          "race_id": "8022",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15111",
+          "winner_probability": 0.9975
+        },
+        {
+          "race_id": "8023",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15114",
+          "winner_probability": 0.995
+        },
+        {
+          "race_id": "8014",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15116",
+          "winner_probability": 0.964
+        },
+        {
+          "race_id": "8015",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14752",
+          "winner_probability": 0.947
+        },
+        {
+          "race_id": "8033",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15118",
+          "winner_probability": 0.81
+        },
+        {
+          "race_id": "8034",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15043",
+          "winner_probability": 0.9175
+        },
+        {
+          "race_id": "8035",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14620",
+          "winner_probability": 0.5845
+        },
+        {
+          "race_id": "8036",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15126",
+          "winner_probability": 0.946
+        },
+        {
+          "race_id": "8037",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15127",
+          "winner_probability": 0.921
+        },
+        {
+          "race_id": "8038",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14571",
+          "winner_probability": 0.632
+        },
+        {
+          "race_id": "8039",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15129",
+          "winner_probability": 0.7165
+        },
+        {
+          "race_id": "8040",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15130",
+          "winner_probability": 0.553
+        },
+        {
+          "race_id": "8041",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15131",
+          "winner_probability": 0.9225
+        },
+        {
+          "race_id": "8042",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15779",
+          "winner_probability": 0.8875
+        },
+        {
+          "race_id": "8043",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15119",
+          "winner_probability": 0.606
+        },
+        {
+          "race_id": "8044",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15725",
+          "winner_probability": 0.99
+        },
+        {
+          "race_id": "8046",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15710",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8047",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14642",
+          "winner_probability": 0.5435
+        },
+        {
+          "race_id": "8048",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14755",
+          "winner_probability": 0.982
+        },
+        {
+          "race_id": "8049",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15882",
+          "winner_probability": 0.7315
+        },
+        {
+          "race_id": "8050",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15884",
+          "winner_probability": 0.9865
+        },
+        {
+          "race_id": "8051",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15886",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8052",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15889",
+          "winner_probability": 0.9365
+        },
+        {
+          "race_id": "8053",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15855",
+          "winner_probability": 0.6345
+        },
+        {
+          "race_id": "8054",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15891",
+          "winner_probability": 0.6665
+        },
+        {
+          "race_id": "8059",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15811",
+          "winner_probability": 0.9925
+        },
+        {
+          "race_id": "8060",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14477",
+          "winner_probability": 0.5225
+        },
+        {
+          "race_id": "8061",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15730",
+          "winner_probability": 0.983
+        },
+        {
+          "race_id": "8062",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15731",
+          "winner_probability": 0.9845
+        },
+        {
+          "race_id": "8063",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15732",
+          "winner_probability": 0.943
+        },
+        {
+          "race_id": "8064",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15734",
+          "winner_probability": 0.992
+        },
+        {
+          "race_id": "8065",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15735",
+          "winner_probability": 0.9875
+        },
+        {
+          "race_id": "8066",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15139",
+          "winner_probability": 0.9975
+        },
+        {
+          "race_id": "8055",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15141",
+          "winner_probability": 0.991
+        },
+        {
+          "race_id": "8056",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14772",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "8057",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15144",
+          "winner_probability": 0.958
+        },
+        {
+          "race_id": "8058",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15145",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8067",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14520",
+          "winner_probability": 0.5305
+        },
+        {
+          "race_id": "8119",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15147",
+          "winner_probability": 0.7715
+        },
+        {
+          "race_id": "8120",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15159",
+          "winner_probability": 0.9905
+        },
+        {
+          "race_id": "8121",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15163",
+          "winner_probability": 0.9805
+        },
+        {
+          "race_id": "8122",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15164",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8123",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15168",
+          "winner_probability": 0.9815
+        },
+        {
+          "race_id": "8124",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15170",
+          "winner_probability": 0.979
+        },
+        {
+          "race_id": "8125",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15175",
+          "winner_probability": 0.845
+        },
+        {
+          "race_id": "8126",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15177",
+          "winner_probability": 0.59
+        },
+        {
+          "race_id": "8127",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15180",
+          "winner_probability": 0.221
+        },
+        {
+          "race_id": "8128",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15150",
+          "winner_probability": 0.986
+        },
+        {
+          "race_id": "8129",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15154",
+          "winner_probability": 0.3915
+        },
+        {
+          "race_id": "8130",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15155",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8131",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15158",
+          "winner_probability": 0.986
+        },
+        {
+          "race_id": "8132",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15183",
+          "winner_probability": 0.9435
+        },
+        {
+          "race_id": "8068",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15189",
+          "winner_probability": 0.9085
+        },
+        {
+          "race_id": "8069",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13510",
+          "winner_probability": 0.539
+        },
+        {
+          "race_id": "8070",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15193",
+          "winner_probability": 0.9925
+        },
+        {
+          "race_id": "8075",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15194",
+          "winner_probability": 0.96
+        },
+        {
+          "race_id": "8076",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16032",
+          "winner_probability": 0.9285
+        },
+        {
+          "race_id": "8077",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15195",
+          "winner_probability": 0.978
+        },
+        {
+          "race_id": "8078",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15203",
+          "winner_probability": 0.292
+        },
+        {
+          "race_id": "8079",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14730",
+          "winner_probability": 0.529
+        },
+        {
+          "race_id": "8080",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15205",
+          "winner_probability": 0.799
+        },
+        {
+          "race_id": "8081",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14506",
+          "winner_probability": 0.7755
+        },
+        {
+          "race_id": "8082",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15207",
+          "winner_probability": 0.9505
+        },
+        {
+          "race_id": "8083",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13433",
+          "winner_probability": 0.5885
+        },
+        {
+          "race_id": "8084",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15208",
+          "winner_probability": 0.992
+        },
+        {
+          "race_id": "8085",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15210",
+          "winner_probability": 0.9945
+        },
+        {
+          "race_id": "8086",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15197",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8087",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15199",
+          "winner_probability": 0.786
+        },
+        {
+          "race_id": "8088",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15201",
+          "winner_probability": 0.9845
+        },
+        {
+          "race_id": "8089",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15212",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "8090",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13423",
+          "winner_probability": 0.4935
+        },
+        {
+          "race_id": "8091",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15214",
+          "winner_probability": 0.973
+        },
+        {
+          "race_id": "8071",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15216",
+          "winner_probability": 0.9825
+        },
+        {
+          "race_id": "8072",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15224",
+          "winner_probability": 0.859
+        },
+        {
+          "race_id": "8073",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15225",
+          "winner_probability": 0.675
+        },
+        {
+          "race_id": "8074",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15230",
+          "winner_probability": 0.6655
+        },
+        {
+          "race_id": "8092",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14739",
+          "winner_probability": 0.6485
+        },
+        {
+          "race_id": "8093",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15270",
+          "winner_probability": 0.435
+        },
+        {
+          "race_id": "8094",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15294",
+          "winner_probability": 0.903
+        },
+        {
+          "race_id": "8095",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15298",
+          "winner_probability": 0.914
+        },
+        {
+          "race_id": "8097",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15305",
+          "winner_probability": 0.9875
+        },
+        {
+          "race_id": "8098",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15307",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8099",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15313",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "8100",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15315",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8101",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15236",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8102",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15242",
+          "winner_probability": 0.377
+        },
+        {
+          "race_id": "8103",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15736",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8104",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14774",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8105",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15247",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8106",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15737",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8107",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15255",
+          "winner_probability": 0.983
+        },
+        {
+          "race_id": "8108",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15256",
+          "winner_probability": 0.994
+        },
+        {
+          "race_id": "8109",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15260",
+          "winner_probability": 0.978
+        },
+        {
+          "race_id": "7925",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14938",
+          "winner_probability": 0.9585
+        },
+        {
+          "race_id": "8110",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15263",
+          "winner_probability": 0.593
+        },
+        {
+          "race_id": "7929",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14943",
+          "winner_probability": 0.9205
+        },
+        {
+          "race_id": "8111",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15272",
+          "winner_probability": 0.9745
+        },
+        {
+          "race_id": "7939",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15967",
+          "winner_probability": 0.993
+        },
+        {
+          "race_id": "8112",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15275",
+          "winner_probability": 0.826
+        },
+        {
+          "race_id": "8113",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15278",
+          "winner_probability": 0.1665
+        },
+        {
+          "race_id": "8114",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15281",
+          "winner_probability": 0.8655
+        },
+        {
+          "race_id": "8115",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14655",
+          "winner_probability": 0.547
+        },
+        {
+          "race_id": "8117",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15287",
+          "winner_probability": 0.9975
+        },
+        {
+          "race_id": "8118",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "17029",
+          "winner_probability": 0.3115
+        },
+        {
+          "race_id": "8133",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14577",
+          "winner_probability": 0.5085
+        },
+        {
+          "race_id": "8134",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15338",
+          "winner_probability": 0.873
+        },
+        {
+          "race_id": "8135",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15339",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8045",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15726",
+          "winner_probability": 0.985
+        },
+        {
+          "race_id": "8136",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15344",
+          "winner_probability": 0.9705
+        },
+        {
+          "race_id": "8137",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15346",
+          "winner_probability": 0.9675
+        },
+        {
+          "race_id": "8138",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15348",
+          "winner_probability": 0.995
+        },
+        {
+          "race_id": "8139",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15351",
+          "winner_probability": 0.873
+        },
+        {
+          "race_id": "8096",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15302",
+          "winner_probability": 0.9115
+        },
+        {
+          "race_id": "8141",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15354",
+          "winner_probability": 0.983
+        },
+        {
+          "race_id": "8142",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15322",
+          "winner_probability": 0.8345
+        },
+        {
+          "race_id": "8116",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15283",
+          "winner_probability": 0.5035
+        },
+        {
+          "race_id": "8143",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15323",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8144",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15327",
+          "winner_probability": 0.719
+        },
+        {
+          "race_id": "8145",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15328",
+          "winner_probability": 0.884
+        },
+        {
+          "race_id": "8140",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15353",
+          "winner_probability": 0.997
+        },
+        {
+          "race_id": "8146",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15332",
+          "winner_probability": 0.775
+        },
+        {
+          "race_id": "8147",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15334",
+          "winner_probability": 0.89
+        },
+        {
+          "race_id": "8148",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15336",
+          "winner_probability": 0.8205
+        },
+        {
+          "race_id": "8149",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15358",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "8150",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15361",
+          "winner_probability": 0.982
+        },
+        {
+          "race_id": "8151",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15363",
+          "winner_probability": 0.9995
+        },
+        {
+          "race_id": "8153",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "16007",
+          "winner_probability": 0.5535
+        },
+        {
+          "race_id": "8154",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15368",
+          "winner_probability": 0.961
+        },
+        {
+          "race_id": "8155",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15371",
+          "winner_probability": 0.7145
+        },
+        {
+          "race_id": "8156",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15372",
+          "winner_probability": 0.985
+        },
+        {
+          "race_id": "8157",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15374",
+          "winner_probability": 0.803
+        },
+        {
+          "race_id": "8158",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15376",
+          "winner_probability": 0.7685
+        },
+        {
+          "race_id": "8159",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13608",
+          "winner_probability": 0.782
+        },
+        {
+          "race_id": "8160",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14775",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8161",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15393",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8162",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15395",
+          "winner_probability": 0.9445
+        },
+        {
+          "race_id": "8163",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15397",
+          "winner_probability": 0.97
+        },
+        {
+          "race_id": "8164",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15399",
+          "winner_probability": 0.84
+        },
+        {
+          "race_id": "8165",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15402",
+          "winner_probability": 0.9085
+        },
+        {
+          "race_id": "8166",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15404",
+          "winner_probability": 0.758
+        },
+        {
+          "race_id": "8167",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15407",
+          "winner_probability": 0.913
+        },
+        {
+          "race_id": "8168",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14647",
+          "winner_probability": 0.4885
+        },
+        {
+          "race_id": "8169",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15379",
+          "winner_probability": 0.8935
+        },
+        {
+          "race_id": "8170",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15381",
+          "winner_probability": 0.828
+        },
+        {
+          "race_id": "8171",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15383",
+          "winner_probability": 0.009
+        },
+        {
+          "race_id": "8172",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15385",
+          "winner_probability": 0.856
+        },
+        {
+          "race_id": "8173",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15387",
+          "winner_probability": 0.8085
+        },
+        {
+          "race_id": "8174",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14653",
+          "winner_probability": 0.708
+        },
+        {
+          "race_id": "8175",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15388",
+          "winner_probability": 0.7435
+        },
+        {
+          "race_id": "8176",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15390",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "8179",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14581",
+          "winner_probability": 0.3265
+        },
+        {
+          "race_id": "8180",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15413",
+          "winner_probability": 0.8475
+        },
+        {
+          "race_id": "8181",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15415",
+          "winner_probability": 0.995
+        },
+        {
+          "race_id": "8182",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15418",
+          "winner_probability": 0.946
+        },
+        {
+          "race_id": "8183",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15420",
+          "winner_probability": 0.87
+        },
+        {
+          "race_id": "8184",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15422",
+          "winner_probability": 0.994
+        },
+        {
+          "race_id": "8186",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15428",
+          "winner_probability": 0.8645
+        },
+        {
+          "race_id": "8187",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15740",
+          "winner_probability": 0.9965
+        },
+        {
+          "race_id": "8188",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15431",
+          "winner_probability": 0.988
+        },
+        {
+          "race_id": "8189",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15743",
+          "winner_probability": 0.978
+        },
+        {
+          "race_id": "8190",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15745",
+          "winner_probability": 0.9865
+        },
+        {
+          "race_id": "8191",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15746",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8192",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15436",
+          "winner_probability": 0.9935
+        },
+        {
+          "race_id": "8193",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15452",
+          "winner_probability": 0.99
+        },
+        {
+          "race_id": "8194",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15441",
+          "winner_probability": 0.9945
+        },
+        {
+          "race_id": "8195",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15748",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8196",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15445",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8197",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15483",
+          "winner_probability": 0.703
+        },
+        {
+          "race_id": "8198",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14733",
+          "winner_probability": 0.6685
+        },
+        {
+          "race_id": "8199",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15794",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8200",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15539",
+          "winner_probability": 0.9575
+        },
+        {
+          "race_id": "8201",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14664",
+          "winner_probability": 0.7495
+        },
+        {
+          "race_id": "8202",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13499",
+          "winner_probability": 0.6405
+        },
+        {
+          "race_id": "8203",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15545",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "8204",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15546",
+          "winner_probability": 0.9885
+        },
+        {
+          "race_id": "8205",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "13606",
+          "winner_probability": 0.6605
+        },
+        {
+          "race_id": "8206",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15455",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8207",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15458",
+          "winner_probability": 0.9805
+        },
+        {
+          "race_id": "8152",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15366",
+          "winner_probability": 0.975
+        },
+        {
+          "race_id": "8208",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15461",
+          "winner_probability": 0.998
+        },
+        {
+          "race_id": "8209",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15465",
+          "winner_probability": 0.9185
+        },
+        {
+          "race_id": "8210",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15466",
+          "winner_probability": 0.8925
+        },
+        {
+          "race_id": "8211",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15469",
+          "winner_probability": 0.9975
+        },
+        {
+          "race_id": "8212",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15474",
+          "winner_probability": 0.7095
+        },
+        {
+          "race_id": "8213",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15475",
+          "winner_probability": 0.9945
+        },
+        {
+          "race_id": "8214",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15480",
+          "winner_probability": 0.989
+        },
+        {
+          "race_id": "8215",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15484",
+          "winner_probability": 0.9865
+        },
+        {
+          "race_id": "8216",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14736",
+          "winner_probability": 0.5455
+        },
+        {
+          "race_id": "8217",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14758",
+          "winner_probability": 0.3235
+        },
+        {
+          "race_id": "8218",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14608",
+          "winner_probability": 0.3525
+        },
+        {
+          "race_id": "8219",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14703",
+          "winner_probability": 0.319
+        },
+        {
+          "race_id": "8220",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14751",
+          "winner_probability": 0.8195
+        },
+        {
+          "race_id": "8221",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15500",
+          "winner_probability": 0.934
+        },
+        {
+          "race_id": "8222",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15503",
+          "winner_probability": 0.9405
+        },
+        {
+          "race_id": "8223",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15504",
+          "winner_probability": 0.992
+        },
+        {
+          "race_id": "8224",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15507",
+          "winner_probability": 0.9985
+        },
+        {
+          "race_id": "8225",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15510",
+          "winner_probability": 0.991
+        },
+        {
+          "race_id": "8226",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15514",
+          "winner_probability": 0.604
+        },
+        {
+          "race_id": "8227",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15515",
+          "winner_probability": 0.6295
+        },
+        {
+          "race_id": "8232",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15551",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8233",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15554",
+          "winner_probability": 0.993
+        },
+        {
+          "race_id": "8234",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15557",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8236",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15896",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8237",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15561",
+          "winner_probability": 0.7815
+        },
+        {
+          "race_id": "8238",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "14710",
+          "winner_probability": 0.7615
+        },
+        {
+          "race_id": "8239",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15566",
+          "winner_probability": 0.988
+        },
+        {
+          "race_id": "8240",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15569",
+          "winner_probability": 0.9445
+        },
+        {
+          "race_id": "8241",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14657",
+          "winner_probability": 0.397
+        },
+        {
+          "race_id": "8242",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15573",
+          "winner_probability": 0.9065
+        },
+        {
+          "race_id": "8243",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15574",
+          "winner_probability": 0.511
+        },
+        {
+          "race_id": "8244",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15576",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8245",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15579",
+          "winner_probability": 0.8835
+        },
+        {
+          "race_id": "8246",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15562",
+          "winner_probability": 0.992
+        },
+        {
+          "race_id": "8247",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15564",
+          "winner_probability": 0.9945
+        },
+        {
+          "race_id": "8248",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15750",
+          "winner_probability": 0.857
+        },
+        {
+          "race_id": "8249",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15753",
+          "winner_probability": 0.991
+        },
+        {
+          "race_id": "8250",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15755",
+          "winner_probability": 0.6515
+        },
+        {
+          "race_id": "8251",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15756",
+          "winner_probability": 0.948
+        },
+        {
+          "race_id": "8252",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15757",
+          "winner_probability": 0.753
+        },
+        {
+          "race_id": "8253",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15758",
+          "winner_probability": 0.9455
+        },
+        {
+          "race_id": "8254",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15759",
+          "winner_probability": 0.9925
+        },
+        {
+          "race_id": "8255",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15761",
+          "winner_probability": 0.598
+        },
+        {
+          "race_id": "8256",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15763",
+          "winner_probability": 0.9905
+        },
+        {
+          "race_id": "8258",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15603",
+          "winner_probability": 0.9755
+        },
+        {
+          "race_id": "8259",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14776",
+          "winner_probability": 0.7955
+        },
+        {
+          "race_id": "8260",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15606",
+          "winner_probability": 0.817
+        },
+        {
+          "race_id": "8261",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14701",
+          "winner_probability": 0.8545
+        },
+        {
+          "race_id": "8262",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15592",
+          "winner_probability": 0.991
+        },
+        {
+          "race_id": "8263",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "13436",
+          "winner_probability": 0.873
+        },
+        {
+          "race_id": "8264",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15594",
+          "winner_probability": 0.9955
+        },
+        {
+          "race_id": "8265",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15899",
+          "winner_probability": 0.838
+        },
+        {
+          "race_id": "8266",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15597",
+          "winner_probability": 0.795
+        },
+        {
+          "race_id": "8268",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15601",
+          "winner_probability": 0.974
+        },
+        {
+          "race_id": "8269",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "16004",
+          "winner_probability": 0.9805
+        },
+        {
+          "race_id": "7936",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15959",
+          "winner_probability": 1.0
+        },
+        {
+          "race_id": "8177",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15408",
+          "winner_probability": 0.93
+        },
+        {
+          "race_id": "8178",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "16056",
+          "winner_probability": 0.9425
+        },
+        {
+          "race_id": "8185",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15426",
+          "winner_probability": 0.918
+        },
+        {
+          "race_id": "8228",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15519",
+          "winner_probability": 0.999
+        },
+        {
+          "race_id": "8229",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15524",
+          "winner_probability": 0.871
+        },
+        {
+          "race_id": "8230",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15527",
+          "winner_probability": 0.993
+        },
+        {
+          "race_id": "8231",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "15534",
+          "winner_probability": 0.9935
+        },
+        {
+          "race_id": "8235",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "R",
+          "actual_winner": "14704",
+          "winner_probability": 0.3525
+        },
+        {
+          "race_id": "8257",
+          "office": "house",
+          "counting_rule": "plurality",
+          "actual_group": "D",
+          "actual_winner": "15752",
+          "winner_probability": 0.497
+        },
+        {
+          "race_id": "unopposed:FL:25",
+          "office": "house",
+          "actual_group": "R",
+          "actual_winner": "Mario Diaz-Balart",
+          "winner_probability": 1.0,
+          "outcome_only_no_vote_total": true
+        }
+      ]
+    }
+  ]
+}

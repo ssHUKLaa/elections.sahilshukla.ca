@@ -1,0 +1,289 @@
+{
+  "design": "Seven-day terminal-proxy replay. Candidate continuity takes precedence. Area overlap is tested only as a single dominant old district, never as a vote-share weight.",
+  "crosswalk_source_sha256": "9cfb8756d485a9e670aa4dcb4c83012dc1251a05bccc1897bc67e329e88aef3a",
+  "selection_score": "2022 full House winner log score; lower is better",
+  "selection_2022": {
+    "baseline": {
+      "full_house": {
+        "all": {
+          "n_races": 405,
+          "log_score": 0.212167,
+          "brier": 0.117178,
+          "share_mae": 0.042155,
+          "coverage80": 0.775403,
+          "coverage95": 0.902384
+        },
+        "density:no_polls": {
+          "n_races": 312,
+          "log_score": 0.11864,
+          "brier": 0.061485,
+          "share_mae": 0.046586,
+          "coverage80": 0.765324,
+          "coverage95": 0.893136
+        },
+        "density:one_poll": {
+          "n_races": 43,
+          "log_score": 0.372461,
+          "brier": 0.210519,
+          "share_mae": 0.025229,
+          "coverage80": 0.804817,
+          "coverage95": 0.96412
+        },
+        "density:multiple_polls": {
+          "n_races": 50,
+          "log_score": 0.657922,
+          "brier": 0.38443,
+          "share_mae": 0.029064,
+          "coverage80": 0.813,
+          "coverage95": 0.907
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 30,
+          "log_score": 0.720058,
+          "brier": 0.35245,
+          "share_mae": 0.051191,
+          "coverage80": 0.714444,
+          "coverage95": 0.875556
+        }
+      },
+      "rekeyed_holdout_races": 0,
+      "rekeyed_training_races": 0
+    },
+    "0.5": {
+      "full_house": {
+        "all": {
+          "n_races": 405,
+          "log_score": 0.237147,
+          "brier": 0.131408,
+          "share_mae": 0.042683,
+          "coverage80": 0.77458,
+          "coverage95": 0.900944
+        },
+        "density:no_polls": {
+          "n_races": 312,
+          "log_score": 0.130485,
+          "brier": 0.064846,
+          "share_mae": 0.046432,
+          "coverage80": 0.769063,
+          "coverage95": 0.89367
+        },
+        "density:one_poll": {
+          "n_races": 43,
+          "log_score": 0.472761,
+          "brier": 0.281418,
+          "share_mae": 0.029054,
+          "coverage80": 0.781561,
+          "coverage95": 0.952492
+        },
+        "density:multiple_polls": {
+          "n_races": 50,
+          "log_score": 0.700092,
+          "brier": 0.417746,
+          "share_mae": 0.031011,
+          "coverage80": 0.803,
+          "coverage95": 0.902
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 30,
+          "log_score": 0.646296,
+          "brier": 0.289652,
+          "share_mae": 0.044797,
+          "coverage80": 0.77,
+          "coverage95": 0.914444
+        }
+      },
+      "rekeyed_holdout_races": 33,
+      "rekeyed_training_races": 0
+    },
+    "0.65": {
+      "full_house": {
+        "all": {
+          "n_races": 405,
+          "log_score": 0.217859,
+          "brier": 0.121043,
+          "share_mae": 0.041861,
+          "coverage80": 0.775403,
+          "coverage95": 0.903001
+        },
+        "density:no_polls": {
+          "n_races": 312,
+          "log_score": 0.111255,
+          "brier": 0.056306,
+          "share_mae": 0.045556,
+          "coverage80": 0.770131,
+          "coverage95": 0.897943
+        },
+        "density:one_poll": {
+          "n_races": 43,
+          "log_score": 0.437362,
+          "brier": 0.251651,
+          "share_mae": 0.028234,
+          "coverage80": 0.781561,
+          "coverage95": 0.940864
+        },
+        "density:multiple_polls": {
+          "n_races": 50,
+          "log_score": 0.694301,
+          "brier": 0.412685,
+          "share_mae": 0.030525,
+          "coverage80": 0.803,
+          "coverage95": 0.902
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 30,
+          "log_score": 0.721147,
+          "brier": 0.352411,
+          "share_mae": 0.050059,
+          "coverage80": 0.747778,
+          "coverage95": 0.892222
+        }
+      },
+      "rekeyed_holdout_races": 17,
+      "rekeyed_training_races": 0
+    },
+    "0.8": {
+      "full_house": {
+        "all": {
+          "n_races": 405,
+          "log_score": 0.213179,
+          "brier": 0.117991,
+          "share_mae": 0.042165,
+          "coverage80": 0.776637,
+          "coverage95": 0.903618
+        },
+        "density:no_polls": {
+          "n_races": 312,
+          "log_score": 0.11859,
+          "brier": 0.061465,
+          "share_mae": 0.046583,
+          "coverage80": 0.766926,
+          "coverage95": 0.894738
+        },
+        "density:one_poll": {
+          "n_races": 43,
+          "log_score": 0.372461,
+          "brier": 0.210519,
+          "share_mae": 0.025229,
+          "coverage80": 0.804817,
+          "coverage95": 0.96412
+        },
+        "density:multiple_polls": {
+          "n_races": 50,
+          "log_score": 0.666438,
+          "brier": 0.391141,
+          "share_mae": 0.029163,
+          "coverage80": 0.813,
+          "coverage95": 0.907
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 30,
+          "log_score": 0.719534,
+          "brier": 0.352233,
+          "share_mae": 0.051161,
+          "coverage80": 0.731111,
+          "coverage95": 0.892222
+        }
+      },
+      "rekeyed_holdout_races": 3,
+      "rekeyed_training_races": 0
+    }
+  },
+  "best_experimental_minimum_area_fraction": 0.8,
+  "selected_minimum_area_fraction": null,
+  "untouched_2024": {
+    "baseline": {
+      "full_house": {
+        "all": {
+          "n_races": 416,
+          "log_score": 0.15616,
+          "brier": 0.077841,
+          "share_mae": 0.025182,
+          "coverage80": 0.852181,
+          "coverage95": 0.952123
+        },
+        "density:no_polls": {
+          "n_races": 335,
+          "log_score": 0.113004,
+          "brier": 0.046141,
+          "share_mae": 0.026237,
+          "coverage80": 0.847086,
+          "coverage95": 0.949751
+        },
+        "density:one_poll": {
+          "n_races": 28,
+          "log_score": 0.185458,
+          "brier": 0.095112,
+          "share_mae": 0.023285,
+          "coverage80": 0.954762,
+          "coverage95": 0.988095
+        },
+        "density:multiple_polls": {
+          "n_races": 53,
+          "log_score": 0.413464,
+          "brier": 0.269087,
+          "share_mae": 0.019518,
+          "coverage80": 0.830189,
+          "coverage95": 0.948113
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 25,
+          "log_score": 0.450971,
+          "brier": 0.169229,
+          "share_mae": 0.059515,
+          "coverage80": 0.727333,
+          "coverage95": 0.926
+        }
+      },
+      "rekeyed_holdout_races": 0,
+      "rekeyed_training_races": 0
+    },
+    "best_experimental": {
+      "full_house": {
+        "all": {
+          "n_races": 416,
+          "log_score": 0.156096,
+          "brier": 0.077824,
+          "share_mae": 0.025193,
+          "coverage80": 0.851379,
+          "coverage95": 0.952123
+        },
+        "density:no_polls": {
+          "n_races": 335,
+          "log_score": 0.112954,
+          "brier": 0.046139,
+          "share_mae": 0.026249,
+          "coverage80": 0.847086,
+          "coverage95": 0.949751
+        },
+        "density:one_poll": {
+          "n_races": 28,
+          "log_score": 0.185265,
+          "brier": 0.094982,
+          "share_mae": 0.023287,
+          "coverage80": 0.954762,
+          "coverage95": 0.988095
+        },
+        "density:multiple_polls": {
+          "n_races": 53,
+          "log_score": 0.41338,
+          "brier": 0.26903,
+          "share_mae": 0.019521,
+          "coverage80": 0.823899,
+          "coverage95": 0.948113
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 25,
+          "log_score": 0.45108,
+          "brier": 0.169377,
+          "share_mae": 0.05952,
+          "coverage80": 0.727333,
+          "coverage95": 0.926
+        }
+      },
+      "rekeyed_holdout_races": 0,
+      "rekeyed_training_races": 3
+    }
+  },
+  "promotion_passed": false,
+  "promotion_rule": "Require 2022 improvement over baseline and 2024 noninferiority on full-House log score, with no material interval undercoverage."
+}

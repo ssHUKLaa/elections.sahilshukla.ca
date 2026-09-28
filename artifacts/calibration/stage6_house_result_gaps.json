@@ -1,0 +1,568 @@
+{
+  "design": "Compare the 2024 House map with exact/tolerant Clerk-to-archive result reconciliations. Source rows remain visible; no votes are imputed.",
+  "source_database_sha256": "595b34a3381bc1c5fbb1520cd2c87453eb8e7fb01cf63e1ecf1d77e40aab6151",
+  "expected_house_seats": 435,
+  "reconciled_house_seats": 426,
+  "resolved_from_official_candidate_rows": 7,
+  "unresolved_vote_share_seats": 2,
+  "gap_count": 9,
+  "gaps": [
+    {
+      "state": "FL",
+      "district": "20",
+      "gap_type": "unopposed_no_reported_vote_total",
+      "reconciliation": null,
+      "official_candidate_rows": [],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Sheila Cherfilus-McCormick",
+          "ballot_party": "DEM",
+          "votes": null,
+          "result_round": "",
+          "source_race_id": "9646"
+        }
+      ]
+    },
+    {
+      "state": "GA",
+      "district": "11",
+      "gap_type": "resolved_with_reviewed_official_candidate_rows",
+      "reconciliation": {
+        "status": "mismatch",
+        "reason": "requires row-level reconciliation before modeling",
+        "official_votes": 400913,
+        "archive_votes": 411139
+      },
+      "official_candidate_rows": [
+        {
+          "candidate_label": "Barry Loudermilk, Republican",
+          "party": "REP",
+          "votes": 269849,
+          "included_in_valid_total": 1,
+          "page": 20
+        },
+        {
+          "candidate_label": "Katy \u201cKate\u201d L. Stamper, Democrat",
+          "party": "DEM",
+          "votes": 131064,
+          "included_in_valid_total": 1,
+          "page": 20
+        }
+      ],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Barry Loudermilk",
+          "ballot_party": "REP",
+          "votes": 269849,
+          "result_round": "",
+          "source_race_id": "9665"
+        },
+        {
+          "candidate_name": "Katy \"Kate\" L. Stamper",
+          "ballot_party": "DEM",
+          "votes": 131064,
+          "result_round": "",
+          "source_race_id": "9665"
+        },
+        {
+          "candidate_name": "Write-in",
+          "ballot_party": "",
+          "votes": 10226,
+          "result_round": "",
+          "source_race_id": "9665"
+        }
+      ]
+    },
+    {
+      "state": "MA",
+      "district": "04",
+      "gap_type": "resolved_with_reviewed_official_candidate_rows",
+      "reconciliation": {
+        "status": "mismatch",
+        "reason": "requires row-level reconciliation before modeling",
+        "official_votes": 297725,
+        "archive_votes": 297179
+      },
+      "official_candidate_rows": [
+        {
+          "candidate_label": "Jake Auchincloss, Democrat",
+          "party": "DEM",
+          "votes": 289347,
+          "included_in_valid_total": 1,
+          "page": 35
+        },
+        {
+          "candidate_label": "Sana A. Fadel, Write-in",
+          "party": "W",
+          "votes": 1099,
+          "included_in_valid_total": 1,
+          "page": 35
+        },
+        {
+          "candidate_label": "Blanks",
+          "party": null,
+          "votes": 113853,
+          "included_in_valid_total": 0,
+          "page": 35
+        },
+        {
+          "candidate_label": "All Others",
+          "party": null,
+          "votes": 7279,
+          "included_in_valid_total": 1,
+          "page": 35
+        }
+      ],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Jake Auchincloss",
+          "ballot_party": "DEM",
+          "votes": 289374,
+          "result_round": "",
+          "source_race_id": "9731"
+        },
+        {
+          "candidate_name": "Sana A. Fadel",
+          "ballot_party": "W",
+          "votes": 832,
+          "result_round": "",
+          "source_race_id": "9731"
+        },
+        {
+          "candidate_name": "Other",
+          "ballot_party": "",
+          "votes": 6973,
+          "result_round": "",
+          "source_race_id": "9731"
+        },
+        {
+          "candidate_name": "Blank",
+          "ballot_party": "",
+          "votes": 114335,
+          "result_round": "",
+          "source_race_id": "9731"
+        }
+      ]
+    },
+    {
+      "state": "ME",
+      "district": "02",
+      "gap_type": "resolved_with_reviewed_official_candidate_rows",
+      "reconciliation": {
+        "status": "mismatch",
+        "reason": "requires row-level reconciliation before modeling",
+        "official_votes": 391596,
+        "archive_votes": 387174
+      },
+      "official_candidate_rows": [
+        {
+          "candidate_label": "Austin Theriault, Republican",
+          "party": "REP",
+          "votes": 194445,
+          "included_in_valid_total": 1,
+          "page": 31
+        },
+        {
+          "candidate_label": "Jared F. Golden, Democrat",
+          "party": "DEM",
+          "votes": 197151,
+          "included_in_valid_total": 1,
+          "page": 31
+        },
+        {
+          "candidate_label": "Continuing Ballots",
+          "party": null,
+          "votes": 391596,
+          "included_in_valid_total": 0,
+          "page": 31
+        },
+        {
+          "candidate_label": "Exhausted Ballots",
+          "party": null,
+          "votes": 11340,
+          "included_in_valid_total": 0,
+          "page": 31
+        }
+      ],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Jared Forrest Golden",
+          "ballot_party": "DEM",
+          "votes": 193740,
+          "result_round": "1",
+          "source_race_id": "9993"
+        },
+        {
+          "candidate_name": "Austin Theriault",
+          "ballot_party": "REP",
+          "votes": 193014,
+          "result_round": "1",
+          "source_race_id": "9993"
+        },
+        {
+          "candidate_name": "Write-in",
+          "ballot_party": "",
+          "votes": 420,
+          "result_round": "1",
+          "source_race_id": "9993"
+        },
+        {
+          "candidate_name": "Jared Forrest Golden",
+          "ballot_party": "DEM",
+          "votes": 197151,
+          "result_round": "2",
+          "source_race_id": "9993"
+        },
+        {
+          "candidate_name": "Austin Theriault",
+          "ballot_party": "REP",
+          "votes": 194445,
+          "result_round": "2",
+          "source_race_id": "9993"
+        }
+      ]
+    },
+    {
+      "state": "NY",
+      "district": "07",
+      "gap_type": "resolved_with_reviewed_official_candidate_rows",
+      "reconciliation": {
+        "status": "mismatch",
+        "reason": "requires row-level reconciliation before modeling",
+        "official_votes": 221779,
+        "archive_votes": 88610
+      },
+      "official_candidate_rows": [
+        {
+          "candidate_label": "Bill Kregler, Republican",
+          "party": "REP",
+          "votes": 43052,
+          "included_in_valid_total": 1,
+          "page": 49
+        },
+        {
+          "candidate_label": "Conservative",
+          "party": "CONSERVATIVE",
+          "votes": 5383,
+          "included_in_valid_total": 1,
+          "page": 49
+        },
+        {
+          "candidate_label": "Nydia M. Vel\u00e1zquez, Democrat",
+          "party": "DEM",
+          "votes": 145141,
+          "included_in_valid_total": 1,
+          "page": 49
+        },
+        {
+          "candidate_label": "Working Families",
+          "party": "WORKING_FAMILIES",
+          "votes": 27654,
+          "included_in_valid_total": 1,
+          "page": 49
+        },
+        {
+          "candidate_label": "Blank",
+          "party": null,
+          "votes": 15556,
+          "included_in_valid_total": 0,
+          "page": 49
+        },
+        {
+          "candidate_label": "Scattering",
+          "party": "W",
+          "votes": 549,
+          "included_in_valid_total": 1,
+          "page": 49
+        }
+      ],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Nydia M. Velazquez",
+          "ballot_party": "DEM",
+          "votes": 51898,
+          "result_round": "",
+          "source_race_id": "9804"
+        },
+        {
+          "candidate_name": "William Kregler",
+          "ballot_party": "REP",
+          "votes": 24595,
+          "result_round": "",
+          "source_race_id": "9804"
+        },
+        {
+          "candidate_name": "William Kregler",
+          "ballot_party": "CRV",
+          "votes": 2120,
+          "result_round": "",
+          "source_race_id": "9804"
+        },
+        {
+          "candidate_name": "Nydia M. Velazquez",
+          "ballot_party": "WFP",
+          "votes": 9770,
+          "result_round": "",
+          "source_race_id": "9804"
+        },
+        {
+          "candidate_name": "Blank",
+          "ballot_party": "",
+          "votes": 5127,
+          "result_round": "",
+          "source_race_id": "9804"
+        },
+        {
+          "candidate_name": "Scattering",
+          "ballot_party": "",
+          "votes": 227,
+          "result_round": "",
+          "source_race_id": "9804"
+        }
+      ]
+    },
+    {
+      "state": "NY",
+      "district": "20",
+      "gap_type": "resolved_with_reviewed_official_candidate_rows",
+      "reconciliation": {
+        "status": "mismatch",
+        "reason": "requires row-level reconciliation before modeling",
+        "official_votes": 363445,
+        "archive_votes": 69845
+      },
+      "official_candidate_rows": [
+        {
+          "candidate_label": "Kevin M. Waltz, Republican",
+          "party": "REP",
+          "votes": 121609,
+          "included_in_valid_total": 1,
+          "page": 51
+        },
+        {
+          "candidate_label": "Conservative",
+          "party": "CONSERVATIVE",
+          "votes": 19542,
+          "included_in_valid_total": 1,
+          "page": 51
+        },
+        {
+          "candidate_label": "Paul Tonko, Democrat",
+          "party": "DEM",
+          "votes": 200354,
+          "included_in_valid_total": 1,
+          "page": 51
+        },
+        {
+          "candidate_label": "Working Families",
+          "party": "WORKING_FAMILIES",
+          "votes": 21643,
+          "included_in_valid_total": 1,
+          "page": 51
+        },
+        {
+          "candidate_label": "Blank",
+          "party": null,
+          "votes": 14140,
+          "included_in_valid_total": 0,
+          "page": 51
+        },
+        {
+          "candidate_label": "Scattering",
+          "party": "W",
+          "votes": 297,
+          "included_in_valid_total": 1,
+          "page": 51
+        },
+        {
+          "candidate_label": "Void",
+          "party": null,
+          "votes": 163,
+          "included_in_valid_total": 0,
+          "page": 51
+        }
+      ],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Paul D. Tonko",
+          "ballot_party": "DEM",
+          "votes": 38022,
+          "result_round": "",
+          "source_race_id": "9817"
+        },
+        {
+          "candidate_name": "Kevin M. Waltz",
+          "ballot_party": "REP",
+          "votes": 23130,
+          "result_round": "",
+          "source_race_id": "9817"
+        },
+        {
+          "candidate_name": "Kevin M. Waltz",
+          "ballot_party": "CRV",
+          "votes": 4689,
+          "result_round": "",
+          "source_race_id": "9817"
+        },
+        {
+          "candidate_name": "Paul D. Tonko",
+          "ballot_party": "WFP",
+          "votes": 3941,
+          "result_round": "",
+          "source_race_id": "9817"
+        },
+        {
+          "candidate_name": "Blank",
+          "ballot_party": "",
+          "votes": 3219,
+          "result_round": "",
+          "source_race_id": "9817"
+        },
+        {
+          "candidate_name": "Void",
+          "ballot_party": "",
+          "votes": 48,
+          "result_round": "",
+          "source_race_id": "9817"
+        },
+        {
+          "candidate_name": "Scattering",
+          "ballot_party": "",
+          "votes": 63,
+          "result_round": "",
+          "source_race_id": "9817"
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "district": "03",
+      "gap_type": "unopposed_no_reported_vote_total",
+      "reconciliation": null,
+      "official_candidate_rows": [],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Frank D. Lucas",
+          "ballot_party": "REP",
+          "votes": null,
+          "result_round": "",
+          "source_race_id": "9857"
+        }
+      ]
+    },
+    {
+      "state": "TX",
+      "district": "28",
+      "gap_type": "resolved_with_reviewed_official_candidate_rows",
+      "reconciliation": {
+        "status": "mismatch",
+        "reason": "requires row-level reconciliation before modeling",
+        "official_votes": 237298,
+        "archive_votes": 237607
+      },
+      "official_candidate_rows": [
+        {
+          "candidate_label": "Jay Furman, Republican",
+          "party": "REP",
+          "votes": 112018,
+          "included_in_valid_total": 1,
+          "page": 68
+        },
+        {
+          "candidate_label": "Henry Cuellar, Democrat",
+          "party": "DEM",
+          "votes": 125280,
+          "included_in_valid_total": 1,
+          "page": 68
+        }
+      ],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Jay Furman",
+          "ballot_party": "REP",
+          "votes": 112117,
+          "result_round": "",
+          "source_race_id": "9929"
+        },
+        {
+          "candidate_name": "Henry Cuellar",
+          "ballot_party": "DEM",
+          "votes": 125490,
+          "result_round": "",
+          "source_race_id": "9929"
+        }
+      ]
+    },
+    {
+      "state": "VA",
+      "district": "06",
+      "gap_type": "resolved_with_reviewed_official_candidate_rows",
+      "reconciliation": {
+        "status": "mismatch",
+        "reason": "requires row-level reconciliation before modeling",
+        "official_votes": 407035,
+        "archive_votes": 404415
+      },
+      "official_candidate_rows": [
+        {
+          "candidate_label": "Ben Cline, Republican",
+          "party": "REP",
+          "votes": 256933,
+          "included_in_valid_total": 1,
+          "page": 74
+        },
+        {
+          "candidate_label": "Ken L. Mitchell, Democrat",
+          "party": "DEM",
+          "votes": 141612,
+          "included_in_valid_total": 1,
+          "page": 74
+        },
+        {
+          "candidate_label": "Robert C. \u201cRobby\u201d Wells, Jr., Independent",
+          "party": "IND",
+          "votes": 7980,
+          "included_in_valid_total": 1,
+          "page": 74
+        },
+        {
+          "candidate_label": "Write-in",
+          "party": "W",
+          "votes": 510,
+          "included_in_valid_total": 1,
+          "page": 74
+        }
+      ],
+      "archive_result_rows": [
+        {
+          "candidate_name": "Ken L. Mitchell",
+          "ballot_party": "DEM",
+          "votes": 140099,
+          "result_round": "",
+          "source_race_id": "9951"
+        },
+        {
+          "candidate_name": "Ben L. Cline",
+          "ballot_party": "REP",
+          "votes": 255849,
+          "result_round": "",
+          "source_race_id": "9951"
+        },
+        {
+          "candidate_name": "Robert Wells",
+          "ballot_party": "IND",
+          "votes": 7960,
+          "result_round": "",
+          "source_race_id": "9951"
+        },
+        {
+          "candidate_name": "Write-in",
+          "ballot_party": "",
+          "votes": 507,
+          "result_round": "",
+          "source_race_id": "9951"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1379 @@
+{
+  "design": "Count distinct source polls with at least one eligible current-ballot question. A candidate is named if any eligible question in that poll names that ballot entry. No-poll races remain unclassified.",
+  "races": {
+    "S-2026-AK-II-regular": {
+      "usable_polls": 15,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-AK-II-regular:DAN-J-SULLIVAN",
+          "name": "Dan J. Sullivan",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 4,
+          "fraction": 0.26666666666666666,
+          "majority_named": false,
+          "median_pct_when_named": 3.85,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-AK-II-regular:DAN-S-SULLIVAN",
+          "name": "Dan S. Sullivan",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 15,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 46.4,
+          "polls_at_least_10_pct": 15
+        },
+        {
+          "ballot_entry_id": "S-2026-AK-II-regular:GERALD-HEIKES",
+          "name": "Gerald Heikes",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 4,
+          "fraction": 0.26666666666666666,
+          "majority_named": false,
+          "median_pct_when_named": 3.0,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-AK-II-regular:MARY-PELTOLA",
+          "name": "Mary Peltola",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 15,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 48.0,
+          "polls_at_least_10_pct": 15
+        }
+      ]
+    },
+    "S-2026-AL-II-regular": {
+      "usable_polls": 1,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-AL-II-regular:BARRY-MOORE",
+          "name": "Barry Moore",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 47.0,
+          "polls_at_least_10_pct": 1
+        },
+        {
+          "ballot_entry_id": "S-2026-AL-II-regular:EVERETT-WESS",
+          "name": "Everett Wess",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 32.0,
+          "polls_at_least_10_pct": 1
+        }
+      ]
+    },
+    "S-2026-AR-II-regular": {
+      "usable_polls": 4,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-AR-II-regular:HALLIE-SHOFFNER",
+          "name": "Hallie Shoffner",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 4,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 39.5,
+          "polls_at_least_10_pct": 4
+        },
+        {
+          "ballot_entry_id": "S-2026-AR-II-regular:JEFF-WADLIN",
+          "name": "Jeff Wadlin",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 2,
+          "fraction": 0.5,
+          "majority_named": false,
+          "median_pct_when_named": 3.475,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-AR-II-regular:TOM-COTTON",
+          "name": "Tom Cotton",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 4,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 48.5,
+          "polls_at_least_10_pct": 4
+        }
+      ]
+    },
+    "S-2026-CO-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-CO-II-regular:JOHN-HICKENLOOPER",
+          "name": "John Hickenlooper",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-CO-II-regular:MARK-BAISLEY",
+          "name": "Mark Baisley",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-DE-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-DE-II-regular:CHRIS-COONS",
+          "name": "Chris Coons",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-DE-II-regular:MICHAEL-KATZ",
+          "name": "Michael Katz",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-FL-III-special": {
+      "usable_polls": 8,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-FL-III-special:ANGIE-NIXON",
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 8,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 41.7,
+          "polls_at_least_10_pct": 8
+        },
+        {
+          "ballot_entry_id": "S-2026-FL-III-special:ASHLEY-MOODY",
+          "name": "Ashley Moody",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 8,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 48.3,
+          "polls_at_least_10_pct": 8
+        },
+        {
+          "ballot_entry_id": "S-2026-FL-III-special:NEIL-GILLESPIE",
+          "name": "Neil Gillespie",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 0.125,
+          "majority_named": false,
+          "median_pct_when_named": 2.4,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-GA-II-regular": {
+      "usable_polls": 13,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-GA-II-regular:JON-OSSOFF",
+          "name": "Jon Ossoff",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 13,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 47.7,
+          "polls_at_least_10_pct": 13
+        },
+        {
+          "ballot_entry_id": "S-2026-GA-II-regular:MIKE-COLLINS",
+          "name": "Mike Collins",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 13,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 42.9,
+          "polls_at_least_10_pct": 13
+        }
+      ]
+    },
+    "S-2026-IA-II-regular": {
+      "usable_polls": 19,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-IA-II-regular:ASHLEY-HINSON",
+          "name": "Ashley Hinson",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 19,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 45.4,
+          "polls_at_least_10_pct": 19
+        },
+        {
+          "ballot_entry_id": "S-2026-IA-II-regular:JOSH-TUREK",
+          "name": "Josh Turek",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 19,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 45.05,
+          "polls_at_least_10_pct": 19
+        },
+        {
+          "ballot_entry_id": "S-2026-IA-II-regular:THOMAS-LAEHN",
+          "name": "Thomas Laehn",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 6,
+          "fraction": 0.3157894736842105,
+          "majority_named": false,
+          "median_pct_when_named": 3.5,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-ID-II-regular": {
+      "usable_polls": 5,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-ID-II-regular:JIM-RISCH",
+          "name": "Jim Risch",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 5,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 43.0,
+          "polls_at_least_10_pct": 5
+        },
+        {
+          "ballot_entry_id": "S-2026-ID-II-regular:MATT-LOESBY",
+          "name": "Matt Loesby",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 3,
+          "fraction": 0.6,
+          "majority_named": true,
+          "median_pct_when_named": 2.0,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-ID-II-regular:NATALIE-FLEMING",
+          "name": "Natalie Fleming",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 2,
+          "fraction": 0.4,
+          "majority_named": false,
+          "median_pct_when_named": 8.5,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-ID-II-regular:TODD-ACHILLES",
+          "name": "Todd Achilles",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 5,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 34.0,
+          "polls_at_least_10_pct": 5
+        }
+      ]
+    },
+    "S-2026-IL-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-IL-II-regular:DON-TRACY",
+          "name": "Don Tracy",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-IL-II-regular:JULIANA-STRATTON",
+          "name": "Juliana Stratton",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-IL-II-regular:WHITFIELD-HARRINGTON-JR",
+          "name": "Whitfield Harrington Jr",
+          "party": "ACP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-KS-II-regular": {
+      "usable_polls": 3,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-KS-II-regular:ADAM-HAMILTON",
+          "name": "Adam Hamilton",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 3,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 45.0,
+          "polls_at_least_10_pct": 3
+        },
+        {
+          "ballot_entry_id": "S-2026-KS-II-regular:ROGER-MARSHALL",
+          "name": "Roger Marshall",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 3,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 47.0,
+          "polls_at_least_10_pct": 3
+        }
+      ]
+    },
+    "S-2026-KY-II-regular": {
+      "usable_polls": 2,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-KY-II-regular:ANDY-BARR",
+          "name": "Andy Barr",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 2,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 49.0,
+          "polls_at_least_10_pct": 2
+        },
+        {
+          "ballot_entry_id": "S-2026-KY-II-regular:CHARLES-BOOKER",
+          "name": "Charles Booker",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 2,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 39.0,
+          "polls_at_least_10_pct": 2
+        }
+      ]
+    },
+    "S-2026-LA-II-regular": {
+      "usable_polls": 1,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-LA-II-regular:JAMIE-DAVIS",
+          "name": "Jamie Davis",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 44.0,
+          "polls_at_least_10_pct": 1
+        },
+        {
+          "ballot_entry_id": "S-2026-LA-II-regular:JULIA-LETLOW",
+          "name": "Julia Letlow",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 48.0,
+          "polls_at_least_10_pct": 1
+        }
+      ]
+    },
+    "S-2026-MA-II-regular": {
+      "usable_polls": 8,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-MA-II-regular:ED-MARKEY",
+          "name": "Ed Markey",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 8,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 54.0,
+          "polls_at_least_10_pct": 8
+        },
+        {
+          "ballot_entry_id": "S-2026-MA-II-regular:JOHN-DEATON",
+          "name": "John Deaton",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 8,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 30.0,
+          "polls_at_least_10_pct": 8
+        }
+      ]
+    },
+    "S-2026-ME-II-regular": {
+      "usable_polls": 9,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-ME-II-regular:SUSAN-M-COLLINS",
+          "name": "Susan M. Collins",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 9,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 45.0,
+          "polls_at_least_10_pct": 9
+        },
+        {
+          "ballot_entry_id": "S-2026-ME-II-regular:TROY-D-JACKSON",
+          "name": "Troy D. Jackson",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 9,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 48.0,
+          "polls_at_least_10_pct": 9
+        }
+      ]
+    },
+    "S-2026-MI-II-regular": {
+      "usable_polls": 30,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-MI-II-regular:ABDUL-EL-SAYED",
+          "name": "Abdul El-Sayed",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 30,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 45.0,
+          "polls_at_least_10_pct": 30
+        },
+        {
+          "ballot_entry_id": "S-2026-MI-II-regular:DOUGLAS-P-MARSH",
+          "name": "Douglas P. Marsh",
+          "party": "GRE",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-MI-II-regular:LYDIA-CHRISTENSEN",
+          "name": "Lydia Christensen",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-MI-II-regular:MIKE-ROGERS",
+          "name": "Mike Rogers",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 30,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 44.05,
+          "polls_at_least_10_pct": 30
+        },
+        {
+          "ballot_entry_id": "S-2026-MI-II-regular:TIM-LONG",
+          "name": "Tim Long",
+          "party": "OTH",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-MN-II-regular": {
+      "usable_polls": 4,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-MN-II-regular:MICHELE-TAFOYA",
+          "name": "Michele Tafoya",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 4,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 44.5,
+          "polls_at_least_10_pct": 4
+        },
+        {
+          "ballot_entry_id": "S-2026-MN-II-regular:PEGGY-FLANAGAN",
+          "name": "Peggy Flanagan",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 4,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 48.45,
+          "polls_at_least_10_pct": 4
+        }
+      ]
+    },
+    "S-2026-MS-II-regular": {
+      "usable_polls": 2,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-MS-II-regular:CINDY-HYDE-SMITH",
+          "name": "Cindy Hyde-Smith",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 2,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 43.75,
+          "polls_at_least_10_pct": 2
+        },
+        {
+          "ballot_entry_id": "S-2026-MS-II-regular:SCOTT-COLOM",
+          "name": "Scott Colom",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 2,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 39.25,
+          "polls_at_least_10_pct": 2
+        },
+        {
+          "ballot_entry_id": "S-2026-MS-II-regular:TY-PINKINS",
+          "name": "Ty Pinkins",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 2,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 6.5,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-MT-II-regular": {
+      "usable_polls": 11,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-MT-II-regular:ALANI-BANKHEAD",
+          "name": "Alani Bankhead",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 9,
+          "fraction": 0.8181818181818182,
+          "majority_named": true,
+          "median_pct_when_named": 25.0,
+          "polls_at_least_10_pct": 9
+        },
+        {
+          "ballot_entry_id": "S-2026-MT-II-regular:JAMI-WOODMAN",
+          "name": "Jami Dee Woodman",
+          "party": "NON",
+          "write_in_only": true,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-MT-II-regular:KURT-ALME",
+          "name": "Kurt Alme",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 11,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 44.0,
+          "polls_at_least_10_pct": 11
+        },
+        {
+          "ballot_entry_id": "S-2026-MT-II-regular:KYLE-AUSTIN",
+          "name": "Kyle Austin",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 6,
+          "fraction": 0.5454545454545454,
+          "majority_named": true,
+          "median_pct_when_named": 4.5,
+          "polls_at_least_10_pct": 1
+        },
+        {
+          "ballot_entry_id": "S-2026-MT-II-regular:SETH-BODNAR",
+          "name": "Seth Bodnar",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 11,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 30.0,
+          "polls_at_least_10_pct": 11
+        }
+      ]
+    },
+    "S-2026-NC-II-regular": {
+      "usable_polls": 34,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-NC-II-regular:MICHAEL-DUBLIN",
+          "name": "Michael Dublin",
+          "party": "GRE",
+          "write_in_only": false,
+          "polls_naming_candidate": 7,
+          "fraction": 0.20588235294117646,
+          "majority_named": false,
+          "median_pct_when_named": 1.3,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-NC-II-regular:MICHAEL-WHATLEY",
+          "name": "Michael Whatley",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 34,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 41.4,
+          "polls_at_least_10_pct": 34
+        },
+        {
+          "ballot_entry_id": "S-2026-NC-II-regular:ROY-COOPER",
+          "name": "Roy Cooper",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 34,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 48.75,
+          "polls_at_least_10_pct": 34
+        },
+        {
+          "ballot_entry_id": "S-2026-NC-II-regular:SHANNON-W-BRAY",
+          "name": "Shannon W. Bray",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 9,
+          "fraction": 0.2647058823529412,
+          "majority_named": false,
+          "median_pct_when_named": 1.6666666666666667,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-NE-II-regular": {
+      "usable_polls": 6,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-NE-II-regular:DAN-OSBORN",
+          "name": "Dan Osborn",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 6,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 47.0,
+          "polls_at_least_10_pct": 6
+        },
+        {
+          "ballot_entry_id": "S-2026-NE-II-regular:MIKE-MARVIN",
+          "name": "Mike Marvin",
+          "party": "OTH",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-NE-II-regular:PETE-RICKETTS",
+          "name": "Pete Ricketts",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 6,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 46.5,
+          "polls_at_least_10_pct": 6
+        }
+      ]
+    },
+    "S-2026-NH-II-regular": {
+      "usable_polls": 16,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-NH-II-regular:CHRIS-PAPPAS",
+          "name": "Chris Pappas",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 16,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 45.7,
+          "polls_at_least_10_pct": 16
+        },
+        {
+          "ballot_entry_id": "S-2026-NH-II-regular:EDMOND-LAPLANTE",
+          "name": "Edmond LaPlante",
+          "party": "OTH",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-NH-II-regular:JOHN-E-SUNUNU",
+          "name": "John E. Sununu",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 16,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 42.5,
+          "polls_at_least_10_pct": 16
+        }
+      ]
+    },
+    "S-2026-NJ-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-NJ-II-regular:CORY-BOOKER",
+          "name": "Cory Booker",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-NJ-II-regular:JUSTIN-MURPHY",
+          "name": "Justin Murphy",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-NM-II-regular": {
+      "usable_polls": 1,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-NM-II-regular:BEN-RAY-LUJAN",
+          "name": "Ben Ray Luj\u00e1n",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 53.0,
+          "polls_at_least_10_pct": 1
+        },
+        {
+          "ballot_entry_id": "S-2026-NM-II-regular:LARRY-MARKER",
+          "name": "Larry Marker",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 38.0,
+          "polls_at_least_10_pct": 1
+        }
+      ]
+    },
+    "S-2026-OH-III-special": {
+      "usable_polls": 18,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-OH-III-special:JON-HUSTED",
+          "name": "Jon Husted",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 18,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 46.25,
+          "polls_at_least_10_pct": 18
+        },
+        {
+          "ballot_entry_id": "S-2026-OH-III-special:SHERROD-BROWN",
+          "name": "Sherrod Brown",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 18,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 47.0,
+          "polls_at_least_10_pct": 18
+        },
+        {
+          "ballot_entry_id": "S-2026-OH-III-special:WILLIAM-REDPATH",
+          "name": "William Redpath",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-OH-III-special:GREG-LEVY",
+          "name": "\u258cGreg Levy",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-OK-II-regular": {
+      "usable_polls": 1,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-OK-II-regular:CURTIS-STINNETT",
+          "name": "Curtis Stinnett",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 4.0,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-OK-II-regular:KEVIN-HERN",
+          "name": "Kevin Hern",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 49.0,
+          "polls_at_least_10_pct": 1
+        },
+        {
+          "ballot_entry_id": "S-2026-OK-II-regular:N-KIYLA-JASMINE-THOMAS",
+          "name": "N'Kiyla Jasmine Thomas",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 25.0,
+          "polls_at_least_10_pct": 1
+        },
+        {
+          "ballot_entry_id": "S-2026-OK-II-regular:RON-MEINHARDT",
+          "name": "Ron Meinhardt",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 1.0,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-OK-II-regular:SEVIER-WHITE",
+          "name": "Sevier White",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 3.0,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-OR-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-OR-II-regular:DAVID-BROCK-SMITH",
+          "name": "David Brock Smith",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-OR-II-regular:JEFF-MERKLEY",
+          "name": "Jeff Merkley",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-RI-II-regular": {
+      "usable_polls": 3,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-RI-II-regular:JACK-REED",
+          "name": "Jack Reed",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 3,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 52.0,
+          "polls_at_least_10_pct": 3
+        },
+        {
+          "ballot_entry_id": "S-2026-RI-II-regular:MICHAEL-BAHRY",
+          "name": "Michael Bahry",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 0.3333333333333333,
+          "majority_named": false,
+          "median_pct_when_named": 4.0,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-RI-II-regular:RAYMOND-MCKAY",
+          "name": "Raymond McKay",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 3,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 34.0,
+          "polls_at_least_10_pct": 3
+        }
+      ]
+    },
+    "S-2026-SC-II-regular": {
+      "usable_polls": 3,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-SC-II-regular:ANNIE-ANDREWS",
+          "name": "Annie Andrews",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 3,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 41.0,
+          "polls_at_least_10_pct": 3
+        },
+        {
+          "ballot_entry_id": "S-2026-SC-II-regular:CATHERINE-FLEMING-BRUCE",
+          "name": "Catherine Fleming Bruce",
+          "party": "DEM",
+          "write_in_only": true,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-SC-II-regular:DARLINE-GRAHAM",
+          "name": "Darline Graham",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 3,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 42.5,
+          "polls_at_least_10_pct": 3
+        },
+        {
+          "ballot_entry_id": "S-2026-SC-II-regular:KASIE-WHITENER",
+          "name": "Kasie Whitener",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 1,
+          "fraction": 0.3333333333333333,
+          "majority_named": false,
+          "median_pct_when_named": 5.0,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-SC-II-regular:MARK-HACKETT",
+          "name": "Mark Hackett",
+          "party": "OTH",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": 0.0,
+          "majority_named": false,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-SD-II-regular": {
+      "usable_polls": 7,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-SD-II-regular:BRIAN-BENGS",
+          "name": "Brian L Bengs",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 7,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 35.0,
+          "polls_at_least_10_pct": 7
+        },
+        {
+          "ballot_entry_id": "S-2026-SD-II-regular:MIKE-ROUNDS",
+          "name": "Mike Rounds",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 7,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 44.0,
+          "polls_at_least_10_pct": 7
+        }
+      ]
+    },
+    "S-2026-TN-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:ANDREW-GERENA",
+          "name": "Andrew Gerena",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:BILL-HAGERTY",
+          "name": "Bill Hagerty",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:CATHERINE-WHITSON",
+          "name": "Catherine Whitson",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:DAVID-SUTMAN-JR",
+          "name": "David Sutman Jr.",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:JAMES-MACON-III",
+          "name": "James Macon III",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:JEREMY-HEARN",
+          "name": "Jeremy Hearn",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:MARQUITA-BRADSHAW",
+          "name": "Marquita Bradshaw",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:ROBERT-JONES",
+          "name": "Robert Jones",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:THARON-CHANDLER",
+          "name": "Tharon Chandler",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-TN-II-regular:YOSHI-MATTHEWS",
+          "name": "Yoshi Matthews",
+          "party": "IND",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-TX-II-regular": {
+      "usable_polls": 37,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-TX-II-regular:JAMES-TALARICO",
+          "name": "JAMES TALARICO",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 37,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 46.57,
+          "polls_at_least_10_pct": 37
+        },
+        {
+          "ballot_entry_id": "S-2026-TX-II-regular:KEN-PAXTON",
+          "name": "KEN PAXTON",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 37,
+          "fraction": 1.0,
+          "majority_named": true,
+          "median_pct_when_named": 45.0,
+          "polls_at_least_10_pct": 37
+        },
+        {
+          "ballot_entry_id": "S-2026-TX-II-regular:TED-BROWN",
+          "name": "TED BROWN",
+          "party": "LIB",
+          "write_in_only": false,
+          "polls_naming_candidate": 14,
+          "fraction": 0.3783783783783784,
+          "majority_named": false,
+          "median_pct_when_named": 2.75,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-VA-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-VA-II-regular:BERT-MIZUSAWA",
+          "name": "Bert Mizusawa",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-VA-II-regular:MARK-WARNER",
+          "name": "Mark Warner",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-WV-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-WV-II-regular:RACHEL-FETTY-ANDERSON",
+          "name": "Rachel Fetty Anderson",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-WV-II-regular:RIO-PHILLIPS",
+          "name": "Rio Phillips",
+          "party": "OTH",
+          "write_in_only": true,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-WV-II-regular:S-MARSHALL-WILSON",
+          "name": "S. Marshall Wilson",
+          "party": "OTH",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-WV-II-regular:SHELLEY-MOORE-CAPITO",
+          "name": "Shelley Moore Capito",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    },
+    "S-2026-WY-II-regular": {
+      "usable_polls": 0,
+      "candidates": [
+        {
+          "ballot_entry_id": "S-2026-WY-II-regular:HARRIET-HAGEMAN",
+          "name": "Harriet Hageman",
+          "party": "REP",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        },
+        {
+          "ballot_entry_id": "S-2026-WY-II-regular:JAMES-W-BYRD",
+          "name": "James W. Byrd",
+          "party": "DEM",
+          "write_in_only": false,
+          "polls_naming_candidate": 0,
+          "fraction": null,
+          "majority_named": null,
+          "median_pct_when_named": null,
+          "polls_at_least_10_pct": 0
+        }
+      ]
+    }
+  }
+}

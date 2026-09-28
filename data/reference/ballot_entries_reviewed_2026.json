@@ -1,0 +1,104 @@
+{
+  "version": "0.1-partial",
+  "reviewed_at_utc": "2026-09-21T02:05:29Z",
+  "scope": "Initial manual review of two Senate races with independent candidates; this is not a national ballot roster.",
+  "sources": {
+    "sd_general": "https://vip.sdsos.gov/candidatelist.aspx?eid=774",
+    "mt_general": "https://candidatefiling.mt.gov/candidatefiling/CandidateList.aspx?e=450002987"
+  },
+  "entries": [
+    {
+      "ballot_entry_id": "S-2026-SD-II-regular:MIKE-ROUNDS",
+      "race_id": "S-2026-SD-II-regular",
+      "candidate_id": "PERSON-MIKE-ROUNDS",
+      "name": "Mike Rounds",
+      "ballot_party": "REP",
+      "status": "active_general_listed",
+      "source_key": "sd_general",
+      "source_candidate_status": "Active",
+      "write_in_only": false,
+      "senate_caucus": null
+    },
+    {
+      "ballot_entry_id": "S-2026-SD-II-regular:BRIAN-BENGS",
+      "race_id": "S-2026-SD-II-regular",
+      "candidate_id": "PERSON-BRIAN-BENGS",
+      "name": "Brian L Bengs",
+      "ballot_party": "IND",
+      "status": "active_general_listed",
+      "source_key": "sd_general",
+      "source_candidate_status": "Active",
+      "write_in_only": false,
+      "senate_caucus": null
+    },
+    {
+      "ballot_entry_id": "S-2026-MT-II-regular:KURT-ALME",
+      "race_id": "S-2026-MT-II-regular",
+      "candidate_id": "PERSON-KURT-ALME",
+      "name": "Kurt Alme",
+      "ballot_party": "REP",
+      "status": "filed_on_state_general_list",
+      "source_key": "mt_general",
+      "source_candidate_status": "FILED",
+      "write_in_only": false,
+      "senate_caucus": null
+    },
+    {
+      "ballot_entry_id": "S-2026-MT-II-regular:KYLE-AUSTIN",
+      "race_id": "S-2026-MT-II-regular",
+      "candidate_id": "PERSON-KYLE-AUSTIN",
+      "name": "Kyle Austin",
+      "ballot_party": "LIB",
+      "status": "filed_on_state_general_list",
+      "source_key": "mt_general",
+      "source_candidate_status": "FILED",
+      "write_in_only": false,
+      "senate_caucus": null
+    },
+    {
+      "ballot_entry_id": "S-2026-MT-II-regular:ALANI-BANKHEAD",
+      "race_id": "S-2026-MT-II-regular",
+      "candidate_id": "PERSON-ALANI-BANKHEAD",
+      "name": "Alani Bankhead",
+      "ballot_party": "DEM",
+      "status": "filed_on_state_general_list",
+      "source_key": "mt_general",
+      "source_candidate_status": "FILED",
+      "write_in_only": false,
+      "senate_caucus": null
+    },
+    {
+      "ballot_entry_id": "S-2026-MT-II-regular:SETH-BODNAR",
+      "race_id": "S-2026-MT-II-regular",
+      "candidate_id": "PERSON-SETH-BODNAR",
+      "name": "Seth Bodnar",
+      "ballot_party": "IND",
+      "status": "filed_on_state_general_list",
+      "source_key": "mt_general",
+      "source_candidate_status": "FILED",
+      "write_in_only": false,
+      "senate_caucus": null
+    },
+    {
+      "ballot_entry_id": "S-2026-MT-II-regular:JAMI-WOODMAN",
+      "race_id": "S-2026-MT-II-regular",
+      "candidate_id": "PERSON-JAMI-WOODMAN",
+      "name": "Jami Dee Woodman",
+      "ballot_party": "NON",
+      "status": "filed_on_state_general_list",
+      "source_key": "mt_general",
+      "source_candidate_status": "FILED",
+      "write_in_only": true,
+      "senate_caucus": null
+    }
+  ],
+  "withdrawn_entries": [
+    {
+      "race_id": "S-2026-SD-II-regular",
+      "name": "Julian Beaudion",
+      "ballot_party": "DEM",
+      "withdrawn_date": "2026-08-04",
+      "source_key": "sd_general"
+    }
+  ]
+}

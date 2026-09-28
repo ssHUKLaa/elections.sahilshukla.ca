@@ -1,0 +1,85 @@
+{
+  "design": "Paired 750-draw seven-day Senate replays on the same expanded race universe. The minor-share model in each holdout cycle is fitted only on earlier cycles. Threshold variants were inspected on 2024, so 2024 is diagnostic, not a pristine selection holdout.",
+  "cells": [
+    {
+      "support_floor_pct": null,
+      "cycle": 2022,
+      "n_senate_races": 28,
+      "log_score": 0.134152,
+      "brier": 0.067918,
+      "share_mae": 0.022104,
+      "coverage80": 0.726277,
+      "coverage95": 0.892048
+    },
+    {
+      "support_floor_pct": null,
+      "cycle": 2024,
+      "n_senate_races": 28,
+      "log_score": 0.194813,
+      "brier": 0.110833,
+      "share_mae": 0.023286,
+      "coverage80": 0.724802,
+      "coverage95": 0.885799
+    },
+    {
+      "support_floor_pct": 5,
+      "cycle": 2022,
+      "n_senate_races": 28,
+      "log_score": 0.132788,
+      "brier": 0.067847,
+      "share_mae": 0.021229,
+      "coverage80": 0.732693,
+      "coverage95": 0.880143
+    },
+    {
+      "support_floor_pct": 5,
+      "cycle": 2024,
+      "n_senate_races": 28,
+      "log_score": 0.194422,
+      "brier": 0.110814,
+      "share_mae": 0.022217,
+      "coverage80": 0.777268,
+      "coverage95": 0.928741
+    },
+    {
+      "support_floor_pct": 10,
+      "cycle": 2022,
+      "n_senate_races": 28,
+      "log_score": 0.132788,
+      "brier": 0.067847,
+      "share_mae": 0.021229,
+      "coverage80": 0.732693,
+      "coverage95": 0.880143
+    },
+    {
+      "support_floor_pct": 10,
+      "cycle": 2024,
+      "n_senate_races": 28,
+      "log_score": 0.194422,
+      "brier": 0.110814,
+      "share_mae": 0.02317,
+      "coverage80": 0.75941,
+      "coverage95": 0.910884
+    },
+    {
+      "support_floor_pct": 15,
+      "cycle": 2022,
+      "n_senate_races": 28,
+      "log_score": 0.132788,
+      "brier": 0.067847,
+      "share_mae": 0.021229,
+      "coverage80": 0.732693,
+      "coverage95": 0.880143
+    },
+    {
+      "support_floor_pct": 15,
+      "cycle": 2024,
+      "n_senate_races": 28,
+      "log_score": 0.194422,
+      "brier": 0.110814,
+      "share_mae": 0.02317,
+      "coverage80": 0.75941,
+      "coverage95": 0.910884
+    }
+  ]
+}

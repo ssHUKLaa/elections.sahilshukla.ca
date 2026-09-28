@@ -1,0 +1,199 @@
+{
+  "design": "Predefined population-weighted old-district group-share prior; candidate continuity takes precedence. Select on 2022 seven-day terminal winner log score, inspect 2024 for noninferiority. 2024 was previously inspected for area-overlap variants and is not a pristine final holdout.",
+  "database_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+  "crosswalk_sha256": "1215616c8e1a2c6495db99ef31f6cf1b7a2c8969dbe9437bb821891c69619e3c",
+  "draws_per_cell": 1000,
+  "weighted_transition_counts": {
+    "2022": 352,
+    "2024": 421
+  },
+  "results": {
+    "2022": {
+      "baseline": {
+        "scores": {
+          "all": {
+            "n_races": 425,
+            "log_score": 0.206525,
+            "brier": 0.114507,
+            "share_mae": 0.04111,
+            "coverage80": 0.769294,
+            "coverage95": 0.901235
+          },
+          "density:no_polls": {
+            "n_races": 326,
+            "log_score": 0.112826,
+            "brier": 0.058141,
+            "share_mae": 0.045518,
+            "coverage80": 0.753608,
+            "coverage95": 0.889801
+          },
+          "density:one_poll": {
+            "n_races": 44,
+            "log_score": 0.386353,
+            "brier": 0.224919,
+            "share_mae": 0.025422,
+            "coverage80": 0.811147,
+            "coverage95": 0.968182
+          },
+          "density:multiple_polls": {
+            "n_races": 55,
+            "log_score": 0.618043,
+            "brier": 0.360272,
+            "share_mae": 0.027537,
+            "coverage80": 0.828788,
+            "coverage95": 0.915455
+          },
+          "district_continuity:no_candidate_continuity_evidence": {
+            "n_races": 32,
+            "log_score": 0.675365,
+            "brier": 0.333769,
+            "share_mae": 0.050697,
+            "coverage80": 0.720833,
+            "coverage95": 0.877083
+          }
+        },
+        "weighted_holdout_races": 0
+      },
+      "population_weighted": {
+        "scores": {
+          "all": {
+            "n_races": 425,
+            "log_score": 0.195616,
+            "brier": 0.112057,
+            "share_mae": 0.038431,
+            "coverage80": 0.800059,
+            "coverage95": 0.922529
+          },
+          "density:no_polls": {
+            "n_races": 326,
+            "log_score": 0.107776,
+            "brier": 0.051335,
+            "share_mae": 0.042363,
+            "coverage80": 0.796527,
+            "coverage95": 0.913574
+          },
+          "density:one_poll": {
+            "n_races": 44,
+            "log_score": 0.470348,
+            "brier": 0.280316,
+            "share_mae": 0.027952,
+            "coverage80": 0.760011,
+            "coverage95": 0.979545
+          },
+          "density:multiple_polls": {
+            "n_races": 55,
+            "log_score": 0.496484,
+            "brier": 0.337361,
+            "share_mae": 0.023509,
+            "coverage80": 0.85303,
+            "coverage95": 0.93
+          },
+          "district_continuity:no_candidate_continuity_evidence": {
+            "n_races": 32,
+            "log_score": 0.439163,
+            "brier": 0.269604,
+            "share_mae": 0.03947,
+            "coverage80": 0.814583,
+            "coverage95": 0.952604
+          }
+        },
+        "weighted_holdout_races": 352
+      }
+    },
+    "2024": {
+      "baseline": {
+        "scores": {
+          "all": {
+            "n_races": 433,
+            "log_score": 0.160973,
+            "brier": 0.082304,
+            "share_mae": 0.024879,
+            "coverage80": 0.849824,
+            "coverage95": 0.950539
+          },
+          "density:no_polls": {
+            "n_races": 349,
+            "log_score": 0.113678,
+            "brier": 0.0471,
+            "share_mae": 0.025917,
+            "coverage80": 0.846439,
+            "coverage95": 0.947469
+          },
+          "density:one_poll": {
+            "n_races": 28,
+            "log_score": 0.18949,
+            "brier": 0.098024,
+            "share_mae": 0.023438,
+            "coverage80": 0.954762,
+            "coverage95": 1.0
+          },
+          "density:multiple_polls": {
+            "n_races": 56,
+            "log_score": 0.441463,
+            "brier": 0.293837,
+            "share_mae": 0.019132,
+            "coverage80": 0.818452,
+            "coverage95": 0.94494
+          },
+          "district_continuity:no_candidate_continuity_evidence": {
+            "n_races": 20,
+            "log_score": 0.522473,
+            "brier": 0.190462,
+            "share_mae": 0.067413,
+            "coverage80": 0.736667,
+            "coverage95": 0.93
+          }
+        },
+        "weighted_holdout_races": 0
+      },
+      "population_weighted": {
+        "scores": {
+          "all": {
+            "n_races": 433,
+            "log_score": 0.161699,
+            "brier": 0.082518,
+            "share_mae": 0.024808,
+            "coverage80": 0.852711,
+            "coverage95": 0.951694
+          },
+          "density:no_polls": {
+            "n_races": 349,
+            "log_score": 0.110912,
+            "brier": 0.045427,
+            "share_mae": 0.025757,
+            "coverage80": 0.848492,
+            "coverage95": 0.950812
+          },
+          "density:one_poll": {
+            "n_races": 28,
+            "log_score": 0.187154,
+            "brier": 0.0971,
+            "share_mae": 0.02336,
+            "coverage80": 0.961905,
+            "coverage95": 0.988095
+          },
+          "density:multiple_polls": {
+            "n_races": 56,
+            "log_score": 0.465485,
+            "brier": 0.306381,
+            "share_mae": 0.019612,
+            "coverage80": 0.824405,
+            "coverage95": 0.938988
+          },
+          "district_continuity:no_candidate_continuity_evidence": {
+            "n_races": 20,
+            "log_score": 0.535859,
+            "brier": 0.200969,
+            "share_mae": 0.063897,
+            "coverage80": 0.786667,
+            "coverage95": 0.93
+          }
+        },
+        "weighted_holdout_races": 421
+      }
+    }
+  },
+  "selection_2022_improves": true,
+  "diagnostic_2024_noninferior": true,
+  "promotion_passed": true
+}

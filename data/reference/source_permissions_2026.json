@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "records": [
+    {
+      "source": "The New York Times polling CSV feeds",
+      "status": "permission_confirmed_by_project_owner",
+      "confirmed_on": "2026-09-21",
+      "confirmation_basis": "Project owner states that permission was obtained directly from The New York Times.",
+      "project_use": "authorized",
+      "raw_redistribution": "confirm_against_external_correspondence_before_publication",
+      "evidence_location": "External correspondence retained by project owner; not stored in this repository."
+    },
+    {
+      "source": "Archived FiveThirtyEight poll files in simonw/fivethirtyeight-polls",
+      "status": "license_recorded",
+      "confirmed_on": "2026-09-21",
+      "confirmation_basis": "The archive includes a Creative Commons Attribution 4.0 license file.",
+      "project_use": "authorized_with_attribution",
+      "raw_redistribution": "permitted subject to CC BY 4.0 attribution and change notices",
+      "evidence_location": "https://github.com/simonw/fivethirtyeight-polls/blob/main/LICENSE"
+    },
+    {
+      "source": "Federal Election Commission Federal Elections workbooks",
+      "status": "official_us_government_source",
+      "confirmed_on": "2026-09-21",
+      "confirmation_basis": "FEC publications compile official certified results reported by state and territory election offices.",
+      "project_use": "authorized",
+      "raw_redistribution": "retain FEC attribution",
+      "evidence_location": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/"
+    },
+    {
+      "source": "FiveThirtyEight election-results repository",
+      "status": "terms_not_explicit_in_repository",
+      "confirmed_on": "2026-09-21",
+      "confirmation_basis": "Public repository with row-level upstream source links; no repository LICENSE file was found.",
+      "project_use": "internal_structured_crosscheck",
+      "raw_redistribution": "do_not_republish_raw_archive_without_separate_terms_review",
+      "evidence_location": "https://github.com/fivethirtyeight/election-results"
+    },
+    {
+      "source": "Jack Whitcomb RealClearPolling-derived historical Senate poll compilation",
+      "status": "terms_not_explicit_in_repository",
+      "confirmed_on": "2026-09-22",
+      "confirmation_basis": "Public downloadable research repository; no explicit redistribution license found.",
+      "project_use": "internal_model_calibration",
+      "raw_redistribution": "do_not_republish_raw_archive_without_separate_terms_review",
+      "evidence_location": "https://github.com/Jack-Whitcomb/All-US-Senate-polls-2006-2024"
+    }
+  ]
+}

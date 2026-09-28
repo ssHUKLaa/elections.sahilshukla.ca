@@ -1,0 +1,20 @@
+[Unit]
+Description=2026 election nowcast refresh
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=forecast
+Group=forecast
+WorkingDirectory=/opt/us2026forecast
+ExecStart=/opt/us2026forecast/.venv/bin/python pipeline/run_nowcast_refresh.py
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/us2026forecast/data/raw /opt/us2026forecast/data/processed /opt/us2026forecast/artifacts
+
+[Install]
+WantedBy=multi-user.target

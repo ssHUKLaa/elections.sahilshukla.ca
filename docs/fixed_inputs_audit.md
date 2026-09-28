@@ -1,0 +1,36 @@
+# Fixed input audit for the 2026 forecast
+
+**Audited 22 September 2026.** The current Stage 5 output is an internal sensitivity forecast. The numeric assumptions below are traceable in code, but several are not estimated from historical data. A reproducible run must freeze its source snapshots and random seed; that is different from hardcoding a political signal or an uncertain model coefficient.
+
+**Update:** The postwar national-environment rebuild in [national_environment_rebuild.md](national_environment_rebuild.md) replaces the fixed D+8.7 approval benchmark and its six-point assumed standard deviation. The [Senate local-lean rebuild](senate_local_lean_rebuild.md) replaces the prior-seat result as the regular Senate race mean where data permit. A reconstructed older generic-ballot series is now available for research, but its comparability with today's NYT feed and its error covariance with fundamentals remain unresolved, so the combined forecast stays internal.
+
+The local Stage 2 historical approval archive contains 10,009 questions covering Donald Trump's first term, January 2017 through January 2021. The new national model instead uses 1,918 dated observations from the [American Presidency Project's historical approval tables](https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval-all-data), matched to Brookings House results from 1946 onward. The sources and model diagnostics are described in [national_environment_rebuild.md](national_environment_rebuild.md).
+
+## Inputs that must become data-driven before publication
+
+| Current implementation | Why it matters | Required replacement |
+| --- | --- | --- |
+| Generic/fundamentals independence assumption | The combined update uses the fitted historical national estimate and current generic ballot. The original local archive has one populated cycle; a separate reconstructed FiveThirtyEight series covers 11 older cycles but is not yet comparable to the live NYT feed. The D+7.9 combined value depends on conditional independence. | Establish source comparability and estimate joint errors across cycles; retain separate-signal scenarios in the meantime. |
+| `0.086` FLIPR-adjusted generic ballot sensitivity | A dated external estimate can become stale and is currently not a live input. | Either estimate the likely-voter adjustment from same-survey RV/LV pairs or keep this clearly labeled as a dated external comparison, never a persistent model parameter. |
+| 30-day live race-poll half-life | This was deliberately changed from a historically selected 120 days to test recency. The 30-day choice has not passed its own holdout gate. | Select recency behavior by historical as-of cross-validation, ideally conditional on time before Election Day and changes in the national environment. Preserve the 30-day run as a sensitivity result. |
+| Generic-ballot 30-day half-life, 180-day window, and uncertainty based on the single 2020 miss | These determine how much national polling moves every race. One cycle cannot identify a stable error distribution. | Fit a time-varying national poll process across multiple cycles with a shared-error term and out-of-cycle validation. |
+| Senate D/R correction is fitted across 2010–2024, but the overall posterior covariance factor is still selected using the 2018 cycle | The new correction was selected on rolling whole-cycle tests and checked on 2024. Overall 95% Senate candidate-share coverage remains poor because tiny other-party shares are often outside the intervals; major-party coverage is about 93% in the 2020 and 2024 checks. | Refit candidate-allocation uncertainty for other-party shares, validate later cycles, and choose posterior covariance using genuinely held-out cycles. |
+| Stage 2 baseline uncertainty multipliers: 1.5 for House, 2.0 for Missouri House or missing baselines, 1.25 for fallback Senate | These widen selected races by policy rather than measured out-of-sample error. | Estimate prediction-error distributions by baseline source, office, redistricting status, and structural missingness. |
+| Ranked-choice transfer prior: same-party concentration 3 versus 1 elsewhere, event weight 8 | Alaska and Maine final-winner probabilities depend on transfer assumptions that sparse historical events only partly identify. | Fit a hierarchical transfer model from ballot-level or round-level evidence; retain conditional scenarios when data do not identify transfers. |
+| Runoff fallback and Vermont legislative-selection default | Stage 5 uses an uninformed 50/50 runoff fallback when its archive does not beat chance, and the plurality leader as the Vermont default. These are explicit unresolved-outcome assumptions. | Obtain additional runoff predictors or preserve conditional finalist scenarios. For Vermont, publish conditional assembly outcomes unless there is evidence for scenario weights. |
+
+## Factual state that should be read from dated snapshots
+
+| Current implementation | Required source handling |
+| --- | --- |
+| The Stage 4 and Stage 5 information cutoff is the literal `2026-09-21T20:45:24Z`. | Derive one as-of time from the selected immutable input snapshots or a run manifest, and have every stage read the same value. |
+| Stage 5 hardcodes 53 R, 45 D, 2 D-caucusing independents; 22 R and 13 D seats up; 31 R and 34 D-caucus seats not up; and the Republican vice-president tie break. | Snapshot the official Senate roster, class and special-election list, caucus declarations, and vice president as of the forecast run. Derive not-up seats by subtracting the race universe from that roster. Validate the 100-seat accounting. The current counts agree with the [Senate's published 119th Congress party division](https://www.senate.gov/history/partydiv.htm/) and [Class II lineup](https://www.dailypress.senate.gov/on-the-floor/senate-facts/), but they must not remain literals. |
+| Candidate ballot status and caucus choices in the Stage 0/2 registry can change. | Refresh from dated election-authority records and candidate statements, retaining the previous snapshot for replay. Do not infer caucus from ballot party. |
+
+## Fixed machinery that is appropriate when estimated or documented
+
+The 51-seat Democratic Senate threshold with a Republican vice president, the number of House seats, jurisdiction counting rules, and the election date are institutional facts for a specified run. A recorded random seed and immutable snapshot are necessary for reproducibility. A prior family, recency kernel, regularization grid, minimum variance floor, and training window are modeling choices; they must be selected or stress-tested on historical data, not tuned until the 2026 probabilities match another forecast.
+
+## Immediate gate
+
+Before treating the current forecast as publishable, estimate the covariance between the historical national model and generic-ballot errors across more cycles, derive the as-of time and Senate baseline from source snapshots, and repair the other-party candidate-share intervals. Stage 4 now reports Senate D/R and other-party coverage separately; the major-party gate must not conceal the latter's undercoverage. Keep each replacement's before/after effect on race margins and chamber control in the run report.

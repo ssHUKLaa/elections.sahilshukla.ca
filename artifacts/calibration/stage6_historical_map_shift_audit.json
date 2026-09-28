@@ -1,0 +1,28 @@
+{
+  "purpose": "Terminal-result diagnostic for a deterministic geographic feature; not direct held-today calibration or pristine selection.",
+  "database_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+  "map_shifts_sha256": "53161d06eb14ccbd7bf647e4562d5db95a5a790f150998789185115ee1da6b8e",
+  "cells": {
+    "2020": {
+      "eligible_races": 381,
+      "DR_logratio_RMSE_without_map_shift": 0.2779835433450165,
+      "DR_logratio_RMSE_with_unit_map_shift": 0.26599636269515703,
+      "paired_RMSE_improvement": 0.011987180649859486,
+      "descriptive_residual_slope": 1.0777186747480134
+    },
+    "2022": {
+      "eligible_races": 378,
+      "DR_logratio_RMSE_without_map_shift": 0.2776857656905407,
+      "DR_logratio_RMSE_with_unit_map_shift": 0.18723453535436296,
+      "paired_RMSE_improvement": 0.09045123033617775,
+      "descriptive_residual_slope": 1.061631276971069
+    },
+    "2024": {
+      "eligible_races": 373,
+      "DR_logratio_RMSE_without_map_shift": 0.15679400287095765,
+      "DR_logratio_RMSE_with_unit_map_shift": 0.12227366967447355,
+      "paired_RMSE_improvement": 0.03452033319648411,
+      "descriptive_residual_slope": 1.1114471652524986
+    }
+  }
+}

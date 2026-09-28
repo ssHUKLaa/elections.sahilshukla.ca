@@ -1,0 +1,222 @@
+{
+  "meaning": "Party that won the previous comparable governor election; a flip changes from this group.",
+  "stage2_database_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+  "seats": {
+    "G-2026-AK": {
+      "state": "AK",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-AL": {
+      "state": "AL",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-AR": {
+      "state": "AR",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-AZ": {
+      "state": "AZ",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-CA": {
+      "state": "CA",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-CO": {
+      "state": "CO",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-CT": {
+      "state": "CT",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-FL": {
+      "state": "FL",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-GA": {
+      "state": "GA",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-HI": {
+      "state": "HI",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-IA": {
+      "state": "IA",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-ID": {
+      "state": "ID",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-IL": {
+      "state": "IL",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-KS": {
+      "state": "KS",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-MA": {
+      "state": "MA",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-MD": {
+      "state": "MD",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-ME": {
+      "state": "ME",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-MI": {
+      "state": "MI",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-MN": {
+      "state": "MN",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-NE": {
+      "state": "NE",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-NH": {
+      "state": "NH",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "G-2026-NM": {
+      "state": "NM",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-NV": {
+      "state": "NV",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-NY": {
+      "state": "NY",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-OH": {
+      "state": "OH",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-OK": {
+      "state": "OK",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-OR": {
+      "state": "OR",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-PA": {
+      "state": "PA",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-RI": {
+      "state": "RI",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-SC": {
+      "state": "SC",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-SD": {
+      "state": "SD",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-TN": {
+      "state": "TN",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-TX": {
+      "state": "TX",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "G-2026-VT": {
+      "state": "VT",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "G-2026-WI": {
+      "state": "WI",
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "G-2026-WY": {
+      "state": "WY",
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    }
+  }
+}

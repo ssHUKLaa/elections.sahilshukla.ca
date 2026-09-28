@@ -24,6 +24,11 @@ body {
     flex-direction: column;
 }
 
+main {
+    width: 100%;
+    max-width: 800px;
+}
+
 .container {
     max-width: 800px;
     width: 100%;
@@ -83,6 +88,12 @@ p {
 
 .btn:active {
     transform: translateY(0);
+}
+
+.btn:disabled {
+    background-color: #6c757d;
+    box-shadow: none;
+    cursor: default;
 }
 
 .status {

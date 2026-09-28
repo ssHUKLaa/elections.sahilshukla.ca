@@ -1,0 +1,494 @@
+{
+  "scope": "historical House targets in 2022 and 2024",
+  "interpretation": "Candidate movement across a district label is evidence that the prior same-number race is not comparable. Absence of such movement does not establish unchanged boundaries.",
+  "counts": {
+    "2022:documented_candidate_move": 71,
+    "2022:no_candidate_continuity_evidence": 37,
+    "2022:same_district_candidate": 214,
+    "2024:documented_candidate_move": 21,
+    "2024:no_candidate_continuity_evidence": 24,
+    "2024:same_district_candidate": 277
+  },
+  "largest_winner_misses": [
+    {
+      "cycle": 2022,
+      "race_id": "9024",
+      "state": "CA",
+      "district": "13",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.0,
+      "brier": 2.0
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9353",
+      "state": "TN",
+      "district": "05",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.007,
+      "brier": 1.9602
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9293",
+      "state": "NC",
+      "district": "13",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.141,
+      "brier": 1.4758
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9257",
+      "state": "NY",
+      "district": "04",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.161,
+      "brier": 1.4078
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9084",
+      "state": "FL",
+      "district": "07",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.19,
+      "brier": 1.3122
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9151",
+      "state": "IA",
+      "district": "02",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.212,
+      "brier": 1.2419
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9079",
+      "state": "FL",
+      "district": "02",
+      "classification": "documented_candidate_move",
+      "candidate_moves": [
+        {
+          "candidate": "Al Lawson",
+          "prior_districts": [
+            "05"
+          ],
+          "target_district": "02"
+        }
+      ],
+      "same_district_candidates": [
+        {
+          "candidate": "Neal Dunn",
+          "prior_districts": [
+            "02"
+          ],
+          "target_district": "02"
+        }
+      ],
+      "winner_probability": 0.216,
+      "brier": 1.2293
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9053",
+      "state": "CA",
+      "district": "42",
+      "classification": "documented_candidate_move",
+      "candidate_moves": [
+        {
+          "candidate": "John Briscoe",
+          "prior_districts": [
+            "47"
+          ],
+          "target_district": "42"
+        }
+      ],
+      "same_district_candidates": [],
+      "winner_probability": 0.229,
+      "brier": 1.1889
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9014",
+      "state": "CA",
+      "district": "03",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.255,
+      "brier": 1.11
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9256",
+      "state": "NY",
+      "district": "03",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "George A.D. Santos",
+          "prior_districts": [
+            "03"
+          ],
+          "target_district": "03"
+        }
+      ],
+      "winner_probability": 0.256,
+      "brier": 1.1071
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9110",
+      "state": "GA",
+      "district": "06",
+      "classification": "documented_candidate_move",
+      "candidate_moves": [
+        {
+          "candidate": "Rich McCormick",
+          "prior_districts": [
+            "07"
+          ],
+          "target_district": "06"
+        }
+      ],
+      "same_district_candidates": [],
+      "winner_probability": 0.268,
+      "brier": 1.0716
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9038",
+      "state": "CA",
+      "district": "27",
+      "classification": "documented_candidate_move",
+      "candidate_moves": [
+        {
+          "candidate": "Mike Garcia",
+          "prior_districts": [
+            "25"
+          ],
+          "target_district": "27"
+        },
+        {
+          "candidate": "Christy Smith",
+          "prior_districts": [
+            "25"
+          ],
+          "target_district": "27"
+        }
+      ],
+      "same_district_candidates": [],
+      "winner_probability": 0.294,
+      "brier": 0.9969
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9033",
+      "state": "CA",
+      "district": "22",
+      "classification": "documented_candidate_move",
+      "candidate_moves": [
+        {
+          "candidate": "David G. Valadao",
+          "prior_districts": [
+            "21"
+          ],
+          "target_district": "22"
+        }
+      ],
+      "same_district_candidates": [],
+      "winner_probability": 0.313,
+      "brier": 0.9439
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9270",
+      "state": "NY",
+      "district": "17",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.329,
+      "brier": 0.9005
+    },
+    {
+      "cycle": 2022,
+      "race_id": "9252",
+      "state": "NM",
+      "district": "02",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Yvette Herrell",
+          "prior_districts": [
+            "02"
+          ],
+          "target_district": "02"
+        }
+      ],
+      "winner_probability": 0.366,
+      "brier": 0.8039
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9838",
+      "state": "NC",
+      "district": "14",
+      "classification": "documented_candidate_move",
+      "candidate_moves": [
+        {
+          "candidate": "Pam Genant",
+          "prior_districts": [
+            "10"
+          ],
+          "target_district": "14"
+        }
+      ],
+      "same_district_candidates": [],
+      "winner_probability": 0.152,
+      "brier": 1.4382
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9555",
+      "state": "AL",
+      "district": "02",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.322,
+      "brier": 0.9194
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9774",
+      "state": "NE",
+      "district": "02",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Don Bacon",
+          "prior_districts": [
+            "02"
+          ],
+          "target_district": "02"
+        },
+        {
+          "candidate": "Tony Vargas",
+          "prior_districts": [
+            "02"
+          ],
+          "target_district": "02"
+        }
+      ],
+      "winner_probability": 0.327,
+      "brier": 0.9059
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9983",
+      "state": "CO",
+      "district": "08",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Yadira Caraveo",
+          "prior_districts": [
+            "08"
+          ],
+          "target_district": "08"
+        }
+      ],
+      "winner_probability": 0.393,
+      "brier": 0.7249
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9837",
+      "state": "NC",
+      "district": "13",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.42,
+      "brier": 0.6728
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9991",
+      "state": "CA",
+      "district": "27",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Mike Garcia",
+          "prior_districts": [
+            "27"
+          ],
+          "target_district": "27"
+        }
+      ],
+      "winner_probability": 0.459,
+      "brier": 0.5854
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9978",
+      "state": "AZ",
+      "district": "01",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "David Schweikert",
+          "prior_districts": [
+            "01"
+          ],
+          "target_district": "01"
+        }
+      ],
+      "winner_probability": 0.466,
+      "brier": 0.5703
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9986",
+      "state": "CA",
+      "district": "41",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Ken Calvert",
+          "prior_districts": [
+            "41"
+          ],
+          "target_district": "41"
+        },
+        {
+          "candidate": "Will Rollins",
+          "prior_districts": [
+            "41"
+          ],
+          "target_district": "41"
+        }
+      ],
+      "winner_probability": 0.466,
+      "brier": 0.5703
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9987",
+      "state": "CA",
+      "district": "45",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Michelle Steel",
+          "prior_districts": [
+            "45"
+          ],
+          "target_district": "45"
+        }
+      ],
+      "winner_probability": 0.472,
+      "brier": 0.5576
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9599",
+      "state": "CA",
+      "district": "34",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Jimmy Gomez",
+          "prior_districts": [
+            "34"
+          ],
+          "target_district": "34"
+        },
+        {
+          "candidate": "David Kim",
+          "prior_districts": [
+            "34"
+          ],
+          "target_district": "34"
+        }
+      ],
+      "winner_probability": 0.504,
+      "brier": 0.492
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9994",
+      "state": "CA",
+      "district": "47",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Scott Baugh",
+          "prior_districts": [
+            "47"
+          ],
+          "target_district": "47"
+        }
+      ],
+      "winner_probability": 0.505,
+      "brier": 0.49
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9992",
+      "state": "CO",
+      "district": "03",
+      "classification": "same_district_candidate",
+      "candidate_moves": [],
+      "same_district_candidates": [
+        {
+          "candidate": "Adam Frisch",
+          "prior_districts": [
+            "03"
+          ],
+          "target_district": "03"
+        }
+      ],
+      "winner_probability": 0.505,
+      "brier": 0.4842
+    },
+    {
+      "cycle": 2024,
+      "race_id": "9587",
+      "state": "CA",
+      "district": "20",
+      "classification": "no_candidate_continuity_evidence",
+      "candidate_moves": [],
+      "same_district_candidates": [],
+      "winner_probability": 0.515,
+      "brier": 0.4704
+    }
+  ]
+}

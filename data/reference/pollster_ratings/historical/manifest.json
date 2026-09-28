@@ -1,0 +1,34 @@
+{
+  "source": "FiveThirtyEight/data pollster-ratings edition directories",
+  "replay_use": {
+    "2020": 2019,
+    "2022": 2021,
+    "2024": 2023
+  },
+  "publication_evidence": {
+    "2019": "https://data.fivethirtyeight.com/ (May 19, 2020 ratings update ahead of general election)",
+    "2021": "https://fivethirtyeight.com/features/the-death-of-polling-is-greatly-exaggerated/ (March 25, 2021 release)",
+    "2023": "https://fivethirtyeight.com/features/the-polls-were-historically-accurate-in-2022/ (March 10, 2023 update)"
+  },
+  "caveat": "These editions predate their scored general elections, but only a single edition per cycle is available; within-cycle rating changes cannot be reconstructed.",
+  "files": {
+    "2019": {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/c3240539f398/pollster-ratings/2019/pollster-ratings.csv",
+      "filename": "538_2019.csv",
+      "bytes": 55320,
+      "sha256": "019c53776b0d220dfddc830f13d83162de7035aaa7aa3043ea585993b3a184db"
+    },
+    "2021": {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/6b0362a08118/pollster-ratings/2021/pollster-ratings.csv",
+      "filename": "538_2021.csv",
+      "bytes": 118367,
+      "sha256": "3627784a4e872da094f58ca13c37518cad37273a145b4de93310048ceea733c6"
+    },
+    "2023": {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/fea5d9ee79d2/pollster-ratings/2023/pollster-ratings.csv",
+      "filename": "538_2023.csv",
+      "bytes": 95044,
+      "sha256": "8501615e7bff043dd3ed0452b875a93f519cec546c190a5d0a462272c387d923"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "method": "Fixed selected directional correction; whole-cycle chronological holdouts. Cycle variance estimated from 2016-2022 fold means after subtracting estimated within-cycle sampling variance; 2024 untouched for this variance estimate.",
+  "source_sha256": "34232aa4c3aba30023a9d8f08445ea0abca0d7eb9e396c40d22df5b86afa6403",
+  "directional_specification": {
+    "specification": "pollster_population",
+    "alpha": 100.0
+  },
+  "folds": [
+    {
+      "cycle": 2016,
+      "races": 15,
+      "polls": 102,
+      "mean_residual_D_points": 0.37898520528545204,
+      "race_rmse_points": 7.855102807587884,
+      "race_residuals_D_points": [
+        11.245955511273193,
+        -10.877969442666723,
+        0.19473408691014946,
+        -4.016430565375768,
+        0.4841792878607788,
+        8.57562900246354,
+        15.541922770435834,
+        -5.59296391649332,
+        10.970553980811161,
+        -2.6469839959340553,
+        -4.987765279287977,
+        -2.1041711346844276,
+        -12.296829951232315,
+        -1.5669026614838926,
+        2.7618203866856015
+      ]
+    },
+    {
+      "cycle": 2018,
+      "races": 13,
+      "polls": 87,
+      "mean_residual_D_points": 5.459528583183405,
+      "race_rmse_points": 8.787581208176036,
+      "race_residuals_D_points": [
+        -0.6527436063358676,
+        0.6145861859689487,
+        11.25039985100275,
+        4.242289626756377,
+        -4.855716797396113,
+        10.953543044719929,
+        12.774900515791135,
+        9.551144136797248,
+        20.818017524243608,
+        3.712583504409132,
+        -0.22181169338060822,
+        -0.777216443395295,
+        3.563895732203011
+      ]
+    },
+    {
+      "cycle": 2020,
+      "races": 9,
+      "polls": 58,
+      "mean_residual_D_points": 5.499155501230849,
+      "race_rmse_points": 7.185676965077199,
+      "race_residuals_D_points": [
+        7.018795042366313,
+        6.655079744349824,
+        1.3813688853748118,
+        14.495517695126413,
+        7.4878728924348374,
+        2.1862702830151775,
+        -2.0636301194952584,
+        3.1664887636137773,
+        9.164636324291745
+      ]
+    },
+    {
+      "cycle": 2022,
+      "races": 9,
+      "polls": 54,
+      "mean_residual_D_points": 3.2899784979603885,
+      "race_rmse_points": 7.196725471134087,
+      "race_residuals_D_points": [
+        -2.9765166502157094,
+        -2.2303292349109176,
+        1.891690126364023,
+        4.020926704296021,
+        5.632260903897297,
+        10.276719392350175,
+        -2.3168749782809646,
+        -1.634527802364829,
+        16.946458020508402
+      ]
+    },
+    {
+      "cycle": 2024,
+      "races": 15,
+      "polls": 165,
+      "mean_residual_D_points": 0.6179853885381574,
+      "race_rmse_points": 5.200213360017568,
+      "race_residuals_D_points": [
+        0.03918030221543689,
+        -1.8290730157764383,
+        -2.6343523714527888,
+        0.6345476510884173,
+        -4.096954656619988,
+        2.3391962614470563,
+        -0.45643256036711427,
+        -0.6324798806650815,
+        -0.8821949309383916,
+        14.249908522527413,
+        2.6382266335817817,
+        4.402817184393967,
+        -0.18565152083018094,
+        5.982246887092067,
+        -10.299203677623796
+      ]
+    }
+  ],
+  "estimated_within_cycle_race_sd_points": 7.072820429343808,
+  "estimated_shared_cycle_sd_points": 1.1251640140392247,
+  "tuning_cycle_means_sd_points": 2.4167976008361247,
+  "heldout_2024_predictive_log_density": {
+    "independent_races": -47.18229075164107,
+    "shared_cycle_error": -47.32743635206864
+  },
+  "limitations": [
+    "Only four tuning cycles estimate shared variation; precision is low.",
+    "The archive is RealClearPolling-derived, not the live NYT source.",
+    "The target mixes poll error and late movement between fieldwork and election.",
+    "This evaluates predictive error covariance, not 2026 directional mean correction transportability.",
+    "The specification was selected using the 2016-2022 folds; only 2024 is untouched for this variance check."
+  ]
+}

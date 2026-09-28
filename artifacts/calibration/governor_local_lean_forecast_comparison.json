@@ -1,0 +1,1241 @@
+{
+  "old_model_version": "nowcast-2026-0.19",
+  "new_model_version": "nowcast-2026-0.20",
+  "information_cutoff_utc": "2026-09-27T02:11:02Z",
+  "race_count": 36,
+  "house_senate_check": {
+    "exactly_unchanged": true,
+    "basis": "Exact candidate win probabilities compared between the 0.19 saved forecast and 0.20 pending forecast before promotion."
+  },
+  "governor_races": [
+    {
+      "race_id": "G-2026-AK",
+      "state": "AK",
+      "old_D_minus_R_share_points": -5.42885854329545,
+      "new_D_minus_R_share_points": -5.263592409201273,
+      "old_D_win_probability": 0.8607466666666667,
+      "new_D_win_probability": 0.8634933333333333,
+      "old_R_win_probability": 0.13925333333333334,
+      "new_R_win_probability": 0.13650666666666667,
+      "poll_count": 2,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.4452518122012954,
+        "mean_target_local_lean": -0.21210631370739363,
+        "local_residual_sd_before": 0.4030681901789728,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4030681901789728,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-AL",
+      "state": "AL",
+      "old_D_minus_R_share_points": -12.915741126427239,
+      "new_D_minus_R_share_points": -12.678295795585647,
+      "old_D_win_probability": 0.14892,
+      "new_D_win_probability": 0.15404,
+      "old_R_win_probability": 0.85108,
+      "new_R_win_probability": 0.84596,
+      "poll_count": 2,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.3266866941177876,
+        "mean_target_local_lean": -0.2763453812427929,
+        "local_residual_sd_before": 0.40345351064049323,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40345351064049323,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-AR",
+      "state": "AR",
+      "old_D_minus_R_share_points": -15.711246256515349,
+      "new_D_minus_R_share_points": -15.097185745016366,
+      "old_D_win_probability": 0.21757333333333334,
+      "new_D_win_probability": 0.22682666666666668,
+      "old_R_win_probability": 0.7811866666666667,
+      "new_R_win_probability": 0.7719066666666666,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.16801391219375403,
+        "mean_target_local_lean": -0.2335628595621415,
+        "local_residual_sd_before": 0.40285622297034696,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40285622297034696,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-AZ",
+      "state": "AZ",
+      "old_D_minus_R_share_points": 8.235003437683597,
+      "new_D_minus_R_share_points": 8.45121755268588,
+      "old_D_win_probability": 0.87828,
+      "new_D_win_probability": 0.8784266666666667,
+      "old_R_win_probability": 0.12172,
+      "new_R_win_probability": 0.12157333333333334,
+      "poll_count": 18,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.004149808479518965,
+        "mean_target_local_lean": -0.02357528317944742,
+        "local_residual_sd_before": 0.40311214494673336,
+        "local_residual_sd_target": 0.5691304704330887,
+        "local_residual_sd_after": 0.5691304704330888,
+        "uncertainty_multiplier": 1.411841537317842
+      }
+    },
+    {
+      "race_id": "G-2026-CA",
+      "state": "CA",
+      "old_D_minus_R_share_points": 23.5874972444015,
+      "new_D_minus_R_share_points": 23.587176360064937,
+      "old_D_win_probability": 0.9997733333333333,
+      "new_D_win_probability": 0.9997733333333333,
+      "old_R_win_probability": 0.00022666666666666666,
+      "new_R_win_probability": 0.00022666666666666666,
+      "poll_count": 9,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.02152899738728923,
+        "mean_target_local_lean": 0.14309903709627636,
+        "local_residual_sd_before": 0.39459212813020544,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.39459212813020544,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-CO",
+      "state": "CO",
+      "old_D_minus_R_share_points": 17.565109481402153,
+      "new_D_minus_R_share_points": 17.63441586522141,
+      "old_D_win_probability": 0.8088533333333333,
+      "new_D_win_probability": 0.8094933333333333,
+      "old_R_win_probability": 0.19072,
+      "new_R_win_probability": 0.19008,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.1098988044833279,
+        "mean_target_local_lean": 0.1146879557081705,
+        "local_residual_sd_before": 0.4027562271619766,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4027562271619766,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-CT",
+      "state": "CT",
+      "old_D_minus_R_share_points": 15.978402980785471,
+      "new_D_minus_R_share_points": 15.98661876435915,
+      "old_D_win_probability": 0.9886266666666667,
+      "new_D_win_probability": 0.98868,
+      "old_R_win_probability": 0.011373333333333333,
+      "new_R_win_probability": 0.01132,
+      "poll_count": 7,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.014709609003379706,
+        "mean_target_local_lean": 0.09414704245634153,
+        "local_residual_sd_before": 0.4049610627561596,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4049610627561596,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-FL",
+      "state": "FL",
+      "old_D_minus_R_share_points": -3.9180863857462276,
+      "new_D_minus_R_share_points": -3.8686709996413327,
+      "old_D_win_probability": 0.28841333333333335,
+      "new_D_win_probability": 0.2906533333333333,
+      "old_R_win_probability": 0.7115733333333333,
+      "new_R_win_probability": 0.7093333333333334,
+      "poll_count": 19,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.18712854668000994,
+        "mean_target_local_lean": -0.13284365353183464,
+        "local_residual_sd_before": 0.3972991193208268,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.3972991193208268,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-GA",
+      "state": "GA",
+      "old_D_minus_R_share_points": -0.606518035363468,
+      "new_D_minus_R_share_points": -0.5741835010037777,
+      "old_D_win_probability": 0.4676666666666667,
+      "new_D_win_probability": 0.46948,
+      "old_R_win_probability": 0.5323333333333333,
+      "new_R_win_probability": 0.53052,
+      "poll_count": 10,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.12063529306445275,
+        "mean_target_local_lean": -0.044828350264044144,
+        "local_residual_sd_before": 0.40204765367935275,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40204765367935275,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-HI",
+      "state": "HI",
+      "old_D_minus_R_share_points": 22.978327791549514,
+      "new_D_minus_R_share_points": 22.923427512825562,
+      "old_D_win_probability": 0.8633066666666667,
+      "new_D_win_probability": 0.86264,
+      "old_R_win_probability": 0.12842666666666666,
+      "new_R_win_probability": 0.12906666666666666,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.09983520486548282,
+        "mean_target_local_lean": 0.18528570107286307,
+        "local_residual_sd_before": 0.44189337864947753,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.44189337864947753,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-IA",
+      "state": "IA",
+      "old_D_minus_R_share_points": 5.802321950981809,
+      "new_D_minus_R_share_points": 5.8471719617093685,
+      "old_D_win_probability": 0.8053333333333333,
+      "new_D_win_probability": 0.8071866666666667,
+      "old_R_win_probability": 0.19209333333333334,
+      "new_R_win_probability": 0.19024,
+      "poll_count": 12,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.17538914679607148,
+        "mean_target_local_lean": -0.13141086701173865,
+        "local_residual_sd_before": 0.4029758324561479,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4029758324561479,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-ID",
+      "state": "ID",
+      "old_D_minus_R_share_points": -22.142167516085088,
+      "new_D_minus_R_share_points": -21.975442032156373,
+      "old_D_win_probability": 0.0034133333333333333,
+      "new_D_win_probability": 0.0037333333333333333,
+      "old_R_win_probability": 0.9085866666666667,
+      "new_R_win_probability": 0.9076266666666667,
+      "poll_count": 1,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.44722366824177945,
+        "mean_target_local_lean": -0.3429243618963607,
+        "local_residual_sd_before": 0.4051682020842808,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4051682020842808,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-IL",
+      "state": "IL",
+      "old_D_minus_R_share_points": 14.887893061577612,
+      "new_D_minus_R_share_points": 14.984384234680931,
+      "old_D_win_probability": 0.77012,
+      "new_D_win_probability": 0.7717333333333334,
+      "old_R_win_probability": 0.2272,
+      "new_R_win_probability": 0.22557333333333332,
+      "poll_count": 1,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.026559894831420957,
+        "mean_target_local_lean": 0.08614060573540894,
+        "local_residual_sd_before": 0.40080833167808927,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40080833167808927,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-KS",
+      "state": "KS",
+      "old_D_minus_R_share_points": -5.146175479807508,
+      "new_D_minus_R_share_points": -5.454372164672727,
+      "old_D_win_probability": 0.23484,
+      "new_D_win_probability": 0.2278,
+      "old_R_win_probability": 0.76516,
+      "new_R_win_probability": 0.7722,
+      "poll_count": 4,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5545537640074355,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.09958737300352329,
+        "mean_target_local_lean": -0.056057119670639234,
+        "local_residual_sd_before": 0.40451394885125747,
+        "local_residual_sd_target": 0.5545537640074355,
+        "local_residual_sd_after": 0.5545537640074356,
+        "uncertainty_multiplier": 1.3709138228292561
+      }
+    },
+    {
+      "race_id": "G-2026-MA",
+      "state": "MA",
+      "old_D_minus_R_share_points": 23.012834769371914,
+      "new_D_minus_R_share_points": 23.000985210287766,
+      "old_D_win_probability": 0.9986266666666667,
+      "new_D_win_probability": 0.9986266666666667,
+      "old_R_win_probability": 0.0009866666666666667,
+      "new_R_win_probability": 0.0009866666666666667,
+      "poll_count": 9,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.12205701465435365,
+        "mean_target_local_lean": 0.2069052389683657,
+        "local_residual_sd_before": 0.40312299892126435,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40312299892126435,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-MD",
+      "state": "MD",
+      "old_D_minus_R_share_points": 29.20132151589177,
+      "new_D_minus_R_share_points": 29.1681086439249,
+      "old_D_win_probability": 0.9965466666666667,
+      "new_D_win_probability": 0.9965333333333334,
+      "old_R_win_probability": 0.00168,
+      "new_R_win_probability": 0.00168,
+      "poll_count": 1,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.14886927252160603,
+        "mean_target_local_lean": 0.235916690725738,
+        "local_residual_sd_before": 0.40413645384345026,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40413645384345026,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-ME",
+      "state": "ME",
+      "old_D_minus_R_share_points": 13.74269594905222,
+      "new_D_minus_R_share_points": 13.872125334921053,
+      "old_D_win_probability": 0.75204,
+      "new_D_win_probability": 0.7541333333333333,
+      "old_R_win_probability": 0.247,
+      "new_R_win_probability": 0.24490666666666666,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.0648957092816041,
+        "mean_target_local_lean": 0.07400714979107562,
+        "local_residual_sd_before": 0.40370166344618563,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40370166344618563,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-MI",
+      "state": "MI",
+      "old_D_minus_R_share_points": 8.122982287098985,
+      "new_D_minus_R_share_points": 8.044889283542101,
+      "old_D_win_probability": 0.88508,
+      "new_D_win_probability": 0.8766533333333333,
+      "old_R_win_probability": 0.11406666666666666,
+      "new_R_win_probability": 0.12252,
+      "poll_count": 17,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5545537640074355,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.09314872423918154,
+        "mean_target_local_lean": 0.03196634772401412,
+        "local_residual_sd_before": 0.400807044007055,
+        "local_residual_sd_target": 0.5545537640074355,
+        "local_residual_sd_after": 0.5545537640074356,
+        "uncertainty_multiplier": 1.383592859205524
+      }
+    },
+    {
+      "race_id": "G-2026-MN",
+      "state": "MN",
+      "old_D_minus_R_share_points": 4.358564168724194,
+      "new_D_minus_R_share_points": 4.386228231619032,
+      "old_D_win_probability": 0.7022,
+      "new_D_win_probability": 0.7033333333333334,
+      "old_R_win_probability": 0.2978,
+      "new_R_win_probability": 0.2966666666666667,
+      "poll_count": 4,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.01851170451804606,
+        "mean_target_local_lean": 0.041517710485263724,
+        "local_residual_sd_before": 0.40243217516446966,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40243217516446966,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-NE",
+      "state": "NE",
+      "old_D_minus_R_share_points": -12.473452641334903,
+      "new_D_minus_R_share_points": -12.410217005632607,
+      "old_D_win_probability": 0.037186666666666666,
+      "new_D_win_probability": 0.03804,
+      "old_R_win_probability": 0.9581733333333333,
+      "new_R_win_probability": 0.95732,
+      "poll_count": 3,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.19455536147360653,
+        "mean_target_local_lean": -0.18005295230804136,
+        "local_residual_sd_before": 0.40390720677092706,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40390720677092706,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-NH",
+      "state": "NH",
+      "old_D_minus_R_share_points": -9.518461395833434,
+      "new_D_minus_R_share_points": -10.207521123907975,
+      "old_D_win_probability": 0.08524,
+      "new_D_win_probability": 0.07588,
+      "old_R_win_probability": 0.91184,
+      "new_R_win_probability": 0.92128,
+      "poll_count": 9,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.17759740559587692,
+        "mean_target_local_lean": -0.034969858274734984,
+        "local_residual_sd_before": 0.40528542750297125,
+        "local_residual_sd_target": 0.5691304704330887,
+        "local_residual_sd_after": 0.5691304704330887,
+        "uncertainty_multiplier": 1.404270747999979
+      }
+    },
+    {
+      "race_id": "G-2026-NM",
+      "state": "NM",
+      "old_D_minus_R_share_points": 12.073234008392241,
+      "new_D_minus_R_share_points": 12.09745479040314,
+      "old_D_win_probability": 0.9342133333333333,
+      "new_D_win_probability": 0.93456,
+      "old_R_win_probability": 0.06578666666666666,
+      "new_R_win_probability": 0.06544,
+      "poll_count": 3,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.00935799901263226,
+        "mean_target_local_lean": 0.042461940760967924,
+        "local_residual_sd_before": 0.40455648707419745,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40455648707419745,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-NV",
+      "state": "NV",
+      "old_D_minus_R_share_points": -2.0975804939315057,
+      "new_D_minus_R_share_points": -2.4426518746746337,
+      "old_D_win_probability": 0.38470666666666664,
+      "new_D_win_probability": 0.37068,
+      "old_R_win_probability": 0.61424,
+      "new_R_win_probability": 0.62828,
+      "poll_count": 11,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5545537640074355,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.03847347112108083,
+        "mean_target_local_lean": -0.02389065129405961,
+        "local_residual_sd_before": 0.4032530860560374,
+        "local_residual_sd_target": 0.5545537640074355,
+        "local_residual_sd_after": 0.5545537640074355,
+        "uncertainty_multiplier": 1.3752002977365259
+      }
+    },
+    {
+      "race_id": "G-2026-NY",
+      "state": "NY",
+      "old_D_minus_R_share_points": 13.414001545041799,
+      "new_D_minus_R_share_points": 13.425763506724147,
+      "old_D_win_probability": 0.9731733333333333,
+      "new_D_win_probability": 0.9732933333333333,
+      "old_R_win_probability": 0.026826666666666665,
+      "new_R_win_probability": 0.026706666666666667,
+      "poll_count": 20,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.039836521556916124,
+        "mean_target_local_lean": 0.07220709189739075,
+        "local_residual_sd_before": 0.39739914232960905,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.39739914232960905,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-OH",
+      "state": "OH",
+      "old_D_minus_R_share_points": 0.46604903448864143,
+      "new_D_minus_R_share_points": 0.5191003346636025,
+      "old_D_win_probability": 0.52724,
+      "new_D_win_probability": 0.5304,
+      "old_R_win_probability": 0.47276,
+      "new_R_win_probability": 0.4696,
+      "poll_count": 20,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.27262314245023495,
+        "mean_target_local_lean": -0.14844338344249208,
+        "local_residual_sd_before": 0.4004065670607813,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4004065670607813,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-OK",
+      "state": "OK",
+      "old_D_minus_R_share_points": -11.372082491287399,
+      "new_D_minus_R_share_points": -10.791460379017204,
+      "old_D_win_probability": 0.2855333333333333,
+      "new_D_win_probability": 0.2961066666666667,
+      "old_R_win_probability": 0.7128266666666667,
+      "new_R_win_probability": 0.7022266666666667,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.039874017461836574,
+        "mean_target_local_lean": -0.18890747763249668,
+        "local_residual_sd_before": 0.40287176442164424,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40287176442164424,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-OR",
+      "state": "OR",
+      "old_D_minus_R_share_points": 2.130757282383472,
+      "new_D_minus_R_share_points": 2.166716617586717,
+      "old_D_win_probability": 0.56848,
+      "new_D_win_probability": 0.56988,
+      "old_R_win_probability": 0.43152,
+      "new_R_win_probability": 0.43012,
+      "poll_count": 3,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.10868578774953201,
+        "mean_target_local_lean": 0.06268826856082835,
+        "local_residual_sd_before": 0.40470448394141645,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40470448394141645,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-PA",
+      "state": "PA",
+      "old_D_minus_R_share_points": 21.881565870980786,
+      "new_D_minus_R_share_points": 22.45814762374836,
+      "old_D_win_probability": 0.99856,
+      "new_D_win_probability": 0.9986133333333334,
+      "old_R_win_probability": 0.0008,
+      "new_R_win_probability": 0.0007733333333333333,
+      "poll_count": 14,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.1467404252098502,
+        "mean_target_local_lean": 0.04851801993945292,
+        "local_residual_sd_before": 0.4005248798903639,
+        "local_residual_sd_target": 0.5691304704330887,
+        "local_residual_sd_after": 0.5691304704330887,
+        "uncertainty_multiplier": 1.4209615906729125
+      }
+    },
+    {
+      "race_id": "G-2026-RI",
+      "state": "RI",
+      "old_D_minus_R_share_points": 22.854811166217658,
+      "new_D_minus_R_share_points": 22.887842100620887,
+      "old_D_win_probability": 0.90636,
+      "new_D_win_probability": 0.90672,
+      "old_R_win_probability": 0.08857333333333334,
+      "new_R_win_probability": 0.08822666666666666,
+      "poll_count": 1,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.08679157732345504,
+        "mean_target_local_lean": 0.1245786685803563,
+        "local_residual_sd_before": 0.4040593555903172,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4040593555903172,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-SC",
+      "state": "SC",
+      "old_D_minus_R_share_points": -8.099233823133684,
+      "new_D_minus_R_share_points": -8.013123981688825,
+      "old_D_win_probability": 0.18012,
+      "new_D_win_probability": 0.18270666666666666,
+      "old_R_win_probability": 0.81952,
+      "new_R_win_probability": 0.8169333333333333,
+      "poll_count": 2,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.12629015075863145,
+        "mean_target_local_lean": -0.1426651301216275,
+        "local_residual_sd_before": 0.40207525443986314,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.40207525443986314,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-SD",
+      "state": "SD",
+      "old_D_minus_R_share_points": -14.780957278399676,
+      "new_D_minus_R_share_points": -14.18769350879036,
+      "old_D_win_probability": 0.22874666666666665,
+      "new_D_win_probability": 0.2376,
+      "old_R_win_probability": 0.7682133333333333,
+      "new_R_win_probability": 0.75932,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.1662638539652963,
+        "mean_target_local_lean": -0.2255500013539165,
+        "local_residual_sd_before": 0.4034104104029866,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4034104104029866,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-TN",
+      "state": "TN",
+      "old_D_minus_R_share_points": -12.056012998352362,
+      "new_D_minus_R_share_points": -11.943473430511986,
+      "old_D_win_probability": 0.08086666666666667,
+      "new_D_win_probability": 0.08265333333333333,
+      "old_R_win_probability": 0.9187333333333333,
+      "new_R_win_probability": 0.9169466666666667,
+      "poll_count": 3,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.23723333435036517,
+        "mean_target_local_lean": -0.24701819582555395,
+        "local_residual_sd_before": 0.4039909928952748,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4039909928952748,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-TX",
+      "state": "TX",
+      "old_D_minus_R_share_points": -2.5500131000873782,
+      "new_D_minus_R_share_points": -2.5090555127962375,
+      "old_D_win_probability": 0.35092,
+      "new_D_win_probability": 0.35302666666666666,
+      "old_R_win_probability": 0.6488533333333333,
+      "new_R_win_probability": 0.6467466666666667,
+      "poll_count": 29,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.07414400163625913,
+        "mean_target_local_lean": -0.10090027943110733,
+        "local_residual_sd_before": 0.3965977793204932,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.3965977793204932,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-VT",
+      "state": "VT",
+      "old_D_minus_R_share_points": -3.2046642632390654,
+      "new_D_minus_R_share_points": -2.8847841506960514,
+      "old_D_win_probability": 0.429,
+      "new_D_win_probability": 0.45070666666666664,
+      "old_R_win_probability": 0.5567733333333333,
+      "new_R_win_probability": 0.5366133333333334,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 1.0537261574914176,
+        "mean_target_local_lean": -0.10770289319436155,
+        "local_residual_sd_before": 0.4049975160553693,
+        "local_residual_sd_target": 0.5691304704330887,
+        "local_residual_sd_after": 0.5691304704330886,
+        "uncertainty_multiplier": 1.4052690396137637
+      }
+    },
+    {
+      "race_id": "G-2026-WI",
+      "state": "WI",
+      "old_D_minus_R_share_points": 2.7181115717164586,
+      "new_D_minus_R_share_points": 2.746611760545642,
+      "old_D_win_probability": 0.6449333333333334,
+      "new_D_win_probability": 0.6464666666666666,
+      "old_R_win_probability": 0.35506666666666664,
+      "new_R_win_probability": 0.3535333333333333,
+      "poll_count": 6,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": -0.0029560279876714997,
+        "mean_target_local_lean": 0.004605798029222022,
+        "local_residual_sd_before": 0.4051545688578314,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4051545688578314,
+        "uncertainty_multiplier": 1.0
+      }
+    },
+    {
+      "race_id": "G-2026-WY",
+      "state": "WY",
+      "old_D_minus_R_share_points": -31.810946717551854,
+      "new_D_minus_R_share_points": -30.98446445324529,
+      "old_D_win_probability": 0.03384,
+      "new_D_win_probability": 0.037706666666666666,
+      "old_R_win_probability": 0.9144133333333333,
+      "new_R_win_probability": 0.9096533333333333,
+      "poll_count": 0,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020,
+        "applied": 1.0,
+        "mean_logratio_adjustment": 0.6868438447961213,
+        "mean_target_local_lean": -0.4376485488999863,
+        "local_residual_sd_before": 0.4048828259955632,
+        "local_residual_sd_target": 0.36836302777761787,
+        "local_residual_sd_after": 0.4048828259955632,
+        "uncertainty_multiplier": 1.0
+      }
+    }
+  ]
+}

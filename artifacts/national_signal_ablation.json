@@ -1,0 +1,234 @@
+{
+  "design": {
+    "target": "eventual national House two-party margin, not held-today support",
+    "historical_cutoff_days": 43,
+    "expanding_train_min_cycles": 5,
+    "training_for_each_test": "all earlier generic-ballot cycles only",
+    "approval_feature": "president-party-signed net approval, as of cutoff",
+    "approval_model": "ridge on outcome-minus-generic residual; alpha fixed at 2 after standardizing approval",
+    "source_warning": "1996-2016 538 trendline reconstructed in 2020; its as-of behavior is unverified"
+  },
+  "overlap_cycles": [
+    1996,
+    1998,
+    2000,
+    2002,
+    2004,
+    2006,
+    2008,
+    2010,
+    2012,
+    2014,
+    2016
+  ],
+  "rolling_predictions": [
+    {
+      "year": 2006,
+      "generic_margin": 10.89542787939143,
+      "actual_margin": 6.557377049180327,
+      "previous_house_margin": -2.713987473903968,
+      "signed_approval_net": 14.499999999999998,
+      "approval_age_days": 8,
+      "generic_date": "2006-09-25",
+      "approval_last_end": "2006-09-17",
+      "generic_raw": 10.89542787939143,
+      "generic_calibrated": 6.536267053003065,
+      "generic_plus_approval": 6.681983353718276,
+      "current_generic_from_previous_house": 2.500677259792235,
+      "current_generic_from_previous_house_and_approval": 2.7043189990736574
+    },
+    {
+      "year": 2008,
+      "generic_margin": 8.967927085482588,
+      "actual_margin": 11.134453781512608,
+      "previous_house_margin": 6.557377049180327,
+      "signed_approval_net": 32.5,
+      "approval_age_days": 11,
+      "generic_date": "2008-09-22",
+      "approval_last_end": "2008-09-11",
+      "generic_raw": 8.967927085482588,
+      "generic_calibrated": 4.6122845917904325,
+      "generic_plus_approval": 5.073617097997568,
+      "current_generic_from_previous_house": 0.7713338280050492,
+      "current_generic_from_previous_house_and_approval": 2.210146735394858
+    },
+    {
+      "year": 2010,
+      "generic_margin": -3.814371995648925,
+      "actual_margin": -6.860706860706863,
+      "previous_house_margin": 11.134453781512608,
+      "signed_approval_net": -3.2857142857142856,
+      "approval_age_days": 1,
+      "generic_date": "2010-09-20",
+      "approval_last_end": "2010-09-19",
+      "generic_raw": -3.814371995648925,
+      "generic_calibrated": -7.238276033666484,
+      "generic_plus_approval": -7.896192328986867,
+      "current_generic_from_previous_house": 6.621498115978258,
+      "current_generic_from_previous_house_and_approval": 5.120745318571309
+    },
+    {
+      "year": 2012,
+      "generic_margin": 3.277285645068219,
+      "actual_margin": 1.4705882352941164,
+      "previous_house_margin": -6.860706860706863,
+      "signed_approval_net": 0.5714285714285714,
+      "approval_age_days": 1,
+      "generic_date": "2012-09-24",
+      "approval_last_end": "2012-09-23",
+      "generic_raw": 3.277285645068219,
+      "generic_calibrated": -0.09942224632938723,
+      "generic_plus_approval": -0.4845481819448758,
+      "current_generic_from_previous_house": 5.138687540994946,
+      "current_generic_from_previous_house_and_approval": 4.37103652747029
+    },
+    {
+      "year": 2014,
+      "generic_margin": -1.9307469477842614,
+      "actual_margin": -5.3069719042663905,
+      "previous_house_margin": 1.4705882352941164,
+      "signed_approval_net": -11.142857142857142,
+      "approval_age_days": 1,
+      "generic_date": "2014-09-22",
+      "approval_last_end": "2014-09-21",
+      "generic_raw": -1.9307469477842614,
+      "generic_calibrated": -5.13300923011259,
+      "generic_plus_approval": -5.936637310766713,
+      "current_generic_from_previous_house": 3.1465258592407577,
+      "current_generic_from_previous_house_and_approval": 1.4987103888002635
+    },
+    {
+      "year": 2016,
+      "generic_margin": 2.838416407996163,
+      "actual_margin": -0.9424083769633567,
+      "previous_house_margin": -5.3069719042663905,
+      "signed_approval_net": 7.57142857142857,
+      "approval_age_days": 1,
+      "generic_date": "2016-09-26",
+      "approval_last_end": "2016-09-25",
+      "generic_raw": 2.838416407996163,
+      "generic_calibrated": -0.38124214174754467,
+      "generic_plus_approval": -0.3404221727309342,
+      "current_generic_from_previous_house": 4.063942139186313,
+      "current_generic_from_previous_house_and_approval": 4.148670998809856
+    }
+  ],
+  "rolling_scores": {
+    "generic_raw": {
+      "n": 6,
+      "mae_points": 3.0857765904191354,
+      "rmse_points": 3.2080722555764174,
+      "mean_error_points": 2.3636010250757953
+    },
+    "generic_calibrated": {
+      "n": 6,
+      "mae_points": 1.5376646249753625,
+      "rmse_points": 2.753537074371251,
+      "mean_error_points": -1.2926216551854917
+    },
+    "generic_plus_approval": {
+      "n": 6,
+      "mae_points": 1.7346194140507885,
+      "rmse_points": 2.6584118854005916,
+      "mean_error_points": -1.4924219111273311
+    }
+  },
+  "current_generic_proxy_scores": {
+    "current_generic_from_previous_house": {
+      "n": 6,
+      "mae_points": 5.865235737140968,
+      "rmse_points": 6.798391886731564,
+      "mean_error_points": 0.3347877781153914
+    },
+    "current_generic_from_previous_house_and_approval": {
+      "n": 6,
+      "mae_points": 4.952911559071004,
+      "rmse_points": 5.877533738412848,
+      "mean_error_points": -0.030051517730830108
+    }
+  },
+  "approval_minus_calibrated_generic_absolute_error_points_by_cycle": [
+    0.10349630836068613,
+    -0.4613325062071354,
+    0.6579162953203834,
+    0.3851259356154886,
+    0.4557027323465217,
+    0.04081996901661045
+  ],
+  "approval_better_cycle_count": 1,
+  "ridge_sensitivity": {
+    "0.5": {
+      "approval_after_generic": {
+        "n": 6,
+        "mae_points": 1.778877112321714,
+        "rmse_points": 2.64191831196562,
+        "mean_error_points": -1.521488864921191
+      },
+      "current_generic_previous_house": {
+        "n": 6,
+        "mae_points": 6.11369492224489,
+        "rmse_points": 7.06018204788016,
+        "mean_error_points": 0.34133474692701643
+      },
+      "current_generic_previous_house_and_approval": {
+        "n": 6,
+        "mae_points": 4.9812456634855975,
+        "rmse_points": 5.8934274878578705,
+        "mean_error_points": -0.08660721344265025
+      }
+    },
+    "2.0": {
+      "approval_after_generic": {
+        "n": 6,
+        "mae_points": 1.7346194140507885,
+        "rmse_points": 2.6584118854005916,
+        "mean_error_points": -1.4924219111273311
+      },
+      "current_generic_previous_house": {
+        "n": 6,
+        "mae_points": 5.865235737140968,
+        "rmse_points": 6.798391886731564,
+        "mean_error_points": 0.3347877781153914
+      },
+      "current_generic_previous_house_and_approval": {
+        "n": 6,
+        "mae_points": 4.952911559071004,
+        "rmse_points": 5.877533738412848,
+        "mean_error_points": -0.030051517730830108
+      }
+    },
+    "8.0": {
+      "approval_after_generic": {
+        "n": 6,
+        "mae_points": 1.638891316288248,
+        "rmse_points": 2.6930105885081543,
+        "mean_error_points": -1.423647257895472
+      },
+      "current_generic_previous_house": {
+        "n": 6,
+        "mae_points": 5.373857233293681,
+        "rmse_points": 6.322923153797445,
+        "mean_error_points": 0.2925529378799984
+      },
+      "current_generic_previous_house_and_approval": {
+        "n": 6,
+        "mae_points": 4.860886576700134,
+        "rmse_points": 5.82509791103947,
+        "mean_error_points": 0.0646320059399641
+      }
+    }
+  },
+  "raw_2020_separate_check": {
+    "poll_count": 17,
+    "cutoff": "2020-09-21",
+    "source_method": "raw 538 LV/RV polls, unweighted 30-day mean; not comparable to reconstructed trendline",
+    "year": 2020,
+    "generic_margin": 8.673898293845832,
+    "signed_approval_net": 13.5,
+    "actual_margin": 3.0927835051546393,
+    "generic_calibrated": 5.403224631809778,
+    "generic_plus_approval": 5.674797915551722,
+    "current_generic_from_previous_house": 0.9794945468498892,
+    "current_generic_from_previous_house_and_approval": 1.6825893491508541
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "forecast_sha256": "d6c560b71a87ed7f94989858eb8c3615e761e7fefa654dc40f4aeec1de5f5165",
+  "model_version": "nowcast-2026-0.18",
+  "interpretation": "Independent-race probabilities hold each marginal win chance fixed and remove shared draw dependence. This is a structural sensitivity, not a historically calibrated alternative.",
+  "house_D_seats": {
+    "model_mean": 233.75254666666666,
+    "model_sd": 21.953958037549604,
+    "independent_race_sd": 5.710639684970113,
+    "variance_ratio_model_to_independent": 14.77937747472329,
+    "model_D_control": 0.7723466666666666,
+    "independent_race_D_control": 0.9978297457910031
+  },
+  "senate_D_elected_seats": {
+    "model_mean": 16.863866666666667,
+    "model_sd": 3.0916060091084625,
+    "independent_race_sd": 1.6918825037218157,
+    "variance_ratio_model_to_independent": 3.3390881703224156
+  },
+  "cross_chamber_D_seat_correlation": 0.6232231834294876,
+  "senate_caucus_scenarios": {
+    "other_winners_unaligned": {
+      "model_senate_D_control": 0.5712133333333334,
+      "independent_race_senate_D_control": 0.5917765104729992,
+      "model_both_chambers_D_control": 0.5219466666666667,
+      "independent_chamber_both_D_control_given_model_marginals": 0.4411747139555555,
+      "conditional_senate_D_control_given_house_D_control": 0.6757932534613128
+    },
+    "all_other_winners_caucus_D": {
+      "model_senate_D_control": 0.6991333333333334,
+      "independent_race_senate_D_control": 0.797904418220351,
+      "model_both_chambers_D_control": 0.61576,
+      "independent_chamber_both_D_control_given_model_marginals": 0.5399732995555556,
+      "conditional_senate_D_control_given_house_D_control": 0.7972585712805994
+    },
+    "all_other_winners_caucus_R": {
+      "model_senate_D_control": 0.5712133333333334,
+      "independent_race_senate_D_control": 0.5917765104729992,
+      "model_both_chambers_D_control": 0.5219466666666667,
+      "independent_chamber_both_D_control_given_model_marginals": 0.4411747139555555,
+      "conditional_senate_D_control_given_house_D_control": 0.6757932534613128
+    }
+  }
+}

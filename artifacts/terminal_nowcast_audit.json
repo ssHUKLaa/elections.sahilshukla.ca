@@ -1,0 +1,319 @@
+{
+  "design": {
+    "calibration_cycle": 2018,
+    "holdout_cycle": 2020,
+    "cutoff_days_before_election": 7,
+    "election_day_bias_applied": false,
+    "availability_warning": "Historical source-created timestamps have unverified timezone; calendar-date comparisons are used conservatively.",
+    "simulation_draws_per_race": 4000
+  },
+  "overall": {
+    "results_only": {
+      "log_score": 0.46087065757681417,
+      "brier": 0.30777390202702704,
+      "share_mae": 0.03883508144297125,
+      "coverage80": 0.8866836616836616,
+      "coverage95": 0.9664241164241163
+    },
+    "polls_only": {
+      "log_score": 0.734962013998334,
+      "brier": 0.4296941734234235,
+      "share_mae": 0.11512715075017517,
+      "coverage80": 0.7804285054285054,
+      "coverage95": 0.9233285483285484
+    },
+    "combined": {
+      "log_score": 0.3394488697698401,
+      "brier": 0.22366367792792788,
+      "share_mae": 0.027695070277085385,
+      "coverage80": 0.7952851202851202,
+      "coverage95": 0.9673142923142923
+    }
+  },
+  "by_office": {
+    "senate": {
+      "results_only": {
+        "log_score": 0.15756808886840903,
+        "brier": 0.07090652631578949,
+        "share_mae": 0.04137204316025726,
+        "coverage80": 0.7603624445729709,
+        "coverage95": 0.917004048582996
+      },
+      "polls_only": {
+        "log_score": 0.8267948953831966,
+        "brier": 0.4234663092105264,
+        "share_mae": 0.09342122481878996,
+        "coverage80": 0.7473154038943512,
+        "coverage95": 0.8684306921149026
+      },
+      "combined": {
+        "log_score": 0.10918651954491727,
+        "brier": 0.04899700657894736,
+        "share_mae": 0.019657227436792303,
+        "coverage80": 0.7856757277809909,
+        "coverage95": 0.8967659533449007
+      }
+    },
+    "governor": {
+      "results_only": {
+        "log_score": 0.46528606870840117,
+        "brier": 0.3083059204545454,
+        "share_mae": 0.044562236486966854,
+        "coverage80": 0.8901515151515151,
+        "coverage95": 0.9772727272727273
+      },
+      "polls_only": {
+        "log_score": 0.36754691046441934,
+        "brier": 0.16209264772727272,
+        "share_mae": 0.08941564438440058,
+        "coverage80": 0.7738095238095238,
+        "coverage95": 0.886904761904762
+      },
+      "combined": {
+        "log_score": 0.030945706946587728,
+        "brier": 0.007988045454545454,
+        "share_mae": 0.024796279775830835,
+        "coverage80": 0.7408008658008658,
+        "coverage95": 0.9545454545454546
+      }
+    },
+    "house": {
+      "results_only": {
+        "log_score": 0.5314160808238788,
+        "brier": 0.36326313580246916,
+        "share_mae": 0.037462229861336856,
+        "coverage80": 0.915843621399177,
+        "coverage95": 0.9765432098765432
+      },
+      "polls_only": {
+        "log_score": 0.7633168460052562,
+        "brier": 0.4674959783950618,
+        "share_mae": 0.12371035028992629,
+        "coverage80": 0.7890946502057613,
+        "coverage95": 0.9411522633744854
+      },
+      "combined": {
+        "log_score": 0.43535651724304136,
+        "brier": 0.2939241558641975,
+        "share_mae": 0.029974153110164013,
+        "coverage80": 0.8049382716049384,
+        "coverage95": 0.9855967078189299
+      }
+    }
+  },
+  "by_office_candidate_group": {
+    "senate:D": {
+      "results_only": {
+        "coverage95": 1.0
+      },
+      "polls_only": {
+        "coverage95": 0.8888888888888888
+      },
+      "combined": {
+        "coverage95": 0.9444444444444444
+      }
+    },
+    "senate:R": {
+      "results_only": {
+        "coverage95": 0.9473684210526315
+      },
+      "polls_only": {
+        "coverage95": 0.6842105263157895
+      },
+      "combined": {
+        "coverage95": 0.9473684210526315
+      }
+    },
+    "senate:O": {
+      "results_only": {
+        "coverage95": 0.8909090909090909
+      },
+      "polls_only": {
+        "coverage95": 0.8727272727272727
+      },
+      "combined": {
+        "coverage95": 0.8363636363636363
+      }
+    },
+    "governor:D": {
+      "results_only": {
+        "coverage95": 1.0
+      },
+      "polls_only": {
+        "coverage95": 0.9090909090909091
+      },
+      "combined": {
+        "coverage95": 1.0
+      }
+    },
+    "governor:R": {
+      "results_only": {
+        "coverage95": 1.0
+      },
+      "polls_only": {
+        "coverage95": 0.6363636363636364
+      },
+      "combined": {
+        "coverage95": 0.9090909090909091
+      }
+    },
+    "governor:O": {
+      "results_only": {
+        "coverage95": 0.9259259259259259
+      },
+      "polls_only": {
+        "coverage95": 0.9629629629629629
+      },
+      "combined": {
+        "coverage95": 0.9259259259259259
+      }
+    },
+    "house:D": {
+      "results_only": {
+        "coverage95": 0.9878048780487805
+      },
+      "polls_only": {
+        "coverage95": 1.0
+      },
+      "combined": {
+        "coverage95": 1.0
+      }
+    },
+    "house:R": {
+      "results_only": {
+        "coverage95": 0.9875
+      },
+      "polls_only": {
+        "coverage95": 0.9625
+      },
+      "combined": {
+        "coverage95": 0.9875
+      }
+    },
+    "house:O": {
+      "results_only": {
+        "coverage95": 0.9444444444444444
+      },
+      "polls_only": {
+        "coverage95": 0.8055555555555556
+      },
+      "combined": {
+        "coverage95": 0.9583333333333334
+      }
+    }
+  },
+  "senate_combined_coverage_failures": [
+    {
+      "race_id": "6280",
+      "group": "O",
+      "actual": 0.007156752534801048,
+      "lower95": 0.007621376546996068,
+      "upper95": 0.03869532684777106,
+      "poll_count": 98
+    },
+    {
+      "race_id": "6294",
+      "group": "O",
+      "actual": 0.0,
+      "lower95": 3.6961020538130283e-07,
+      "upper95": 0.0002742291749811319,
+      "poll_count": 1
+    },
+    {
+      "race_id": "6295",
+      "group": "O",
+      "actual": 6.083969547847998e-05,
+      "lower95": 0.004212416279026779,
+      "upper95": 0.016851252360280348,
+      "poll_count": 33
+    },
+    {
+      "race_id": "6297",
+      "group": "R",
+      "actual": 0.7028390664999397,
+      "lower95": 0.5085444904564794,
+      "upper95": 0.6641460332396554,
+      "poll_count": 1
+    },
+    {
+      "race_id": "6297",
+      "group": "D",
+      "actual": 0.27000146356869403,
+      "lower95": 0.29314016225019385,
+      "upper95": 0.44388410208316176,
+      "poll_count": 1
+    },
+    {
+      "race_id": "6281",
+      "group": "O",
+      "actual": 0.05920121295332029,
+      "lower95": 0.007226472282986038,
+      "upper95": 0.035447989046874594,
+      "poll_count": 16
+    },
+    {
+      "race_id": "6269",
+      "group": "O",
+      "actual": 0.0027724296076074156,
+      "lower95": 0.0033290166483388017,
+      "upper95": 0.03239628174147097,
+      "poll_count": 21
+    },
+    {
+      "race_id": "6269",
+      "group": "O",
+      "actual": 1.699739476294815e-05,
+      "lower95": 0.00017244181818254657,
+      "upper95": 0.03560998266654563,
+      "poll_count": 21
+    },
+    {
+      "race_id": "6269",
+      "group": "O",
+      "actual": 2.194209142126034e-05,
+      "lower95": 0.0001816200676026707,
+      "upper95": 0.034247476394692396,
+      "poll_count": 21
+    },
+    {
+      "race_id": "6269",
+      "group": "O",
+      "actual": 1.5452177057225593e-06,
+      "lower95": 0.00016602128115949052,
+      "upper95": 0.03945337922770764,
+      "poll_count": 21
+    },
+    {
+      "race_id": "6274",
+      "group": "O",
+      "actual": 3.3507005728525236e-07,
+      "lower95": 3.6961020538130283e-07,
+      "upper95": 0.0002742291749811319,
+      "poll_count": 1
+    }
+  ],
+  "gate": {
+    "holdout_cycle": 2020,
+    "cutoff_days_before_election": 7,
+    "poll_updated_races": 111,
+    "combined_improves_log_or_brier": true,
+    "no_obvious_undercoverage": true,
+    "passed": true
+  },
+  "interpretation": "Seven-day polls are compared with final results, so this is a terminal proxy for held-today support, not a direct counterfactual-nowcast score. Seven days of real movement and turnout uncertainty remain. The historical poll source differs from the live NYT feed.",
+  "nowcast_group_gate": {
+    "criterion": "at least 90% observed coverage for every office and candidate group",
+    "coverage95": {
+      "senate:D": 0.9444444444444444,
+      "senate:R": 0.9473684210526315,
+      "senate:O": 0.8363636363636363,
+      "governor:D": 1.0,
+      "governor:R": 0.9090909090909091,
+      "governor:O": 0.9259259259259259,
+      "house:D": 1.0,
+      "house:R": 0.9875,
+      "house:O": 0.9583333333333334
+    },
+    "passed": false
+  }
+}

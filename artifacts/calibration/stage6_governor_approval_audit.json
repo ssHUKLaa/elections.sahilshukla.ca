@@ -1,0 +1,36 @@
+{
+  "status": "reviewed_feature_disabled",
+  "decision": "Exclude sitting-governor approval from the release model and historical replay until dated, usable 2022/2024 approval data can support full as-of testing.",
+  "evidence_hashes": {
+    "approval_on_2020": "711f5893e1fcb9526426b9d274df294a2577c33cafd7cd06976572e484e007d1",
+    "approval_off_2020": "59fe2761cd9f33f17ffbee0edfb5c8aba66b313c2ff49ed70dbcb0eac81cfb57",
+    "prior_live_impact": "afe184f1eadc593b2503de92539416f5c45249d7c07fe29f9ef1168401b5afb8",
+    "current_live_impact": "497a73466549219f0c34ec4fecc5819807272ec52ce8f9ef2f87427721f0b272"
+  },
+  "paired_2020_seven_day_replay": {
+    "governor_races": 11,
+    "approval_covered_races": 5,
+    "winner_log_score_with_approval": 0.04019678114910138,
+    "winner_log_score_without_approval": 0.041042704201387975,
+    "with_minus_without": -0.0008459230522865971,
+    "note": "Small, inspected diagnostic; the approval series is retrospectively smoothed."
+  },
+  "prior_2026_live_impact": {
+    "affected_governor_races": 15,
+    "largest_absolute_first_stage_D_probability_change": 0.07985,
+    "note": "Prior live paired impact, before removal. First-stage leaders do not incorporate final runoff/RCV counting."
+  },
+  "current_release_model": {
+    "model_version": "nowcast-2026-0.18",
+    "governor_approval_coefficient_present": false,
+    "nonzero_live_approval_shifts": 0
+  },
+  "source_limitations": [
+    "Singer State Executive Approval Database v1 ends in 2020 and its smoothed values lack verified as-of release dates.",
+    "Morning Consult published 2022 approval workbooks, but the complete later historical trended dataset is listed as Pro+ access; the 2024 public report covers the three incumbent races at a published quarter only."
+  ],
+  "sources": [
+    "https://pro.morningconsult.com/instant-intel/democratic-governors-are-resisting-bidens-decline",
+    "https://pro.morningconsult.com/analyst-reports/us-governor-approval-outlook-october-2024"
+  ]
+}

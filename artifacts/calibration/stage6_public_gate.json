@@ -1,0 +1,427 @@
+{
+  "status": "passed",
+  "prelaunch_status": "passed",
+  "stage6_prelaunch_evidence_passed": true,
+  "public_calibration_claim_supported": false,
+  "calibration_claim_limit": "Three inspected, correlated historical cycles and terminal-result proxies cannot establish nominal held-today coverage.",
+  "scope": "Version 0.20 prelaunch evidence gate for the held-today 2026 nowcast; deployment operations have separate checks",
+  "owner_model_decision": "accepted_with_documented_governor_limitations",
+  "approved_model_code_sha256": {
+    "model_code_sha256": "257f479f19ed47e24fe7cbd26bcee3d43d5f3914ebe2da3c1b666a851e91b935",
+    "stage3_model_code_sha256": "20c7c6ea40f585fc0e0df77fd754ffd0bc1a00ab142f23c728d1d7c6b089449f",
+    "stage4_model_code_sha256": "9d7a3e1d63ce03621380cecfc4f691d7556a071f708e1d8148eb2173ecaa8168",
+    "governor_local_lean_code_sha256": "ca9f51dccdcaed2c6248dd984e5dd4daca69557fd9c88712a5c87383ff926175"
+  },
+  "frozen_live_cutoff": "2026-09-27T02:11:02Z",
+  "live_model_version": "nowcast-2026-0.20",
+  "hashes": {
+    "stage2_database": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+    "forecast": "574a73e4c66db3a2e342436675f03c1e9455161bc1dad46e5bcde4e2105c23e8",
+    "frozen_source_forecast": "4904c4c76c8ddcd956e50036afaff5ec54bd6a45fe75e6eb0c9ab2275fc07aab",
+    "national_snapshots": "b9584eb2c39013e21d948511a06635243d1578685ac7990434c2b3c98b324ca9",
+    "population_crosswalk": "1215616c8e1a2c6495db99ef31f6cf1b7a2c8969dbe9437bb821891c69619e3c",
+    "historical_house_map_shifts": "53161d06eb14ccbd7bf647e4562d5db95a5a790f150998789185115ee1da6b8e",
+    "frozen_v020_manifest": "a151fd545785c1c20f4969293bac8e9492984e2009fd283de5cc7f544eae9f0e",
+    "missouri_map_status": "438c1c845163bff416d548ea2ce902be04e8a835205e8db0c53d1edc05d2e31b",
+    "missouri_certified_house_candidates": "d382ee030c3c7aa532fbab2fec89dc0019ab6a9734f8cc5ddf5966ed5835c114",
+    "joint_replay": "d0298b25418c8f4f6afc5686e433638fedeb0db34032b43622e73d1d9902d0ee",
+    "race_replay_development_reference": "fb895eed8ed71e3cc95cf675157779729d258e1e21865dccbddae780f948c884",
+    "governor_local_lean_audit": "09bda288bf0b48d8cb913abe8a5398b8516679854aa8e1471f52920b73abb329",
+    "governor_paired_replay": "5e8ac37c077fbf7e88a3a512d581f480570a83295fd8c1b9bede9ff6be2d12fd"
+  },
+  "checks": {
+    "data_and_live_validators": {
+      "passed": true,
+      "stage2": "passed",
+      "stage5": "passed"
+    },
+    "official_2024_house_seat_outcomes": {
+      "passed": true,
+      "numeric_vote_share_seats": 433,
+      "unopposed_outcome_only_seats": 2
+    },
+    "population_weighted_crosswalk": {
+      "passed": true,
+      "selection_2022_log_score": {
+        "baseline": {
+          "scores": {
+            "all": {
+              "n_races": 425,
+              "log_score": 0.206525,
+              "brier": 0.114507,
+              "share_mae": 0.04111,
+              "coverage80": 0.769294,
+              "coverage95": 0.901235
+            },
+            "density:no_polls": {
+              "n_races": 326,
+              "log_score": 0.112826,
+              "brier": 0.058141,
+              "share_mae": 0.045518,
+              "coverage80": 0.753608,
+              "coverage95": 0.889801
+            },
+            "density:one_poll": {
+              "n_races": 44,
+              "log_score": 0.386353,
+              "brier": 0.224919,
+              "share_mae": 0.025422,
+              "coverage80": 0.811147,
+              "coverage95": 0.968182
+            },
+            "density:multiple_polls": {
+              "n_races": 55,
+              "log_score": 0.618043,
+              "brier": 0.360272,
+              "share_mae": 0.027537,
+              "coverage80": 0.828788,
+              "coverage95": 0.915455
+            },
+            "district_continuity:no_candidate_continuity_evidence": {
+              "n_races": 32,
+              "log_score": 0.675365,
+              "brier": 0.333769,
+              "share_mae": 0.050697,
+              "coverage80": 0.720833,
+              "coverage95": 0.877083
+            }
+          },
+          "weighted_holdout_races": 0
+        },
+        "population_weighted": {
+          "scores": {
+            "all": {
+              "n_races": 425,
+              "log_score": 0.195616,
+              "brier": 0.112057,
+              "share_mae": 0.038431,
+              "coverage80": 0.800059,
+              "coverage95": 0.922529
+            },
+            "density:no_polls": {
+              "n_races": 326,
+              "log_score": 0.107776,
+              "brier": 0.051335,
+              "share_mae": 0.042363,
+              "coverage80": 0.796527,
+              "coverage95": 0.913574
+            },
+            "density:one_poll": {
+              "n_races": 44,
+              "log_score": 0.470348,
+              "brier": 0.280316,
+              "share_mae": 0.027952,
+              "coverage80": 0.760011,
+              "coverage95": 0.979545
+            },
+            "density:multiple_polls": {
+              "n_races": 55,
+              "log_score": 0.496484,
+              "brier": 0.337361,
+              "share_mae": 0.023509,
+              "coverage80": 0.85303,
+              "coverage95": 0.93
+            },
+            "district_continuity:no_candidate_continuity_evidence": {
+              "n_races": 32,
+              "log_score": 0.439163,
+              "brier": 0.269604,
+              "share_mae": 0.03947,
+              "coverage80": 0.814583,
+              "coverage95": 0.952604
+            }
+          },
+          "weighted_holdout_races": 352
+        }
+      },
+      "2024_is_pristine_holdout": false
+    },
+    "dated_national_and_pollster_inputs": {
+      "passed": true,
+      "national_snapshots": 12,
+      "pollster_editions": {
+        "2020": "2019",
+        "2022": "2021",
+        "2024": "2023"
+      }
+    },
+    "historical_full_chamber_coverage": {
+      "passed": true,
+      "house_seats_by_cycle": {
+        "2020": 435,
+        "2022": 435,
+        "2024": 435
+      }
+    },
+    "historical_regular_senate_coverage": {
+      "passed": true,
+      "regular_races_by_cycle": {
+        "2020": 33,
+        "2022": 34,
+        "2024": 33
+      },
+      "modeled_races_by_cycle": {
+        "2020": 33,
+        "2022": 34,
+        "2024": 33
+      },
+      "special_elections_not_in_replay": true
+    },
+    "historical_feature_parity": {
+      "passed": true,
+      "house_map_shift_replayed": true,
+      "counting_rule_precycle_fits_replayed": true,
+      "governor_approval_effect": "disabled_in_live_and_replay_pending_dated_validation",
+      "audit_sha256": "d000a467831cf47e71b6c81223675e7c8d12452b5e8e1806ee9050eeba7bda9b",
+      "audit_scope": "Governor approval audit is an earlier development review; current replay independently checks that the feature is disabled."
+    },
+    "governor_local_lean_review": {
+      "passed": true,
+      "owner_decision": "accepted_for_release_with_documented_limitations",
+      "old_governor_winner_log_loss": 0.17311933836535928,
+      "revised_governor_winner_log_loss": 0.17627701790680203,
+      "cross_party_incumbent_95_coverage": 0.8888888888888888,
+      "distinct_cross_party_incumbent_races": 9,
+      "audit_sha256": "09bda288bf0b48d8cb913abe8a5398b8516679854aa8e1471f52920b73abb329",
+      "paired_replay_sha256": "5e8ac37c077fbf7e88a3a512d581f480570a83295fd8c1b9bede9ff6be2d12fd"
+    },
+    "historical_house_interval_review": {
+      "passed": true,
+      "finding": "The chronological 2020 miss remains; the live 2026 generic-ballot variance already includes the later observed error scale. The forensic wider interval is not a backtest score.",
+      "seven_day_actual_D": 222,
+      "seven_day_interval95": [
+        227,
+        261
+      ],
+      "audit_sha256": "8371a65c2e2b39b3fa380c61c964feb97df4d8bf35c1a71a4d1394164fd1d652",
+      "audit_scope": "Earlier review; current replay retains the 2020 House diagnostic."
+    },
+    "live_missouri_house_map": {
+      "passed": true,
+      "model_assumption": "All eight Missouri district presidential map shifts are zero, retaining the 2024 district geography.",
+      "status_as_of_verification": "2022 map operative under the September 25 US Supreme Court stay; subject to any further order",
+      "verified_on": "2026-09-25",
+      "eight_district_shifts_zero": true,
+      "future_court_orders_require_recheck": true
+    },
+    "live_missouri_house_candidates": {
+      "passed": true,
+      "districts_checked": 8,
+      "official_certification": "https://www.sos.mo.gov/CMSImages/ElectionCandidates/2026GeneralElectionCertifiedCandidates.pdf",
+      "official_certification_date": "2026-08-25",
+      "reviewed_on": "2026-09-27",
+      "reference_sha256": "d382ee030c3c7aa532fbab2fec89dc0019ab6a9734f8cc5ddf5966ed5835c114"
+    }
+  },
+  "postrelease_evaluation": {
+    "pristine_2026_outcome_holdout": {
+      "status": "pending_election",
+      "prospective_forecast_frozen": true,
+      "release_blocker": false,
+      "reason": "Score the frozen forecast after the 2026 election; the result is not available before release."
+    },
+    "direct_held_today_truth": {
+      "status": "unobservable",
+      "release_blocker": false,
+      "reason": "Support at a past cutoff is latent; later certified results include opinion and turnout changes."
+    }
+  },
+  "terminal_proxy_results": [
+    {
+      "cycle": 2020,
+      "lead_days": 90,
+      "house_seats": 435,
+      "house_actual_D": 222,
+      "house_predicted_D": 247.1735,
+      "house_95_interval": [
+        227,
+        267
+      ],
+      "house_actual_in_95_interval": false,
+      "senate_races": 33,
+      "senate_actual_D": 13,
+      "senate_predicted_D": 12.98,
+      "senate_95_interval": [
+        9,
+        17
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": -0.043046458706659206
+    },
+    {
+      "cycle": 2020,
+      "lead_days": 30,
+      "house_seats": 435,
+      "house_actual_D": 222,
+      "house_predicted_D": 242.1085,
+      "house_95_interval": [
+        224,
+        260
+      ],
+      "house_actual_in_95_interval": false,
+      "senate_races": 33,
+      "senate_actual_D": 13,
+      "senate_predicted_D": 14.057,
+      "senate_95_interval": [
+        9,
+        18
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": -0.07089239334581728
+    },
+    {
+      "cycle": 2020,
+      "lead_days": 7,
+      "house_seats": 435,
+      "house_actual_D": 222,
+      "house_predicted_D": 243.9585,
+      "house_95_interval": [
+        227,
+        261
+      ],
+      "house_actual_in_95_interval": false,
+      "senate_races": 33,
+      "senate_actual_D": 13,
+      "senate_predicted_D": 14.026,
+      "senate_95_interval": [
+        10,
+        18
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": -0.04358067972737245
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 90,
+      "house_seats": 435,
+      "house_actual_D": 213,
+      "house_predicted_D": 211.3065,
+      "house_95_interval": [
+        182,
+        243
+      ],
+      "house_actual_in_95_interval": true,
+      "senate_races": 34,
+      "senate_actual_D": 15,
+      "senate_predicted_D": 15.693,
+      "senate_95_interval": [
+        12,
+        19
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": 0.41445092410860945
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 30,
+      "house_seats": 435,
+      "house_actual_D": 213,
+      "house_predicted_D": 220.9595,
+      "house_95_interval": [
+        189,
+        251
+      ],
+      "house_actual_in_95_interval": true,
+      "senate_races": 34,
+      "senate_actual_D": 15,
+      "senate_predicted_D": 15.7205,
+      "senate_95_interval": [
+        12,
+        19
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": 0.382861142849858
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 7,
+      "house_seats": 435,
+      "house_actual_D": 213,
+      "house_predicted_D": 219.3065,
+      "house_95_interval": [
+        189,
+        250
+      ],
+      "house_actual_in_95_interval": true,
+      "senate_races": 34,
+      "senate_actual_D": 15,
+      "senate_predicted_D": 14.67,
+      "senate_95_interval": [
+        11,
+        19
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": 0.39941618502016074
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 90,
+      "house_seats": 435,
+      "house_actual_D": 215,
+      "house_predicted_D": 208.8705,
+      "house_95_interval": [
+        172,
+        246
+      ],
+      "house_actual_in_95_interval": true,
+      "senate_races": 33,
+      "senate_actual_D": 17,
+      "senate_predicted_D": 19.691,
+      "senate_95_interval": [
+        16,
+        23
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": 0.5032487047123946
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 30,
+      "house_seats": 435,
+      "house_actual_D": 215,
+      "house_predicted_D": 216.5655,
+      "house_95_interval": [
+        181,
+        253
+      ],
+      "house_actual_in_95_interval": true,
+      "senate_races": 33,
+      "senate_actual_D": 17,
+      "senate_predicted_D": 19.697,
+      "senate_95_interval": [
+        16,
+        23
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": 0.49267165323990186
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 7,
+      "house_seats": 435,
+      "house_actual_D": 215,
+      "house_predicted_D": 216.111,
+      "house_95_interval": [
+        180,
+        251
+      ],
+      "house_actual_in_95_interval": true,
+      "senate_races": 33,
+      "senate_actual_D": 17,
+      "senate_predicted_D": 19.3775,
+      "senate_95_interval": [
+        16,
+        22
+      ],
+      "senate_actual_in_95_interval": true,
+      "cross_chamber_correlation": 0.4781347899408097
+    }
+  ],
+  "seven_day_senate_candidate_share_coverage95": {
+    "2020": 0.899148,
+    "2022": 0.85685,
+    "2024": 0.935209
+  },
+  "candidate_share_replay_scope": "The separate race replay predates version 0.20 and is retained as development evidence, not a current-code parity check.",
+  "interpretation": "A passing prelaunch review permits release with documented limitations; it does not prove nominal probability calibration. Governor winner log loss slightly worsened and cross-party incumbent coverage remains weak. Terminal outcomes are diagnostics, not direct labels for an earlier held-today estimand. No partisan correction or interval tuning was chosen from these proxy misses."
+}

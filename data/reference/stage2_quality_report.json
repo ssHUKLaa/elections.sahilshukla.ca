@@ -1,0 +1,2216 @@
+{
+  "stage": 2,
+  "database": "data\\processed\\stage2.sqlite",
+  "metadata": {
+    "stage2_version": "1.4",
+    "source_snapshot_id": "nyt:20260921T200327Z:21f40e0754570333",
+    "stage1_database_sha256": "2020edd048b3b0370084be220ed8b6e813da702513c013c06654e2ea2081ffb0",
+    "race_registry_sha256": "c0b0ef64abb1113f41375273039aa494282e52fd6e55659ed69f83bf0c8e90f6",
+    "prior_winner_alias_sha256": "c104cae74b8c8b81da736e037e87cab629aef8e6477a536e2fe1d080cf51acc2",
+    "historical_snapshot": "20260921T204524Z",
+    "historical_manifest_sha256": "0d898f0faa44657ae300cf008f2fa5277ef7982409b0568c8bb0b0c60a19a32a"
+  },
+  "race_inventory": [
+    {
+      "office": "governor",
+      "ballot_status": "certified_list_ingested",
+      "races": 3
+    },
+    {
+      "office": "governor",
+      "ballot_status": "official_list_reviewed",
+      "races": 3
+    },
+    {
+      "office": "governor",
+      "ballot_status": "secondary_source_snapshot",
+      "races": 30
+    },
+    {
+      "office": "house",
+      "ballot_status": "certified_list_ingested",
+      "races": 107
+    },
+    {
+      "office": "house",
+      "ballot_status": "official_list_reviewed",
+      "races": 27
+    },
+    {
+      "office": "house",
+      "ballot_status": "official_list_unfinalized",
+      "races": 14
+    },
+    {
+      "office": "house",
+      "ballot_status": "secondary_source_snapshot",
+      "races": 287
+    },
+    {
+      "office": "senate",
+      "ballot_status": "certified_list_ingested",
+      "races": 2
+    },
+    {
+      "office": "senate",
+      "ballot_status": "official_filing_list_reviewed",
+      "races": 1
+    },
+    {
+      "office": "senate",
+      "ballot_status": "official_list_reviewed",
+      "races": 3
+    },
+    {
+      "office": "senate",
+      "ballot_status": "official_list_unfinalized",
+      "races": 1
+    },
+    {
+      "office": "senate",
+      "ballot_status": "secondary_source_snapshot",
+      "races": 28
+    }
+  ],
+  "counting_rules": [
+    {
+      "office": "governor",
+      "counting_rule": "majority_then_legislative_selection",
+      "races": 1
+    },
+    {
+      "office": "governor",
+      "counting_rule": "majority_then_top_two_runoff",
+      "races": 1
+    },
+    {
+      "office": "governor",
+      "counting_rule": "plurality",
+      "races": 33
+    },
+    {
+      "office": "governor",
+      "counting_rule": "ranked_choice",
+      "races": 1
+    },
+    {
+      "office": "house",
+      "counting_rule": "majority_then_top_two_runoff",
+      "races": 20
+    },
+    {
+      "office": "house",
+      "counting_rule": "plurality",
+      "races": 412
+    },
+    {
+      "office": "house",
+      "counting_rule": "ranked_choice",
+      "races": 3
+    },
+    {
+      "office": "senate",
+      "counting_rule": "majority_then_top_two_runoff",
+      "races": 1
+    },
+    {
+      "office": "senate",
+      "counting_rule": "plurality",
+      "races": 32
+    },
+    {
+      "office": "senate",
+      "counting_rule": "ranked_choice",
+      "races": 2
+    }
+  ],
+  "question_status": [
+    {
+      "feed": "governor",
+      "mapping_status": "insufficient_candidate_contrast",
+      "questions": 3
+    },
+    {
+      "feed": "governor",
+      "mapping_status": "mapped",
+      "questions": 228
+    },
+    {
+      "feed": "governor",
+      "mapping_status": "out_of_scope",
+      "questions": 115
+    },
+    {
+      "feed": "governor",
+      "mapping_status": "out_of_scope_stage",
+      "questions": 505
+    },
+    {
+      "feed": "governor",
+      "mapping_status": "quarantined_options",
+      "questions": 280
+    },
+    {
+      "feed": "house",
+      "mapping_status": "mapped",
+      "questions": 159
+    },
+    {
+      "feed": "house",
+      "mapping_status": "out_of_scope",
+      "questions": 14
+    },
+    {
+      "feed": "house",
+      "mapping_status": "out_of_scope_stage",
+      "questions": 295
+    },
+    {
+      "feed": "house",
+      "mapping_status": "quarantined_options",
+      "questions": 137
+    },
+    {
+      "feed": "house",
+      "mapping_status": "signal",
+      "questions": 780
+    },
+    {
+      "feed": "house",
+      "mapping_status": "unmapped_race",
+      "questions": 4
+    },
+    {
+      "feed": "other",
+      "mapping_status": "out_of_scope",
+      "questions": 275
+    },
+    {
+      "feed": "president_approval_polls",
+      "mapping_status": "signal",
+      "questions": 1250
+    },
+    {
+      "feed": "senate",
+      "mapping_status": "insufficient_candidate_contrast",
+      "questions": 1
+    },
+    {
+      "feed": "senate",
+      "mapping_status": "mapped",
+      "questions": 279
+    },
+    {
+      "feed": "senate",
+      "mapping_status": "out_of_scope",
+      "questions": 2
+    },
+    {
+      "feed": "senate",
+      "mapping_status": "out_of_scope_stage",
+      "questions": 498
+    },
+    {
+      "feed": "senate",
+      "mapping_status": "quarantined_options",
+      "questions": 325
+    }
+  ],
+  "eligible_race_coverage": [
+    {
+      "office": "governor",
+      "races_with_eligible_questions": 27,
+      "eligible_questions": 228
+    },
+    {
+      "office": "house",
+      "races_with_eligible_questions": 78,
+      "eligible_questions": 159
+    },
+    {
+      "office": "senate",
+      "races_with_eligible_questions": 24,
+      "eligible_questions": 279
+    }
+  ],
+  "option_status": [
+    {
+      "mapping_status": "not_applicable_to_target_race",
+      "options": 15009
+    },
+    {
+      "mapping_status": "mapped_candidate",
+      "options": 2236
+    },
+    {
+      "mapping_status": "noncandidate_response",
+      "options": 1677
+    },
+    {
+      "mapping_status": "unmapped_candidate",
+      "options": 973
+    }
+  ],
+  "candidate_match_methods": [
+    {
+      "mapping_method": "exact_normalized_name",
+      "options": 1986
+    },
+    {
+      "mapping_method": "unique_first_last_name",
+      "options": 139
+    },
+    {
+      "mapping_method": "reviewed_source_id",
+      "options": 111
+    }
+  ],
+  "quarantine_reasons": [
+    {
+      "reason_code": "unmapped_candidate",
+      "records": 973
+    }
+  ],
+  "top_unmapped_candidates": [
+    {
+      "source_candidate_name": "Generic Democrat",
+      "source_party": "DEM",
+      "appearances": 83,
+      "races": 57
+    },
+    {
+      "source_candidate_name": "Generic Republican",
+      "source_party": "REP",
+      "appearances": 83,
+      "races": 55
+    },
+    {
+      "source_candidate_name": "Mike Duggan",
+      "source_party": "IND",
+      "appearances": 37,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Graham Platner",
+      "source_party": "DEM",
+      "appearances": 25,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "John Cornyn",
+      "source_party": "REP",
+      "appearances": 23,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Haley Stevens",
+      "source_party": "DEM",
+      "appearances": 22,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Josh Shapiro",
+      "source_party": "DEM",
+      "appearances": 17,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Mallory McMorrow",
+      "source_party": "DEM",
+      "appearances": 16,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Scott Brown",
+      "source_party": "REP",
+      "appearances": 16,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Janet Mills",
+      "source_party": "DEM",
+      "appearances": 15,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Colin Allred",
+      "source_party": "DEM",
+      "appearances": 14,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Alexander Vindman",
+      "source_party": "DEM",
+      "appearances": 13,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Wesley Hunt",
+      "source_party": "REP",
+      "appearances": 13,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Elise Stefanik",
+      "source_party": "REP",
+      "appearances": 12,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jasmine Crockett",
+      "source_party": "DEM",
+      "appearances": 12,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Brian Shortsleeve",
+      "source_party": "REP",
+      "appearances": 10,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "James Risch",
+      "source_party": "REP",
+      "appearances": 10,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Buddy Carter",
+      "source_party": "REP",
+      "appearances": 9,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Bobby Charles",
+      "source_party": "REP",
+      "appearances": 8,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jerry Demings",
+      "source_party": "DEM",
+      "appearances": 8,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Mandela Barnes",
+      "source_party": "DEM",
+      "appearances": 8,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Mike Cox",
+      "source_party": "REP",
+      "appearances": 8,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Tim Ryan",
+      "source_party": "DEM",
+      "appearances": 8,
+      "races": 2
+    },
+    {
+      "source_candidate_name": "Tom Begich",
+      "source_party": "DEM",
+      "appearances": 8,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Click Bishop",
+      "source_party": "REP",
+      "appearances": 7,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Francesca Hong",
+      "source_party": "DEM",
+      "appearances": 7,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Karrin Taylor Robson",
+      "source_party": "REP",
+      "appearances": 7,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Mary Peltola",
+      "source_party": "DEM",
+      "appearances": 7,
+      "races": 2
+    },
+    {
+      "source_candidate_name": "Nancy Dahlstrom",
+      "source_party": "REP",
+      "appearances": 7,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Perry Johnson",
+      "source_party": "REP",
+      "appearances": 7,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Seth Moulton",
+      "source_party": "DEM",
+      "appearances": 7,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Beto O’Rourke",
+      "source_party": "DEM",
+      "appearances": 6,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Casey DeSantis",
+      "source_party": "REP",
+      "appearances": 6,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Christopher Reynolds",
+      "source_party": "IND",
+      "appearances": 6,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Daniel McKee",
+      "source_party": "DEM",
+      "appearances": 6,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Generic Candidate",
+      "source_party": "IND",
+      "appearances": 6,
+      "races": 3
+    },
+    {
+      "source_candidate_name": "Generic Candidate",
+      "source_party": "OTH",
+      "appearances": 6,
+      "races": 4
+    },
+    {
+      "source_candidate_name": "Jasjit Gotra",
+      "source_party": "IND",
+      "appearances": 6,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jay Pizzo",
+      "source_party": "IND",
+      "appearances": 6,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Matt Schultz",
+      "source_party": "DEM",
+      "appearances": 6,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Brad Raffensperger",
+      "source_party": "REP",
+      "appearances": 5,
+      "races": 2
+    },
+    {
+      "source_candidate_name": "Derek Dooley",
+      "source_party": "REP",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Joni Ernst",
+      "source_party": "REP",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Marisa Simonetti",
+      "source_party": "IND",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Mike Kennealy",
+      "source_party": "REP",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Rebecca Whiting",
+      "source_party": "LIB",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Sara Rodriguez",
+      "source_party": "DEM",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Steve Daines",
+      "source_party": "REP",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Tim Walz",
+      "source_party": "DEM",
+      "appearances": 5,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Angie Craig",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Brian Kemp",
+      "source_party": "REP",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Chris Sununu",
+      "source_party": "REP",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "David Roth",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jared Golden",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jenn Mack Raphoon",
+      "source_party": "IND",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Joe Baldacci",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "John King",
+      "source_party": "REP",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jordan Wood",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 2
+    },
+    {
+      "source_candidate_name": "Julian Beaudion",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "June Goodband",
+      "source_party": "OTH",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Keith Gross",
+      "source_party": "REP",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Lindsey Graham",
+      "source_party": "REP",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Matt Dunlap",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Mike Lawler",
+      "source_party": "REP",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Reilly Neill",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Zach Wahls",
+      "source_party": "DEM",
+      "appearances": 4,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Adam Crum",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Aric Nesbitt",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Bill Huizenga",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Bill Redpath",
+      "source_party": "LIB",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Bridget Brink",
+      "source_party": "DEM",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Chris Swanson",
+      "source_party": "DEM",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "David Graham",
+      "source_party": "LIB",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "David Schweikert",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Edna DeVries",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "James Fishback",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jay Collins",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Jeanne Shaheen",
+      "source_party": "DEM",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Joaquin Castro",
+      "source_party": "DEM",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Kendall Qualls",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Marjorie Taylor Greene",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Matt Maasdam",
+      "source_party": "DEM",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Mike Lindell",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Paul Renner",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Robert Wittman",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Ryan Zinke",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Steven Young",
+      "source_party": "GRE",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Thom Tillis",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Timothy Long",
+      "source_party": "CON",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Tom Steyer",
+      "source_party": "DEM",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Tudor Dixon",
+      "source_party": "REP",
+      "appearances": 3,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Alex Kelloff",
+      "source_party": "DEM",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Aly Richards",
+      "source_party": "DEM",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Burt Jones",
+      "source_party": "REP",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Charles D. Baker",
+      "source_party": "REP",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Charlie Kirk",
+      "source_party": "REP",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Cherlynn Stevenson",
+      "source_party": "DEM",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Chris Dudley",
+      "source_party": "REP",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Dan Innis",
+      "source_party": "REP",
+      "appearances": 2,
+      "races": 1
+    },
+    {
+      "source_candidate_name": "Daniella Levine Cava",
+      "source_party": "DEM",
+      "appearances": 2,
+      "races": 1
+    }
+  ],
+  "historical_poll_coverage": [
+    {
+      "source_key": "538_archive_generic_ballot_polls",
+      "office": "generic_ballot",
+      "first_cycle": 2020,
+      "last_cycle": 2022,
+      "questions": 912
+    },
+    {
+      "source_key": "538_archive_governor_polls",
+      "office": "governor",
+      "first_cycle": 2018,
+      "last_cycle": 2022,
+      "questions": 914
+    },
+    {
+      "source_key": "538_archive_house_polls",
+      "office": "house",
+      "first_cycle": 2017,
+      "last_cycle": 2021,
+      "questions": 1214
+    },
+    {
+      "source_key": "538_archive_president_approval_polls",
+      "office": "president_approval",
+      "first_cycle": null,
+      "last_cycle": null,
+      "questions": 10009
+    },
+    {
+      "source_key": "538_archive_senate_polls",
+      "office": "senate",
+      "first_cycle": 2018,
+      "last_cycle": 2022,
+      "questions": 1927
+    }
+  ],
+  "result_reconciliation": [
+    {
+      "cycle": 2010,
+      "office": "house",
+      "status": "exact",
+      "races": 311
+    },
+    {
+      "cycle": 2010,
+      "office": "house",
+      "status": "mismatch",
+      "races": 45
+    },
+    {
+      "cycle": 2010,
+      "office": "house",
+      "status": "missing_archive",
+      "races": 6
+    },
+    {
+      "cycle": 2010,
+      "office": "house",
+      "status": "missing_official_parse",
+      "races": 1
+    },
+    {
+      "cycle": 2010,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 75
+    },
+    {
+      "cycle": 2010,
+      "office": "senate",
+      "status": "exact",
+      "races": 16
+    },
+    {
+      "cycle": 2010,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 8
+    },
+    {
+      "cycle": 2010,
+      "office": "senate",
+      "status": "missing_official_parse",
+      "races": 2
+    },
+    {
+      "cycle": 2010,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 8
+    },
+    {
+      "cycle": 2012,
+      "office": "house",
+      "status": "exact",
+      "races": 298
+    },
+    {
+      "cycle": 2012,
+      "office": "house",
+      "status": "mismatch",
+      "races": 76
+    },
+    {
+      "cycle": 2012,
+      "office": "house",
+      "status": "missing_archive",
+      "races": 7
+    },
+    {
+      "cycle": 2012,
+      "office": "house",
+      "status": "missing_official_parse",
+      "races": 1
+    },
+    {
+      "cycle": 2012,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 58
+    },
+    {
+      "cycle": 2012,
+      "office": "senate",
+      "status": "exact",
+      "races": 18
+    },
+    {
+      "cycle": 2012,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 7
+    },
+    {
+      "cycle": 2012,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 8
+    },
+    {
+      "cycle": 2014,
+      "office": "house",
+      "status": "exact",
+      "races": 316
+    },
+    {
+      "cycle": 2014,
+      "office": "house",
+      "status": "mismatch",
+      "races": 73
+    },
+    {
+      "cycle": 2014,
+      "office": "house",
+      "status": "missing_archive",
+      "races": 6
+    },
+    {
+      "cycle": 2014,
+      "office": "house",
+      "status": "missing_official_parse",
+      "races": 1
+    },
+    {
+      "cycle": 2014,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 40
+    },
+    {
+      "cycle": 2014,
+      "office": "senate",
+      "status": "exact",
+      "races": 16
+    },
+    {
+      "cycle": 2014,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 8
+    },
+    {
+      "cycle": 2014,
+      "office": "senate",
+      "status": "missing_official_parse",
+      "races": 2
+    },
+    {
+      "cycle": 2014,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 7
+    },
+    {
+      "cycle": 2016,
+      "office": "house",
+      "status": "exact",
+      "races": 302
+    },
+    {
+      "cycle": 2016,
+      "office": "house",
+      "status": "mismatch",
+      "races": 80
+    },
+    {
+      "cycle": 2016,
+      "office": "house",
+      "status": "missing_archive",
+      "races": 7
+    },
+    {
+      "cycle": 2016,
+      "office": "house",
+      "status": "missing_official_parse",
+      "races": 1
+    },
+    {
+      "cycle": 2016,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 50
+    },
+    {
+      "cycle": 2016,
+      "office": "senate",
+      "status": "exact",
+      "races": 17
+    },
+    {
+      "cycle": 2016,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 9
+    },
+    {
+      "cycle": 2016,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 8
+    },
+    {
+      "cycle": 2018,
+      "office": "house",
+      "status": "exact",
+      "races": 305
+    },
+    {
+      "cycle": 2018,
+      "office": "house",
+      "status": "mismatch",
+      "races": 56
+    },
+    {
+      "cycle": 2018,
+      "office": "house",
+      "status": "missing_archive",
+      "races": 6
+    },
+    {
+      "cycle": 2018,
+      "office": "house",
+      "status": "missing_official_parse",
+      "races": 1
+    },
+    {
+      "cycle": 2018,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 69
+    },
+    {
+      "cycle": 2018,
+      "office": "senate",
+      "status": "exact",
+      "races": 17
+    },
+    {
+      "cycle": 2018,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 9
+    },
+    {
+      "cycle": 2018,
+      "office": "senate",
+      "status": "missing_official_parse",
+      "races": 2
+    },
+    {
+      "cycle": 2018,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 5
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "status": "exact",
+      "races": 298
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "status": "mismatch",
+      "races": 85
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "status": "missing_archive",
+      "races": 7
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "status": "missing_official_parse",
+      "races": 2
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 50
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "status": "exact",
+      "races": 18
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 7
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "status": "missing_archive",
+      "races": 1
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "status": "missing_official_parse",
+      "races": 1
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 7
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "status": "exact",
+      "races": 287
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "status": "mismatch",
+      "races": 90
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "status": "missing_archive",
+      "races": 5
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 56
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "status": "exact",
+      "races": 16
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 12
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "status": "missing_official_parse",
+      "races": 2
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 4
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "status": "exact",
+      "races": 318
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "status": "mismatch",
+      "races": 91
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "status": "missing_official_parse",
+      "races": 3
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "status": "within_tolerance",
+      "races": 24
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "status": "exact",
+      "races": 18
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "status": "mismatch",
+      "races": 13
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "status": "within_tolerance",
+      "races": 2
+    }
+  ],
+  "fundamentals_status": [
+    {
+      "office": "governor",
+      "geography_status": "statewide_comparable",
+      "evidence_status": "state_source_link_present_pending_official_reconciliation",
+      "races": 36
+    },
+    {
+      "office": "house",
+      "geography_status": "same_district_label_boundaries_not_yet_validated",
+      "evidence_status": "official_result_with_widened_boundary_uncertainty",
+      "races": 392
+    },
+    {
+      "office": "house",
+      "geography_status": "same_district_label_boundaries_not_yet_validated",
+      "evidence_status": "official_same_district_contested_fallback_for_structural_zero",
+      "races": 35
+    },
+    {
+      "office": "house",
+      "geography_status": "missouri_2026_plan_unresolved",
+      "evidence_status": "official_result_with_widened_boundary_uncertainty",
+      "races": 8
+    },
+    {
+      "office": "senate",
+      "geography_status": "statewide_comparable",
+      "evidence_status": "official_statewide_result",
+      "races": 33
+    },
+    {
+      "office": "senate",
+      "geography_status": "statewide_comparable",
+      "evidence_status": "official_other_seat_statewide_fallback_for_structural_zero",
+      "races": 1
+    },
+    {
+      "office": "senate",
+      "geography_status": "statewide_comparable",
+      "evidence_status": "structured_same_seat_result_official_row_unavailable",
+      "races": 1
+    }
+  ],
+  "state_coverage": [
+    {
+      "office": "governor",
+      "state": "AK",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "AL",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "AR",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "AZ",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "CA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "CO",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "CT",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "FL",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "GA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "HI",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "IA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "ID",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "IL",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "KS",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "MA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "MD",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "ME",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "MI",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "MN",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "NE",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "NH",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "NM",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "NV",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "NY",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "OH",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "OK",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "OR",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "PA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "RI",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "SC",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "SD",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "TN",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "TX",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "VT",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "WI",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "governor",
+      "state": "WY",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "AK",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "AL",
+      "races": 7,
+      "usable_baselines": 7,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "AR",
+      "races": 4,
+      "usable_baselines": 4,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "AZ",
+      "races": 9,
+      "usable_baselines": 9,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "CA",
+      "races": 52,
+      "usable_baselines": 52,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "CO",
+      "races": 8,
+      "usable_baselines": 8,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "CT",
+      "races": 5,
+      "usable_baselines": 5,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "DE",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "FL",
+      "races": 28,
+      "usable_baselines": 28,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "GA",
+      "races": 14,
+      "usable_baselines": 14,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "HI",
+      "races": 2,
+      "usable_baselines": 2,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "IA",
+      "races": 4,
+      "usable_baselines": 4,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "ID",
+      "races": 2,
+      "usable_baselines": 2,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "IL",
+      "races": 17,
+      "usable_baselines": 17,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "IN",
+      "races": 9,
+      "usable_baselines": 9,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "KS",
+      "races": 4,
+      "usable_baselines": 4,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "KY",
+      "races": 6,
+      "usable_baselines": 6,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "LA",
+      "races": 6,
+      "usable_baselines": 6,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "MA",
+      "races": 9,
+      "usable_baselines": 9,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "MD",
+      "races": 8,
+      "usable_baselines": 8,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "ME",
+      "races": 2,
+      "usable_baselines": 2,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "MI",
+      "races": 13,
+      "usable_baselines": 13,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "MN",
+      "races": 8,
+      "usable_baselines": 8,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "MO",
+      "races": 8,
+      "usable_baselines": 8,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "MS",
+      "races": 4,
+      "usable_baselines": 4,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "MT",
+      "races": 2,
+      "usable_baselines": 2,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "NC",
+      "races": 14,
+      "usable_baselines": 14,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "ND",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "NE",
+      "races": 3,
+      "usable_baselines": 3,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "NH",
+      "races": 2,
+      "usable_baselines": 2,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "NJ",
+      "races": 12,
+      "usable_baselines": 12,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "NM",
+      "races": 3,
+      "usable_baselines": 3,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "NV",
+      "races": 4,
+      "usable_baselines": 4,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "NY",
+      "races": 26,
+      "usable_baselines": 26,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "OH",
+      "races": 15,
+      "usable_baselines": 15,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "OK",
+      "races": 5,
+      "usable_baselines": 5,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "OR",
+      "races": 6,
+      "usable_baselines": 6,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "PA",
+      "races": 17,
+      "usable_baselines": 17,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "RI",
+      "races": 2,
+      "usable_baselines": 2,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "SC",
+      "races": 7,
+      "usable_baselines": 7,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "SD",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "TN",
+      "races": 9,
+      "usable_baselines": 9,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "TX",
+      "races": 38,
+      "usable_baselines": 38,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "UT",
+      "races": 4,
+      "usable_baselines": 4,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "VA",
+      "races": 11,
+      "usable_baselines": 11,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "VT",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "WA",
+      "races": 10,
+      "usable_baselines": 10,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "WI",
+      "races": 8,
+      "usable_baselines": 8,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "WV",
+      "races": 2,
+      "usable_baselines": 2,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "house",
+      "state": "WY",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "AK",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "AL",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "AR",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "CO",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "DE",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "FL",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "GA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "IA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "ID",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "IL",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "KS",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "KY",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "LA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "MA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "ME",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "MI",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "MN",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "MS",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "MT",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "NC",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "NE",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "NH",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "NJ",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "NM",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "OH",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "OK",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "OR",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "RI",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "SC",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "SD",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "TN",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "TX",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "VA",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "WV",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    },
+    {
+      "office": "senate",
+      "state": "WY",
+      "races": 1,
+      "usable_baselines": 1,
+      "quarantined_or_missing": 0
+    }
+  ]
+}

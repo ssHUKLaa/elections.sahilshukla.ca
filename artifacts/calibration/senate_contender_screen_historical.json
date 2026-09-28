@@ -1,0 +1,59 @@
+{
+  "design": "Historical safety test of the proposed current-ballot Senate plurality contender screen. Counts distinct archived polls available at each cutoff; excludes AK ranked-choice and GA runoff races. Uses final-result candidate roster, so early cutoffs can leak later ballot status.",
+  "cells": [
+    {
+      "lead_days": 90,
+      "eligible_senate_races_at_least_3_polls": 37,
+      "races_with_screened_candidate": 35,
+      "candidate_entries_screened": 128,
+      "actual_winners_screened": 0,
+      "winner_failures": [],
+      "screened_share_median": 0.0017922445405393632,
+      "screened_share_max": 0.04953594007688148,
+      "unpolled_n": 115,
+      "unpolled_share_median": 0.0007243568118251399,
+      "unpolled_share_mean": 0.004732279096093775,
+      "unpolled_share_max": 0.03429641238154338,
+      "polled_n": 13,
+      "polled_share_median": 0.01648960000390633,
+      "polled_share_mean": 0.021238488080548873,
+      "polled_share_max": 0.04953594007688148
+    },
+    {
+      "lead_days": 30,
+      "eligible_senate_races_at_least_3_polls": 55,
+      "races_with_screened_candidate": 53,
+      "candidate_entries_screened": 171,
+      "actual_winners_screened": 0,
+      "winner_failures": [],
+      "screened_share_median": 0.0019142790134249366,
+      "screened_share_max": 0.059159569119572306,
+      "unpolled_n": 114,
+      "unpolled_share_median": 5.7562338140747135e-05,
+      "unpolled_share_mean": 0.0023974266184002796,
+      "unpolled_share_max": 0.03429641238154338,
+      "polled_n": 57,
+      "polled_share_median": 0.013683370412334748,
+      "polled_share_mean": 0.016027665276045253,
+      "polled_share_max": 0.059159569119572306
+    },
+    {
+      "lead_days": 7,
+      "eligible_senate_races_at_least_3_polls": 60,
+      "races_with_screened_candidate": 58,
+      "candidate_entries_screened": 180,
+      "actual_winners_screened": 0,
+      "winner_failures": [],
+      "screened_share_median": 0.0023151321114657612,
+      "screened_share_max": 0.059159569119572306,
+      "unpolled_n": 108,
+      "unpolled_share_median": 4.19337001138793e-05,
+      "unpolled_share_mean": 0.001826518052459829,
+      "unpolled_share_max": 0.030299140864378914,
+      "polled_n": 72,
+      "polled_share_median": 0.012433180831048414,
+      "polled_share_mean": 0.015409449772893592,
+      "polled_share_max": 0.059159569119572306
+    }
+  ]
+}

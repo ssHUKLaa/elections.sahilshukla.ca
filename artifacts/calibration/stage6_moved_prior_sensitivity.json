@@ -1,0 +1,647 @@
+{
+  "design": "Paired seven-day test only where a target House candidate won a different district in the prior cycle. Candidate identity is matched by canonical name within state; ambiguity is excluded. Polls and random seed are held fixed. This does not replace a geographic crosswalk.",
+  "cycles": [
+    {
+      "cycle": 2022,
+      "paired_races": 62,
+      "same_number": {
+        "log_score": 0.814684,
+        "brier": 0.45733,
+        "share_mae": 0.091444,
+        "coverage80": 0.611559,
+        "coverage95": 0.758065
+      },
+      "moved_winner_previous_district": {
+        "log_score": 0.24138,
+        "brier": 0.14459,
+        "share_mae": 0.047326,
+        "coverage80": 0.829301,
+        "coverage95": 0.916667
+      },
+      "examples": [
+        {
+          "target_race_id": "8999",
+          "state": "AZ",
+          "target_district": "01",
+          "same_number_prior_race": "7837",
+          "moved_winner_prior_race": "7842",
+          "moved_winner_prior_district": "06"
+        },
+        {
+          "target_race_id": "9000",
+          "state": "AZ",
+          "target_district": "02",
+          "same_number_prior_race": "7838",
+          "moved_winner_prior_race": "7837",
+          "moved_winner_prior_district": "01"
+        },
+        {
+          "target_race_id": "9001",
+          "state": "AZ",
+          "target_district": "03",
+          "same_number_prior_race": "7839",
+          "moved_winner_prior_race": "7843",
+          "moved_winner_prior_district": "07"
+        },
+        {
+          "target_race_id": "9002",
+          "state": "AZ",
+          "target_district": "04",
+          "same_number_prior_race": "7840",
+          "moved_winner_prior_race": "7845",
+          "moved_winner_prior_district": "09"
+        },
+        {
+          "target_race_id": "9005",
+          "state": "AZ",
+          "target_district": "07",
+          "same_number_prior_race": "7843",
+          "moved_winner_prior_race": "7839",
+          "moved_winner_prior_district": "03"
+        },
+        {
+          "target_race_id": "9007",
+          "state": "AZ",
+          "target_district": "09",
+          "same_number_prior_race": "7845",
+          "moved_winner_prior_race": "7840",
+          "moved_winner_prior_district": "04"
+        },
+        {
+          "target_race_id": "9015",
+          "state": "CA",
+          "target_district": "04",
+          "same_number_prior_race": "7853",
+          "moved_winner_prior_race": "7854",
+          "moved_winner_prior_district": "05"
+        },
+        {
+          "target_race_id": "9016",
+          "state": "CA",
+          "target_district": "05",
+          "same_number_prior_race": "7854",
+          "moved_winner_prior_race": "7853",
+          "moved_winner_prior_district": "04"
+        },
+        {
+          "target_race_id": "9017",
+          "state": "CA",
+          "target_district": "06",
+          "same_number_prior_race": "7855",
+          "moved_winner_prior_race": "7856",
+          "moved_winner_prior_district": "07"
+        },
+        {
+          "target_race_id": "9018",
+          "state": "CA",
+          "target_district": "07",
+          "same_number_prior_race": "7856",
+          "moved_winner_prior_race": "7855",
+          "moved_winner_prior_district": "06"
+        },
+        {
+          "target_race_id": "9019",
+          "state": "CA",
+          "target_district": "08",
+          "same_number_prior_race": "7857",
+          "moved_winner_prior_race": "7852",
+          "moved_winner_prior_district": "03"
+        },
+        {
+          "target_race_id": "9020",
+          "state": "CA",
+          "target_district": "09",
+          "same_number_prior_race": "7858",
+          "moved_winner_prior_race": "7859",
+          "moved_winner_prior_district": "10"
+        },
+        {
+          "target_race_id": "9021",
+          "state": "CA",
+          "target_district": "10",
+          "same_number_prior_race": "7859",
+          "moved_winner_prior_race": "7860",
+          "moved_winner_prior_district": "11"
+        },
+        {
+          "target_race_id": "9022",
+          "state": "CA",
+          "target_district": "11",
+          "same_number_prior_race": "7860",
+          "moved_winner_prior_race": "7861",
+          "moved_winner_prior_district": "12"
+        },
+        {
+          "target_race_id": "9023",
+          "state": "CA",
+          "target_district": "12",
+          "same_number_prior_race": "7861",
+          "moved_winner_prior_race": "7862",
+          "moved_winner_prior_district": "13"
+        },
+        {
+          "target_race_id": "9025",
+          "state": "CA",
+          "target_district": "14",
+          "same_number_prior_race": "7863",
+          "moved_winner_prior_race": "7864",
+          "moved_winner_prior_district": "15"
+        },
+        {
+          "target_race_id": "9027",
+          "state": "CA",
+          "target_district": "16",
+          "same_number_prior_race": "7865",
+          "moved_winner_prior_race": "7867",
+          "moved_winner_prior_district": "18"
+        },
+        {
+          "target_race_id": "9029",
+          "state": "CA",
+          "target_district": "18",
+          "same_number_prior_race": "7867",
+          "moved_winner_prior_race": "7868",
+          "moved_winner_prior_district": "19"
+        },
+        {
+          "target_race_id": "9030",
+          "state": "CA",
+          "target_district": "19",
+          "same_number_prior_race": "7868",
+          "moved_winner_prior_race": "7869",
+          "moved_winner_prior_district": "20"
+        },
+        {
+          "target_race_id": "9031",
+          "state": "CA",
+          "target_district": "20",
+          "same_number_prior_race": "7869",
+          "moved_winner_prior_race": "7872",
+          "moved_winner_prior_district": "23"
+        },
+        {
+          "target_race_id": "9032",
+          "state": "CA",
+          "target_district": "21",
+          "same_number_prior_race": "7870",
+          "moved_winner_prior_race": "7865",
+          "moved_winner_prior_district": "16"
+        },
+        {
+          "target_race_id": "9033",
+          "state": "CA",
+          "target_district": "22",
+          "same_number_prior_race": "7871",
+          "moved_winner_prior_race": "7870",
+          "moved_winner_prior_district": "21"
+        },
+        {
+          "target_race_id": "9034",
+          "state": "CA",
+          "target_district": "23",
+          "same_number_prior_race": "7872",
+          "moved_winner_prior_race": "7857",
+          "moved_winner_prior_district": "08"
+        },
+        {
+          "target_race_id": "9036",
+          "state": "CA",
+          "target_district": "25",
+          "same_number_prior_race": "7874",
+          "moved_winner_prior_race": "7885",
+          "moved_winner_prior_district": "36"
+        },
+        {
+          "target_race_id": "9038",
+          "state": "CA",
+          "target_district": "27",
+          "same_number_prior_race": "7876",
+          "moved_winner_prior_race": "7874",
+          "moved_winner_prior_district": "25"
+        },
+        {
+          "target_race_id": "9039",
+          "state": "CA",
+          "target_district": "28",
+          "same_number_prior_race": "7877",
+          "moved_winner_prior_race": "7876",
+          "moved_winner_prior_district": "27"
+        },
+        {
+          "target_race_id": "9041",
+          "state": "CA",
+          "target_district": "30",
+          "same_number_prior_race": "7879",
+          "moved_winner_prior_race": "7877",
+          "moved_winner_prior_district": "28"
+        },
+        {
+          "target_race_id": "9042",
+          "state": "CA",
+          "target_district": "31",
+          "same_number_prior_race": "7880",
+          "moved_winner_prior_race": "7881",
+          "moved_winner_prior_district": "32"
+        },
+        {
+          "target_race_id": "9043",
+          "state": "CA",
+          "target_district": "32",
+          "same_number_prior_race": "7881",
+          "moved_winner_prior_race": "7879",
+          "moved_winner_prior_district": "30"
+        },
+        {
+          "target_race_id": "9044",
+          "state": "CA",
+          "target_district": "33",
+          "same_number_prior_race": "7882",
+          "moved_winner_prior_race": "7880",
+          "moved_winner_prior_district": "31"
+        },
+        {
+          "target_race_id": "9047",
+          "state": "CA",
+          "target_district": "36",
+          "same_number_prior_race": "7885",
+          "moved_winner_prior_race": "7882",
+          "moved_winner_prior_district": "33"
+        },
+        {
+          "target_race_id": "9050",
+          "state": "CA",
+          "target_district": "39",
+          "same_number_prior_race": "7888",
+          "moved_winner_prior_race": "7890",
+          "moved_winner_prior_district": "41"
+        },
+        {
+          "target_race_id": "9051",
+          "state": "CA",
+          "target_district": "40",
+          "same_number_prior_race": "7889",
+          "moved_winner_prior_race": "7888",
+          "moved_winner_prior_district": "39"
+        },
+        {
+          "target_race_id": "9052",
+          "state": "CA",
+          "target_district": "41",
+          "same_number_prior_race": "7890",
+          "moved_winner_prior_race": "7891",
+          "moved_winner_prior_district": "42"
+        },
+        {
+          "target_race_id": "9056",
+          "state": "CA",
+          "target_district": "45",
+          "same_number_prior_race": "7894",
+          "moved_winner_prior_race": "7897",
+          "moved_winner_prior_district": "48"
+        },
+        {
+          "target_race_id": "9058",
+          "state": "CA",
+          "target_district": "47",
+          "same_number_prior_race": "7896",
+          "moved_winner_prior_race": "7894",
+          "moved_winner_prior_district": "45"
+        },
+        {
+          "target_race_id": "9059",
+          "state": "CA",
+          "target_district": "48",
+          "same_number_prior_race": "7897",
+          "moved_winner_prior_race": "7899",
+          "moved_winner_prior_district": "50"
+        },
+        {
+          "target_race_id": "9061",
+          "state": "CA",
+          "target_district": "50",
+          "same_number_prior_race": "7899",
+          "moved_winner_prior_race": "7901",
+          "moved_winner_prior_district": "52"
+        },
+        {
+          "target_race_id": "9062",
+          "state": "CA",
+          "target_district": "51",
+          "same_number_prior_race": "7900",
+          "moved_winner_prior_race": "7902",
+          "moved_winner_prior_district": "53"
+        },
+        {
+          "target_race_id": "9063",
+          "state": "CA",
+          "target_district": "52",
+          "same_number_prior_race": "7901",
+          "moved_winner_prior_race": "7900",
+          "moved_winner_prior_district": "51"
+        },
+        {
+          "target_race_id": "9079",
+          "state": "FL",
+          "target_district": "02",
+          "same_number_prior_race": "7917",
+          "moved_winner_prior_race": "7920",
+          "moved_winner_prior_district": "05"
+        },
+        {
+          "target_race_id": "9095",
+          "state": "FL",
+          "target_district": "18",
+          "same_number_prior_race": "7933",
+          "moved_winner_prior_race": "7930",
+          "moved_winner_prior_district": "15"
+        },
+        {
+          "target_race_id": "9099",
+          "state": "FL",
+          "target_district": "22",
+          "same_number_prior_race": "7937",
+          "moved_winner_prior_race": "7936",
+          "moved_winner_prior_district": "21"
+        },
+        {
+          "target_race_id": "9102",
+          "state": "FL",
+          "target_district": "25",
+          "same_number_prior_race": "278",
+          "moved_winner_prior_race": "276",
+          "moved_winner_prior_district": "23"
+        },
+        {
+          "target_race_id": "9111",
+          "state": "GA",
+          "target_district": "07",
+          "same_number_prior_race": "7949",
+          "moved_winner_prior_race": "7948",
+          "moved_winner_prior_district": "06"
+        },
+        {
+          "target_race_id": "9150",
+          "state": "IA",
+          "target_district": "01",
+          "same_number_prior_race": "7988",
+          "moved_winner_prior_race": "7989",
+          "moved_winner_prior_district": "02"
+        },
+        {
+          "target_race_id": "9151",
+          "state": "IA",
+          "target_district": "02",
+          "same_number_prior_race": "7989",
+          "moved_winner_prior_race": "7988",
+          "moved_winner_prior_district": "01"
+        },
+        {
+          "target_race_id": "9138",
+          "state": "IL",
+          "target_district": "16",
+          "same_number_prior_race": "7976",
+          "moved_winner_prior_race": "7978",
+          "moved_winner_prior_district": "18"
+        },
+        {
+          "target_race_id": "9196",
+          "state": "MI",
+          "target_district": "02",
+          "same_number_prior_race": "8034",
+          "moved_winner_prior_race": "8036",
+          "moved_winner_prior_district": "04"
+        },
+        {
+          "target_race_id": "9198",
+          "state": "MI",
+          "target_district": "04",
+          "same_number_prior_race": "8036",
+          "moved_winner_prior_race": "8034",
+          "moved_winner_prior_district": "02"
+        },
+        {
+          "target_race_id": "9199",
+          "state": "MI",
+          "target_district": "05",
+          "same_number_prior_race": "8037",
+          "moved_winner_prior_race": "8039",
+          "moved_winner_prior_district": "07"
+        },
+        {
+          "target_race_id": "9200",
+          "state": "MI",
+          "target_district": "06",
+          "same_number_prior_race": "8038",
+          "moved_winner_prior_race": "8044",
+          "moved_winner_prior_district": "12"
+        },
+        {
+          "target_race_id": "9201",
+          "state": "MI",
+          "target_district": "07",
+          "same_number_prior_race": "8039",
+          "moved_winner_prior_race": "8040",
+          "moved_winner_prior_district": "08"
+        },
+        {
+          "target_race_id": "9203",
+          "state": "MI",
+          "target_district": "09",
+          "same_number_prior_race": "8041",
+          "moved_winner_prior_race": "8042",
+          "moved_winner_prior_district": "10"
+        },
+        {
+          "target_race_id": "9206",
+          "state": "MI",
+          "target_district": "12",
+          "same_number_prior_race": "8044",
+          "moved_winner_prior_race": "8045",
+          "moved_winner_prior_district": "13"
+        },
+        {
+          "target_race_id": "9288",
+          "state": "NC",
+          "target_district": "08",
+          "same_number_prior_race": "8126",
+          "moved_winner_prior_race": "8127",
+          "moved_winner_prior_district": "09"
+        },
+        {
+          "target_race_id": "9289",
+          "state": "NC",
+          "target_district": "09",
+          "same_number_prior_race": "8127",
+          "moved_winner_prior_race": "8126",
+          "moved_winner_prior_district": "08"
+        },
+        {
+          "target_race_id": "9265",
+          "state": "NY",
+          "target_district": "12",
+          "same_number_prior_race": "8103",
+          "moved_winner_prior_race": "8101",
+          "moved_winner_prior_district": "10"
+        },
+        {
+          "target_race_id": "9270",
+          "state": "NY",
+          "target_district": "17",
+          "same_number_prior_race": "8108",
+          "moved_winner_prior_race": "8109",
+          "moved_winner_prior_district": "18"
+        },
+        {
+          "target_race_id": "9420",
+          "state": "WV",
+          "target_district": "01",
+          "same_number_prior_race": "8258",
+          "moved_winner_prior_race": "8260",
+          "moved_winner_prior_district": "03"
+        },
+        {
+          "target_race_id": "9098",
+          "state": "FL",
+          "target_district": "21",
+          "same_number_prior_race": "7936",
+          "moved_winner_prior_race": "7933",
+          "moved_winner_prior_district": "18"
+        },
+        {
+          "target_race_id": "9391",
+          "state": "TX",
+          "target_district": "34",
+          "same_number_prior_race": "8229",
+          "moved_winner_prior_race": "8210",
+          "moved_winner_prior_district": "15"
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "paired_races": 5,
+      "same_number": {
+        "log_score": 1.605315,
+        "brier": 1.01698,
+        "share_mae": 0.160551,
+        "coverage80": 0.253333,
+        "coverage95": 0.533333
+      },
+      "moved_winner_previous_district": {
+        "log_score": 0.191984,
+        "brier": 0.097708,
+        "share_mae": 0.048343,
+        "coverage80": 0.693333,
+        "coverage95": 1.0
+      },
+      "examples": [
+        {
+          "target_race_id": "9554",
+          "state": "AL",
+          "target_district": "01",
+          "same_number_prior_race": "8991",
+          "moved_winner_prior_race": "8992",
+          "moved_winner_prior_district": "02"
+        },
+        {
+          "target_race_id": "9616",
+          "state": "CO",
+          "target_district": "04",
+          "same_number_prior_race": "9068",
+          "moved_winner_prior_race": "9067",
+          "moved_winner_prior_district": "03"
+        },
+        {
+          "target_race_id": "9631",
+          "state": "FL",
+          "target_district": "05",
+          "same_number_prior_race": "7920",
+          "moved_winner_prior_race": "7919",
+          "moved_winner_prior_district": "04"
+        },
+        {
+          "target_race_id": "9660",
+          "state": "GA",
+          "target_district": "06",
+          "same_number_prior_race": "9110",
+          "moved_winner_prior_race": "9111",
+          "moved_winner_prior_district": "07"
+        },
+        {
+          "target_race_id": "9661",
+          "state": "GA",
+          "target_district": "07",
+          "same_number_prior_race": "9111",
+          "moved_winner_prior_race": "9110",
+          "moved_winner_prior_district": "06"
+        }
+      ]
+    }
+  ],
+  "untouched_2024_full_cycle": {
+    "training_rekeyed": 161,
+    "holdout_rekeyed": 5,
+    "methods": {
+      "same_number": {
+        "all": {
+          "log_score": 0.187871,
+          "brier": 0.096208,
+          "share_mae": 0.026004,
+          "coverage80": 0.848402,
+          "coverage95": 0.948357
+        },
+        "office:house": {
+          "log_score": 0.189665,
+          "brier": 0.096419,
+          "share_mae": 0.026316,
+          "coverage80": 0.853863,
+          "coverage95": 0.950401
+        },
+        "district_continuity:documented_candidate_move": {
+          "log_score": 0.237104,
+          "brier": 0.136563,
+          "share_mae": 0.030113,
+          "coverage80": 0.717672,
+          "coverage95": 0.90158
+        },
+        "district_continuity:same_district_candidate": {
+          "log_score": 0.14645,
+          "brier": 0.072915,
+          "share_mae": 0.021904,
+          "coverage80": 0.916268,
+          "coverage95": 0.972485
+        }
+      },
+      "candidate_continuity": {
+        "all": {
+          "log_score": 0.159229,
+          "brier": 0.080204,
+          "share_mae": 0.024822,
+          "coverage80": 0.845838,
+          "coverage95": 0.944987
+        },
+        "office:house": {
+          "log_score": 0.158337,
+          "brier": 0.078916,
+          "share_mae": 0.025023,
+          "coverage80": 0.851059,
+          "coverage95": 0.946715
+        },
+        "district_continuity:documented_candidate_move": {
+          "log_score": 0.164326,
+          "brier": 0.093269,
+          "share_mae": 0.025266,
+          "coverage80": 0.72658,
+          "coverage95": 0.896552
+        },
+        "district_continuity:same_district_candidate": {
+          "log_score": 0.127733,
+          "brier": 0.064671,
+          "share_mae": 0.021917,
+          "coverage80": 0.915541,
+          "coverage95": 0.969758
+        }
+      }
+    }
+  }
+}

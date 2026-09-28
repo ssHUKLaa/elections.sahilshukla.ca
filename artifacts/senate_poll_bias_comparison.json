@@ -1,0 +1,143 @@
+{
+  "source_sha256": "34232aa4c3aba30023a9d8f08445ea0abca0d7eb9e396c40d22df5b86afa6403",
+  "holdout_cycle": 2024,
+  "old_2018_correction": {
+    "races": 15,
+    "polls": 165,
+    "mean_error_margin_points_approx": 1.483208974445711,
+    "rmse_margin_points_approx": 5.791685645140739,
+    "mae_margin_points_approx": 3.867472111960372
+  },
+  "multi_cycle_correction": {
+    "races": 15,
+    "polls": 165,
+    "mean_error_margin_points_approx": 0.6179853885381572,
+    "rmse_margin_points_approx": 5.200213360017568,
+    "mae_margin_points_approx": 3.4201644037746615
+  },
+  "no_correction": {
+    "races": 15,
+    "polls": 165,
+    "mean_error_margin_points_approx": 4.63551662638819,
+    "rmse_margin_points_approx": 7.1118007848888904,
+    "mae_margin_points_approx": 5.628702502260883
+  },
+  "current_adjustment_by_state": {
+    "AK": {
+      "poll_count": 14,
+      "old_D_margin_correction_points_approx": 3.9424144070407605,
+      "new_D_margin_correction_points_approx": 3.4602579114593586
+    },
+    "AL": {
+      "poll_count": 1,
+      "old_D_margin_correction_points_approx": 3.019451425981125,
+      "new_D_margin_correction_points_approx": 3.469282533013674
+    },
+    "AR": {
+      "poll_count": 4,
+      "old_D_margin_correction_points_approx": 4.236106782503733,
+      "new_D_margin_correction_points_approx": 3.4653208151222534
+    },
+    "FL": {
+      "poll_count": 7,
+      "old_D_margin_correction_points_approx": 4.315210798993002,
+      "new_D_margin_correction_points_approx": 3.4550400333387707
+    },
+    "GA": {
+      "poll_count": 12,
+      "old_D_margin_correction_points_approx": 3.7358018253670817,
+      "new_D_margin_correction_points_approx": 3.608606619021523
+    },
+    "IA": {
+      "poll_count": 18,
+      "old_D_margin_correction_points_approx": 3.218044420174504,
+      "new_D_margin_correction_points_approx": 3.638208365368023
+    },
+    "KS": {
+      "poll_count": 3,
+      "old_D_margin_correction_points_approx": 4.35170297626338,
+      "new_D_margin_correction_points_approx": 4.6755736782904185
+    },
+    "KY": {
+      "poll_count": 2,
+      "old_D_margin_correction_points_approx": 4.558478290593526,
+      "new_D_margin_correction_points_approx": 3.475226307001472
+    },
+    "MA": {
+      "poll_count": 8,
+      "old_D_margin_correction_points_approx": 0.838912665126859,
+      "new_D_margin_correction_points_approx": 4.9132037145857845
+    },
+    "ME": {
+      "poll_count": 9,
+      "old_D_margin_correction_points_approx": 3.2992319054356174,
+      "new_D_margin_correction_points_approx": 4.3645531807116935
+    },
+    "MI": {
+      "poll_count": 29,
+      "old_D_margin_correction_points_approx": 2.95720666211894,
+      "new_D_margin_correction_points_approx": 3.9248864440013977
+    },
+    "MN": {
+      "poll_count": 4,
+      "old_D_margin_correction_points_approx": 4.318628511323066,
+      "new_D_margin_correction_points_approx": 3.4673780895886477
+    },
+    "MS": {
+      "poll_count": 2,
+      "old_D_margin_correction_points_approx": 4.8097378591458595,
+      "new_D_margin_correction_points_approx": 3.274506959705611
+    },
+    "MT": {
+      "poll_count": 9,
+      "old_D_margin_correction_points_approx": 1.994908229106182,
+      "new_D_margin_correction_points_approx": 3.930294829632678
+    },
+    "NC": {
+      "poll_count": 32,
+      "old_D_margin_correction_points_approx": 3.8753581852485515,
+      "new_D_margin_correction_points_approx": 3.9120509536337447
+    },
+    "NE": {
+      "poll_count": 6,
+      "old_D_margin_correction_points_approx": 4.379154093979253,
+      "new_D_margin_correction_points_approx": 3.224058391670767
+    },
+    "NH": {
+      "poll_count": 16,
+      "old_D_margin_correction_points_approx": 2.336463175889502,
+      "new_D_margin_correction_points_approx": 3.587197659922691
+    },
+    "NM": {
+      "poll_count": 1,
+      "old_D_margin_correction_points_approx": 1.4776432060478253,
+      "new_D_margin_correction_points_approx": 3.470787630705048
+    },
+    "OH": {
+      "poll_count": 18,
+      "old_D_margin_correction_points_approx": 2.6374158000381236,
+      "new_D_margin_correction_points_approx": 3.732706293968114
+    },
+    "OK": {
+      "poll_count": 1,
+      "old_D_margin_correction_points_approx": 3.361791242526631,
+      "new_D_margin_correction_points_approx": 5.357549124837811
+    },
+    "RI": {
+      "poll_count": 3,
+      "old_D_margin_correction_points_approx": 0.5672218226081536,
+      "new_D_margin_correction_points_approx": 3.467812829295128
+    },
+    "SC": {
+      "poll_count": 3,
+      "old_D_margin_correction_points_approx": 3.6757379230668064,
+      "new_D_margin_correction_points_approx": 3.8929943933548152
+    },
+    "TX": {
+      "poll_count": 35,
+      "old_D_margin_correction_points_approx": 3.5923651242192087,
+      "new_D_margin_correction_points_approx": 3.7683791018551727
+    }
+  },
+  "note": "Same 2024 race set and 30-day as-of poll weighting; old model was fitted only on 2018. Approximate margin-point metrics are 50 times D/R log-ratio error."
+}

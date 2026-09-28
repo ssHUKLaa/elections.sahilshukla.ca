@@ -1,0 +1,2027 @@
+{
+  "design": {
+    "target": "election-held-at-cutoff nowcast",
+    "validation_target": "certified eventual vote shares and winners (terminal proxy)",
+    "training_rule": "fit on cycles strictly before each holdout; 2018 poll error calibration only",
+    "leads_days": [
+      7
+    ],
+    "draws_per_race": 750,
+    "current_model_version": "nowcast-2026-0.12",
+    "senate_contender_screen": true,
+    "contender_support_floor_pct": 5.0,
+    "source_database_sha256": "faad9d4e29058c283d1684cabf88a31a3a546659a58c0ae3dea17feedd944f2f",
+    "stage6_code_sha256": "4d8c29877601afa492898d1fffdbc7e3a7f5c8049c8cc8fc5183798fb14ab4c8",
+    "poll_loader_code_sha256": "f83d0fff45aeb7c67aa7128298821dbc78e9d500c920754d92ebaf0508b0556e",
+    "stage3_code_sha256": "7d95bcb0294205e8ae07d17c84bc28177c8bbbbcfe1caf9f0df843c26f772ac9",
+    "stage4_code_sha256": "866ebf8ff4d642d8c3c1817295811ff90fd073e1b502f49e0370e3cfdea87e04",
+    "stage5_code_sha256": "35efcedc1b3b5539e3d2fd816e9a4101c7f2a1c41c31890a8271ad3c4ea6083a"
+  },
+  "archive_coverage": {
+    "2022": {
+      "holdout_races": 469,
+      "deduplicated_poll_questions_in_archive": 1425
+    },
+    "2024": {
+      "holdout_races": 455,
+      "deduplicated_poll_questions_in_archive": 1116
+    }
+  },
+  "polled_races_by_cycle_at_7_days": {
+    "2020": 0,
+    "2022": 150,
+    "2024": 116
+  },
+  "wayback_poll_processing": {
+    "source_manifest_sha256": "8bf82a6c2549573a93dad7a8c75b2a1315639d6f32367006914f651930b6fcfc",
+    "raw_questions_accepted": 3993,
+    "deduplicated_questions": 3679,
+    "files": {
+      "house_polls.csv": {
+        "general_questions_in_used_cycles": 297,
+        "accepted_questions_before_deduplication": 246,
+        "sha256": "0b7e5f2d293dd1343c052a4a1263f68fbb2629f97181f4a774bf7dcf84167225"
+      },
+      "senate_polls.csv": {
+        "general_questions_in_used_cycles": 1142,
+        "accepted_questions_before_deduplication": 905,
+        "sha256": "eabff005edb5068b61bb074c42f9a1e833bcf09539f5755ce2299354c8ed1429"
+      },
+      "governor_polls.csv": {
+        "general_questions_in_used_cycles": 219,
+        "accepted_questions_before_deduplication": 163,
+        "sha256": "09dc4eb4a2d2652d367085d3041e1292d1a3367c52e2f5840eaaf4a9adf8f448"
+      },
+      "house_polls_historical.csv": {
+        "general_questions_in_used_cycles": 740,
+        "accepted_questions_before_deduplication": 555,
+        "sha256": "a08a26c33087392ca340d04faacdcb4af6261146d20b3414973cad24aa70dc2c"
+      },
+      "senate_polls_historical.csv": {
+        "general_questions_in_used_cycles": 1735,
+        "accepted_questions_before_deduplication": 1215,
+        "sha256": "0ac54cbdac66e3e10ebbcba86c914ba3751ce3fe800a49f9596eb548a029eccc"
+      },
+      "governor_polls_historical.csv": {
+        "general_questions_in_used_cycles": 1215,
+        "accepted_questions_before_deduplication": 909,
+        "sha256": "bbb50ee2d91c52bc288a87a1ed6a247317785d66984e864cf337940146728c7d"
+      }
+    },
+    "exclusions": {
+      "outside_cycle_use": 5668,
+      "unmatched_race": 563,
+      "ranked_choice_reallocated": 19,
+      "hypothetical": 230,
+      "unmapped_candidate_or_pct": 543,
+      "non_general": 1433
+    },
+    "availability_rule": "created_at calendar date plus one full day"
+  },
+  "cells": [
+    {
+      "cycle": 2022,
+      "lead_days": 7,
+      "n_races": 469,
+      "n_polled_races": 150,
+      "strata": {
+        "all": {
+          "n_races": 469,
+          "methods": {
+            "results_only": {
+              "log_score": 0.27573,
+              "brier": 0.154052,
+              "share_mae": 0.044328,
+              "coverage80": 0.791243,
+              "coverage95": 0.904468
+            },
+            "polls_only": {
+              "log_score": 0.830328,
+              "brier": 0.470042,
+              "share_mae": 0.147966,
+              "coverage80": 0.798454,
+              "coverage95": 0.92984
+            },
+            "combined": {
+              "log_score": 0.200405,
+              "brier": 0.110707,
+              "share_mae": 0.03913,
+              "coverage80": 0.780393,
+              "coverage95": 0.905919
+            }
+          }
+        },
+        "office:senate": {
+          "n_races": 28,
+          "methods": {
+            "results_only": {
+              "log_score": 0.281735,
+              "brier": 0.18494,
+              "share_mae": 0.030844,
+              "coverage80": 0.783276,
+              "coverage95": 0.904661
+            },
+            "polls_only": {
+              "log_score": 0.466701,
+              "brier": 0.238177,
+              "share_mae": 0.062161,
+              "coverage80": 0.756379,
+              "coverage95": 0.893732
+            },
+            "combined": {
+              "log_score": 0.132788,
+              "brier": 0.067847,
+              "share_mae": 0.021229,
+              "coverage80": 0.732693,
+              "coverage95": 0.880143
+            }
+          }
+        },
+        "density:multiple_polls": {
+          "n_races": 100,
+          "methods": {
+            "results_only": {
+              "log_score": 0.684423,
+              "brier": 0.407953,
+              "share_mae": 0.041555,
+              "coverage80": 0.846755,
+              "coverage95": 0.913874
+            },
+            "polls_only": {
+              "log_score": 0.761549,
+              "brier": 0.427944,
+              "share_mae": 0.123565,
+              "coverage80": 0.820919,
+              "coverage95": 0.937998
+            },
+            "combined": {
+              "log_score": 0.406539,
+              "brier": 0.235346,
+              "share_mae": 0.023007,
+              "coverage80": 0.814369,
+              "coverage95": 0.913175
+            }
+          }
+        },
+        "ballot:same_group_multi": {
+          "n_races": 144,
+          "methods": {
+            "results_only": {
+              "log_score": 0.315217,
+              "brier": 0.172989,
+              "share_mae": 0.038976,
+              "coverage80": 0.732128,
+              "coverage95": 0.860155
+            },
+            "polls_only": {
+              "log_score": 1.006689,
+              "brier": 0.499299,
+              "share_mae": 0.15089,
+              "coverage80": 0.762002,
+              "coverage95": 0.913687
+            },
+            "combined": {
+              "log_score": 0.181861,
+              "brier": 0.093548,
+              "share_mae": 0.031808,
+              "coverage80": 0.738457,
+              "coverage95": 0.871823
+            }
+          }
+        },
+        "competitiveness:prior_close": {
+          "n_races": 95,
+          "methods": {
+            "results_only": {
+              "log_score": 0.607726,
+              "brier": 0.413371,
+              "share_mae": 0.041993,
+              "coverage80": 0.817587,
+              "coverage95": 0.93709
+            },
+            "polls_only": {
+              "log_score": 0.905703,
+              "brier": 0.531059,
+              "share_mae": 0.151128,
+              "coverage80": 0.821811,
+              "coverage95": 0.940782
+            },
+            "combined": {
+              "log_score": 0.449561,
+              "brier": 0.291236,
+              "share_mae": 0.035751,
+              "coverage80": 0.775155,
+              "coverage95": 0.927499
+            }
+          }
+        },
+        "office_density:senate:multiple_polls": {
+          "n_races": 20,
+          "methods": {
+            "results_only": {
+              "log_score": 0.378974,
+              "brier": 0.255435,
+              "share_mae": 0.028292,
+              "coverage80": 0.813445,
+              "coverage95": 0.904026
+            },
+            "polls_only": {
+              "log_score": 0.368968,
+              "brier": 0.176516,
+              "share_mae": 0.024884,
+              "coverage80": 0.781822,
+              "coverage95": 0.884978
+            },
+            "combined": {
+              "log_score": 0.172924,
+              "brier": 0.091771,
+              "share_mae": 0.015036,
+              "coverage80": 0.75263,
+              "coverage95": 0.857201
+            }
+          }
+        },
+        "density:no_polls": {
+          "n_races": 319,
+          "methods": {
+            "results_only": {
+              "log_score": 0.116864,
+              "brier": 0.060212,
+              "share_mae": 0.046395,
+              "coverage80": 0.767953,
+              "coverage95": 0.894854
+            },
+            "combined": {
+              "log_score": 0.116864,
+              "brier": 0.060212,
+              "share_mae": 0.046395,
+              "coverage80": 0.767953,
+              "coverage95": 0.894854
+            }
+          }
+        },
+        "competitiveness:prior_safe": {
+          "n_races": 374,
+          "methods": {
+            "results_only": {
+              "log_score": 0.1914,
+              "brier": 0.088182,
+              "share_mae": 0.044921,
+              "coverage80": 0.784552,
+              "coverage95": 0.896182
+            },
+            "polls_only": {
+              "log_score": 0.775746,
+              "brier": 0.425857,
+              "share_mae": 0.145677,
+              "coverage80": 0.78154,
+              "coverage95": 0.921916
+            },
+            "combined": {
+              "log_score": 0.137117,
+              "brier": 0.064851,
+              "share_mae": 0.039989,
+              "coverage80": 0.781724,
+              "coverage95": 0.900437
+            }
+          }
+        },
+        "office_density:senate:no_polls": {
+          "n_races": 4,
+          "methods": {
+            "results_only": {
+              "log_score": 0.011875,
+              "brier": 0.000712,
+              "share_mae": 0.049207,
+              "coverage80": 0.724038,
+              "coverage95": 0.875
+            },
+            "combined": {
+              "log_score": 0.011875,
+              "brier": 0.000712,
+              "share_mae": 0.049207,
+              "coverage80": 0.724038,
+              "coverage95": 0.875
+            }
+          }
+        },
+        "density:one_poll": {
+          "n_races": 50,
+          "methods": {
+            "results_only": {
+              "log_score": 0.47191,
+              "brier": 0.244949,
+              "share_mae": 0.036689,
+              "coverage80": 0.82881,
+              "coverage95": 0.947
+            },
+            "polls_only": {
+              "log_score": 0.967887,
+              "brier": 0.554239,
+              "share_mae": 0.196769,
+              "coverage80": 0.753524,
+              "coverage95": 0.913524
+            },
+            "combined": {
+              "log_score": 0.321128,
+              "brier": 0.183585,
+              "share_mae": 0.025031,
+              "coverage80": 0.79181,
+              "coverage95": 0.962
+            }
+          }
+        },
+        "office_density:senate:one_poll": {
+          "n_races": 4,
+          "methods": {
+            "results_only": {
+              "log_score": 0.065401,
+              "brier": 0.016696,
+              "share_mae": 0.025244,
+              "coverage80": 0.691667,
+              "coverage95": 0.9375
+            },
+            "polls_only": {
+              "log_score": 0.955368,
+              "brier": 0.54648,
+              "share_mae": 0.248546,
+              "coverage80": 0.629167,
+              "coverage95": 0.9375
+            },
+            "combined": {
+              "log_score": 0.053023,
+              "brier": 0.01536,
+              "share_mae": 0.024215,
+              "coverage80": 0.641667,
+              "coverage95": 1.0
+            }
+          }
+        },
+        "office:governor": {
+          "n_races": 36,
+          "methods": {
+            "results_only": {
+              "log_score": 0.518518,
+              "brier": 0.327446,
+              "share_mae": 0.036504,
+              "coverage80": 0.846744,
+              "coverage95": 0.937691
+            },
+            "polls_only": {
+              "log_score": 0.899563,
+              "brier": 0.425131,
+              "share_mae": 0.144109,
+              "coverage80": 0.8063,
+              "coverage95": 0.924322
+            },
+            "combined": {
+              "log_score": 0.154044,
+              "brier": 0.082174,
+              "share_mae": 0.021179,
+              "coverage80": 0.828994,
+              "coverage95": 0.947876
+            }
+          }
+        },
+        "office_density:governor:one_poll": {
+          "n_races": 3,
+          "methods": {
+            "results_only": {
+              "log_score": 0.262087,
+              "brier": 0.104209,
+              "share_mae": 0.031577,
+              "coverage80": 0.714286,
+              "coverage95": 0.833333
+            },
+            "polls_only": {
+              "log_score": 1.764736,
+              "brier": 0.79415,
+              "share_mae": 0.230348,
+              "coverage80": 0.845238,
+              "coverage95": 0.845238
+            },
+            "combined": {
+              "log_score": 0.061752,
+              "brier": 0.01692,
+              "share_mae": 0.022243,
+              "coverage80": 0.630952,
+              "coverage95": 0.833333
+            }
+          }
+        },
+        "office_density:governor:multiple_polls": {
+          "n_races": 30,
+          "methods": {
+            "results_only": {
+              "log_score": 0.584533,
+              "brier": 0.379461,
+              "share_mae": 0.035945,
+              "coverage80": 0.866331,
+              "coverage95": 0.948562
+            },
+            "polls_only": {
+              "log_score": 0.813046,
+              "brier": 0.388229,
+              "share_mae": 0.135485,
+              "coverage80": 0.802406,
+              "coverage95": 0.93223
+            },
+            "combined": {
+              "log_score": 0.167198,
+              "brier": 0.093864,
+              "share_mae": 0.018488,
+              "coverage80": 0.853364,
+              "coverage95": 0.960784
+            }
+          }
+        },
+        "office_density:governor:no_polls": {
+          "n_races": 3,
+          "methods": {
+            "results_only": {
+              "log_score": 0.114799,
+              "brier": 0.030532,
+              "share_mae": 0.047021,
+              "coverage80": 0.783333,
+              "coverage95": 0.933333
+            },
+            "combined": {
+              "log_score": 0.114799,
+              "brier": 0.030532,
+              "share_mae": 0.047021,
+              "coverage80": 0.783333,
+              "coverage95": 0.933333
+            }
+          }
+        },
+        "ballot:other_ballot": {
+          "n_races": 168,
+          "methods": {
+            "results_only": {
+              "log_score": 0.237662,
+              "brier": 0.15373,
+              "share_mae": 0.039152,
+              "coverage80": 0.825397,
+              "coverage95": 0.930556
+            },
+            "polls_only": {
+              "log_score": 0.836063,
+              "brier": 0.52785,
+              "share_mae": 0.215346,
+              "coverage80": 0.754717,
+              "coverage95": 0.924528
+            },
+            "combined": {
+              "log_score": 0.180852,
+              "brier": 0.110088,
+              "share_mae": 0.034984,
+              "coverage80": 0.813492,
+              "coverage95": 0.918651
+            }
+          }
+        },
+        "ballot:two_major": {
+          "n_races": 157,
+          "methods": {
+            "results_only": {
+              "log_score": 0.280248,
+              "brier": 0.137028,
+              "share_mae": 0.054775,
+              "coverage80": 0.808917,
+              "coverage95": 0.917197
+            },
+            "polls_only": {
+              "log_score": 0.479083,
+              "brier": 0.320459,
+              "share_mae": 0.03408,
+              "coverage80": 0.939394,
+              "coverage95": 0.969697
+            },
+            "combined": {
+              "log_score": 0.238338,
+              "brier": 0.127107,
+              "share_mae": 0.050284,
+              "coverage80": 0.783439,
+              "coverage95": 0.923567
+            }
+          }
+        },
+        "office:house": {
+          "n_races": 405,
+          "methods": {
+            "results_only": {
+              "log_score": 0.253734,
+              "brier": 0.136504,
+              "share_mae": 0.045956,
+              "coverage80": 0.786861,
+              "coverage95": 0.901502
+            },
+            "polls_only": {
+              "log_score": 0.8996,
+              "brier": 0.545814,
+              "share_mae": 0.171478,
+              "coverage80": 0.806528,
+              "coverage95": 0.941116
+            },
+            "combined": {
+              "log_score": 0.209201,
+              "brier": 0.116206,
+              "share_mae": 0.041964,
+              "coverage80": 0.779371,
+              "coverage95": 0.903971
+            }
+          }
+        },
+        "office_density:house:no_polls": {
+          "n_races": 312,
+          "methods": {
+            "results_only": {
+              "log_score": 0.11823,
+              "brier": 0.06126,
+              "share_mae": 0.046352,
+              "coverage80": 0.768368,
+              "coverage95": 0.894738
+            },
+            "combined": {
+              "log_score": 0.11823,
+              "brier": 0.06126,
+              "share_mae": 0.046352,
+              "coverage80": 0.768368,
+              "coverage95": 0.894738
+            }
+          }
+        },
+        "district_continuity:documented_candidate_move": {
+          "n_races": 171,
+          "methods": {
+            "results_only": {
+              "log_score": 0.263794,
+              "brier": 0.164277,
+              "share_mae": 0.046228,
+              "coverage80": 0.744737,
+              "coverage95": 0.871248
+            },
+            "polls_only": {
+              "log_score": 1.086835,
+              "brier": 0.682703,
+              "share_mae": 0.222111,
+              "coverage80": 0.804167,
+              "coverage95": 0.983333
+            },
+            "combined": {
+              "log_score": 0.220279,
+              "brier": 0.13676,
+              "share_mae": 0.042964,
+              "coverage80": 0.737622,
+              "coverage95": 0.868811
+            }
+          }
+        },
+        "district_continuity:same_district_candidate": {
+          "n_races": 204,
+          "methods": {
+            "results_only": {
+              "log_score": 0.146376,
+              "brier": 0.077733,
+              "share_mae": 0.043014,
+              "coverage80": 0.832003,
+              "coverage95": 0.93558
+            },
+            "polls_only": {
+              "log_score": 0.673059,
+              "brier": 0.401311,
+              "share_mae": 0.129874,
+              "coverage80": 0.805952,
+              "coverage95": 0.907039
+            },
+            "combined": {
+              "log_score": 0.127162,
+              "brier": 0.063496,
+              "share_mae": 0.039704,
+              "coverage80": 0.823098,
+              "coverage95": 0.937623
+            }
+          }
+        },
+        "office_density:house:one_poll": {
+          "n_races": 43,
+          "methods": {
+            "results_only": {
+              "log_score": 0.524364,
+              "brier": 0.276001,
+              "share_mae": 0.03811,
+              "coverage80": 0.849557,
+              "coverage95": 0.955814
+            },
+            "polls_only": {
+              "log_score": 0.913457,
+              "brier": 0.538222,
+              "share_mae": 0.18961,
+              "coverage80": 0.758693,
+              "coverage95": 0.916058
+            },
+            "combined": {
+              "log_score": 0.364164,
+              "brier": 0.210862,
+              "share_mae": 0.025302,
+              "coverage80": 0.816999,
+              "coverage95": 0.967442
+            }
+          }
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 30,
+          "methods": {
+            "results_only": {
+              "log_score": 0.926431,
+              "brier": 0.37784,
+              "share_mae": 0.064404,
+              "coverage80": 0.72,
+              "coverage95": 0.842222
+            },
+            "polls_only": {
+              "log_score": 1.318382,
+              "brier": 0.713188,
+              "share_mae": 0.155546,
+              "coverage80": 0.82381,
+              "coverage95": 0.92381
+            },
+            "combined": {
+              "log_score": 0.703921,
+              "brier": 0.357478,
+              "share_mae": 0.051631,
+              "coverage80": 0.72,
+              "coverage95": 0.875556
+            }
+          }
+        },
+        "office_density:house:multiple_polls": {
+          "n_races": 50,
+          "methods": {
+            "results_only": {
+              "log_score": 0.866536,
+              "brier": 0.486055,
+              "share_mae": 0.050226,
+              "coverage80": 0.848333,
+              "coverage95": 0.897
+            },
+            "polls_only": {
+              "log_score": 0.887682,
+              "brier": 0.552344,
+              "share_mae": 0.155886,
+              "coverage80": 0.847667,
+              "coverage95": 0.962667
+            },
+            "combined": {
+              "log_score": 0.64359,
+              "brier": 0.377664,
+              "share_mae": 0.028906,
+              "coverage80": 0.815667,
+              "coverage95": 0.907
+            }
+          }
+        }
+      },
+      "senate_polled_share_coverage_failures": [
+        {
+          "race_id": "8924",
+          "candidate": "25621",
+          "actual": 0.5768,
+          "interval95": [
+            0.4634,
+            0.5489
+          ],
+          "poll_count": 42
+        },
+        {
+          "race_id": "8929",
+          "candidate": "29282",
+          "actual": 0.5862,
+          "interval95": [
+            0.4159,
+            0.532
+          ],
+          "poll_count": 2
+        },
+        {
+          "race_id": "8937",
+          "candidate": "29736",
+          "actual": 0.0063,
+          "interval95": [
+            0.0128,
+            0.0386
+          ],
+          "poll_count": 38
+        },
+        {
+          "race_id": "8948",
+          "candidate": "29985",
+          "actual": 0.0112,
+          "interval95": [
+            0.0137,
+            0.0394
+          ],
+          "poll_count": 19
+        },
+        {
+          "race_id": "8940",
+          "candidate": "29812",
+          "actual": 0.0137,
+          "interval95": [
+            0.0177,
+            0.0434
+          ],
+          "poll_count": 29
+        },
+        {
+          "race_id": "8919",
+          "candidate": "30075",
+          "actual": 0.0209,
+          "interval95": [
+            0.0403,
+            0.0661
+          ],
+          "poll_count": 42
+        },
+        {
+          "race_id": "8920",
+          "candidate": "29276",
+          "actual": 0.6573,
+          "interval95": [
+            0.5181,
+            0.6466
+          ],
+          "poll_count": 2
+        },
+        {
+          "race_id": "8920",
+          "candidate": "30184",
+          "actual": 0.3109,
+          "interval95": [
+            0.3127,
+            0.4408
+          ],
+          "poll_count": 2
+        },
+        {
+          "race_id": "8931",
+          "candidate": "30257",
+          "actual": 0.0296,
+          "interval95": [
+            0.0,
+            0.0222
+          ],
+          "poll_count": 3
+        },
+        {
+          "race_id": "8947",
+          "candidate": "29290",
+          "actual": 0.6963,
+          "interval95": [
+            0.5717,
+            0.6685
+          ],
+          "poll_count": 4
+        },
+        {
+          "race_id": "8947",
+          "candidate": "30583",
+          "actual": 0.0422,
+          "interval95": [
+            0.0678,
+            0.0935
+          ],
+          "poll_count": 4
+        },
+        {
+          "race_id": "8922",
+          "candidate": "30226",
+          "actual": 0.0174,
+          "interval95": [
+            0.0369,
+            0.0626
+          ],
+          "poll_count": 14
+        },
+        {
+          "race_id": "8928",
+          "candidate": "29578",
+          "actual": 0.0168,
+          "interval95": [
+            0.0435,
+            0.0692
+          ],
+          "poll_count": 7
+        }
+      ],
+      "largest_winner_misses": [
+        {
+          "race_id": "9024",
+          "office": "house",
+          "state": "CA",
+          "winner": "30382",
+          "forecast_favorite": "29399",
+          "winner_probability": 0.0,
+          "winner_actual_share": 0.5021,
+          "winner_predicted_share": 0.2693,
+          "winner_share_interval95": [
+            0.1928,
+            0.3493
+          ],
+          "brier": 2.0,
+          "poll_count": 2
+        },
+        {
+          "race_id": "9353",
+          "office": "house",
+          "state": "TN",
+          "winner": "30688",
+          "forecast_favorite": "29956",
+          "winner_probability": 0.016,
+          "winner_actual_share": 0.5584,
+          "winner_predicted_share": 0.3948,
+          "winner_share_interval95": [
+            0.2965,
+            0.4809
+          ],
+          "brier": 1.9261,
+          "poll_count": 1
+        },
+        {
+          "race_id": "9293",
+          "office": "house",
+          "state": "NC",
+          "winner": "29832",
+          "forecast_favorite": "30160",
+          "winner_probability": 0.1133,
+          "winner_actual_share": 0.5159,
+          "winner_predicted_share": 0.4552,
+          "winner_share_interval95": [
+            0.3809,
+            0.5288
+          ],
+          "brier": 1.5724,
+          "poll_count": 5
+        },
+        {
+          "race_id": "9257",
+          "office": "house",
+          "state": "NY",
+          "winner": "29789",
+          "forecast_favorite": "29788",
+          "winner_probability": 0.1667,
+          "winner_actual_share": 0.5178,
+          "winner_predicted_share": 0.4267,
+          "winner_share_interval95": [
+            0.2787,
+            0.5785
+          ],
+          "brier": 1.3845,
+          "poll_count": 1
+        },
+        {
+          "race_id": "9084",
+          "office": "house",
+          "state": "FL",
+          "winner": "29522",
+          "forecast_favorite": "30411",
+          "winner_probability": 0.1733,
+          "winner_actual_share": 0.5853,
+          "winner_predicted_share": 0.4279,
+          "winner_share_interval95": [
+            0.2932,
+            0.5712
+          ],
+          "brier": 1.3668,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9079",
+          "office": "house",
+          "state": "FL",
+          "winner": "28993",
+          "forecast_favorite": "28996",
+          "winner_probability": 0.184,
+          "winner_actual_share": 0.598,
+          "winner_predicted_share": 0.4626,
+          "winner_share_interval95": [
+            0.3779,
+            0.5435
+          ],
+          "brier": 1.3317,
+          "poll_count": 2
+        },
+        {
+          "race_id": "9053",
+          "office": "house",
+          "state": "CA",
+          "winner": "29430",
+          "forecast_favorite": "29431",
+          "winner_probability": 0.196,
+          "winner_actual_share": 0.6837,
+          "winner_predicted_share": 0.4403,
+          "winner_share_interval95": [
+            0.2976,
+            0.5692
+          ],
+          "brier": 1.2928,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9014",
+          "office": "house",
+          "state": "CA",
+          "winner": "30322",
+          "forecast_favorite": "29387",
+          "winner_probability": 0.216,
+          "winner_actual_share": 0.5365,
+          "winner_predicted_share": 0.4436,
+          "winner_share_interval95": [
+            0.3052,
+            0.5894
+          ],
+          "brier": 1.2293,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9110",
+          "office": "house",
+          "state": "GA",
+          "winner": "29546",
+          "forecast_favorite": "30182",
+          "winner_probability": 0.2373,
+          "winner_actual_share": 0.6222,
+          "winner_predicted_share": 0.4478,
+          "winner_share_interval95": [
+            0.3147,
+            0.5834
+          ],
+          "brier": 1.1633,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9256",
+          "office": "house",
+          "state": "NY",
+          "winner": "29787",
+          "forecast_favorite": "30740",
+          "winner_probability": 0.24,
+          "winner_actual_share": 0.5374,
+          "winner_predicted_share": 0.4632,
+          "winner_share_interval95": [
+            0.3721,
+            0.555
+          ],
+          "brier": 1.1532,
+          "poll_count": 1
+        },
+        {
+          "race_id": "9412",
+          "office": "house",
+          "state": "WA",
+          "winner": "30358",
+          "forecast_favorite": "30696",
+          "winner_probability": 0.2813,
+          "winner_actual_share": 0.5014,
+          "winner_predicted_share": 0.4749,
+          "winner_share_interval95": [
+            0.403,
+            0.5499
+          ],
+          "brier": 1.033,
+          "poll_count": 2
+        },
+        {
+          "race_id": "9033",
+          "office": "house",
+          "state": "CA",
+          "winner": "28952",
+          "forecast_favorite": "29409",
+          "winner_probability": 0.3107,
+          "winner_actual_share": 0.5152,
+          "winner_predicted_share": 0.4753,
+          "winner_share_interval95": [
+            0.3814,
+            0.578
+          ],
+          "brier": 0.9504,
+          "poll_count": 2
+        },
+        {
+          "race_id": "9038",
+          "office": "house",
+          "state": "CA",
+          "winner": "28955",
+          "forecast_favorite": "29414",
+          "winner_probability": 0.336,
+          "winner_actual_share": 0.5324,
+          "winner_predicted_share": 0.4811,
+          "winner_share_interval95": [
+            0.4013,
+            0.5569
+          ],
+          "brier": 0.8818,
+          "poll_count": 3
+        },
+        {
+          "race_id": "9252",
+          "office": "house",
+          "state": "NM",
+          "winner": "29768",
+          "forecast_favorite": "29156",
+          "winner_probability": 0.344,
+          "winner_actual_share": 0.5034,
+          "winner_predicted_share": 0.4904,
+          "winner_share_interval95": [
+            0.4458,
+            0.5327
+          ],
+          "brier": 0.8607,
+          "poll_count": 5
+        },
+        {
+          "race_id": "9272",
+          "office": "house",
+          "state": "NY",
+          "winner": "29802",
+          "forecast_favorite": "30307",
+          "winner_probability": 0.3613,
+          "winner_actual_share": 0.5076,
+          "winner_predicted_share": 0.4759,
+          "winner_share_interval95": [
+            0.3679,
+            0.5513
+          ],
+          "brier": 0.804,
+          "poll_count": 4
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 7,
+      "n_races": 455,
+      "n_polled_races": 116,
+      "strata": {
+        "all": {
+          "n_races": 455,
+          "methods": {
+            "results_only": {
+              "log_score": 0.198329,
+              "brier": 0.103663,
+              "share_mae": 0.027042,
+              "coverage80": 0.844863,
+              "coverage95": 0.945179
+            },
+            "polls_only": {
+              "log_score": 0.675941,
+              "brier": 0.39313,
+              "share_mae": 0.124578,
+              "coverage80": 0.861272,
+              "coverage95": 0.96875
+            },
+            "combined": {
+              "log_score": 0.155478,
+              "brier": 0.078577,
+              "share_mae": 0.024725,
+              "coverage80": 0.843426,
+              "coverage95": 0.947792
+            }
+          }
+        },
+        "office:senate": {
+          "n_races": 28,
+          "methods": {
+            "results_only": {
+              "log_score": 0.450972,
+              "brier": 0.283135,
+              "share_mae": 0.038172,
+              "coverage80": 0.766355,
+              "coverage95": 0.9339
+            },
+            "polls_only": {
+              "log_score": 0.320042,
+              "brier": 0.17051,
+              "share_mae": 0.038043,
+              "coverage80": 0.890446,
+              "coverage95": 0.978205
+            },
+            "combined": {
+              "log_score": 0.194422,
+              "brier": 0.110814,
+              "share_mae": 0.022217,
+              "coverage80": 0.777268,
+              "coverage95": 0.928741
+            }
+          }
+        },
+        "density:multiple_polls": {
+          "n_races": 84,
+          "methods": {
+            "results_only": {
+              "log_score": 0.502282,
+              "brier": 0.309457,
+              "share_mae": 0.030074,
+              "coverage80": 0.806075,
+              "coverage95": 0.932757
+            },
+            "polls_only": {
+              "log_score": 0.663623,
+              "brier": 0.390861,
+              "share_mae": 0.118037,
+              "coverage80": 0.856737,
+              "coverage95": 0.969444
+            },
+            "combined": {
+              "log_score": 0.31647,
+              "brier": 0.200125,
+              "share_mae": 0.018854,
+              "coverage80": 0.805036,
+              "coverage95": 0.94691
+            }
+          }
+        },
+        "ballot:same_group_multi": {
+          "n_races": 134,
+          "methods": {
+            "results_only": {
+              "log_score": 0.314652,
+              "brier": 0.171049,
+              "share_mae": 0.037107,
+              "coverage80": 0.739398,
+              "coverage95": 0.908381
+            },
+            "polls_only": {
+              "log_score": 0.811496,
+              "brier": 0.424407,
+              "share_mae": 0.124156,
+              "coverage80": 0.81444,
+              "coverage95": 0.953231
+            },
+            "combined": {
+              "log_score": 0.246425,
+              "brier": 0.123763,
+              "share_mae": 0.031611,
+              "coverage80": 0.741981,
+              "coverage95": 0.914765
+            }
+          }
+        },
+        "competitiveness:prior_safe": {
+          "n_races": 374,
+          "methods": {
+            "results_only": {
+              "log_score": 0.12687,
+              "brier": 0.051525,
+              "share_mae": 0.027451,
+              "coverage80": 0.846717,
+              "coverage95": 0.946095
+            },
+            "polls_only": {
+              "log_score": 0.478627,
+              "brier": 0.278725,
+              "share_mae": 0.111814,
+              "coverage80": 0.871612,
+              "coverage95": 0.9625
+            },
+            "combined": {
+              "log_score": 0.100954,
+              "brier": 0.041319,
+              "share_mae": 0.025667,
+              "coverage80": 0.848266,
+              "coverage95": 0.947715
+            }
+          }
+        },
+        "office_density:senate:multiple_polls": {
+          "n_races": 23,
+          "methods": {
+            "results_only": {
+              "log_score": 0.442658,
+              "brier": 0.297689,
+              "share_mae": 0.034593,
+              "coverage80": 0.769393,
+              "coverage95": 0.938164
+            },
+            "polls_only": {
+              "log_score": 0.25376,
+              "brier": 0.134651,
+              "share_mae": 0.022472,
+              "coverage80": 0.902243,
+              "coverage95": 0.984058
+            },
+            "combined": {
+              "log_score": 0.180367,
+              "brier": 0.102282,
+              "share_mae": 0.017365,
+              "coverage80": 0.782678,
+              "coverage95": 0.931884
+            }
+          }
+        },
+        "competitiveness:prior_close": {
+          "n_races": 81,
+          "methods": {
+            "results_only": {
+              "log_score": 0.528278,
+              "brier": 0.344396,
+              "share_mae": 0.025152,
+              "coverage80": 0.836302,
+              "coverage95": 0.940947
+            },
+            "polls_only": {
+              "log_score": 0.847796,
+              "brier": 0.492774,
+              "share_mae": 0.135695,
+              "coverage80": 0.852266,
+              "coverage95": 0.974194
+            },
+            "combined": {
+              "log_score": 0.407229,
+              "brier": 0.250608,
+              "share_mae": 0.020376,
+              "coverage80": 0.821076,
+              "coverage95": 0.948148
+            }
+          }
+        },
+        "density:no_polls": {
+          "n_races": 339,
+          "methods": {
+            "results_only": {
+              "log_score": 0.111102,
+              "brier": 0.045576,
+              "share_mae": 0.026157,
+              "coverage80": 0.843581,
+              "coverage95": 0.945329
+            },
+            "combined": {
+              "log_score": 0.111102,
+              "brier": 0.045576,
+              "share_mae": 0.026157,
+              "coverage80": 0.843581,
+              "coverage95": 0.945329
+            }
+          }
+        },
+        "office_density:senate:no_polls": {
+          "n_races": 2,
+          "methods": {
+            "results_only": {
+              "log_score": 0.004009,
+              "brier": 2.7e-05,
+              "share_mae": 0.043131,
+              "coverage80": 0.666667,
+              "coverage95": 1.0
+            },
+            "combined": {
+              "log_score": 0.004009,
+              "brier": 2.7e-05,
+              "share_mae": 0.043131,
+              "coverage80": 0.666667,
+              "coverage95": 1.0
+            }
+          }
+        },
+        "ballot:other_ballot": {
+          "n_races": 163,
+          "methods": {
+            "results_only": {
+              "log_score": 0.161882,
+              "brier": 0.078487,
+              "share_mae": 0.022915,
+              "coverage80": 0.824131,
+              "coverage95": 0.928425
+            },
+            "polls_only": {
+              "log_score": 0.750081,
+              "brier": 0.480256,
+              "share_mae": 0.209032,
+              "coverage80": 0.805556,
+              "coverage95": 0.962963
+            },
+            "combined": {
+              "log_score": 0.107872,
+              "brier": 0.052387,
+              "share_mae": 0.021553,
+              "coverage80": 0.811861,
+              "coverage95": 0.93047
+            }
+          }
+        },
+        "ballot:two_major": {
+          "n_races": 158,
+          "methods": {
+            "results_only": {
+              "log_score": 0.137276,
+              "brier": 0.072486,
+              "share_mae": 0.022763,
+              "coverage80": 0.955696,
+              "coverage95": 0.993671
+            },
+            "polls_only": {
+              "log_score": 0.375579,
+              "brier": 0.242513,
+              "share_mae": 0.027171,
+              "coverage80": 1.0,
+              "coverage95": 1.0
+            },
+            "combined": {
+              "log_score": 0.127457,
+              "brier": 0.067274,
+              "share_mae": 0.022158,
+              "coverage80": 0.962025,
+              "coverage95": 0.993671
+            }
+          }
+        },
+        "density:one_poll": {
+          "n_races": 32,
+          "methods": {
+            "results_only": {
+              "log_score": 0.324521,
+              "brier": 0.178812,
+              "share_mae": 0.028456,
+              "coverage80": 0.960268,
+              "coverage95": 0.97619
+            },
+            "polls_only": {
+              "log_score": 0.708277,
+              "brier": 0.399086,
+              "share_mae": 0.141748,
+              "coverage80": 0.873177,
+              "coverage95": 0.966927
+            },
+            "combined": {
+              "log_score": 0.202981,
+              "brier": 0.109122,
+              "share_mae": 0.02497,
+              "coverage80": 0.94256,
+              "coverage95": 0.97619
+            }
+          }
+        },
+        "office_density:senate:one_poll": {
+          "n_races": 3,
+          "methods": {
+            "results_only": {
+              "log_score": 0.812687,
+              "brier": 0.360293,
+              "share_mae": 0.062312,
+              "coverage80": 0.809524,
+              "coverage95": 0.857143
+            },
+            "polls_only": {
+              "log_score": 0.828204,
+              "brier": 0.445435,
+              "share_mae": 0.157419,
+              "coverage80": 0.8,
+              "coverage95": 0.933333
+            },
+            "combined": {
+              "log_score": 0.429118,
+              "brier": 0.250081,
+              "share_mae": 0.045477,
+              "coverage80": 0.809524,
+              "coverage95": 0.857143
+            }
+          }
+        },
+        "office:governor": {
+          "n_races": 11,
+          "methods": {
+            "results_only": {
+              "log_score": 0.206901,
+              "brier": 0.091946,
+              "share_mae": 0.022983,
+              "coverage80": 0.91039,
+              "coverage95": 0.987013
+            },
+            "polls_only": {
+              "log_score": 0.872136,
+              "brier": 0.457303,
+              "share_mae": 0.170784,
+              "coverage80": 0.79881,
+              "coverage95": 0.908333
+            },
+            "combined": {
+              "log_score": 0.082297,
+              "brier": 0.035024,
+              "share_mae": 0.020733,
+              "coverage80": 0.92013,
+              "coverage95": 0.987013
+            }
+          }
+        },
+        "office_density:governor:no_polls": {
+          "n_races": 2,
+          "methods": {
+            "results_only": {
+              "log_score": 0.10689,
+              "brier": 0.033465,
+              "share_mae": 0.027477,
+              "coverage80": 1.0,
+              "coverage95": 1.0
+            },
+            "combined": {
+              "log_score": 0.10689,
+              "brier": 0.033465,
+              "share_mae": 0.027477,
+              "coverage80": 1.0,
+              "coverage95": 1.0
+            }
+          }
+        },
+        "office_density:governor:multiple_polls": {
+          "n_races": 8,
+          "methods": {
+            "results_only": {
+              "log_score": 0.250385,
+              "brier": 0.117274,
+              "share_mae": 0.023878,
+              "coverage80": 0.876786,
+              "coverage95": 0.982143
+            },
+            "polls_only": {
+              "log_score": 0.691653,
+              "brier": 0.393386,
+              "share_mae": 0.166991,
+              "coverage80": 0.820536,
+              "coverage95": 0.9125
+            },
+            "combined": {
+              "log_score": 0.083228,
+              "brier": 0.039646,
+              "share_mae": 0.019439,
+              "coverage80": 0.890179,
+              "coverage95": 0.982143
+            }
+          }
+        },
+        "office_density:governor:one_poll": {
+          "n_races": 1,
+          "methods": {
+            "results_only": {
+              "log_score": 0.059043,
+              "brier": 0.006283,
+              "share_mae": 0.006833,
+              "coverage80": 1.0,
+              "coverage95": 1.0
+            },
+            "polls_only": {
+              "log_score": 2.316008,
+              "brier": 0.96864,
+              "share_mae": 0.201133,
+              "coverage80": 0.625,
+              "coverage95": 0.875
+            },
+            "combined": {
+              "log_score": 0.02566,
+              "brier": 0.001163,
+              "share_mae": 0.017594,
+              "coverage80": 1.0,
+              "coverage95": 1.0
+            }
+          }
+        },
+        "office:house": {
+          "n_races": 416,
+          "methods": {
+            "results_only": {
+              "log_score": 0.181098,
+              "brier": 0.091893,
+              "share_mae": 0.0264,
+              "coverage80": 0.848415,
+              "coverage95": 0.944832
+            },
+            "polls_only": {
+              "log_score": 0.768381,
+              "brier": 0.457458,
+              "share_mae": 0.147221,
+              "coverage80": 0.858848,
+              "coverage95": 0.972428
+            },
+            "combined": {
+              "log_score": 0.154792,
+              "brier": 0.077559,
+              "share_mae": 0.025,
+              "coverage80": 0.845851,
+              "coverage95": 0.948037
+            }
+          }
+        },
+        "office_density:house:no_polls": {
+          "n_races": 335,
+          "methods": {
+            "results_only": {
+              "log_score": 0.111766,
+              "brier": 0.04592,
+              "share_mae": 0.026048,
+              "coverage80": 0.843703,
+              "coverage95": 0.944677
+            },
+            "combined": {
+              "log_score": 0.111766,
+              "brier": 0.04592,
+              "share_mae": 0.026048,
+              "coverage80": 0.843703,
+              "coverage95": 0.944677
+            }
+          }
+        },
+        "district_continuity:documented_candidate_move": {
+          "n_races": 116,
+          "methods": {
+            "results_only": {
+              "log_score": 0.215511,
+              "brier": 0.115193,
+              "share_mae": 0.027598,
+              "coverage80": 0.711494,
+              "coverage95": 0.890805
+            },
+            "polls_only": {
+              "log_score": 1.140001,
+              "brier": 0.676825,
+              "share_mae": 0.248517,
+              "coverage80": 0.836957,
+              "coverage95": 1.0
+            },
+            "combined": {
+              "log_score": 0.161805,
+              "brier": 0.091353,
+              "share_mae": 0.024926,
+              "coverage80": 0.713649,
+              "coverage95": 0.900862
+            }
+          }
+        },
+        "office_density:house:multiple_polls": {
+          "n_races": 53,
+          "methods": {
+            "results_only": {
+              "log_score": 0.566179,
+              "brier": 0.343572,
+              "share_mae": 0.029048,
+              "coverage80": 0.811321,
+              "coverage95": 0.922956
+            },
+            "polls_only": {
+              "log_score": 0.837257,
+              "brier": 0.501666,
+              "share_mae": 0.15212,
+              "coverage80": 0.842453,
+              "coverage95": 0.971698
+            },
+            "combined": {
+              "log_score": 0.41074,
+              "brier": 0.266809,
+              "share_mae": 0.019412,
+              "coverage80": 0.801887,
+              "coverage95": 0.948113
+            }
+          }
+        },
+        "district_continuity:no_candidate_continuity_evidence": {
+          "n_races": 25,
+          "methods": {
+            "results_only": {
+              "log_score": 0.469983,
+              "brier": 0.192344,
+              "share_mae": 0.069495,
+              "coverage80": 0.727333,
+              "coverage95": 0.908
+            },
+            "polls_only": {
+              "log_score": 0.314857,
+              "brier": 0.176989,
+              "share_mae": 0.06941,
+              "coverage80": 0.916667,
+              "coverage95": 0.916667
+            },
+            "combined": {
+              "log_score": 0.434788,
+              "brier": 0.164879,
+              "share_mae": 0.058179,
+              "coverage80": 0.720667,
+              "coverage95": 0.918
+            }
+          }
+        },
+        "district_continuity:same_district_candidate": {
+          "n_races": 275,
+          "methods": {
+            "results_only": {
+              "log_score": 0.14032,
+              "brier": 0.072932,
+              "share_mae": 0.021977,
+              "coverage80": 0.917177,
+              "coverage95": 0.97097
+            },
+            "polls_only": {
+              "log_score": 0.663036,
+              "brier": 0.397023,
+              "share_mae": 0.112218,
+              "coverage80": 0.860784,
+              "coverage95": 0.967647
+            },
+            "combined": {
+              "log_score": 0.126379,
+              "brier": 0.063802,
+              "share_mae": 0.022015,
+              "coverage80": 0.912996,
+              "coverage95": 0.970667
+            }
+          }
+        },
+        "office_density:house:one_poll": {
+          "n_races": 28,
+          "methods": {
+            "results_only": {
+              "log_score": 0.281698,
+              "brier": 0.165529,
+              "share_mae": 0.025601,
+              "coverage80": 0.975,
+              "coverage95": 0.988095
+            },
+            "polls_only": {
+              "log_score": 0.638009,
+              "brier": 0.373779,
+              "share_mae": 0.137948,
+              "coverage80": 0.889881,
+              "coverage95": 0.97381
+            },
+            "combined": {
+              "log_score": 0.185085,
+              "brier": 0.097875,
+              "share_mae": 0.023036,
+              "coverage80": 0.954762,
+              "coverage95": 0.988095
+            }
+          }
+        }
+      },
+      "senate_polled_share_coverage_failures": [
+        {
+          "race_id": "9509",
+          "candidate": "31048",
+          "actual": 0.5557,
+          "interval95": [
+            0.4645,
+            0.5498
+          ],
+          "poll_count": 40
+        },
+        {
+          "race_id": "9521",
+          "candidate": "none candidates",
+          "actual": 0.0303,
+          "interval95": [
+            0.0,
+            0.0228
+          ],
+          "poll_count": 48
+        },
+        {
+          "race_id": "9525",
+          "candidate": "31093",
+          "actual": 0.3338,
+          "interval95": [
+            0.3393,
+            0.4667
+          ],
+          "poll_count": 6
+        },
+        {
+          "race_id": "9525",
+          "candidate": "31094",
+          "actual": 0.6631,
+          "interval95": [
+            0.5313,
+            0.6549
+          ],
+          "poll_count": 6
+        },
+        {
+          "race_id": "9529",
+          "candidate": "31096",
+          "actual": 0.638,
+          "interval95": [
+            0.533,
+            0.6371
+          ],
+          "poll_count": 9
+        },
+        {
+          "race_id": "9532",
+          "candidate": "write in",
+          "actual": 0.0011,
+          "interval95": [
+            0.0033,
+            0.4776
+          ],
+          "poll_count": 1
+        },
+        {
+          "race_id": "9532",
+          "candidate": "36896",
+          "actual": 0.6316,
+          "interval95": [
+            0.0499,
+            0.5929
+          ],
+          "poll_count": 1
+        },
+        {
+          "race_id": "9532",
+          "candidate": "37299",
+          "actual": 0.003,
+          "interval95": [
+            0.0036,
+            0.5413
+          ],
+          "poll_count": 1
+        },
+        {
+          "race_id": "9479",
+          "candidate": "28808",
+          "actual": 0.6875,
+          "interval95": [
+            0.4942,
+            0.6783
+          ],
+          "poll_count": 2
+        },
+        {
+          "race_id": "9479",
+          "candidate": "35444",
+          "actual": 0.2776,
+          "interval95": [
+            0.2877,
+            0.4298
+          ],
+          "poll_count": 2
+        }
+      ],
+      "largest_winner_misses": [
+        {
+          "race_id": "9718",
+          "office": "house",
+          "state": "LA",
+          "winner": "37054",
+          "forecast_favorite": "37441",
+          "winner_probability": 0.0,
+          "winner_actual_share": 0.5078,
+          "winner_predicted_share": 0.0823,
+          "winner_share_interval95": [
+            0.0056,
+            0.2652
+          ],
+          "brier": 2.0,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9527",
+          "office": "senate",
+          "state": "PA",
+          "winner": "30991",
+          "forecast_favorite": "30990",
+          "winner_probability": 0.0853,
+          "winner_actual_share": 0.4882,
+          "winner_predicted_share": 0.4609,
+          "winner_share_interval95": [
+            0.4077,
+            0.5161
+          ],
+          "brier": 1.6732,
+          "poll_count": 95
+        },
+        {
+          "race_id": "9838",
+          "office": "house",
+          "state": "NC",
+          "winner": "31159",
+          "forecast_favorite": "36456",
+          "winner_probability": 0.128,
+          "winner_actual_share": 0.5806,
+          "winner_predicted_share": 0.4249,
+          "winner_share_interval95": [
+            0.2934,
+            0.5586
+          ],
+          "brier": 1.5208,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9774",
+          "office": "house",
+          "state": "NE",
+          "winner": "31554",
+          "forecast_favorite": "31776",
+          "winner_probability": 0.3413,
+          "winner_actual_share": 0.5093,
+          "winner_predicted_share": 0.4841,
+          "winner_share_interval95": [
+            0.4123,
+            0.5493
+          ],
+          "brier": 0.8677,
+          "poll_count": 11
+        },
+        {
+          "race_id": "9701",
+          "office": "house",
+          "state": "IA",
+          "winner": "31640",
+          "forecast_favorite": "36775",
+          "winner_probability": 0.376,
+          "winner_actual_share": 0.5177,
+          "winner_predicted_share": 0.4877,
+          "winner_share_interval95": [
+            0.4082,
+            0.5646
+          ],
+          "brier": 0.7788,
+          "poll_count": 3
+        },
+        {
+          "race_id": "9532",
+          "office": "senate",
+          "state": "VT",
+          "winner": "36896",
+          "forecast_favorite": "36897",
+          "winner_probability": 0.276,
+          "winner_actual_share": 0.6316,
+          "winner_predicted_share": 0.254,
+          "winner_share_interval95": [
+            0.0499,
+            0.5929
+          ],
+          "brier": 0.7502,
+          "poll_count": 1
+        },
+        {
+          "race_id": "9555",
+          "office": "house",
+          "state": "AL",
+          "winner": "31520",
+          "forecast_favorite": "31528",
+          "winner_probability": 0.3853,
+          "winner_actual_share": 0.5456,
+          "winner_predicted_share": 0.4831,
+          "winner_share_interval95": [
+            0.4082,
+            0.5551
+          ],
+          "brier": 0.7491,
+          "poll_count": 5
+        },
+        {
+          "race_id": "9983",
+          "office": "house",
+          "state": "CO",
+          "winner": "31706",
+          "forecast_favorite": "31623",
+          "winner_probability": 0.3947,
+          "winner_actual_share": 0.4895,
+          "winner_predicted_share": 0.4778,
+          "winner_share_interval95": [
+            0.3775,
+            0.537
+          ],
+          "brier": 0.7233,
+          "poll_count": 4
+        },
+        {
+          "race_id": "9837",
+          "office": "house",
+          "state": "NC",
+          "winner": "31651",
+          "forecast_favorite": "36576",
+          "winner_probability": 0.4,
+          "winner_actual_share": 0.5864,
+          "winner_predicted_share": 0.4803,
+          "winner_share_interval95": [
+            0.3401,
+            0.6289
+          ],
+          "brier": 0.72,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9713",
+          "office": "house",
+          "state": "LA",
+          "winner": "37048",
+          "forecast_favorite": "37047",
+          "winner_probability": 0.3147,
+          "winner_actual_share": 0.6677,
+          "winner_predicted_share": 0.2455,
+          "winner_share_interval95": [
+            0.0213,
+            0.6409
+          ],
+          "brier": 0.6483,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9987",
+          "office": "house",
+          "state": "CA",
+          "winner": "31498",
+          "forecast_favorite": "31408",
+          "winner_probability": 0.46,
+          "winner_actual_share": 0.501,
+          "winner_predicted_share": 0.4969,
+          "winner_share_interval95": [
+            0.4256,
+            0.5699
+          ],
+          "brier": 0.5832,
+          "poll_count": 6
+        },
+        {
+          "race_id": "9699",
+          "office": "house",
+          "state": "IA",
+          "winner": "31129",
+          "forecast_favorite": "31128",
+          "winner_probability": 0.4653,
+          "winner_actual_share": 0.4998,
+          "winner_predicted_share": 0.4962,
+          "winner_share_interval95": [
+            0.4225,
+            0.5716
+          ],
+          "brier": 0.5717,
+          "poll_count": 3
+        },
+        {
+          "race_id": "9991",
+          "office": "house",
+          "state": "CA",
+          "winner": "31841",
+          "forecast_favorite": "31842",
+          "winner_probability": 0.468,
+          "winner_actual_share": 0.5133,
+          "winner_predicted_share": 0.4972,
+          "winner_share_interval95": [
+            0.4138,
+            0.5859
+          ],
+          "brier": 0.566,
+          "poll_count": 2
+        },
+        {
+          "race_id": "9992",
+          "office": "house",
+          "state": "CO",
+          "winner": "31705",
+          "forecast_favorite": "30988",
+          "winner_probability": 0.464,
+          "winner_actual_share": 0.508,
+          "winner_predicted_share": 0.4855,
+          "winner_share_interval95": [
+            0.3215,
+            0.6355
+          ],
+          "brier": 0.5606,
+          "poll_count": 0
+        },
+        {
+          "race_id": "9716",
+          "office": "house",
+          "state": "LA",
+          "winner": "37052",
+          "forecast_favorite": "37438",
+          "winner_probability": 0.4853,
+          "winner_actual_share": 0.8582,
+          "winner_predicted_share": 0.4933,
+          "winner_share_interval95": [
+            0.0464,
+            0.9419
+          ],
+          "brier": 0.5298,
+          "poll_count": 0
+        }
+      ]
+    }
+  ],
+  "supplemental_senate_archive": {
+    "source_url": "https://github.com/Jack-Whitcomb/All-US-Senate-polls-2006-2024",
+    "source_sha256": "34232aa4c3aba30023a9d8f08445ea0abca0d7eb9e396c40d22df5b86afa6403",
+    "availability_assumption": "fieldwork end date plus seven days; publication date absent",
+    "scope": "two-party Senate questions only; independent-led and same-party ballots unsupported",
+    "cells": []
+  },
+  "gate": {
+    "status": "incomplete",
+    "passed": false,
+    "reasons": [
+      "Earlier-date election results are an imperfect proxy for a held-today nowcast.",
+      "Historical ballot rosters come from final results and may reveal later candidate entries or withdrawals at early cutoffs.",
+      "This replay covers the Stage 3/4 race-level core, not every 2026-only national, local, ballot, and joint-seat component.",
+      "Historical 538 CSVs were captured after the elections; their row creation dates are used, but retrospective source revisions cannot be fully ruled out.",
+      "Independent seat-distribution calibration and a geographic redistricting crosswalk are not yet evaluated; candidate-move evidence is only a partial diagnostic."
+    ]
+  }
+}

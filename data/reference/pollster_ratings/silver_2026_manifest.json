@@ -1,0 +1,11 @@
+{
+  "source_page": "https://www.natesilver.net/p/pollster-ratings-silver-bulletin",
+  "source_file_url": "https://www.natesilver.net/api/v1/file/7bd65470-3e0d-4c0f-a658-22ca23b216ae.xlsx",
+  "source_date": "2026-01-14",
+  "retrieved_at_utc": "2026-09-23T16:37:00.686734+00:00",
+  "workbook_sha256": "f53a9a0c7f91c2d6b6e8616a0a040f65fd8f24a5233af2dac6f69bf2a3a2d966",
+  "normalized_csv_sha256": "aed8416918043f85519921e7ee076ddd3ae0e3682d8e0929104a9dc582932c56",
+  "rows": 540,
+  "banned_rows": 11,
+  "credit": "Silver Bulletin / Nate Silver and Eli McKown-Dawson"
+}

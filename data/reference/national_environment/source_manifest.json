@@ -1,0 +1,87 @@
+{
+  "house_votes.csv": {
+    "url": "https://www.brookings.edu/wp-content/uploads/2026/04/2-2.csv",
+    "sha256": "bb1f2ae3339a51110d93e7e5ff3c9210bcf6d1c288c3162eb80d4f5e69adb92b",
+    "bytes": 1788
+  },
+  "approval_index.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval-all-data",
+    "sha256": "3d4cf8be7c4e5f4aa35dc519e4fb10619e5723fb948cbf86991b9a9fdfd5ca02",
+    "bytes": 50140
+  },
+  "approval_donald-j-trump-2nd-term-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/donald-j-trump-2nd-term-public-approval",
+    "sha256": "b4297d100b38bec9b3e308d2ebb896646f8de820c869b4d1d476c9d63eaf19d0",
+    "bytes": 80067
+  },
+  "approval_joseph-r-biden-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/joseph-r-biden-public-approval",
+    "sha256": "1e741a2d40f99cd4f852efba0a1c72ff6112f1097ec2f870f83337c785fa526e",
+    "bytes": 77274
+  },
+  "approval_donald-j-trump-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/donald-j-trump-public-approval",
+    "sha256": "180bd6908fe640f2248bd726c0c1bb0b6c572eb868492c5e769cb4dcf5b96183",
+    "bytes": 156160
+  },
+  "approval_barack-obama-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/barack-obama-public-approval",
+    "sha256": "7c0967af124d26bef41eeae408b6d064f6f78a1bfca4cf5de2cd8c9116505cd4",
+    "bytes": 386387
+  },
+  "approval_george-w-bush-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/george-w-bush-public-approval",
+    "sha256": "3fe796b389b98637a34b07c53feee4f9430c7bfa63480f227f1594d44eecb347",
+    "bytes": 200682
+  },
+  "approval_william-j-clinton-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/william-j-clinton-public-approval",
+    "sha256": "efdc4990b2a53a6c24a074cd7c02fa2fbf45d068b93a972a1242bbb000771d7c",
+    "bytes": 164715
+  },
+  "approval_george-bush-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/george-bush-public-approval",
+    "sha256": "e1d7e5ef0b4e59f5eca1a906ca9f47b6facbeee78eff63b3d767251573ffc517",
+    "bytes": 210032
+  },
+  "approval_ronald-reagan-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/ronald-reagan-public-approval",
+    "sha256": "4a9c5051b023a4c91a4efdce1aa926e6804230146b8df3c87c2b3a9c98a10599",
+    "bytes": 119920
+  },
+  "approval_jimmy-carter-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/jimmy-carter-public-approval",
+    "sha256": "4bf78076101b63c61b95e83dc75c8c593873b6157a22f62cd3b42c06a99342d2",
+    "bytes": 96002
+  },
+  "approval_gerald-r-ford-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/gerald-r-ford-public-approval",
+    "sha256": "828e907ae38079f81ef06adbd98272035d16ee8cb30d7856f2eefe9ed9aca925",
+    "bytes": 65822
+  },
+  "approval_richard-m-nixon-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/richard-m-nixon-public-approval",
+    "sha256": "4d7cc5bf301888a81ce7b39d22c1534c39f3aac83f7ec5fd7f0f7daaec2ecd6c",
+    "bytes": 99747
+  },
+  "approval_lyndon-b-johnson-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/lyndon-b-johnson-public-approval",
+    "sha256": "e6cd2d7479cb7813cb0cc3f9671d5b7e257c0b31a329ef714c69b5d1739d09a4",
+    "bytes": 92970
+  },
+  "approval_john-f-kennedy-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/john-f-kennedy-public-approval",
+    "sha256": "d23a3ca703f7ea33adfb42841a6f7a43cca2bfb011dfa4cc8e606ebbd841a451",
+    "bytes": 70731
+  },
+  "approval_dwight-d-eisenhower-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/dwight-d-eisenhower-public-approval",
+    "sha256": "d8f17f4b4a492b77df0cb6b908b29126ea64bcbbe834e1f8ac54ac296c8062d6",
+    "bytes": 111554
+  },
+  "approval_harry-s-truman-public-approval.html": {
+    "url": "https://www.presidency.ucsb.edu/statistics/data/harry-s-truman-public-approval",
+    "sha256": "98a7a6a909202b6d53958ac333d9dde688d723f9444ee346bc783f58dfdd8301",
+    "bytes": 88352
+  }
+}

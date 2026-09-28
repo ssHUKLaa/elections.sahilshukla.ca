@@ -1,0 +1,2877 @@
+{
+  "method": "paired one-component-at-a-time diagnostic; no variant is a calibrated replacement forecast",
+  "cutoff_utc": "2026-09-21T20:45:24Z",
+  "snapshot_ids": {
+    "live_source_snapshot": "nyt:20260921T200327Z:21f40e0754570333",
+    "historical_snapshot": "20260921T204524Z"
+  },
+  "stage1_sha256": "2020edd048b3b0370084be220ed8b6e813da702513c013c06654e2ea2081ffb0",
+  "stage2_sha256": "658d3ade871be0a0b56b587356a5e6bb681a4782ce2e40bef55369c96d3f107f",
+  "draws": 20000,
+  "seed": 20260921,
+  "accepted_stage5_D_control_if_O_caucus_D": 0.38088,
+  "variants": {
+    "accepted_components": {
+      "label": "accepted_components",
+      "draws": 20000,
+      "expected_D_winners": 15.3751,
+      "D_control_if_other_winners_caucus_D": 0.37865,
+      "D_control_if_other_winners_caucus_R": 0.36425,
+      "R_control_if_other_winners_caucus_D": 0.62135,
+      "R_control_if_other_winners_caucus_R": 0.63575,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 14,
+          "D_R_margin": -0.04577144470894347,
+          "D_win_probability": 0.3553,
+          "R_win_probability": 0.6447,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 1,
+          "D_R_margin": -0.17936784062601382,
+          "D_win_probability": 0.03725,
+          "R_win_probability": 0.96275,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 4,
+          "D_R_margin": -0.16268160339565402,
+          "D_win_probability": 0.02025,
+          "R_win_probability": 0.97975,
+          "O_win_probability": 0.0
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.16576571088086384,
+          "D_win_probability": 0.9187,
+          "R_win_probability": 0.0813,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.23293268990461402,
+          "D_win_probability": 0.9745,
+          "R_win_probability": 0.0255,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 7,
+          "D_R_margin": -0.07857968334584801,
+          "D_win_probability": 0.14255,
+          "R_win_probability": 0.8556,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 12,
+          "D_R_margin": 0.06094757830842697,
+          "D_win_probability": 0.78725,
+          "R_win_probability": 0.21275,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 18,
+          "D_R_margin": -0.01815397490525418,
+          "D_win_probability": 0.40335,
+          "R_win_probability": 0.59665,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9914,
+          "O_win_probability": 0.0086
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.19556668233890884,
+          "D_win_probability": 0.92525,
+          "R_win_probability": 0.04675,
+          "O_win_probability": 0.028
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 3,
+          "D_R_margin": -0.09001558228682516,
+          "D_win_probability": 0.14855,
+          "R_win_probability": 0.85145,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 2,
+          "D_R_margin": -0.1394613938695764,
+          "D_win_probability": 0.0518,
+          "R_win_probability": 0.9482,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.21179082953911774,
+          "D_win_probability": 0.0354,
+          "R_win_probability": 0.9646,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 8,
+          "D_R_margin": 0.25382028147405916,
+          "D_win_probability": 0.9984,
+          "R_win_probability": 0.0016,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 9,
+          "D_R_margin": -0.016064542930137805,
+          "D_win_probability": 0.4135,
+          "R_win_probability": 0.5865,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 29,
+          "D_R_margin": 0.009311153803553225,
+          "D_win_probability": 0.54895,
+          "R_win_probability": 0.4477,
+          "O_win_probability": 0.00335
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 4,
+          "D_R_margin": 0.046958955054554836,
+          "D_win_probability": 0.71675,
+          "R_win_probability": 0.28325,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 2,
+          "D_R_margin": -0.1420553998973637,
+          "D_win_probability": 0.1377,
+          "R_win_probability": 0.8623,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 11,
+          "D_R_margin": -0.11391528620806048,
+          "D_win_probability": 0.1722,
+          "R_win_probability": 0.82225,
+          "O_win_probability": 0.00555
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 32,
+          "D_R_margin": 0.04941183117739095,
+          "D_win_probability": 0.75175,
+          "R_win_probability": 0.24825,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 6,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9379,
+          "O_win_probability": 0.0621
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 16,
+          "D_R_margin": 0.03528106911411836,
+          "D_win_probability": 0.6771,
+          "R_win_probability": 0.31575,
+          "O_win_probability": 0.00715
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.17033023455846374,
+          "D_win_probability": 0.92275,
+          "R_win_probability": 0.07725,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 1,
+          "D_R_margin": 0.16043873525272087,
+          "D_win_probability": 0.96735,
+          "R_win_probability": 0.03265,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 18,
+          "D_R_margin": 0.00844686411928567,
+          "D_win_probability": 0.55015,
+          "R_win_probability": 0.4498,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 1,
+          "D_R_margin": -0.2133032662764253,
+          "D_win_probability": 0.052,
+          "R_win_probability": 0.94755,
+          "O_win_probability": 0.00045
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.2902714283764918,
+          "D_win_probability": 0.9932,
+          "R_win_probability": 0.0068,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 3,
+          "D_R_margin": 0.2637786517273195,
+          "D_win_probability": 0.99935,
+          "R_win_probability": 0.00065,
+          "O_win_probability": 0.0
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 3,
+          "D_R_margin": 0.18372089742958475,
+          "D_win_probability": 0.32005,
+          "R_win_probability": 0.6784,
+          "O_win_probability": 0.00155
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 7,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.24459756129768553,
+          "D_win_probability": 0.02,
+          "R_win_probability": 0.97815,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 35,
+          "D_R_margin": -0.011855475975513327,
+          "D_win_probability": 0.42905,
+          "R_win_probability": 0.57095,
+          "O_win_probability": 0.0
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.15156531906748932,
+          "D_win_probability": 0.90015,
+          "R_win_probability": 0.09985,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.36896998875165543,
+          "D_win_probability": 0.0006,
+          "R_win_probability": 0.99455,
+          "O_win_probability": 0.00485
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.32215145374044085,
+          "D_win_probability": 0.00395,
+          "R_win_probability": 0.99605,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": 0.0,
+      "delta_expected_D_winners_vs_baseline": 0.0
+    },
+    "without_race_polls": {
+      "label": "without_race_polls",
+      "draws": 20000,
+      "expected_D_winners": 16.24355,
+      "D_control_if_other_winners_caucus_D": 0.49695,
+      "D_control_if_other_winners_caucus_R": 0.4721,
+      "R_control_if_other_winners_caucus_D": 0.50305,
+      "R_control_if_other_winners_caucus_R": 0.5279,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 0,
+          "D_R_margin": -0.03923200415019404,
+          "D_win_probability": 0.6566,
+          "R_win_probability": 0.3434,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 0,
+          "D_R_margin": -0.14526409772727564,
+          "D_win_probability": 0.1132,
+          "R_win_probability": 0.8868,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 0,
+          "D_R_margin": -0.30203963742118695,
+          "D_win_probability": 0.0071,
+          "R_win_probability": 0.9808,
+          "O_win_probability": 0.0121
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.16576571088086384,
+          "D_win_probability": 0.9187,
+          "R_win_probability": 0.0813,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.23293268990461402,
+          "D_win_probability": 0.9745,
+          "R_win_probability": 0.0255,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 0,
+          "D_R_margin": -0.10820083118466073,
+          "D_win_probability": 0.1803,
+          "R_win_probability": 0.81795,
+          "O_win_probability": 0.00175
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 0,
+          "D_R_margin": 0.13189087553843584,
+          "D_win_probability": 0.8522,
+          "R_win_probability": 0.1478,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 0,
+          "D_R_margin": -0.011787032102412083,
+          "D_win_probability": 0.4579,
+          "R_win_probability": 0.531,
+          "O_win_probability": 0.0111
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9914,
+          "O_win_probability": 0.0086
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.19556668233890884,
+          "D_win_probability": 0.92525,
+          "R_win_probability": 0.04675,
+          "O_win_probability": 0.028
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 0,
+          "D_R_margin": -0.11928902655929778,
+          "D_win_probability": 0.1602,
+          "R_win_probability": 0.8398,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 0,
+          "D_R_margin": -0.14576594415687888,
+          "D_win_probability": 0.1123,
+          "R_win_probability": 0.8877,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.21179082953911774,
+          "D_win_probability": 0.0354,
+          "R_win_probability": 0.9646,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 0,
+          "D_R_margin": 0.3279493552655259,
+          "D_win_probability": 0.9969,
+          "R_win_probability": 0.0031,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 0,
+          "D_R_margin": -0.0015144857394800784,
+          "D_win_probability": 0.49495,
+          "R_win_probability": 0.50505,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 0,
+          "D_R_margin": 0.07668997447201754,
+          "D_win_probability": 0.73495,
+          "R_win_probability": 0.2618,
+          "O_win_probability": 0.00325
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 0,
+          "D_R_margin": 0.11876907139892415,
+          "D_win_probability": 0.8402,
+          "R_win_probability": 0.1598,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 0,
+          "D_R_margin": -0.14226846388235623,
+          "D_win_probability": 0.11405,
+          "R_win_probability": 0.8813,
+          "O_win_probability": 0.00465
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 0,
+          "D_R_margin": -0.05701296634105218,
+          "D_win_probability": 0.31565,
+          "R_win_probability": 0.6701,
+          "O_win_probability": 0.01425
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 0,
+          "D_R_margin": 0.05425492300830044,
+          "D_win_probability": 0.6673,
+          "R_win_probability": 0.3197,
+          "O_win_probability": 0.013
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.94795,
+          "O_win_probability": 0.05205
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 0,
+          "D_R_margin": 0.15339231940931955,
+          "D_win_probability": 0.8963,
+          "R_win_probability": 0.0977,
+          "O_win_probability": 0.006
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.17033023455846374,
+          "D_win_probability": 0.92275,
+          "R_win_probability": 0.07725,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 0,
+          "D_R_margin": 0.2024326274688091,
+          "D_win_probability": 0.9547,
+          "R_win_probability": 0.0453,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 0,
+          "D_R_margin": -0.004051076344654583,
+          "D_win_probability": 0.48875,
+          "R_win_probability": 0.5112,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 0,
+          "D_R_margin": -0.20838267790240025,
+          "D_win_probability": 0.03955,
+          "R_win_probability": 0.95065,
+          "O_win_probability": 0.0098
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.2902714283764918,
+          "D_win_probability": 0.9932,
+          "R_win_probability": 0.0068,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 0,
+          "D_R_margin": 0.3470410999933372,
+          "D_win_probability": 0.9986,
+          "R_win_probability": 0.00125,
+          "O_win_probability": 0.00015
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 0,
+          "D_R_margin": -0.04749769721008121,
+          "D_win_probability": 0.0612,
+          "R_win_probability": 0.9364,
+          "O_win_probability": 0.0024
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.24459756129768553,
+          "D_win_probability": 0.02,
+          "R_win_probability": 0.97815,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 0,
+          "D_R_margin": -0.0262149082001265,
+          "D_win_probability": 0.40615,
+          "R_win_probability": 0.58495,
+          "O_win_probability": 0.0089
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.15156531906748932,
+          "D_win_probability": 0.90015,
+          "R_win_probability": 0.09985,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.36896998875165543,
+          "D_win_probability": 0.0006,
+          "R_win_probability": 0.99455,
+          "O_win_probability": 0.00485
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.32215145374044085,
+          "D_win_probability": 0.00395,
+          "R_win_probability": 0.99605,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": 0.11830000000000002,
+      "delta_expected_D_winners_vs_baseline": 0.8684499999999993
+    },
+    "without_senate_poll_bias_correction": {
+      "label": "without_senate_poll_bias_correction",
+      "draws": 20000,
+      "expected_D_winners": 17.095,
+      "D_control_if_other_winners_caucus_D": 0.6519,
+      "D_control_if_other_winners_caucus_R": 0.5844,
+      "R_control_if_other_winners_caucus_D": 0.3481,
+      "R_control_if_other_winners_caucus_R": 0.4156,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 14,
+          "D_R_margin": -0.017165269983573945,
+          "D_win_probability": 0.50945,
+          "R_win_probability": 0.49055,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 1,
+          "D_R_margin": -0.16460862350137284,
+          "D_win_probability": 0.05255,
+          "R_win_probability": 0.94745,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 4,
+          "D_R_margin": -0.13901725016911673,
+          "D_win_probability": 0.0404,
+          "R_win_probability": 0.9596,
+          "O_win_probability": 0.0
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.16576571088086384,
+          "D_win_probability": 0.9187,
+          "R_win_probability": 0.0813,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.23293268990461402,
+          "D_win_probability": 0.9745,
+          "R_win_probability": 0.0255,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 7,
+          "D_R_margin": -0.054651299800863806,
+          "D_win_probability": 0.22965,
+          "R_win_probability": 0.7685,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 12,
+          "D_R_margin": 0.08615707549511703,
+          "D_win_probability": 0.8656,
+          "R_win_probability": 0.1344,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 18,
+          "D_R_margin": 0.009499070855083907,
+          "D_win_probability": 0.55495,
+          "R_win_probability": 0.44505,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9914,
+          "O_win_probability": 0.0086
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.19556668233890884,
+          "D_win_probability": 0.92525,
+          "R_win_probability": 0.04675,
+          "O_win_probability": 0.028
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 3,
+          "D_R_margin": -0.0625007033976609,
+          "D_win_probability": 0.2335,
+          "R_win_probability": 0.7665,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 2,
+          "D_R_margin": -0.11926543425095743,
+          "D_win_probability": 0.08445,
+          "R_win_probability": 0.91555,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.21179082953911774,
+          "D_win_probability": 0.0354,
+          "R_win_probability": 0.9646,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 8,
+          "D_R_margin": 0.28191030210685475,
+          "D_win_probability": 0.9996,
+          "R_win_probability": 0.0004,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 9,
+          "D_R_margin": 0.014596934607415395,
+          "D_win_probability": 0.57755,
+          "R_win_probability": 0.42245,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 29,
+          "D_R_margin": 0.03720853304280059,
+          "D_win_probability": 0.69135,
+          "R_win_probability": 0.3053,
+          "O_win_probability": 0.00335
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 4,
+          "D_R_margin": 0.06893800968737544,
+          "D_win_probability": 0.80135,
+          "R_win_probability": 0.19865,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 2,
+          "D_R_margin": -0.14114350386693836,
+          "D_win_probability": 0.13915,
+          "R_win_probability": 0.8604,
+          "O_win_probability": 0.00045
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 11,
+          "D_R_margin": -0.10673271851223053,
+          "D_win_probability": 0.14555,
+          "R_win_probability": 0.68055,
+          "O_win_probability": 0.1739
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 32,
+          "D_R_margin": 0.08096461648186175,
+          "D_win_probability": 0.8712,
+          "R_win_probability": 0.1288,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 6,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.60715,
+          "O_win_probability": 0.39285
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 16,
+          "D_R_margin": 0.06015644641445589,
+          "D_win_probability": 0.7837,
+          "R_win_probability": 0.2094,
+          "O_win_probability": 0.0069
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.17033023455846374,
+          "D_win_probability": 0.92275,
+          "R_win_probability": 0.07725,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 1,
+          "D_R_margin": 0.18017345406449958,
+          "D_win_probability": 0.9814,
+          "R_win_probability": 0.0186,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 18,
+          "D_R_margin": 0.034518042375739626,
+          "D_win_probability": 0.68075,
+          "R_win_probability": 0.3192,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 1,
+          "D_R_margin": -0.21246369311475874,
+          "D_win_probability": 0.0522,
+          "R_win_probability": 0.9448,
+          "O_win_probability": 0.003
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.2902714283764918,
+          "D_win_probability": 0.9932,
+          "R_win_probability": 0.0068,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 3,
+          "D_R_margin": 0.28462021275902405,
+          "D_win_probability": 0.99975,
+          "R_win_probability": 0.0001,
+          "O_win_probability": 0.00015
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 3,
+          "D_R_margin": 0.21687543266903503,
+          "D_win_probability": 0.51505,
+          "R_win_probability": 0.4833,
+          "O_win_probability": 0.00165
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 7,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.24459756129768553,
+          "D_win_probability": 0.02,
+          "R_win_probability": 0.97815,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 35,
+          "D_R_margin": 0.015558683251515637,
+          "D_win_probability": 0.59135,
+          "R_win_probability": 0.40865,
+          "O_win_probability": 0.0
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.15156531906748932,
+          "D_win_probability": 0.90015,
+          "R_win_probability": 0.09985,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.36896998875165543,
+          "D_win_probability": 0.0006,
+          "R_win_probability": 0.99455,
+          "O_win_probability": 0.00485
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.32215145374044085,
+          "D_win_probability": 0.00395,
+          "R_win_probability": 0.99605,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": 0.27325000000000005,
+      "delta_expected_D_winners_vs_baseline": 1.719899999999999
+    },
+    "without_senate_shared_poll_error": {
+      "label": "without_senate_shared_poll_error",
+      "draws": 20000,
+      "expected_D_winners": 14.85275,
+      "D_control_if_other_winners_caucus_D": 0.30705,
+      "D_control_if_other_winners_caucus_R": 0.2938,
+      "R_control_if_other_winners_caucus_D": 0.69295,
+      "R_control_if_other_winners_caucus_R": 0.7062,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 14,
+          "D_R_margin": -0.05096566651983881,
+          "D_win_probability": 0.2518,
+          "R_win_probability": 0.7482,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 1,
+          "D_R_margin": -0.16557390120120336,
+          "D_win_probability": 0.07575,
+          "R_win_probability": 0.92425,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 4,
+          "D_R_margin": -0.1515575873553322,
+          "D_win_probability": 0.01785,
+          "R_win_probability": 0.98215,
+          "O_win_probability": 0.0
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.16576571088086384,
+          "D_win_probability": 0.9187,
+          "R_win_probability": 0.0813,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.23293268990461402,
+          "D_win_probability": 0.9745,
+          "R_win_probability": 0.0255,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 7,
+          "D_R_margin": -0.0715318747838249,
+          "D_win_probability": 0.07515,
+          "R_win_probability": 0.92305,
+          "O_win_probability": 0.0018
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 12,
+          "D_R_margin": 0.049469778244740636,
+          "D_win_probability": 0.7936,
+          "R_win_probability": 0.2064,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 18,
+          "D_R_margin": -0.018078776669081167,
+          "D_win_probability": 0.3559,
+          "R_win_probability": 0.6441,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9914,
+          "O_win_probability": 0.0086
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.19556668233890884,
+          "D_win_probability": 0.92525,
+          "R_win_probability": 0.04675,
+          "O_win_probability": 0.028
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 3,
+          "D_R_margin": -0.09375901571643379,
+          "D_win_probability": 0.1589,
+          "R_win_probability": 0.8411,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 2,
+          "D_R_margin": -0.14021893979484798,
+          "D_win_probability": 0.0667,
+          "R_win_probability": 0.9333,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.21179082953911774,
+          "D_win_probability": 0.0354,
+          "R_win_probability": 0.9646,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 8,
+          "D_R_margin": 0.25884309659915533,
+          "D_win_probability": 0.99805,
+          "R_win_probability": 0.00195,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 9,
+          "D_R_margin": -0.020198950484052267,
+          "D_win_probability": 0.3182,
+          "R_win_probability": 0.6818,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 29,
+          "D_R_margin": -0.012567289633101279,
+          "D_win_probability": 0.3478,
+          "R_win_probability": 0.64875,
+          "O_win_probability": 0.00345
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 4,
+          "D_R_margin": 0.04684924237531731,
+          "D_win_probability": 0.71665,
+          "R_win_probability": 0.28335,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 2,
+          "D_R_margin": -0.1421322791094104,
+          "D_win_probability": 0.13785,
+          "R_win_probability": 0.86215,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 11,
+          "D_R_margin": -0.12830310917991788,
+          "D_win_probability": 0.13675,
+          "R_win_probability": 0.85815,
+          "O_win_probability": 0.0051
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 32,
+          "D_R_margin": 0.047875088271083374,
+          "D_win_probability": 0.81495,
+          "R_win_probability": 0.18505,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 6,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9432,
+          "O_win_probability": 0.0568
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 16,
+          "D_R_margin": 0.006962367275634157,
+          "D_win_probability": 0.55045,
+          "R_win_probability": 0.44225,
+          "O_win_probability": 0.0073
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.17033023455846374,
+          "D_win_probability": 0.92275,
+          "R_win_probability": 0.07725,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 1,
+          "D_R_margin": 0.16648815121230068,
+          "D_win_probability": 0.9599,
+          "R_win_probability": 0.0401,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 18,
+          "D_R_margin": 0.011770625799959146,
+          "D_win_probability": 0.60185,
+          "R_win_probability": 0.3981,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 1,
+          "D_R_margin": -0.2129519940906594,
+          "D_win_probability": 0.05225,
+          "R_win_probability": 0.9472,
+          "O_win_probability": 0.00055
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.2902714283764918,
+          "D_win_probability": 0.9932,
+          "R_win_probability": 0.0068,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 3,
+          "D_R_margin": 0.26992904723463584,
+          "D_win_probability": 0.9991,
+          "R_win_probability": 0.00085,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 3,
+          "D_R_margin": 0.18876726843769537,
+          "D_win_probability": 0.30635,
+          "R_win_probability": 0.6921,
+          "O_win_probability": 0.00155
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 7,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.24459756129768553,
+          "D_win_probability": 0.02,
+          "R_win_probability": 0.97815,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 35,
+          "D_R_margin": -0.006691655910792559,
+          "D_win_probability": 0.42245,
+          "R_win_probability": 0.57755,
+          "O_win_probability": 0.0
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.15156531906748932,
+          "D_win_probability": 0.90015,
+          "R_win_probability": 0.09985,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.36896998875165543,
+          "D_win_probability": 0.0006,
+          "R_win_probability": 0.99455,
+          "O_win_probability": 0.00485
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.32215145374044085,
+          "D_win_probability": 0.00395,
+          "R_win_probability": 0.99605,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": -0.0716,
+      "delta_expected_D_winners_vs_baseline": -0.5223499999999994
+    },
+    "without_national_or_local_update": {
+      "label": "without_national_or_local_update",
+      "draws": 20000,
+      "expected_D_winners": 13.86615,
+      "D_control_if_other_winners_caucus_D": 0.2826,
+      "D_control_if_other_winners_caucus_R": 0.2733,
+      "R_control_if_other_winners_caucus_D": 0.7174,
+      "R_control_if_other_winners_caucus_R": 0.7267,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 14,
+          "D_R_margin": -0.058966959645135805,
+          "D_win_probability": 0.29685,
+          "R_win_probability": 0.70315,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 1,
+          "D_R_margin": -0.2111408803000798,
+          "D_win_probability": 0.0223,
+          "R_win_probability": 0.9777,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 4,
+          "D_R_margin": -0.16998476979888028,
+          "D_win_probability": 0.0186,
+          "R_win_probability": 0.9814,
+          "O_win_probability": 0.0
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.09362741654743784,
+          "D_win_probability": 0.7626,
+          "R_win_probability": 0.2374,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.21794509767166706,
+          "D_win_probability": 0.9506,
+          "R_win_probability": 0.0494,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 7,
+          "D_R_margin": -0.0909795162744314,
+          "D_win_probability": 0.1156,
+          "R_win_probability": 0.88265,
+          "O_win_probability": 0.00175
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 12,
+          "D_R_margin": 0.026399993337803473,
+          "D_win_probability": 0.63035,
+          "R_win_probability": 0.36965,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 18,
+          "D_R_margin": -0.031883193199997106,
+          "D_win_probability": 0.33345,
+          "R_win_probability": 0.66655,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9918,
+          "O_win_probability": 0.0082
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.1699865813383482,
+          "D_win_probability": 0.878,
+          "R_win_probability": 0.09385,
+          "O_win_probability": 0.02815
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 3,
+          "D_R_margin": -0.08718329103700906,
+          "D_win_probability": 0.1655,
+          "R_win_probability": 0.8345,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 2,
+          "D_R_margin": -0.15861714541752248,
+          "D_win_probability": 0.0361,
+          "R_win_probability": 0.9639,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.26385383555973685,
+          "D_win_probability": 0.01905,
+          "R_win_probability": 0.98095,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 8,
+          "D_R_margin": 0.24915937824055728,
+          "D_win_probability": 0.99745,
+          "R_win_probability": 0.00255,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 9,
+          "D_R_margin": -0.04009783139486488,
+          "D_win_probability": 0.29585,
+          "R_win_probability": 0.70415,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 29,
+          "D_R_margin": -0.00938515070143238,
+          "D_win_probability": 0.4494,
+          "R_win_probability": 0.54735,
+          "O_win_probability": 0.00325
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 4,
+          "D_R_margin": 0.021942091003306765,
+          "D_win_probability": 0.6008,
+          "R_win_probability": 0.3992,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 2,
+          "D_R_margin": -0.10138554699273052,
+          "D_win_probability": 0.23905,
+          "R_win_probability": 0.76095,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 11,
+          "D_R_margin": -0.15673952835530436,
+          "D_win_probability": 0.1128,
+          "R_win_probability": 0.88185,
+          "O_win_probability": 0.00535
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 32,
+          "D_R_margin": 0.03131579438652435,
+          "D_win_probability": 0.66435,
+          "R_win_probability": 0.33565,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 6,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9391,
+          "O_win_probability": 0.0609
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 16,
+          "D_R_margin": 0.02966043168545643,
+          "D_win_probability": 0.64565,
+          "R_win_probability": 0.3473,
+          "O_win_probability": 0.00705
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.1637068288312718,
+          "D_win_probability": 0.89315,
+          "R_win_probability": 0.10685,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 1,
+          "D_R_margin": 0.10509625231171772,
+          "D_win_probability": 0.8782,
+          "R_win_probability": 0.1218,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 18,
+          "D_R_margin": -0.005385995033458707,
+          "D_win_probability": 0.4747,
+          "R_win_probability": 0.52525,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 1,
+          "D_R_margin": -0.3117047873583689,
+          "D_win_probability": 0.0137,
+          "R_win_probability": 0.98595,
+          "O_win_probability": 0.00035
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.17986718253707085,
+          "D_win_probability": 0.91655,
+          "R_win_probability": 0.08345,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 3,
+          "D_R_margin": 0.2510117398783633,
+          "D_win_probability": 0.99815,
+          "R_win_probability": 0.0018,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 3,
+          "D_R_margin": 0.16614672257244625,
+          "D_win_probability": 0.2696,
+          "R_win_probability": 0.7289,
+          "O_win_probability": 0.0015
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 7,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.2732996159660649,
+          "D_win_probability": 0.0169,
+          "R_win_probability": 0.98135,
+          "O_win_probability": 0.00175
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 35,
+          "D_R_margin": -0.027222393139859788,
+          "D_win_probability": 0.34915,
+          "R_win_probability": 0.65085,
+          "O_win_probability": 0.0
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.11929243007759824,
+          "D_win_probability": 0.8213,
+          "R_win_probability": 0.1787,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.438639178067396,
+          "D_win_probability": 0.0002,
+          "R_win_probability": 0.9952,
+          "O_win_probability": 0.0046
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.4512770131187841,
+          "D_win_probability": 0.0002,
+          "R_win_probability": 0.9998,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": -0.09604999999999997,
+      "delta_expected_D_winners_vs_baseline": -1.5089500000000005
+    },
+    "without_generic_ballot": {
+      "label": "without_generic_ballot",
+      "draws": 20000,
+      "expected_D_winners": 15.5857,
+      "D_control_if_other_winners_caucus_D": 0.4122,
+      "D_control_if_other_winners_caucus_R": 0.3982,
+      "R_control_if_other_winners_caucus_D": 0.5878,
+      "R_control_if_other_winners_caucus_R": 0.6018,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 14,
+          "D_R_margin": -0.04430563534411775,
+          "D_win_probability": 0.366,
+          "R_win_probability": 0.634,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 1,
+          "D_R_margin": -0.17630501750911584,
+          "D_win_probability": 0.0426,
+          "R_win_probability": 0.9574,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 4,
+          "D_R_margin": -0.1576942993298594,
+          "D_win_probability": 0.02475,
+          "R_win_probability": 0.97525,
+          "O_win_probability": 0.0
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.17394862987146117,
+          "D_win_probability": 0.92085,
+          "R_win_probability": 0.07915,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.24115368078874272,
+          "D_win_probability": 0.9749,
+          "R_win_probability": 0.0251,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 7,
+          "D_R_margin": -0.07549673762399473,
+          "D_win_probability": 0.1545,
+          "R_win_probability": 0.8437,
+          "O_win_probability": 0.0018
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 12,
+          "D_R_margin": 0.06195128522061093,
+          "D_win_probability": 0.7881,
+          "R_win_probability": 0.2119,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 18,
+          "D_R_margin": -0.016093914296578884,
+          "D_win_probability": 0.41395,
+          "R_win_probability": 0.58605,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9913,
+          "O_win_probability": 0.0087
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.20375435280504445,
+          "D_win_probability": 0.9268,
+          "R_win_probability": 0.04585,
+          "O_win_probability": 0.02735
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 3,
+          "D_R_margin": -0.08605325453880062,
+          "D_win_probability": 0.16235,
+          "R_win_probability": 0.83765,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 2,
+          "D_R_margin": -0.13610738873266442,
+          "D_win_probability": 0.0578,
+          "R_win_probability": 0.9422,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.2036478043764992,
+          "D_win_probability": 0.04785,
+          "R_win_probability": 0.95215,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 8,
+          "D_R_margin": 0.2545531004624101,
+          "D_win_probability": 0.9983,
+          "R_win_probability": 0.0017,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 9,
+          "D_R_margin": -0.01402628799492141,
+          "D_win_probability": 0.4252,
+          "R_win_probability": 0.5748,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 29,
+          "D_R_margin": 0.01030298552773489,
+          "D_win_probability": 0.55525,
+          "R_win_probability": 0.4414,
+          "O_win_probability": 0.00335
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 4,
+          "D_R_margin": 0.04807273209366116,
+          "D_win_probability": 0.71795,
+          "R_win_probability": 0.28205,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 2,
+          "D_R_margin": -0.13429207090931713,
+          "D_win_probability": 0.1601,
+          "R_win_probability": 0.8399,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 11,
+          "D_R_margin": -0.11037565668045105,
+          "D_win_probability": 0.18665,
+          "R_win_probability": 0.8078,
+          "O_win_probability": 0.00555
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 32,
+          "D_R_margin": 0.051556410870695187,
+          "D_win_probability": 0.7597,
+          "R_win_probability": 0.2403,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 6,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9373,
+          "O_win_probability": 0.0627
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 16,
+          "D_R_margin": 0.03531158224408669,
+          "D_win_probability": 0.6753,
+          "R_win_probability": 0.31765,
+          "O_win_probability": 0.00705
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.1785215544478379,
+          "D_win_probability": 0.9261,
+          "R_win_probability": 0.0739,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 1,
+          "D_R_margin": 0.16250782273371261,
+          "D_win_probability": 0.968,
+          "R_win_probability": 0.032,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 18,
+          "D_R_margin": 0.01106908523182186,
+          "D_win_probability": 0.5614,
+          "R_win_probability": 0.43855,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 1,
+          "D_R_margin": -0.2057376040626476,
+          "D_win_probability": 0.06385,
+          "R_win_probability": 0.9357,
+          "O_win_probability": 0.00045
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.29851010885112195,
+          "D_win_probability": 0.9925,
+          "R_win_probability": 0.0075,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 3,
+          "D_R_margin": 0.2641495224138999,
+          "D_win_probability": 0.9993,
+          "R_win_probability": 0.00065,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 3,
+          "D_R_margin": 0.18638343072068642,
+          "D_win_probability": 0.3309,
+          "R_win_probability": 0.66755,
+          "O_win_probability": 0.00155
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 7,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.23647730292131913,
+          "D_win_probability": 0.028,
+          "R_win_probability": 0.97015,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 35,
+          "D_R_margin": -0.0093875896491654,
+          "D_win_probability": 0.4459,
+          "R_win_probability": 0.5541,
+          "O_win_probability": 0.0
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.15974653537549427,
+          "D_win_probability": 0.90405,
+          "R_win_probability": 0.09595,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.36086192627481334,
+          "D_win_probability": 0.0009,
+          "R_win_probability": 0.9942,
+          "O_win_probability": 0.0049
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.3140563391235873,
+          "D_win_probability": 0.0059,
+          "R_win_probability": 0.9941,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": 0.033550000000000024,
+      "delta_expected_D_winners_vs_baseline": 0.21059999999999945
+    },
+    "without_approval_fundamentals": {
+      "label": "without_approval_fundamentals",
+      "draws": 20000,
+      "expected_D_winners": 14.9925,
+      "D_control_if_other_winners_caucus_D": 0.36255,
+      "D_control_if_other_winners_caucus_R": 0.3496,
+      "R_control_if_other_winners_caucus_D": 0.63745,
+      "R_control_if_other_winners_caucus_R": 0.6504,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 14,
+          "D_R_margin": -0.04729314057521301,
+          "D_win_probability": 0.35235,
+          "R_win_probability": 0.64765,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 1,
+          "D_R_margin": -0.18773374494396938,
+          "D_win_probability": 0.03525,
+          "R_win_probability": 0.96475,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 4,
+          "D_R_margin": -0.1611595050067972,
+          "D_win_probability": 0.02305,
+          "R_win_probability": 0.97695,
+          "O_win_probability": 0.0
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.15447000646257864,
+          "D_win_probability": 0.8876,
+          "R_win_probability": 0.1124,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.22167249503195088,
+          "D_win_probability": 0.9589,
+          "R_win_probability": 0.0411,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 7,
+          "D_R_margin": -0.0804006798948053,
+          "D_win_probability": 0.1416,
+          "R_win_probability": 0.8566,
+          "O_win_probability": 0.0018
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 12,
+          "D_R_margin": 0.05546135108048736,
+          "D_win_probability": 0.762,
+          "R_win_probability": 0.238,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 18,
+          "D_R_margin": -0.021286243630025136,
+          "D_win_probability": 0.3868,
+          "R_win_probability": 0.6132,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.99145,
+          "O_win_probability": 0.00855
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.1842633684743754,
+          "D_win_probability": 0.9023,
+          "R_win_probability": 0.06975,
+          "O_win_probability": 0.02795
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 3,
+          "D_R_margin": -0.09291950213359615,
+          "D_win_probability": 0.14745,
+          "R_win_probability": 0.85255,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 2,
+          "D_R_margin": -0.14346106074082185,
+          "D_win_probability": 0.05115,
+          "R_win_probability": 0.94885,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.22212428814609958,
+          "D_win_probability": 0.0367,
+          "R_win_probability": 0.9633,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 8,
+          "D_R_margin": 0.24558518502498433,
+          "D_win_probability": 0.9972,
+          "R_win_probability": 0.0028,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 9,
+          "D_R_margin": -0.019641276357023674,
+          "D_win_probability": 0.39705,
+          "R_win_probability": 0.60295,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 29,
+          "D_R_margin": 0.004058125977314611,
+          "D_win_probability": 0.519,
+          "R_win_probability": 0.4777,
+          "O_win_probability": 0.0033
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 4,
+          "D_R_margin": 0.0400044502403687,
+          "D_win_probability": 0.6837,
+          "R_win_probability": 0.3163,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 2,
+          "D_R_margin": -0.15276536702074472,
+          "D_win_probability": 0.13295,
+          "R_win_probability": 0.86705,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 11,
+          "D_R_margin": -0.1288524120718579,
+          "D_win_probability": 0.15345,
+          "R_win_probability": 0.8411,
+          "O_win_probability": 0.00545
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 32,
+          "D_R_margin": 0.04628449240344581,
+          "D_win_probability": 0.7354,
+          "R_win_probability": 0.2646,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 6,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9377,
+          "O_win_probability": 0.0623
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 16,
+          "D_R_margin": 0.027826295946410624,
+          "D_win_probability": 0.63875,
+          "R_win_probability": 0.3542,
+          "O_win_probability": 0.00705
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.15904237745388333,
+          "D_win_probability": 0.89415,
+          "R_win_probability": 0.10585,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 1,
+          "D_R_margin": 0.1538892000847458,
+          "D_win_probability": 0.95835,
+          "R_win_probability": 0.04165,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 18,
+          "D_R_margin": 0.005796469653155796,
+          "D_win_probability": 0.53445,
+          "R_win_probability": 0.4655,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 1,
+          "D_R_margin": -0.22489885142839175,
+          "D_win_probability": 0.05225,
+          "R_win_probability": 0.9473,
+          "O_win_probability": 0.00045
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.2790092844961888,
+          "D_win_probability": 0.98665,
+          "R_win_probability": 0.01335,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 3,
+          "D_R_margin": 0.25501502251982566,
+          "D_win_probability": 0.9986,
+          "R_win_probability": 0.00135,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 3,
+          "D_R_margin": 0.18016834780777527,
+          "D_win_probability": 0.31125,
+          "R_win_probability": 0.6872,
+          "O_win_probability": 0.00155
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 7,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.25603616461342427,
+          "D_win_probability": 0.0218,
+          "R_win_probability": 0.97645,
+          "O_win_probability": 0.00175
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 35,
+          "D_R_margin": -0.014053098110169531,
+          "D_win_probability": 0.4196,
+          "R_win_probability": 0.5804,
+          "O_win_probability": 0.0
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.14026405289950136,
+          "D_win_probability": 0.86705,
+          "R_win_probability": 0.13295,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.38051093945592546,
+          "D_win_probability": 0.00075,
+          "R_win_probability": 0.99445,
+          "O_win_probability": 0.0048
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.3336777885526291,
+          "D_win_probability": 0.00495,
+          "R_win_probability": 0.99505,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": -0.016100000000000003,
+      "delta_expected_D_winners_vs_baseline": -0.38260000000000005
+    },
+    "without_fitted_senate_local_lean": {
+      "label": "without_fitted_senate_local_lean",
+      "draws": 20000,
+      "expected_D_winners": 15.5544,
+      "D_control_if_other_winners_caucus_D": 0.40065,
+      "D_control_if_other_winners_caucus_R": 0.38615,
+      "R_control_if_other_winners_caucus_D": 0.59935,
+      "R_control_if_other_winners_caucus_R": 0.61385,
+      "races": {
+        "S-2026-AK-II-regular": {
+          "state": "AK",
+          "poll_count": 14,
+          "D_R_margin": -0.051762728453668395,
+          "D_win_probability": 0.3262,
+          "R_win_probability": 0.6738,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AL-II-regular": {
+          "state": "AL",
+          "poll_count": 1,
+          "D_R_margin": -0.18025955091714513,
+          "D_win_probability": 0.03655,
+          "R_win_probability": 0.96345,
+          "O_win_probability": 0.0
+        },
+        "S-2026-AR-II-regular": {
+          "state": "AR",
+          "poll_count": 4,
+          "D_R_margin": -0.16268160339565402,
+          "D_win_probability": 0.02025,
+          "R_win_probability": 0.97975,
+          "O_win_probability": 0.0
+        },
+        "S-2026-CO-II-regular": {
+          "state": "CO",
+          "poll_count": 0,
+          "D_R_margin": 0.14907194733128062,
+          "D_win_probability": 0.89455,
+          "R_win_probability": 0.10545,
+          "O_win_probability": 0.0
+        },
+        "S-2026-DE-II-regular": {
+          "state": "DE",
+          "poll_count": 0,
+          "D_R_margin": 0.2712188553050846,
+          "D_win_probability": 0.9897,
+          "R_win_probability": 0.0103,
+          "O_win_probability": 0.0
+        },
+        "S-2026-FL-III-special": {
+          "state": "FL",
+          "poll_count": 7,
+          "D_R_margin": -0.07857968334584801,
+          "D_win_probability": 0.14255,
+          "R_win_probability": 0.8556,
+          "O_win_probability": 0.00185
+        },
+        "S-2026-GA-II-regular": {
+          "state": "GA",
+          "poll_count": 12,
+          "D_R_margin": 0.04234758054066315,
+          "D_win_probability": 0.70995,
+          "R_win_probability": 0.29005,
+          "O_win_probability": 0.0
+        },
+        "S-2026-IA-II-regular": {
+          "state": "IA",
+          "poll_count": 18,
+          "D_R_margin": -0.01794256792240824,
+          "D_win_probability": 0.40405,
+          "R_win_probability": 0.59595,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ID-II-regular": {
+          "state": "ID",
+          "poll_count": 0,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9914,
+          "O_win_probability": 0.0086
+        },
+        "S-2026-IL-II-regular": {
+          "state": "IL",
+          "poll_count": 0,
+          "D_R_margin": 0.22435149264053203,
+          "D_win_probability": 0.94635,
+          "R_win_probability": 0.0269,
+          "O_win_probability": 0.02675
+        },
+        "S-2026-KS-II-regular": {
+          "state": "KS",
+          "poll_count": 3,
+          "D_R_margin": -0.06686211637477657,
+          "D_win_probability": 0.218,
+          "R_win_probability": 0.782,
+          "O_win_probability": 0.0
+        },
+        "S-2026-KY-II-regular": {
+          "state": "KY",
+          "poll_count": 2,
+          "D_R_margin": -0.13949364272958484,
+          "D_win_probability": 0.0516,
+          "R_win_probability": 0.9484,
+          "O_win_probability": 0.0
+        },
+        "S-2026-LA-II-regular": {
+          "state": "LA",
+          "poll_count": 0,
+          "D_R_margin": -0.21179082953911774,
+          "D_win_probability": 0.0354,
+          "R_win_probability": 0.9646,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MA-II-regular": {
+          "state": "MA",
+          "poll_count": 8,
+          "D_R_margin": 0.2753801495113738,
+          "D_win_probability": 0.9995,
+          "R_win_probability": 0.0005,
+          "O_win_probability": 0.0
+        },
+        "S-2026-ME-II-regular": {
+          "state": "ME",
+          "poll_count": 9,
+          "D_R_margin": -0.0262801965823126,
+          "D_win_probability": 0.36065,
+          "R_win_probability": 0.63935,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MI-II-regular": {
+          "state": "MI",
+          "poll_count": 29,
+          "D_R_margin": 0.008046295571505697,
+          "D_win_probability": 0.5425,
+          "R_win_probability": 0.45415,
+          "O_win_probability": 0.00335
+        },
+        "S-2026-MN-II-regular": {
+          "state": "MN",
+          "poll_count": 4,
+          "D_R_margin": 0.044517610911120345,
+          "D_win_probability": 0.7063,
+          "R_win_probability": 0.2937,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MS-II-regular": {
+          "state": "MS",
+          "poll_count": 2,
+          "D_R_margin": -0.04840148270729809,
+          "D_win_probability": 0.35605,
+          "R_win_probability": 0.64395,
+          "O_win_probability": 0.0
+        },
+        "S-2026-MT-II-regular": {
+          "state": "MT",
+          "poll_count": 11,
+          "D_R_margin": -0.10278497891366332,
+          "D_win_probability": 0.19555,
+          "R_win_probability": 0.7988,
+          "O_win_probability": 0.00565
+        },
+        "S-2026-NC-II-regular": {
+          "state": "NC",
+          "poll_count": 32,
+          "D_R_margin": 0.04472424830158757,
+          "D_win_probability": 0.7321,
+          "R_win_probability": 0.2679,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NE-II-regular": {
+          "state": "NE",
+          "poll_count": 6,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 0.9379,
+          "O_win_probability": 0.0621
+        },
+        "S-2026-NH-II-regular": {
+          "state": "NH",
+          "poll_count": 16,
+          "D_R_margin": 0.05360558943384234,
+          "D_win_probability": 0.7571,
+          "R_win_probability": 0.2361,
+          "O_win_probability": 0.0068
+        },
+        "S-2026-NJ-II-regular": {
+          "state": "NJ",
+          "poll_count": 0,
+          "D_R_margin": 0.2181569904614021,
+          "D_win_probability": 0.96765,
+          "R_win_probability": 0.03235,
+          "O_win_probability": 0.0
+        },
+        "S-2026-NM-II-regular": {
+          "state": "NM",
+          "poll_count": 1,
+          "D_R_margin": 0.12488833250255127,
+          "D_win_probability": 0.92455,
+          "R_win_probability": 0.07545,
+          "O_win_probability": 0.0
+        },
+        "S-2026-OH-III-special": {
+          "state": "OH",
+          "poll_count": 18,
+          "D_R_margin": 0.00844686411928567,
+          "D_win_probability": 0.55015,
+          "R_win_probability": 0.4498,
+          "O_win_probability": 5e-05
+        },
+        "S-2026-OK-II-regular": {
+          "state": "OK",
+          "poll_count": 1,
+          "D_R_margin": -0.26236299411226,
+          "D_win_probability": 0.0214,
+          "R_win_probability": 0.9782,
+          "O_win_probability": 0.0004
+        },
+        "S-2026-OR-II-regular": {
+          "state": "OR",
+          "poll_count": 0,
+          "D_R_margin": 0.23399840283620715,
+          "D_win_probability": 0.97635,
+          "R_win_probability": 0.02365,
+          "O_win_probability": 0.0
+        },
+        "S-2026-RI-II-regular": {
+          "state": "RI",
+          "poll_count": 3,
+          "D_R_margin": 0.276531516917925,
+          "D_win_probability": 0.9998,
+          "R_win_probability": 0.0002,
+          "O_win_probability": 0.0
+        },
+        "S-2026-SC-II-regular": {
+          "state": "SC",
+          "poll_count": 3,
+          "D_R_margin": 0.18376958513938188,
+          "D_win_probability": 0.3206,
+          "R_win_probability": 0.67785,
+          "O_win_probability": 0.00155
+        },
+        "S-2026-SD-II-regular": {
+          "state": "SD",
+          "poll_count": 7,
+          "D_R_margin": null,
+          "D_win_probability": 0.0,
+          "R_win_probability": 1.0,
+          "O_win_probability": 0.0
+        },
+        "S-2026-TN-II-regular": {
+          "state": "TN",
+          "poll_count": 0,
+          "D_R_margin": -0.22153498062056642,
+          "D_win_probability": 0.03145,
+          "R_win_probability": 0.9666,
+          "O_win_probability": 0.00195
+        },
+        "S-2026-TX-II-regular": {
+          "state": "TX",
+          "poll_count": 35,
+          "D_R_margin": -0.015871020199405075,
+          "D_win_probability": 0.4071,
+          "R_win_probability": 0.5929,
+          "O_win_probability": 0.0
+        },
+        "S-2026-VA-II-regular": {
+          "state": "VA",
+          "poll_count": 0,
+          "D_R_margin": 0.1744535280953078,
+          "D_win_probability": 0.92985,
+          "R_win_probability": 0.07015,
+          "O_win_probability": 0.0
+        },
+        "S-2026-WV-II-regular": {
+          "state": "WV",
+          "poll_count": 0,
+          "D_R_margin": -0.39337466909011953,
+          "D_win_probability": 0.0003,
+          "R_win_probability": 0.99505,
+          "O_win_probability": 0.00465
+        },
+        "S-2026-WY-II-regular": {
+          "state": "WY",
+          "poll_count": 0,
+          "D_R_margin": -0.4066134310416388,
+          "D_win_probability": 0.0003,
+          "R_win_probability": 0.9997,
+          "O_win_probability": 0.0
+        }
+      },
+      "delta_D_control_if_O_caucus_D_vs_baseline": 0.02200000000000002,
+      "delta_expected_D_winners_vs_baseline": 0.17929999999999957
+    }
+  },
+  "national_signals": {
+    "prior": {
+      "national_D_R_logratio_mean": 0.044530621872485084,
+      "national_D_R_logratio_sd": 0.14564142510678907,
+      "implied_D_two_party_margin": 0.022261632367063175
+    },
+    "generic_ballot": {
+      "raw_logratio_mean": 0.13530869272566584,
+      "raw_implied_D_two_party_margin": 0.0675513145190989,
+      "observation_sd_logratio": 0.12355116275562292,
+      "poll_count_last_180_days": 219,
+      "effective_poll_count": 61.23225214408627,
+      "half_life_days": 30,
+      "historical_2020_error_calibration": {
+        "poll_mean_logratio": 0.1881734207373557,
+        "actual_logratio": 0.06482702285372184,
+        "absolute_2020_miss": 0.12334639788363387,
+        "poll_variance": 0.003973984683793618,
+        "effective_poll_count": 51.50385800069783,
+        "poll_count": 564
+      },
+      "FLIPR_likely_voter_adjusted_context": {
+        "implied_D_two_party_margin": 0.086,
+        "source": "User-supplied Nate Silver/FLIPR description",
+        "use_in_likelihood": "sensitivity case only; it is an adjusted view of the same generic-ballot evidence and is not counted as an independent observation"
+      }
+    },
+    "historical_fundamentals": {
+      "margin": 0.08726650942268431,
+      "margin_sd": 0.05268060768924372,
+      "approval_date": "2026-09-21",
+      "approve": 37.7,
+      "disapprove": 59.4,
+      "previous_house_margin": -0.025799793601651185,
+      "training_cycles": 39,
+      "approval_observations": 1918,
+      "half_life_years": 24,
+      "ridge_alpha": 0.001,
+      "rolling_tuning_rmse": 0.05268060768924372,
+      "later_cycle_rmse": 0.02950762670171688,
+      "later_cycle_predictions": [
+        {
+          "year": 2018,
+          "predicted": 0.10076318321727763,
+          "actual": 0.08904810644831118,
+          "error": 0.011715076768966451
+        },
+        {
+          "year": 2020,
+          "predicted": 0.07973706284191079,
+          "actual": 0.030927835051546393,
+          "error": 0.048809227790364396
+        },
+        {
+          "year": 2022,
+          "predicted": -0.05140794469304851,
+          "actual": -0.026694045174538,
+          "error": -0.02471389951851051
+        },
+        {
+          "year": 2024,
+          "predicted": -0.007026419806139401,
+          "actual": -0.025799793601651185,
+          "error": 0.018773373795511784
+        }
+      ],
+      "coefficients": {
+        "intercept": 0.014560428670035262,
+        "previous_margin": 0.5079826397573346,
+        "president_party_midterm": -0.06815796697199084,
+        "signed_approval_net": 0.08210159576505462,
+        "president_party": 0.00016208524139747364
+      }
+    },
+    "senate_local_lean": {
+      "training_races": 361,
+      "selected": {
+        "specification": "combined",
+        "alpha": 0.1,
+        "tuning_rmse": 0.1477673915758039,
+        "later_rmse": 0.09785907559457481
+      },
+      "grid": [
+        {
+          "specification": "previous",
+          "alpha": 0.01,
+          "tuning_rmse": 0.17208000564910939,
+          "later_rmse": 0.11584355543501897
+        },
+        {
+          "specification": "previous",
+          "alpha": 0.1,
+          "tuning_rmse": 0.17170240059396652,
+          "later_rmse": 0.11604506873744276
+        },
+        {
+          "specification": "previous",
+          "alpha": 1.0,
+          "tuning_rmse": 0.17003535526558305,
+          "later_rmse": 0.11820099515509778
+        },
+        {
+          "specification": "previous",
+          "alpha": 10.0,
+          "tuning_rmse": 0.1916711809470773,
+          "later_rmse": 0.1426161802075587
+        },
+        {
+          "specification": "presidential",
+          "alpha": 0.01,
+          "tuning_rmse": 0.18271932255639914,
+          "later_rmse": 0.11882502746936216
+        },
+        {
+          "specification": "presidential",
+          "alpha": 0.1,
+          "tuning_rmse": 0.18234770474888698,
+          "later_rmse": 0.1189800896964988
+        },
+        {
+          "specification": "presidential",
+          "alpha": 1.0,
+          "tuning_rmse": 0.1842222225335818,
+          "later_rmse": 0.12150257629501672
+        },
+        {
+          "specification": "presidential",
+          "alpha": 10.0,
+          "tuning_rmse": 0.22011131572338255,
+          "later_rmse": 0.1605660196673632
+        },
+        {
+          "specification": "combined",
+          "alpha": 0.01,
+          "tuning_rmse": 0.14789029340638563,
+          "later_rmse": 0.09779948010406572
+        },
+        {
+          "specification": "combined",
+          "alpha": 0.1,
+          "tuning_rmse": 0.1477673915758039,
+          "later_rmse": 0.09785907559457481
+        },
+        {
+          "specification": "combined",
+          "alpha": 1.0,
+          "tuning_rmse": 0.14844848966618784,
+          "later_rmse": 0.09875975986800058
+        },
+        {
+          "specification": "combined",
+          "alpha": 10.0,
+          "tuning_rmse": 0.1648973393521075,
+          "later_rmse": 0.11376379299686444
+        }
+      ],
+      "coefficients": {
+        "intercept": 0.005309280723613644,
+        "features": {
+          "previous_senate_lean": 0.40599843434700095,
+          "presidential_lean": 0.4587282913100102,
+          "recurring_candidate": 0.07399172108985429
+        }
+      },
+      "current_predictions": {
+        "S-2026-AK-II-regular": {
+          "predicted_lean": -0.11849930105391916,
+          "inputs": {
+            "previous_senate_lean": -0.16451820221448607,
+            "presidential_lean": -0.12428805970098233,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-AL-II-regular": {
+          "predicted_lean": -0.22590355402236495,
+          "inputs": {
+            "previous_senate_lean": -0.23485734329221883,
+            "presidential_lean": -0.29616904744736183,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-CO-II-regular": {
+          "predicted_lean": 0.0891021067116681,
+          "inputs": {
+            "previous_senate_lean": 0.0645038638062043,
+            "presidential_lean": 0.1255740257678463,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-DE-II-regular": {
+          "predicted_lean": 0.1570186317305592,
+          "inputs": {
+            "previous_senate_lean": 0.1903722164281819,
+            "presidential_lean": 0.16222790397648043,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-GA-II-regular": {
+          "predicted_lean": 0.05501767285816754,
+          "inputs": {
+            "previous_senate_lean": -0.049140678353864126,
+            "presidential_lean": -0.009444131881445751,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-IA-II-regular": {
+          "predicted_lean": -0.09073117678296773,
+          "inputs": {
+            "previous_senate_lean": -0.0989202985791686,
+            "presidential_lean": -0.12181278594944528,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-ID-II-regular": {
+          "predicted_lean": -0.2979754114111051,
+          "inputs": {
+            "previous_senate_lean": -0.3373441104819063,
+            "presidential_lean": -0.36257522065601366,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-IL-II-regular": {
+          "predicted_lean": 0.11918073251261588,
+          "inputs": {
+            "previous_senate_lean": 0.14036958582435557,
+            "presidential_lean": 0.12399849931195131,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-KS-II-regular": {
+          "predicted_lean": -0.19959720419100796,
+          "inputs": {
+            "previous_senate_lean": -0.1513071832891654,
+            "presidential_lean": -0.15147154779898614,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-KY-II-regular": {
+          "predicted_lean": -0.22639720630443694,
+          "inputs": {
+            "previous_senate_lean": -0.23441324566410354,
+            "presidential_lean": -0.2976382291755246,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MA-II-regular": {
+          "predicted_lean": 0.25292099023628406,
+          "inputs": {
+            "previous_senate_lean": 0.30283522576969507,
+            "presidential_lean": 0.2717536379303173,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-ME-II-regular": {
+          "predicted_lean": -0.08030243250526978,
+          "inputs": {
+            "previous_senate_lean": -0.12299862373665284,
+            "presidential_lean": 0.08352930754600627,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MI-II-regular": {
+          "predicted_lean": -0.0010924667410743619,
+          "inputs": {
+            "previous_senate_lean": -0.013754984503423075,
+            "presidential_lean": -0.0017815454318222557,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MN-II-regular": {
+          "predicted_lean": 0.041535350372730415,
+          "inputs": {
+            "previous_senate_lean": 0.025866739178881513,
+            "presidential_lean": 0.05607723466840663,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MS-II-regular": {
+          "predicted_lean": -0.2228422098361164,
+          "inputs": {
+            "previous_senate_lean": -0.1324802313372221,
+            "presidential_lean": -0.21880709096531978,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-MT-II-regular": {
+          "predicted_lean": -0.13654372369209647,
+          "inputs": {
+            "previous_senate_lean": -0.13117105004666724,
+            "presidential_lean": -0.19313777925511996,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NC-II-regular": {
+          "predicted_lean": -0.02382122838726552,
+          "inputs": {
+            "previous_senate_lean": -0.049193874444062535,
+            "presidential_lean": -0.019963610879490994,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NE-II-regular": {
+          "predicted_lean": -0.27549313062509095,
+          "inputs": {
+            "previous_senate_lean": -0.47044538659355095,
+            "presidential_lean": -0.19576364189246087,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NH-II-regular": {
+          "predicted_lean": 0.0765726947275669,
+          "inputs": {
+            "previous_senate_lean": 0.1293654441595804,
+            "presidential_lean": 0.04085478609361341,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NJ-II-regular": {
+          "predicted_lean": 0.09366060716325147,
+          "inputs": {
+            "previous_senate_lean": 0.13522356127219054,
+            "presidential_lean": 0.0729206654788522,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-NM-II-regular": {
+          "predicted_lean": 0.12617948655087668,
+          "inputs": {
+            "previous_senate_lean": 0.03178451905824055,
+            "presidential_lean": 0.07406131343299013,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-OK-II-regular": {
+          "predicted_lean": -0.28971872807709614,
+          "inputs": {
+            "previous_senate_lean": -0.34617805618751024,
+            "presidential_lean": -0.3367576469768991,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-OR-II-regular": {
+          "predicted_lean": 0.2149345062812812,
+          "inputs": {
+            "previous_senate_lean": 0.1518198829130002,
+            "presidential_lean": 0.161304351844269,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-RI-II-regular": {
+          "predicted_lean": 0.27222077278379625,
+          "inputs": {
+            "previous_senate_lean": 0.30087066078068075,
+            "presidential_lean": 0.1542672538254238,
+            "recurring_candidate": 1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-SC-II-regular": {
+          "predicted_lean": -0.12687270284669747,
+          "inputs": {
+            "previous_senate_lean": -0.13508615986661435,
+            "presidential_lean": -0.16859046112386436,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-SD-II-regular": {
+          "predicted_lean": -0.2663320994707124,
+          "inputs": {
+            "previous_senate_lean": -0.3456327865173297,
+            "presidential_lean": -0.2862587995920135,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-TN-II-regular": {
+          "predicted_lean": -0.32636047765608817,
+          "inputs": {
+            "previous_senate_lean": -0.3086312911319346,
+            "presidential_lean": -0.28856780540341626,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-TX-II-regular": {
+          "predicted_lean": -0.10530016149429491,
+          "inputs": {
+            "previous_senate_lean": -0.1299182556722999,
+            "presidential_lean": -0.1261374868696675,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-VA-II-regular": {
+          "predicted_lean": 0.07468633683233963,
+          "inputs": {
+            "previous_senate_lean": 0.09003044907558887,
+            "presidential_lean": 0.07155615941353916,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-WV-II-regular": {
+          "predicted_lean": -0.4518976535081293,
+          "inputs": {
+            "previous_senate_lean": -0.4758492682701121,
+            "presidential_lean": -0.41423465445395896,
+            "recurring_candidate": -1,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        },
+        "S-2026-WY-II-regular": {
+          "predicted_lean": -0.4047207243670042,
+          "inputs": {
+            "previous_senate_lean": -0.4936437167052054,
+            "presidential_lean": -0.45694026933563126,
+            "recurring_candidate": 0,
+            "presidential_year": 2024,
+            "prior_senate_year": 2020
+          }
+        }
+      }
+    },
+    "combination_limitation": "Historical fundamentals and generic-ballot errors are treated as conditionally independent. Their covariance is not identifiable from the current two-cycle generic archive; this run remains internal.",
+    "posterior": {
+      "national_D_R_logratio_mean": 0.1581278266143273,
+      "national_D_R_logratio_sd": 0.08052346970451567,
+      "implied_D_two_party_margin": 0.0788995786649269
+    },
+    "sensitivity": {
+      "fundamentals_only": {
+        "national_D_R_logratio_mean": 0.1749781031218487,
+        "national_D_R_logratio_sd": 0.10616974509135121,
+        "implied_D_two_party_margin": 0.08726650942268435
+      },
+      "both_default": {
+        "national_D_R_logratio_mean": 0.1581278266143273,
+        "national_D_R_logratio_sd": 0.08052346970451567,
+        "implied_D_two_party_margin": 0.0788995786649269
+      },
+      "generic_error_doubled": {
+        "national_D_R_logratio_mean": 0.16879609774022597,
+        "national_D_R_logratio_sd": 0.09754693974501116,
+        "implied_D_two_party_margin": 0.0841982282192024
+      },
+      "fundamentals_error_doubled": {
+        "national_D_R_logratio_mean": 0.14534215736652695,
+        "national_D_R_logratio_sd": 0.10678945245326227,
+        "implied_D_two_party_margin": 0.07254342094747095
+      },
+      "both_FLIPR_adjusted_generic_D_plus_8_6": {
+        "national_D_R_logratio_mean": 0.1738940225028145,
+        "national_D_R_logratio_sd": 0.08052346970451567,
+        "implied_D_two_party_margin": 0.08672857159777636
+      }
+    }
+  },
+  "limitations": [
+    "All probabilities condition on a stated caucus choice for other-party winners.",
+    "One-at-a-time effects need not add because model components interact.",
+    "Removing shared poll error is a deliberately overconfident diagnostic, not an endorsed setting.",
+    "The Senate mean correction is fitted across cycles; 30-day live recency still needs whole-cycle validation.",
+    "Monte Carlo replay uses fewer draws and per-race outcome seeds, so small differences from the accepted Stage 5 run are expected."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "status": "reviewed_no_live_change_required",
+  "decision": "Keep the chronological 2020 replay miss visible. Its national uncertainty used only the unusually accurate 2018 generic-ballot cycle. The 2026 model already uses a wider variance from three later cycles; do not choose a signed partisan correction from this inspected sample.",
+  "evidence_hashes": {
+    "joint_replay": "8b3f78d34e7368c1bcc39ca27853961cdaedefdf172feaec258eb322d395fc16",
+    "forensic_replay": "bf1e41c6a35e5ce3caaf9d779549a7e2fa6a396ba778e5ffbacd89464006fd52",
+    "national_snapshots": "b9584eb2c39013e21d948511a06635243d1578685ac7990434c2b3c98b324ca9",
+    "live_parameters": "cf0b6d2dfc3b66d23491dbbe4cb9d3f5d1694d97574e14e5e8bcbbe8a28dc51d"
+  },
+  "chronological_2020_seven_day": {
+    "house_actual_D": 222,
+    "house_predicted_D": 244.0945,
+    "house_interval95": [
+      226,
+      260
+    ],
+    "house_actual_percentile": 0.012,
+    "national_logratio_sd": 0.008097480428984127,
+    "generic_terminal_proxy_error_margin": 0.04066406063224165,
+    "generic_terminal_proxy_error_logratio": 0.0815537674064517,
+    "generic_error_in_prior_sd_units": 10.071499168375647,
+    "national_error_training_cycles": [
+      2018
+    ]
+  },
+  "current_2026": {
+    "generic_observation_sd_logratio": 0.07994100533894001,
+    "generic_error_training_cycles": [
+      2020,
+      2022,
+      2024
+    ],
+    "sd_ratio_to_2020_replay": 9.872330787339617
+  },
+  "forensic_sensitivity_not_a_backtest": {
+    "used_later_known_2026_national_sd": 0.07994100533894001,
+    "house_predicted_D": 244.2125,
+    "house_interval95": [
+      202,
+      286
+    ],
+    "actual_in_interval95": true,
+    "house_actual_percentile": 0.1465
+  },
+  "limitations": [
+    "The forensic floor uses post-2020 information and must not replace the chronological backtest score.",
+    "One missed 95% interval among a few correlated cycles cannot identify a unique covariance correction.",
+    "Generic-to-final-House errors include movement after each forecast cutoff, so they are proxy errors for a held-today forecast.",
+    "The signed error is not subtracted from the 2026 generic ballot; the same inspected cycles set a variance floor only."
+  ]
+}

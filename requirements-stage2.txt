@@ -1,0 +1,3 @@
+-r requirements-stage0.txt
+openpyxl>=3.1
+xlrd>=2.0

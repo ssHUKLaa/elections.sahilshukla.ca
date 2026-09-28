@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 U.S. Midterms | Sahil Shukla Predicts the Election</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/us2026.css', v=css_version) }}">
+</head>
+<body>
+    <main>
+        {% if updated_at %}
+        <h2 class="updated">UPDATED: <time datetime="{{ updated_iso }}">{{ updated_at }}</time></h2>
+        {% else %}
+        <h2 class="updated">FORECAST UPDATE PENDING</h2>
+        {% endif %}
+        {% if history_dates %}
+        <section class="history-picker" aria-label="Daily nowcast history">
+            <div class="slider-track">
+                <output id="selected-date" class="date-bubble" for="history-date">{{ history_dates[selected_index].label }}</output>
+                <input id="history-date" type="range" min="0" max="{{ history_dates|length - 1 }}"
+                       step="1" value="{{ selected_index }}" list="history-days" aria-label="Forecast date"
+                       style="--slider-progress: {{ (selected_index * 100 / (history_dates|length - 1)) if history_dates|length > 1 else 100 }}%"
+                       aria-valuetext="{{ history_dates[selected_index].label }}">
+            </div>
+            <datalist id="history-days">
+                {% for entry in history_dates %}<option value="{{ loop.index0 }}"></option>{% endfor %}
+            </datalist>
+            <div class="range-ends" aria-hidden="true">
+                <span>{{ history_dates[0].label }}</span>
+                <span>{{ history_dates[-1].label }}</span>
+            </div>
+        </section>
+        {% endif %}
+        <h1>Sahil Shukla Predicts The Election. <span>(Midterms Edition!)</span></h1>
+        <p class="methodology-link">
+            <a href="https://medium.com/@sshuklaa/trying-to-predict-the-unpredictable-again-a9d02f739acc"
+               target="_blank" rel="noopener noreferrer">How I built the model ↗</a>
+        </p>
+        <nav class="office-nav" aria-label="Election sections">
+            <a href="#senate">SENATE</a>
+            <a href="#house">HOUSE</a>
+            <a href="#gubernatorial">GUBERNATORIAL</a>
+        </nav>
+        <section id="senate" class="office-section">
+            <h2>Senate</h2>
+            {% if senate_seats %}
+            <div class="senate-charts">
+                <figure class="senate-chart">
+                    <figcaption>Chance of Senate majority</figcaption>
+                    <svg class="senate-control-gauge" viewBox="0 0 600 215" role="img"
+                         aria-label="Democrats and independents {{ senate_control.d_probability }} percent chance of Senate control; Republicans {{ senate_control.r_probability }} percent">
+                        {% for sector in senate_control.sectors %}
+                        <path class="majority-gauge-sector" d="{{ sector.path }}" fill="{{ sector.fill }}"
+                              aria-label="{{ sector.range_label }}" data-gauge-tooltip="{{ sector.range_label }}" tabindex="0" />
+                        <text class="senate-gauge-sector-label" x="{{ sector.label_x }}" y="{{ sector.label_y }}"
+                              fill="{{ sector.text_color }}">{{ sector.label }}</text>
+                        {% endfor %}
+                        <path d="M60 205 A240 195 0 0 1 540 205" class="senate-gauge-outline"/>
+                        <path d="M205 205 A95 80 0 0 1 395 205" class="senate-gauge-outline"/>
+                        <line x1="60" x2="540" y1="205" y2="205" class="house-vote-baseline"/>
+                        <path d="{{ senate_control.needle_path }}" fill="{{ senate_control.needle_color }}">
+                            <title>Democrats and independents: {{ senate_control.d_probability }}% chance of Senate control</title>
+                        </path>
+                        <circle cx="300" cy="205" r="10" fill="{{ senate_control.needle_color }}" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div class="house-vote-estimate house-vote-estimate-{{ senate_control.favored_party }}">
+                        {{ 'Dem. + Ind.' if senate_control.favored_party == 'D' else 'Rep.' }} {{ senate_control.favored_probability }}%
+                    </div>
+                    <div class="house-vote-caption">Chance of winning the Senate</div>
+                </figure>
+                <figure class="senate-chart">
+                    <figcaption>Seats in contention</figcaption>
+                    <svg class="senate-hemicycle" viewBox="0 0 600 215" role="img"
+                         aria-label="Senate seats in contention, ordered from Democratic leaning at left to Republican leaning at right; {{ senate_tipping.coalition_name }} tipping point: {{ senate_tipping.state }}">
+                        {% for seat in senate_seats %}
+                        <circle cx="{{ seat.x }}" cy="{{ seat.y }}" r="12.5" fill="{{ seat.fill }}"
+                                aria-label="{{ seat.title }}{% if seat.tooltip.signifier %}; {{ seat.tooltip.signifier }}{% endif %}"
+                                tabindex="0" focusable="true" data-map-tooltip='{{ seat.tooltip|tojson }}' />
+                        {% endfor %}
+                        <path d="{{ senate_tipping.arrow_path }}" fill="{{ senate_tipping.arrow_color }}" opacity="0.78" aria-hidden="true" pointer-events="none"/>
+                        <circle cx="300" cy="205" r="9" fill="{{ senate_tipping.arrow_color }}" stroke="white" stroke-width="2" aria-hidden="true"/>
+                    </svg>
+                    <div class="house-vote-estimate house-vote-estimate-{{ senate_tipping.party }}">{{ senate_tipping.state_name }}</div>
+                    <div class="house-vote-caption">is the {{ senate_tipping.party_adjective }} tipping point state</div>
+                </figure>
+            </div>
+            <div class="senate-seat-summary" aria-label="Projected Senate seats based on each race's most likely winner">
+                <div class="senate-seat-totals">
+                    <div class="senate-seat-dem">
+                        <strong>{{ senate_seat_projection.d_seats }}</strong>
+                        <span>Democrats + independents</span>
+                    </div>
+                    <div class="senate-seat-rep">
+                        <strong>{{ senate_seat_projection.r_seats }}</strong>
+                        <span>Republicans</span>
+                    </div>
+                </div>
+                <div class="senate-seat-bar" role="img"
+                     aria-label="Projected Senate seats: {{ senate_seat_projection.d_seats }} Democrats and independents, {{ senate_seat_projection.r_seats }} Republicans">
+                    <span class="senate-seat-bar-dem" style="width: {{ senate_seat_projection.d_seats }}%"></span>
+                    <span class="senate-seat-bar-rep"></span>
+                    <span class="senate-seat-bar-midpoint"></span>
+                </div>
+                <div class="senate-seat-footnotes">
+                    <span>{{ senate_seat_projection.d_not_up }} Democrats and independents not up for election</span>
+                    <span class="senate-seat-midpoint-label">50</span>
+                    <span>{{ senate_seat_projection.r_not_up }} Republicans not up for election</span>
+                </div>
+            </div>
+            {% endif %}
+            {% if senate_states %}
+            <div class="senate-map-layout">
+                <figure class="senate-map-figure">
+                    <svg class="senate-map" viewBox="0 0 1000 610" role="img"
+                         aria-label="Map of expected 2026 Senate winners by state; striped states are projected flips">
+                        <defs>
+                            <pattern id="senate-flip-hatch" width="8" height="8" patternUnits="userSpaceOnUse"
+                                     patternTransform="rotate(45)">
+                                <path d="M0,0 V8" stroke="white" stroke-opacity="0.7" stroke-width="2"/>
+                            </pattern>
+                        </defs>
+                        {% for state in senate_states %}
+                        <path class="map-state" d="{{ state.path }}" fill="{{ state.fill }}" fill-rule="evenodd"
+                              aria-label="{{ state.title }}" tabindex="0" focusable="true"
+                              {% if state.tooltip %}data-map-tooltip='{{ state.tooltip|tojson }}'{% endif %}></path>
+                        {% if state.flip %}
+                        <path class="map-flip-overlay" d="{{ state.path }}" fill="url(#senate-flip-hatch)"
+                              fill-rule="evenodd" aria-hidden="true"/>
+                        {% endif %}
+                        {% endfor %}
+                        {% for state in senate_states if state.show_label %}
+                        <text class="map-label" x="{{ state.label_x }}" y="{{ state.label_y }}"
+                              fill="{{ state.label_fill }}" aria-hidden="true">{{ state.abbr }}</text>
+                        {% endfor %}
+                    </svg>
+                    <figcaption class="senate-map-legend">
+                        <span><i class="legend-dem"></i>Democratic</span>
+                        <span><i class="legend-rep"></i>Republican</span>
+                        <span><i class="legend-ind"></i>Independent</span>
+                        <span><i class="legend-none"></i>No election</span>
+                        <span><i class="legend-flip"></i>Flip</span>
+                    </figcaption>
+                </figure>
+                <aside class="key-states" aria-label="Key Senate races">
+                    <div class="key-states-heading"><h3>Key States</h3><span>{{ senate_keys|length }} races</span></div>
+                    {% for race in senate_keys %}
+                    <div class="key-race" tabindex="0" aria-label="{{ race.vote_aria_label }}"
+                         data-map-tooltip='{{ race.tooltip|tojson }}'>
+                        <strong class="key-state-name">{{ race.state }}</strong>
+                        <div class="key-race-bar" role="img" aria-label="{{ race.vote_aria_label }}">
+                            {% for segment in race.segments %}
+                            <span class="{{ segment.css_class }}" style="width: {{ segment.share }}%; background: {{ segment.gradient }}">
+                                {% if segment.label %}<span class="key-bar-name">{{ segment.label }}</span>{% endif %}
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </aside>
+            </div>
+            {% endif %}
+            {% if senate_distribution %}
+            <figure class="senate-distribution">
+                <figcaption>
+                    <strong>Senate seats across simulations</strong>
+                    <span>{{ '{:,}'.format(senate_distribution.draws) }} simulations &middot; each dot up to {{ senate_distribution.dot_unit }} results</span>
+                </figcaption>
+                <div class="senate-distribution-scroll">
+                    <svg class="senate-distribution-chart" viewBox="0 0 1000 450" role="img"
+                         aria-label="Distribution of Senate seat totals across {{ senate_distribution.draws }} simulations. Blue dots show Democratic and independent control, red dots Republican control.">
+                        <defs>
+                            <linearGradient id="senate-range-gradient" x1="0" y1="0" x2="1" y2="0">
+                                {% for stop in senate_distribution.interval.gradient_stops %}
+                                <stop offset="{{ stop.offset }}%" stop-color="{{ stop.color }}" />
+                                {% endfor %}
+                            </linearGradient>
+                        </defs>
+                        {% for line in senate_distribution.grid %}
+                        <line class="distribution-grid" x1="58" x2="958" y1="{{ line.y }}" y2="{{ line.y }}" />
+                        <text class="distribution-y-label" x="49" y="{{ line.y }}">{{ '{:,}'.format(line.count) }}</text>
+                        {% endfor %}
+                        <rect class="distribution-range-band" x="{{ senate_distribution.interval.left_x }}" y="48"
+                              width="{{ senate_distribution.interval.right_x - senate_distribution.interval.left_x }}" height="337"
+                              fill="url(#senate-range-gradient)" />
+                        <line class="distribution-range-bracket" x1="{{ senate_distribution.interval.left_x }}" x2="{{ senate_distribution.interval.right_x }}" y1="42" y2="42" />
+                        <line class="distribution-range-bracket" x1="{{ senate_distribution.interval.left_x }}" x2="{{ senate_distribution.interval.left_x }}" y1="38" y2="46" />
+                        <line class="distribution-range-bracket" x1="{{ senate_distribution.interval.right_x }}" x2="{{ senate_distribution.interval.right_x }}" y1="38" y2="46" />
+                        {% if senate_distribution.majority_x is not none %}
+                        <line class="distribution-majority" x1="{{ senate_distribution.majority_x }}" x2="{{ senate_distribution.majority_x }}" y1="24" y2="385" />
+                        {% endif %}
+                        {% for column in senate_distribution.columns %}
+                        <g aria-label="{{ column.d_seats }} Democratic and independent seats, {{ column.r_seats }} Republican seats: {{ '{:,}'.format(column.count) }} simulations">
+                            {% for dot in column.dots %}
+                            <circle class="distribution-dot" cx="{{ column.x }}" cy="{{ dot.y }}" r="3.15"
+                                    fill="{{ column.fill }}" fill-opacity="{{ dot.opacity }}"
+                                    data-distribution-tooltip='{{ dot.tooltip|tojson }}' />
+                            {% endfor %}
+                        </g>
+                        {% endfor %}
+                        <text class="distribution-stat-label" x="{{ senate_distribution.interval.median_x }}" y="16">Median: {{ senate_distribution.interval.median }} D+I</text>
+                        <text class="distribution-stat-label" x="{{ senate_distribution.interval.center_x }}" y="34">80% range: {{ senate_distribution.interval.low }}&ndash;{{ senate_distribution.interval.high }} D+I</text>
+                        {% for tick in senate_distribution.ticks %}
+                        <line class="distribution-tick" x1="{{ tick.x }}" x2="{{ tick.x }}" y1="385" y2="391" />
+                        <text class="distribution-x-label" x="{{ tick.x }}" y="411">{{ tick.label }}</text>
+                        {% endfor %}
+                    </svg>
+                </div>
+                <div class="senate-distribution-legend">
+                    <span><i class="distribution-dem"></i>Democrats + independents control (51+)</span>
+                    <span><i class="distribution-rep"></i>Republicans control (50+)</span>
+                    <span>A lighter dot represents fewer than {{ senate_distribution.dot_unit }} results.</span>
+                </div>
+            </figure>
+            {% endif %}
+            {% if senate_extremes %}
+            <div class="senate-extreme-maps">
+                {% for scenario in senate_extremes %}
+                <figure class="senate-extreme-figure">
+                    <figcaption>
+                        <strong>{{ scenario.heading }}</strong>
+                        <span>{{ scenario.d_seats }} D + I &middot; {{ scenario.r_seats }} R</span>
+                    </figcaption>
+                    <svg class="senate-extreme-map" viewBox="0 0 1000 610" role="img"
+                         aria-label="{{ scenario.heading }}: {{ scenario.d_seats }} Democratic and independent seats, {{ scenario.r_seats }} Republican seats">
+                        {% for state in scenario.states %}
+                        <path class="map-state" d="{{ state.path }}" fill="{{ state.fill }}" fill-rule="evenodd"
+                              aria-label="{{ state.title }}"><title>{{ state.title }}</title></path>
+                        {% endfor %}
+                        {% for state in scenario.states if state.show_label %}
+                        <text class="map-label" x="{{ state.label_x }}" y="{{ state.label_y }}"
+                              fill="{{ state.label_fill }}" aria-hidden="true">{{ state.abbr }}</text>
+                        {% endfor %}
+                    </svg>
+                </figure>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </section>
+        <section id="house" class="office-section">
+            <h2>House</h2>
+            {% if house_control and house_vote %}
+            <div class="house-charts">
+                <figure class="house-chart">
+                    <figcaption>Chance of House majority</figcaption>
+                    <svg class="house-control-gauge" viewBox="0 0 600 215" role="img"
+                         aria-label="Democrats {{ house_control.d_probability }} percent chance of House majority; Republicans {{ house_control.r_probability }} percent; neither party {{ house_control.neither_probability }} percent">
+                        {% for sector in house_control.sectors %}
+                        <path class="majority-gauge-sector" d="{{ sector.path }}" fill="{{ sector.fill }}"
+                              aria-label="{{ sector.range_label }}" data-gauge-tooltip="{{ sector.range_label }}" tabindex="0" />
+                        <text class="senate-gauge-sector-label" x="{{ sector.label_x }}" y="{{ sector.label_y }}"
+                              fill="{{ sector.text_color }}">{{ sector.label }}</text>
+                        {% endfor %}
+                        <path d="M60 205 A240 195 0 0 1 540 205" class="senate-gauge-outline" />
+                        <path d="M205 205 A95 80 0 0 1 395 205" class="senate-gauge-outline" />
+                        <line x1="60" x2="540" y1="205" y2="205" class="house-vote-baseline" />
+                        <path d="{{ house_control.needle_path }}" fill="{{ house_control.needle_color }}">
+                            <title>Democrats: {{ house_control.d_probability }}% chance of House majority</title>
+                        </path>
+                        <circle cx="300" cy="205" r="10" fill="{{ house_control.needle_color }}" stroke="white" stroke-width="2" />
+                    </svg>
+                    <div class="house-vote-estimate house-vote-estimate-{{ house_control.favored_party }}">
+                        {{ 'Dem.' if house_control.favored_party == 'D' else 'Rep.' }} {{ house_control.favored_probability }}%
+                    </div>
+                    <div class="house-vote-caption">Chance of winning the House</div>
+                </figure>
+                <figure class="house-chart">
+                    <figcaption>National popular vote</figcaption>
+                    <svg class="house-vote-gauge" viewBox="0 0 600 215" role="img"
+                         aria-label="Estimated national two-party House popular vote margin {{ house_vote.mean_text }} percentage points, 95 percent interval {{ house_vote.low_text }} to {{ house_vote.high_text }}">
+                        <path d="M60 205 A240 195 0 0 1 540 205 L395 205 A95 80 0 0 0 205 205 Z"
+                              class="house-vote-base" />
+                        {% for band in house_vote.bands %}
+                        <path d="{{ band.path }}" fill="{{ band.fill }}" />
+                        {% endfor %}
+                        {% for tick in house_vote.ticks %}
+                        <line class="house-vote-tick" x1="{{ tick.x1 }}" y1="{{ tick.y1 }}"
+                              x2="{{ tick.x2 }}" y2="{{ tick.y2 }}" />
+                        {% endfor %}
+                        <path d="M60 205 A240 195 0 0 1 540 205" class="senate-gauge-outline" />
+                        <path d="M205 205 A95 80 0 0 1 395 205" class="senate-gauge-outline" />
+                        <line class="house-vote-zero" x1="300" y1="10" x2="300" y2="125" />
+                        {% for label in house_vote.labels %}
+                        <text class="house-vote-label house-vote-label-{{ label.party }}"
+                              x="{{ label.x }}" y="{{ label.y }}"
+                              transform="rotate({{ label.rotation }} {{ label.x }} {{ label.y }})">{{ label.text }}</text>
+                        {% endfor %}
+                        <path d="{{ house_vote.needle_path }}" fill="{{ house_vote.needle_color }}" />
+                        <line x1="60" x2="540" y1="205" y2="205" class="house-vote-baseline" />
+                        <circle cx="300" cy="205" r="10" fill="{{ house_vote.needle_color }}" stroke="white" stroke-width="2" />
+                    </svg>
+                    <div class="house-vote-estimate house-vote-estimate-{{ house_vote.party }}">{{ house_vote.mean_display }}</div>
+                    <div class="house-vote-caption">Estimated two-party margin, in percentage points</div>
+                    <div class="house-vote-range">95% range: {{ house_vote.low_text }} to {{ house_vote.high_text }}</div>
+                </figure>
+            </div>
+            {% endif %}
+            {% if house_seat_projection %}
+            <div class="senate-seat-summary house-seat-summary" aria-label="Projected House seats based on each district's most likely winner">
+                <div class="senate-seat-totals">
+                    <div class="senate-seat-dem">
+                        <strong>{{ house_seat_projection.d_seats }}</strong>
+                        <span>Democrats</span>
+                    </div>
+                    <div class="senate-seat-rep">
+                        <strong>{{ house_seat_projection.r_seats }}</strong>
+                        <span>Republicans</span>
+                    </div>
+                </div>
+                <div class="senate-seat-bar" role="img"
+                     aria-label="Projected House seats: {{ house_seat_projection.d_seats }} Democrats, {{ house_seat_projection.r_seats }} Republicans{% if house_seat_projection.other_seats %}, {{ house_seat_projection.other_seats }} independents{% endif %}">
+                    <span class="senate-seat-bar-dem" style="width: {{ house_seat_projection.d_percent }}%"></span>
+                    {% if house_seat_projection.other_seats %}
+                    <span class="house-seat-bar-other" style="width: {{ house_seat_projection.other_percent }}%"></span>
+                    {% endif %}
+                    <span class="senate-seat-bar-rep"></span>
+                    <span class="senate-seat-bar-midpoint" style="left: {{ house_seat_projection.majority_percent }}%"></span>
+                </div>
+                <div class="senate-seat-footnotes">
+                    <span>All 435 seats are up for election</span>
+                    <span class="senate-seat-midpoint-label" style="left: {{ house_seat_projection.majority_percent }}%">218 for majority</span>
+                    <span>{% if house_seat_projection.other_seats %}{{ house_seat_projection.other_seats }} independent{% endif %}</span>
+                </div>
+            </div>
+            {% endif %}
+            {% if house_districts %}
+            <div class="senate-map-layout house-map-layout">
+                <figure class="senate-map-figure house-map-figure">
+                    <svg class="senate-map house-map" viewBox="0 0 1000 610" role="img"
+                         aria-label="Map of expected 2026 House winners by district; striped districts are projected flips">
+                        <defs>
+                            <pattern id="house-flip-hatch" width="8" height="8" patternUnits="userSpaceOnUse"
+                                     patternTransform="rotate(45)">
+                                <path d="M0,0 V8" stroke="white" stroke-opacity="0.7" stroke-width="2"/>
+                            </pattern>
+                        </defs>
+                        {% for district in house_districts %}
+                        <path class="house-map-district" d="{{ district.path }}" fill="{{ district.fill }}" fill-rule="evenodd"
+                              aria-label="{{ district.title }}" tabindex="0" focusable="true"
+                              data-map-tooltip='{{ district.tooltip|tojson }}'></path>
+                        {% if district.flip %}
+                        <path class="map-flip-overlay" d="{{ district.path }}" fill="url(#house-flip-hatch)"
+                              fill-rule="evenodd" aria-hidden="true" />
+                        {% endif %}
+                        {% endfor %}
+                        {% for state in house_state_outlines %}
+                        <path class="house-state-outline" d="{{ state.path }}" fill="none" fill-rule="evenodd" aria-hidden="true" />
+                        {% endfor %}
+                        {% for state in house_state_outlines if state.show_label %}
+                        <text class="map-label house-map-label" x="{{ state.label_x }}" y="{{ state.label_y }}"
+                              aria-hidden="true">{{ state.abbr }}</text>
+                        {% endfor %}
+                    </svg>
+                    <svg class="senate-map house-cartogram" viewBox="{{ house_cartogram.view_box|join(' ') }}" role="img"
+                         aria-label="Cartogram of expected 2026 House winners, one square per district; striped squares are projected flips" hidden>
+                        <defs>
+                            <pattern id="house-cartogram-flip-hatch" width="7" height="7" patternUnits="userSpaceOnUse"
+                                     patternTransform="rotate(45)">
+                                <path d="M0,0 V7" stroke="white" stroke-opacity="0.75" stroke-width="2"/>
+                            </pattern>
+                        </defs>
+                        {% for district in house_districts %}
+                        <rect class="house-cartogram-tile" x="{{ district.tile_x }}" y="{{ district.tile_y }}"
+                              width="{{ house_cartogram.tile_size }}" height="{{ house_cartogram.tile_size }}"
+                              fill="{{ district.fill }}" aria-label="{{ district.title }}" tabindex="0" focusable="true"
+                              data-map-tooltip='{{ district.tooltip|tojson }}'></rect>
+                        {% if district.flip %}
+                        <rect class="map-flip-overlay" x="{{ district.tile_x }}" y="{{ district.tile_y }}"
+                              width="{{ house_cartogram.tile_size }}" height="{{ house_cartogram.tile_size }}"
+                              fill="url(#house-cartogram-flip-hatch)" aria-hidden="true" />
+                        {% endif %}
+                        {% endfor %}
+                        {% for state in house_cartogram.outlines %}
+                        <path class="house-cartogram-outline" d="{{ state.path }}" fill="none" fill-rule="evenodd" aria-hidden="true" />
+                        {% endfor %}
+                        {% for state in house_cartogram.labels %}
+                        <text class="house-cartogram-label" x="{{ state.x }}" y="{{ state.y }}"
+                              text-anchor="middle" aria-hidden="true">{{ state.abbr }}</text>
+                        {% endfor %}
+                    </svg>
+                    <ul class="house-competitive-grid" aria-label="Competitive House districts, under 60 percent chance for the leading candidate" hidden>
+                        {% for district in house_competitive %}
+                        <li class="house-competitive-tile" aria-label="{{ district.title }}" tabindex="0"
+                            data-map-tooltip='{{ district.tooltip|tojson }}'>
+                            <svg viewBox="{{ district.view_box }}" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                                {% if district.flip %}
+                                <defs>
+                                    <pattern id="competitive-flip-{{ loop.index }}" width="{{ district.hatch_pitch }}"
+                                             height="{{ district.hatch_pitch }}" patternUnits="userSpaceOnUse"
+                                             patternTransform="rotate(45)">
+                                        <path d="M0,0 V{{ district.hatch_pitch }}" stroke="white"
+                                              stroke-opacity="0.75" stroke-width="{{ district.hatch_pitch * 0.23 }}" />
+                                    </pattern>
+                                </defs>
+                                {% endif %}
+                                <path d="{{ district.path }}" fill="{{ district.fill }}" fill-rule="evenodd" />
+                                {% if district.flip %}
+                                <path d="{{ district.path }}" fill="url(#competitive-flip-{{ loop.index }})"
+                                      fill-rule="evenodd" />
+                                {% endif %}
+                            </svg>
+                            <span>{{ district.label }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="house-map-switch" role="group" aria-label="House map view">
+                        <button type="button" class="is-active" data-house-view="map" aria-pressed="true">Map</button>
+                        <button type="button" data-house-view="cartogram" aria-pressed="false">Cartogram</button>
+                        <button type="button" data-house-view="competitive" aria-pressed="false">Competitive</button>
+                    </div>
+                    <figcaption class="senate-map-legend">
+                        <span><i class="legend-dem"></i>Democratic</span>
+                        <span><i class="legend-rep"></i>Republican</span>
+                        <span><i class="legend-ind"></i>Independent</span>
+                        <span><i class="legend-flip"></i>Flip vs 2024 seat</span>
+                    </figcaption>
+                </figure>
+                <aside class="key-states house-close-races" aria-label="Close House races">
+                    <div class="key-states-heading"><h3>Close Races</h3><span>{{ house_close|length }} districts &middot; under 60%</span></div>
+                    <div class="house-close-race-list">
+                        {% for race in house_close %}
+                        <div class="key-race house-key-race" tabindex="0" aria-label="{{ race.vote_aria_label }}"
+                             data-map-tooltip='{{ race.tooltip|tojson }}'>
+                            <strong class="key-state-name">{{ race.district }}</strong>
+                            <div class="key-race-bar" role="img" aria-label="{{ race.vote_aria_label }}">
+                                {% for segment in race.segments %}
+                                <span class="{{ segment.css_class }}" style="width: {{ segment.share }}%; background: {{ segment.gradient }}">
+                                    {% if segment.label %}<span class="key-bar-name">{{ segment.label }}</span>{% endif %}
+                                </span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </aside>
+            </div>
+            {% if house_distribution %}
+            <figure class="senate-distribution house-distribution">
+                <figcaption>
+                    <strong>House seats across simulations</strong>
+                    <span>{{ '{:,}'.format(house_distribution.draws) }} simulations &middot; each dot up to {{ house_distribution.dot_unit }} results</span>
+                </figcaption>
+                <div class="senate-distribution-scroll">
+                    <svg class="senate-distribution-chart" viewBox="0 0 1000 450" role="img"
+                         aria-label="Distribution of Democratic House seat totals across {{ house_distribution.draws }} simulations. Blue dots are Democratic majorities, red dots Republican majorities, and grey dots neither party winning a majority.">
+                        <defs>
+                            <linearGradient id="house-range-gradient" x1="0" y1="0" x2="1" y2="0">
+                                {% for stop in house_distribution.interval.gradient_stops %}
+                                <stop offset="{{ stop.offset }}%" stop-color="{{ stop.color }}" />
+                                {% endfor %}
+                            </linearGradient>
+                        </defs>
+                        {% for line in house_distribution.grid %}
+                        <line class="distribution-grid" x1="58" x2="958" y1="{{ line.y }}" y2="{{ line.y }}" />
+                        <text class="distribution-y-label" x="49" y="{{ line.y }}">{{ '{:,}'.format(line.count) }}</text>
+                        {% endfor %}
+                        <rect class="distribution-range-band" x="{{ house_distribution.interval.left_x }}" y="48"
+                              width="{{ house_distribution.interval.right_x - house_distribution.interval.left_x }}" height="337"
+                              fill="url(#house-range-gradient)" />
+                        <line class="distribution-range-bracket" x1="{{ house_distribution.interval.left_x }}" x2="{{ house_distribution.interval.right_x }}" y1="42" y2="42" />
+                        <line class="distribution-range-bracket" x1="{{ house_distribution.interval.left_x }}" x2="{{ house_distribution.interval.left_x }}" y1="38" y2="46" />
+                        <line class="distribution-range-bracket" x1="{{ house_distribution.interval.right_x }}" x2="{{ house_distribution.interval.right_x }}" y1="38" y2="46" />
+                        {% if house_distribution.majority_x is not none %}
+                        <line class="distribution-majority" x1="{{ house_distribution.majority_x }}" x2="{{ house_distribution.majority_x }}" y1="24" y2="385" />
+                        {% endif %}
+                        {% for column in house_distribution.columns %}
+                        <g aria-label="{{ column.d_seats }} Democratic seats: {{ '{:,}'.format(column.count) }} simulations; {{ '{:,}'.format(column.d_control) }} Democratic majority, {{ '{:,}'.format(column.r_control) }} Republican majority, {{ '{:,}'.format(column.neither) }} neither">
+                            {% for dot in column.dots %}
+                            <circle class="distribution-dot" cx="{{ column.x }}" cy="{{ dot.y }}" r="2.05"
+                                    fill="{{ dot.fill }}" fill-opacity="{{ dot.opacity }}"
+                                    data-distribution-tooltip='{{ dot.tooltip|tojson }}' />
+                            {% endfor %}
+                        </g>
+                        {% endfor %}
+                        <text class="distribution-stat-label" x="{{ house_distribution.interval.median_x }}" y="16">Median: {{ house_distribution.interval.median }} D</text>
+                        <text class="distribution-stat-label" x="{{ house_distribution.interval.center_x }}" y="34">80% range: {{ house_distribution.interval.low }}&ndash;{{ house_distribution.interval.high }} D</text>
+                        {% for tick in house_distribution.ticks %}
+                        <line class="distribution-tick" x1="{{ tick.x }}" x2="{{ tick.x }}" y1="385" y2="391" />
+                        <text class="distribution-x-label" x="{{ tick.x }}" y="411">{{ tick.label }}</text>
+                        {% endfor %}
+                        <text class="distribution-axis-label" x="508" y="440">Democratic seats</text>
+                    </svg>
+                </div>
+                <div class="senate-distribution-legend">
+                    <span><i class="distribution-dem"></i>Democratic majority (218+)</span>
+                    <span><i class="distribution-rep"></i>Republican majority (218+)</span>
+                    <span><i class="distribution-neither"></i>Neither party has a majority</span>
+                    <span>A lighter dot represents fewer than {{ house_distribution.dot_unit }} results.</span>
+                </div>
+            </figure>
+            {% endif %}
+            {% endif %}
+        </section>
+        <section id="gubernatorial" class="office-section">
+            <h2>Gubernatorial</h2>
+            {% if governor_seats %}
+            <div class="senate-seat-summary governor-seat-summary" aria-label="Projected winners of the {{ governor_seats.total }} gubernatorial elections">
+                <div class="senate-seat-totals">
+                    <div class="senate-seat-dem">
+                        <strong>{{ governor_seats.d_seats }}</strong>
+                        <span>Democrats</span>
+                    </div>
+                    <div class="senate-seat-rep">
+                        <strong>{{ governor_seats.r_seats }}</strong>
+                        <span>Republicans</span>
+                    </div>
+                </div>
+                <div class="senate-seat-bar" role="img"
+                     aria-label="Projected gubernatorial winners: {{ governor_seats.d_seats }} Democrats, {{ governor_seats.r_seats }} Republicans{% if governor_seats.other_seats %}, {{ governor_seats.other_seats }} others{% endif %}">
+                    <span class="senate-seat-bar-dem" style="width: {{ governor_seats.d_percent }}%"></span>
+                    {% if governor_seats.other_seats %}
+                    <span class="house-seat-bar-other" style="width: {{ governor_seats.other_percent }}%"></span>
+                    {% endif %}
+                    <span class="senate-seat-bar-rep"></span>
+                </div>
+                <div class="senate-seat-footnotes">
+                    <span>{{ governor_seats.total }} states elect a governor in 2026</span>
+                    <span>{{ governor_seats.not_up }} states do not elect a governor</span>
+                </div>
+            </div>
+            {% endif %}
+            {% if governor_states %}
+            <div class="senate-map-layout governor-map-layout">
+                <figure class="senate-map-figure">
+                    <svg class="senate-map" viewBox="0 0 1000 610" role="img"
+                         aria-label="Map of expected 2026 gubernatorial winners by state; striped states are projected flips">
+                        <defs>
+                            <pattern id="governor-flip-hatch" width="8" height="8" patternUnits="userSpaceOnUse"
+                                     patternTransform="rotate(45)">
+                                <path d="M0,0 V8" stroke="white" stroke-opacity="0.7" stroke-width="2"/>
+                            </pattern>
+                        </defs>
+                        {% for state in governor_states %}
+                        <path class="map-state" d="{{ state.path }}" fill="{{ state.fill }}" fill-rule="evenodd"
+                              aria-label="{{ state.title }}" tabindex="0" focusable="true"
+                              {% if state.tooltip %}data-map-tooltip='{{ state.tooltip|tojson }}'{% endif %}></path>
+                        {% if state.flip %}
+                        <path class="map-flip-overlay" d="{{ state.path }}" fill="url(#governor-flip-hatch)"
+                              fill-rule="evenodd" aria-hidden="true" />
+                        {% endif %}
+                        {% endfor %}
+                        {% for state in governor_states if state.show_label %}
+                        <text class="map-label" x="{{ state.label_x }}" y="{{ state.label_y }}"
+                              fill="{{ state.label_fill }}" aria-hidden="true">{{ state.abbr }}</text>
+                        {% endfor %}
+                    </svg>
+                    <figcaption class="senate-map-legend">
+                        <span><i class="legend-dem"></i>Democratic</span>
+                        <span><i class="legend-rep"></i>Republican</span>
+                        <span><i class="legend-ind"></i>Independent</span>
+                        <span><i class="legend-none"></i>No election</span>
+                        <span><i class="legend-flip"></i>Flip vs previous election</span>
+                    </figcaption>
+                </figure>
+                <aside class="key-states governor-close-races" aria-label="Close gubernatorial races">
+                    <div class="key-states-heading"><h3>Close Races</h3><span>{{ governor_close|length }} races &middot; under 70%</span></div>
+                    {% for race in governor_close %}
+                    <div class="key-race" tabindex="0" aria-label="{{ race.vote_aria_label }}"
+                         data-map-tooltip='{{ race.tooltip|tojson }}'>
+                        <strong class="key-state-name">{{ race.state }}</strong>
+                        <div class="key-race-bar" role="img" aria-label="{{ race.vote_aria_label }}">
+                            {% for segment in race.segments %}
+                            <span class="{{ segment.css_class }}" style="width: {{ segment.share }}%; background: {{ segment.gradient }}">
+                                {% if segment.label %}<span class="key-bar-name">{{ segment.label }}</span>{% endif %}
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </aside>
+            </div>
+            {% endif %}
+        </section>
+    </main>
+    <div class="map-hover-tooltip" id="map-hover-tooltip" role="tooltip" hidden>
+        <h3 class="map-hover-tooltip-title"></h3>
+        <span class="map-hover-tooltip-badge" hidden></span>
+        <table>
+            <thead><tr><th>Candidate</th><th>Party</th><th>Pct.</th></tr></thead>
+            <tbody></tbody>
+        </table>
+        <p class="map-hover-tooltip-note" hidden>* Incumbent</p>
+    </div>
+    <div class="gauge-hover-tooltip" id="gauge-hover-tooltip" role="tooltip" hidden></div>
+    <div class="distribution-hover-tooltip" id="distribution-hover-tooltip" role="tooltip" hidden>
+        <div class="distribution-tooltip-heading">
+            <i class="distribution-tooltip-swatch"></i>
+        <strong class="distribution-tooltip-title"></strong>
+        </div>
+        <div class="distribution-tooltip-detail"></div>
+        <div class="distribution-tooltip-count"></div>
+        <div class="distribution-tooltip-share"></div>
+    </div>
+    <script>
+        const distributionTooltip = document.getElementById('distribution-hover-tooltip');
+        const distributionTooltipTitle = distributionTooltip.querySelector('.distribution-tooltip-title');
+        const distributionTooltipDetail = distributionTooltip.querySelector('.distribution-tooltip-detail');
+        const distributionTooltipCount = distributionTooltip.querySelector('.distribution-tooltip-count');
+        const distributionTooltipShare = distributionTooltip.querySelector('.distribution-tooltip-share');
+        const distributionTooltipSwatch = distributionTooltip.querySelector('.distribution-tooltip-swatch');
+        const numberFormat = new Intl.NumberFormat('en-US');
+
+        function showDistributionTooltip(target, event) {
+            let info;
+            try { info = JSON.parse(target.dataset.distributionTooltip); } catch (_) { return; }
+            distributionTooltipTitle.textContent = info.title;
+            distributionTooltipDetail.textContent = info.detail;
+            distributionTooltipCount.textContent = `${numberFormat.format(info.represented)} simulated ${info.represented === 1 ? 'result' : 'results'}`;
+            distributionTooltipShare.textContent = `${info.share}% of all simulations`;
+            distributionTooltipSwatch.style.backgroundColor = info.dot_color;
+            distributionTooltip.hidden = false;
+            const left = Math.max(8, Math.min(event.clientX + 14,
+                window.innerWidth - distributionTooltip.offsetWidth - 8));
+            const top = Math.max(8, Math.min(event.clientY + 14,
+                window.innerHeight - distributionTooltip.offsetHeight - 8));
+            distributionTooltip.style.left = `${left}px`;
+            distributionTooltip.style.top = `${top}px`;
+        }
+
+        document.querySelectorAll('[data-distribution-tooltip]').forEach(dot => {
+            dot.addEventListener('pointerenter', event => showDistributionTooltip(dot, event));
+            dot.addEventListener('pointermove', event => showDistributionTooltip(dot, event));
+            dot.addEventListener('pointerleave', () => { distributionTooltip.hidden = true; });
+        });
+
+        const gaugeTooltip = document.getElementById('gauge-hover-tooltip');
+        function showGaugeTooltip(target, event = null) {
+            gaugeTooltip.textContent = target.dataset.gaugeTooltip;
+            gaugeTooltip.hidden = false;
+            const bounds = target.getBoundingClientRect();
+            const x = event ? event.clientX + 12 : bounds.left + bounds.width / 2 + 10;
+            const y = event ? event.clientY + 12 : bounds.top + bounds.height / 2;
+            gaugeTooltip.style.left = `${Math.max(8, Math.min(x, window.innerWidth - gaugeTooltip.offsetWidth - 8))}px`;
+            gaugeTooltip.style.top = `${Math.max(8, Math.min(y, window.innerHeight - gaugeTooltip.offsetHeight - 8))}px`;
+        }
+        function hideGaugeTooltip() { gaugeTooltip.hidden = true; }
+        document.querySelectorAll('[data-gauge-tooltip]').forEach(sector => {
+            sector.addEventListener('pointerenter', event => showGaugeTooltip(sector, event));
+            sector.addEventListener('pointermove', event => showGaugeTooltip(sector, event));
+            sector.addEventListener('pointerleave', hideGaugeTooltip);
+            sector.addEventListener('focus', () => showGaugeTooltip(sector));
+            sector.addEventListener('blur', hideGaugeTooltip);
+        });
+
+        const mapTooltip = document.getElementById('map-hover-tooltip');
+        const mapTooltipTitle = mapTooltip.querySelector('.map-hover-tooltip-title');
+        const mapTooltipBadge = mapTooltip.querySelector('.map-hover-tooltip-badge');
+        const mapTooltipBody = mapTooltip.querySelector('tbody');
+        const mapTooltipNote = mapTooltip.querySelector('.map-hover-tooltip-note');
+
+        function positionMapTooltip(target, pointerEvent) {
+            const rect = target.getBoundingClientRect();
+            const x = pointerEvent ? pointerEvent.clientX + 14 : rect.left + rect.width / 2 + 12;
+            const y = pointerEvent ? pointerEvent.clientY + 12 : rect.top + rect.height / 2;
+            const left = Math.max(8, Math.min(x, window.innerWidth - mapTooltip.offsetWidth - 8));
+            const top = Math.max(8, Math.min(y, window.innerHeight - mapTooltip.offsetHeight - 8));
+            mapTooltip.style.left = `${left}px`;
+            mapTooltip.style.top = `${top}px`;
+        }
+
+        function showMapTooltip(target, pointerEvent = null) {
+            let info;
+            try { info = JSON.parse(target.dataset.mapTooltip); } catch (_) { return; }
+            mapTooltipTitle.textContent = info.title;
+            mapTooltipBadge.textContent = info.signifier || '';
+            mapTooltipBadge.hidden = !info.signifier;
+            mapTooltipBody.replaceChildren();
+            info.rows.forEach(candidate => {
+                const row = document.createElement('tr');
+                row.className = candidate.winner ? 'is-winner' : '';
+                row.style.setProperty('--candidate-color', candidate.color);
+                const name = document.createElement('td');
+                name.className = 'map-tooltip-candidate';
+                const swatch = document.createElement('span');
+                swatch.className = 'map-tooltip-swatch';
+                swatch.setAttribute('aria-hidden', 'true');
+                const label = document.createElement('span');
+                label.textContent = candidate.name;
+                name.append(swatch, label);
+                const party = document.createElement('td');
+                party.textContent = candidate.party;
+                const pct = document.createElement('td');
+                pct.className = 'map-tooltip-pct';
+                pct.textContent = candidate.pct;
+                row.append(name, party, pct);
+                mapTooltipBody.append(row);
+            });
+            mapTooltipNote.hidden = !info.has_incumbent;
+            mapTooltip.hidden = false;
+            positionMapTooltip(target, pointerEvent);
+        }
+
+        function hideMapTooltip() {
+            mapTooltip.hidden = true;
+        }
+
+        document.querySelectorAll('[data-map-tooltip]').forEach(target => {
+            target.addEventListener('pointerenter', event => showMapTooltip(target, event));
+            target.addEventListener('pointermove', event => positionMapTooltip(target, event));
+            target.addEventListener('pointerleave', hideMapTooltip);
+            target.addEventListener('focus', () => showMapTooltip(target));
+            target.addEventListener('blur', hideMapTooltip);
+        });
+
+        const houseViewButtons = document.querySelectorAll('[data-house-view]');
+        if (houseViewButtons.length) {
+            const houseViews = {
+                map: document.querySelector('svg.house-map'),
+                cartogram: document.querySelector('svg.house-cartogram'),
+                competitive: document.querySelector('.house-competitive-grid')
+            };
+            function setHouseView(view) {
+                Object.entries(houseViews).forEach(([name, element]) => {
+                    element.toggleAttribute('hidden', name !== view);
+                });
+                houseViewButtons.forEach(button => {
+                    const active = button.dataset.houseView === view;
+                    button.classList.toggle('is-active', active);
+                    button.setAttribute('aria-pressed', String(active));
+                });
+                try { window.localStorage.setItem('us2026-house-view', view); } catch (_) {}
+            }
+            houseViewButtons.forEach(button => button.addEventListener('click', () => setHouseView(button.dataset.houseView)));
+            let savedView;
+            try { savedView = window.localStorage.getItem('us2026-house-view'); } catch (_) {}
+            if (savedView in houseViews) setHouseView(savedView);
+        }
+    </script>
+    {% if history_dates %}
+    <script>
+        const historyDates = {{ history_dates|tojson }};
+        const slider = document.getElementById('history-date');
+        const selectedDate = document.getElementById('selected-date');
+        function updateDateBubble() {
+            const index = Number(slider.value);
+            const label = historyDates[index].label;
+            selectedDate.value = label;
+            slider.setAttribute('aria-valuetext', label);
+            const ratio = index / Math.max(1, historyDates.length - 1);
+            slider.style.setProperty('--slider-progress', `${100 * ratio}%`);
+            const thumbCenter = 9 + ratio * (slider.clientWidth - 18);
+            const halfBubble = selectedDate.offsetWidth / 2;
+            const bubbleCenter = Math.min(Math.max(thumbCenter, halfBubble), slider.clientWidth - halfBubble);
+            selectedDate.style.left = `${bubbleCenter}px`;
+            selectedDate.style.setProperty('--arrow-left', `${thumbCenter - bubbleCenter + halfBubble}px`);
+        }
+        slider.addEventListener('input', updateDateBubble);
+        window.addEventListener('resize', updateDateBubble);
+        updateDateBubble();
+        slider.addEventListener('change', () => {
+            const date = historyDates[Number(slider.value)].date;
+            window.location.assign(`{{ url_for('us2026') }}?date=${encodeURIComponent(date)}`);
+        });
+    </script>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,4600 @@
+{
+  "design": "Audit only previously mismatched, unique structured general-result races. Test whether adding positive-vote named rows lacking both source candidate ID and party reconciles the official total; exclude explicit noncandidate labels.",
+  "counts": {
+    "2020:house:recovered_exact": 64,
+    "2020:house:recovered_within_tolerance": 5,
+    "2020:house:still_mismatch": 16,
+    "2020:senate:recovered_exact": 6,
+    "2020:senate:still_mismatch": 1,
+    "2022:house:recovered_exact": 59,
+    "2022:house:recovered_within_tolerance": 11,
+    "2022:house:still_mismatch": 20,
+    "2022:senate:recovered_exact": 10,
+    "2022:senate:still_mismatch": 2,
+    "2024:house:recovered_exact": 85,
+    "2024:house:still_mismatch": 6,
+    "2024:senate:recovered_exact": 9,
+    "2024:senate:recovered_within_tolerance": 2,
+    "2024:senate:still_mismatch": 2
+  },
+  "races": [
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "AK",
+      "district": "00",
+      "official_votes": 353165,
+      "previous_archive_votes": 351982,
+      "revised_archive_votes": 353165,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1183
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "AL",
+      "district": "05",
+      "official_votes": 264160,
+      "previous_archive_votes": 253094,
+      "revised_archive_votes": 264160,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 11066
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "AL",
+      "district": "06",
+      "official_votes": 282261,
+      "previous_archive_votes": 274160,
+      "revised_archive_votes": 282261,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 8101
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "AL",
+      "district": "07",
+      "official_votes": 232331,
+      "previous_archive_votes": 225742,
+      "revised_archive_votes": 232331,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 6589
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "IA",
+      "district": "01",
+      "official_votes": 413869,
+      "previous_archive_votes": 413435,
+      "revised_archive_votes": 413869,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 434
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "IA",
+      "district": "02",
+      "official_votes": 394625,
+      "previous_archive_votes": 393922,
+      "revised_archive_votes": 394625,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 703
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "IA",
+      "district": "04",
+      "official_votes": 383022,
+      "previous_archive_votes": 382130,
+      "revised_archive_votes": 383022,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 892
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MA",
+      "district": "01",
+      "official_votes": 285332,
+      "previous_archive_votes": 276650,
+      "revised_archive_votes": 285332,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 8682
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MA",
+      "district": "03",
+      "official_votes": 293539,
+      "previous_archive_votes": 286896,
+      "revised_archive_votes": 293539,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 6643
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MA",
+      "district": "04",
+      "official_votes": 412823,
+      "previous_archive_votes": 411576,
+      "revised_archive_votes": 412823,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 1247
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MA",
+      "district": "05",
+      "official_votes": 396183,
+      "previous_archive_votes": 395778,
+      "revised_archive_votes": 396183,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 405
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MA",
+      "district": "06",
+      "official_votes": 437677,
+      "previous_archive_votes": 437072,
+      "revised_archive_votes": 437677,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 605
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MA",
+      "district": "07",
+      "official_votes": 308650,
+      "previous_archive_votes": 306744,
+      "revised_archive_votes": 308650,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 1906
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MA",
+      "district": "08",
+      "official_votes": 385401,
+      "previous_archive_votes": 383000,
+      "revised_archive_votes": 385401,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 2401
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MD",
+      "district": "01",
+      "official_votes": 395524,
+      "previous_archive_votes": 394778,
+      "revised_archive_votes": 395524,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 746
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MD",
+      "district": "02",
+      "official_votes": 332026,
+      "previous_archive_votes": 331191,
+      "revised_archive_votes": 332026,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 835
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MD",
+      "district": "03",
+      "official_votes": 373206,
+      "previous_archive_votes": 372475,
+      "revised_archive_votes": 373206,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 731
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MD",
+      "district": "04",
+      "official_votes": 354529,
+      "previous_archive_votes": 353790,
+      "revised_archive_votes": 354529,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 739
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MD",
+      "district": "05",
+      "official_votes": 398839,
+      "previous_archive_votes": 397735,
+      "revised_archive_votes": 398839,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 1104
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MD",
+      "district": "07",
+      "official_votes": 330998,
+      "previous_archive_votes": 329946,
+      "revised_archive_votes": 330998,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 1052
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MD",
+      "district": "08",
+      "official_votes": 402614,
+      "previous_archive_votes": 401900,
+      "revised_archive_votes": 402614,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 714
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MN",
+      "district": "04",
+      "official_votes": 389114,
+      "previous_archive_votes": 388080,
+      "revised_archive_votes": 389114,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1034
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MN",
+      "district": "05",
+      "official_votes": 398229,
+      "previous_archive_votes": 396781,
+      "revised_archive_votes": 398229,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1448
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "MN",
+      "district": "06",
+      "official_votes": 412307,
+      "previous_archive_votes": 411754,
+      "revised_archive_votes": 412307,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 553
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "ND",
+      "district": "00",
+      "official_votes": 355799,
+      "previous_archive_votes": 355223,
+      "revised_archive_votes": 355598,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 375
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "01",
+      "official_votes": 375116,
+      "previous_archive_votes": 357247,
+      "revised_archive_votes": 357346,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 99
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "05",
+      "official_votes": 230679,
+      "previous_archive_votes": 229125,
+      "revised_archive_votes": 230679,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 1554
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "07",
+      "official_votes": 225453,
+      "previous_archive_votes": 225115,
+      "revised_archive_votes": 225453,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 338
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "09",
+      "official_votes": 277248,
+      "previous_archive_votes": 276867,
+      "revised_archive_votes": 277248,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 381
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "10",
+      "official_votes": 276976,
+      "previous_archive_votes": 276569,
+      "revised_archive_votes": 276976,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 407
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "11",
+      "official_votes": 293314,
+      "previous_archive_votes": 292806,
+      "revised_archive_votes": 293314,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 508
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "12",
+      "official_votes": 323021,
+      "previous_archive_votes": 322248,
+      "revised_archive_votes": 323021,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 773
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "13",
+      "official_votes": 255370,
+      "previous_archive_votes": 254965,
+      "revised_archive_votes": 255370,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 405
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "15",
+      "official_votes": 191037,
+      "previous_archive_votes": 190754,
+      "revised_archive_votes": 191037,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 283
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "16",
+      "official_votes": 260090,
+      "previous_archive_votes": 259556,
+      "revised_archive_votes": 259970,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 414
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "18",
+      "official_votes": 335871,
+      "previous_archive_votes": 335429,
+      "revised_archive_votes": 335545,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 116
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "19",
+      "official_votes": 352771,
+      "previous_archive_votes": 350598,
+      "revised_archive_votes": 352771,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 2173
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "22",
+      "official_votes": 319638,
+      "previous_archive_votes": 318867,
+      "revised_archive_votes": 319638,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 771
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "24",
+      "official_votes": 344127,
+      "previous_archive_votes": 343437,
+      "revised_archive_votes": 343624,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 187
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "NY",
+      "district": "26",
+      "official_votes": 319947,
+      "previous_archive_votes": 319591,
+      "revised_archive_votes": 319835,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 244
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "OH",
+      "district": "14",
+      "official_votes": 392450,
+      "previous_archive_votes": 397450,
+      "revised_archive_votes": 397450,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "OR",
+      "district": "01",
+      "official_votes": 459899,
+      "previous_archive_votes": 458999,
+      "revised_archive_votes": 459899,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 900
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "OR",
+      "district": "02",
+      "official_votes": 457433,
+      "previous_archive_votes": 456810,
+      "revised_archive_votes": 457433,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 623
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "OR",
+      "district": "03",
+      "official_votes": 470506,
+      "previous_archive_votes": 469885,
+      "revised_archive_votes": 470506,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 621
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "OR",
+      "district": "04",
+      "official_votes": 467705,
+      "previous_archive_votes": 467149,
+      "revised_archive_votes": 467705,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 556
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "OR",
+      "district": "05",
+      "official_votes": 452646,
+      "previous_archive_votes": 451875,
+      "revised_archive_votes": 452646,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 771
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "01",
+      "official_votes": 442648,
+      "previous_archive_votes": 441679,
+      "revised_archive_votes": 441679,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "03",
+      "official_votes": 375898,
+      "previous_archive_votes": 375379,
+      "revised_archive_votes": 375379,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "05",
+      "official_votes": 395769,
+      "previous_archive_votes": 395295,
+      "revised_archive_votes": 395295,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "06",
+      "official_votes": 404418,
+      "previous_archive_votes": 403966,
+      "revised_archive_votes": 403966,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "07",
+      "official_votes": 377404,
+      "previous_archive_votes": 376882,
+      "revised_archive_votes": 376882,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "08",
+      "official_votes": 344231,
+      "previous_archive_votes": 343787,
+      "revised_archive_votes": 343787,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "09",
+      "official_votes": 351635,
+      "previous_archive_votes": 381254,
+      "revised_archive_votes": 381254,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "10",
+      "official_votes": 392332,
+      "previous_archive_votes": 391834,
+      "revised_archive_votes": 391834,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "11",
+      "official_votes": 383633,
+      "previous_archive_votes": 383240,
+      "revised_archive_votes": 383240,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "12",
+      "official_votes": 340867,
+      "previous_archive_votes": 340234,
+      "revised_archive_votes": 340234,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "14",
+      "official_votes": 373996,
+      "previous_archive_votes": 373583,
+      "revised_archive_votes": 373583,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "15",
+      "official_votes": 347576,
+      "previous_archive_votes": 347214,
+      "revised_archive_votes": 347214,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "PA",
+      "district": "18",
+      "official_votes": 385060,
+      "previous_archive_votes": 384247,
+      "revised_archive_votes": 384247,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "RI",
+      "district": "01",
+      "official_votes": 223860,
+      "previous_archive_votes": 222307,
+      "revised_archive_votes": 223860,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1553
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "RI",
+      "district": "02",
+      "official_votes": 264557,
+      "previous_archive_votes": 263980,
+      "revised_archive_votes": 264557,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 577
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "SC",
+      "district": "01",
+      "official_votes": 427111,
+      "previous_archive_votes": 426669,
+      "revised_archive_votes": 427111,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 442
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "01",
+      "official_votes": 448178,
+      "previous_archive_votes": 447537,
+      "revised_archive_votes": 448178,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 641
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "03",
+      "official_votes": 341361,
+      "previous_archive_votes": 340625,
+      "revised_archive_votes": 341361,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 736
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "04",
+      "official_votes": 391345,
+      "previous_archive_votes": 390767,
+      "revised_archive_votes": 391345,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 578
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "05",
+      "official_votes": 402317,
+      "previous_archive_votes": 401303,
+      "revised_archive_votes": 402317,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1014
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "06",
+      "official_votes": 381813,
+      "previous_archive_votes": 381335,
+      "revised_archive_votes": 381813,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 478
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "07",
+      "official_votes": 454339,
+      "previous_archive_votes": 453516,
+      "revised_archive_votes": 454339,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 823
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "08",
+      "official_votes": 397745,
+      "previous_archive_votes": 396819,
+      "revised_archive_votes": 397745,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 926
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "09",
+      "official_votes": 289274,
+      "previous_archive_votes": 271851,
+      "revised_archive_votes": 289274,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 17423
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "10",
+      "official_votes": 475546,
+      "previous_archive_votes": 474987,
+      "revised_archive_votes": 475546,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 559
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VA",
+      "district": "11",
+      "official_votes": 393241,
+      "previous_archive_votes": 392105,
+      "revised_archive_votes": 393241,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1136
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "VT",
+      "district": "00",
+      "official_votes": 354840,
+      "previous_archive_votes": 354295,
+      "revised_archive_votes": 354837,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 542
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "01",
+      "official_votes": 426862,
+      "previous_archive_votes": 426351,
+      "revised_archive_votes": 426862,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 511
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "02",
+      "official_votes": 404598,
+      "previous_archive_votes": 403636,
+      "revised_archive_votes": 404598,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 962
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "03",
+      "official_votes": 417903,
+      "previous_archive_votes": 416926,
+      "revised_archive_votes": 417903,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 977
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "04",
+      "official_votes": 305263,
+      "previous_archive_votes": 304775,
+      "revised_archive_votes": 305263,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 488
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "05",
+      "official_votes": 404360,
+      "previous_archive_votes": 403552,
+      "revised_archive_votes": 404360,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 808
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "06",
+      "official_votes": 417216,
+      "previous_archive_votes": 416212,
+      "revised_archive_votes": 417216,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1004
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "07",
+      "official_votes": 466462,
+      "previous_archive_votes": 465349,
+      "revised_archive_votes": 466462,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1113
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "08",
+      "official_votes": 412112,
+      "previous_archive_votes": 411546,
+      "revised_archive_votes": 412112,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 566
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "09",
+      "official_votes": 349050,
+      "previous_archive_votes": 348468,
+      "revised_archive_votes": 349050,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 582
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WA",
+      "district": "10",
+      "official_votes": 340407,
+      "previous_archive_votes": 288977,
+      "revised_archive_votes": 340407,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 51430
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WI",
+      "district": "04",
+      "official_votes": 311697,
+      "previous_archive_votes": 311348,
+      "revised_archive_votes": 311697,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 349
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "house",
+      "state": "WY",
+      "district": "00",
+      "official_votes": 270892,
+      "previous_archive_votes": 270367,
+      "revised_archive_votes": 270892,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 525
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "state": "AK",
+      "district": "S",
+      "official_votes": 354587,
+      "previous_archive_votes": 353986,
+      "revised_archive_votes": 354587,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 601
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "state": "AL",
+      "district": "S",
+      "official_votes": 2316445,
+      "previous_archive_votes": 2312554,
+      "revised_archive_votes": 2316445,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 3891
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "state": "MA",
+      "district": "S",
+      "official_votes": 3564136,
+      "previous_archive_votes": 3556708,
+      "revised_archive_votes": 3564136,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 7428
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "state": "NE",
+      "district": "S",
+      "official_votes": 930012,
+      "previous_archive_votes": 924224,
+      "revised_archive_votes": 930012,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 5788
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "state": "OR",
+      "district": "S",
+      "official_votes": 2321249,
+      "previous_archive_votes": 2318847,
+      "revised_archive_votes": 2321249,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 2402
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "state": "RI",
+      "district": "S",
+      "official_votes": 494262,
+      "previous_archive_votes": 493429,
+      "revised_archive_votes": 494262,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 833
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "office": "senate",
+      "state": "WY",
+      "district": "S",
+      "official_votes": 272937,
+      "previous_archive_votes": 270866,
+      "revised_archive_votes": 271937,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1071
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "AK",
+      "district": "00",
+      "official_votes": 263610,
+      "previous_archive_votes": 264589,
+      "revised_archive_votes": 264589,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "AL",
+      "district": "01",
+      "official_votes": 168150,
+      "previous_archive_votes": 166961,
+      "revised_archive_votes": 168150,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1189
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "AL",
+      "district": "05",
+      "official_votes": 212317,
+      "previous_archive_votes": 211948,
+      "revised_archive_votes": 212317,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 369
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "AL",
+      "district": "06",
+      "official_votes": 184203,
+      "previous_archive_votes": 182066,
+      "revised_archive_votes": 184203,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 2137
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "IA",
+      "district": "03",
+      "official_votes": 310913,
+      "previous_archive_votes": 310379,
+      "revised_archive_votes": 310913,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 534
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "IN",
+      "district": "02",
+      "official_votes": 382418,
+      "previous_archive_votes": 194373,
+      "revised_archive_votes": 194373,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MA",
+      "district": "01",
+      "official_votes": 256399,
+      "previous_archive_votes": 256021,
+      "revised_archive_votes": 256399,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 378
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MA",
+      "district": "02",
+      "official_votes": 272871,
+      "previous_archive_votes": 272595,
+      "revised_archive_votes": 272871,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 276
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MA",
+      "district": "04",
+      "official_votes": 208279,
+      "previous_archive_votes": 201882,
+      "revised_archive_votes": 208279,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 6397
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MA",
+      "district": "07",
+      "official_votes": 179511,
+      "previous_archive_votes": 178954,
+      "revised_archive_votes": 179511,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 557
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MA",
+      "district": "08",
+      "official_votes": 272564,
+      "previous_archive_votes": 272113,
+      "revised_archive_votes": 272564,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 451
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MD",
+      "district": "02",
+      "official_votes": 268434,
+      "previous_archive_votes": 268073,
+      "revised_archive_votes": 268434,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 361
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MD",
+      "district": "04",
+      "official_votes": 160009,
+      "previous_archive_votes": 159609,
+      "revised_archive_votes": 160009,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 400
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MD",
+      "district": "05",
+      "official_votes": 276920,
+      "previous_archive_votes": 276478,
+      "revised_archive_votes": 276920,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 442
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MD",
+      "district": "06",
+      "official_votes": 256398,
+      "previous_archive_votes": 256066,
+      "revised_archive_votes": 256398,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 332
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MD",
+      "district": "07",
+      "official_votes": 184801,
+      "previous_archive_votes": 184377,
+      "revised_archive_votes": 184801,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 424
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MD",
+      "district": "08",
+      "official_votes": 264206,
+      "previous_archive_votes": 263932,
+      "revised_archive_votes": 264206,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 274
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "ME",
+      "district": "02",
+      "official_votes": 316382,
+      "previous_archive_votes": 315989,
+      "revised_archive_votes": 316382,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 393
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MI",
+      "district": "08",
+      "official_votes": 335829,
+      "previous_archive_votes": 340326,
+      "revised_archive_votes": 340326,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MN",
+      "district": "02",
+      "official_votes": 325472,
+      "previous_archive_votes": 324887,
+      "revised_archive_votes": 325472,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 585
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MN",
+      "district": "04",
+      "official_votes": 295973,
+      "previous_archive_votes": 295548,
+      "revised_archive_votes": 295973,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 425
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MN",
+      "district": "05",
+      "official_votes": 288206,
+      "previous_archive_votes": 284926,
+      "revised_archive_votes": 288206,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 3280
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "MN",
+      "district": "06",
+      "official_votes": 319767,
+      "previous_archive_votes": 318997,
+      "revised_archive_votes": 319767,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 770
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "ND",
+      "district": "00",
+      "official_votes": 238586,
+      "previous_archive_votes": 238043,
+      "revised_archive_votes": 238586,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 543
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NH",
+      "district": "01",
+      "official_votes": 309962,
+      "previous_archive_votes": 309620,
+      "revised_archive_votes": 309962,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 342
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NH",
+      "district": "02",
+      "official_votes": 307584,
+      "previous_archive_votes": 307215,
+      "revised_archive_votes": 307584,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 369
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NJ",
+      "district": "08",
+      "official_votes": 106473,
+      "previous_archive_votes": 97192,
+      "revised_archive_votes": 97192,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NJ",
+      "district": "09",
+      "official_votes": 149984,
+      "previous_archive_votes": 149482,
+      "revised_archive_votes": 149482,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NJ",
+      "district": "10",
+      "official_votes": 129707,
+      "previous_archive_votes": 128362,
+      "revised_archive_votes": 128362,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "05",
+      "official_votes": 138987,
+      "previous_archive_votes": 138803,
+      "revised_archive_votes": 138987,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 184
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "07",
+      "official_votes": 148304,
+      "previous_archive_votes": 148070,
+      "revised_archive_votes": 148304,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 234
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "08",
+      "official_votes": 138330,
+      "previous_archive_votes": 138139,
+      "revised_archive_votes": 138330,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 191
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "09",
+      "official_votes": 143853,
+      "previous_archive_votes": 143491,
+      "revised_archive_votes": 143853,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 362
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "10",
+      "official_votes": 192347,
+      "previous_archive_votes": 191087,
+      "revised_archive_votes": 192347,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 1260
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "11",
+      "official_votes": 188099,
+      "previous_archive_votes": 187793,
+      "revised_archive_votes": 188099,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 306
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "12",
+      "official_votes": 246105,
+      "previous_archive_votes": 245694,
+      "revised_archive_votes": 246105,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 411
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "13",
+      "official_votes": 117846,
+      "previous_archive_votes": 116589,
+      "revised_archive_votes": 117846,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 1257
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "14",
+      "official_votes": 116790,
+      "previous_archive_votes": 116596,
+      "revised_archive_votes": 116790,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 194
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "NY",
+      "district": "15",
+      "official_votes": 92390,
+      "previous_archive_votes": 92288,
+      "revised_archive_votes": 92390,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 102
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "OR",
+      "district": "01",
+      "official_votes": 310243,
+      "previous_archive_votes": 309724,
+      "revised_archive_votes": 310243,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 519
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "OR",
+      "district": "02",
+      "official_votes": 308676,
+      "previous_archive_votes": 308251,
+      "revised_archive_votes": 308676,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 425
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "OR",
+      "district": "03",
+      "official_votes": 303334,
+      "previous_archive_votes": 302867,
+      "revised_archive_votes": 303334,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 467
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "OR",
+      "district": "04",
+      "official_votes": 339077,
+      "previous_archive_votes": 338587,
+      "revised_archive_votes": 339077,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 490
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "OR",
+      "district": "05",
+      "official_votes": 351233,
+      "previous_archive_votes": 350327,
+      "revised_archive_votes": 351233,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 906
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "OR",
+      "district": "06",
+      "official_votes": 294377,
+      "previous_archive_votes": 293864,
+      "revised_archive_votes": 294377,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 513
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "02",
+      "official_votes": 186893,
+      "previous_archive_votes": 186683,
+      "revised_archive_votes": 186683,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "03",
+      "official_votes": 264931,
+      "previous_archive_votes": 263935,
+      "revised_archive_votes": 263935,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "05",
+      "official_votes": 315511,
+      "previous_archive_votes": 315186,
+      "revised_archive_votes": 315186,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "07",
+      "official_votes": 297395,
+      "previous_archive_votes": 296891,
+      "revised_archive_votes": 296891,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "08",
+      "official_votes": 287438,
+      "previous_archive_votes": 286886,
+      "revised_archive_votes": 286886,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "09",
+      "official_votes": 302121,
+      "previous_archive_votes": 301807,
+      "revised_archive_votes": 301807,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "10",
+      "official_votes": 315085,
+      "previous_archive_votes": 314546,
+      "revised_archive_votes": 314546,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "11",
+      "official_votes": 317165,
+      "previous_archive_votes": 316826,
+      "revised_archive_votes": 316826,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "12",
+      "official_votes": 329972,
+      "previous_archive_votes": 328620,
+      "revised_archive_votes": 328620,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "13",
+      "official_votes": 274517,
+      "previous_archive_votes": 260345,
+      "revised_archive_votes": 260345,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "14",
+      "official_votes": 238096,
+      "previous_archive_votes": 230865,
+      "revised_archive_votes": 230865,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "15",
+      "official_votes": 305720,
+      "previous_archive_votes": 305146,
+      "revised_archive_votes": 305146,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "16",
+      "official_votes": 321323,
+      "previous_archive_votes": 320989,
+      "revised_archive_votes": 320989,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "PA",
+      "district": "17",
+      "official_votes": 363384,
+      "previous_archive_votes": 362628,
+      "revised_archive_votes": 362628,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "RI",
+      "district": "01",
+      "official_votes": 156734,
+      "previous_archive_votes": 156373,
+      "revised_archive_votes": 156734,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 361
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "SC",
+      "district": "01",
+      "official_votes": 272681,
+      "previous_archive_votes": 272187,
+      "revised_archive_votes": 272681,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 494
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "SC",
+      "district": "02",
+      "official_votes": 246126,
+      "previous_archive_votes": 245780,
+      "revised_archive_votes": 246126,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 346
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "SC",
+      "district": "03",
+      "official_votes": 194569,
+      "previous_archive_votes": 189971,
+      "revised_archive_votes": 194569,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 4598
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "SC",
+      "district": "04",
+      "official_votes": 182365,
+      "previous_archive_votes": 165607,
+      "revised_archive_votes": 182365,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 16758
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "SC",
+      "district": "06",
+      "official_votes": 211028,
+      "previous_archive_votes": 210802,
+      "revised_archive_votes": 211028,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 226
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "SC",
+      "district": "07",
+      "official_votes": 253865,
+      "previous_archive_votes": 253470,
+      "revised_archive_votes": 253865,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 395
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "02",
+      "official_votes": 296989,
+      "previous_archive_votes": 296547,
+      "revised_archive_votes": 296996,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 449
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "03",
+      "official_votes": 207843,
+      "previous_archive_votes": 207327,
+      "revised_archive_votes": 207850,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 523
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "04",
+      "official_votes": 244972,
+      "previous_archive_votes": 244547,
+      "revised_archive_votes": 244978,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 431
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "05",
+      "official_votes": 307775,
+      "previous_archive_votes": 307187,
+      "revised_archive_votes": 307790,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 603
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "06",
+      "official_votes": 269231,
+      "previous_archive_votes": 268762,
+      "revised_archive_votes": 269234,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 472
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "07",
+      "official_votes": 274580,
+      "previous_archive_votes": 273943,
+      "revised_archive_votes": 274590,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 647
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "08",
+      "official_votes": 268930,
+      "previous_archive_votes": 268427,
+      "revised_archive_votes": 268936,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 509
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "09",
+      "official_votes": 248789,
+      "previous_archive_votes": 248234,
+      "revised_archive_votes": 248792,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 558
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "10",
+      "official_votes": 296140,
+      "previous_archive_votes": 295568,
+      "revised_archive_votes": 296145,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 577
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VA",
+      "district": "11",
+      "official_votes": 289652,
+      "previous_archive_votes": 288824,
+      "revised_archive_votes": 289676,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 852
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "VT",
+      "district": "00",
+      "official_votes": 282026,
+      "previous_archive_votes": 281022,
+      "revised_archive_votes": 282026,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1004
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "01",
+      "official_votes": 286684,
+      "previous_archive_votes": 286321,
+      "revised_archive_votes": 286684,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 363
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "02",
+      "official_votes": 337923,
+      "previous_archive_votes": 337315,
+      "revised_archive_votes": 337923,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 608
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "03",
+      "official_votes": 319773,
+      "previous_archive_votes": 317999,
+      "revised_archive_votes": 319759,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1760
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "04",
+      "official_votes": 226647,
+      "previous_archive_votes": 221329,
+      "revised_archive_votes": 226647,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 5318
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "05",
+      "official_votes": 317006,
+      "previous_archive_votes": 316233,
+      "revised_archive_votes": 317006,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 773
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "06",
+      "official_votes": 347873,
+      "previous_archive_votes": 347464,
+      "revised_archive_votes": 347873,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 409
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "07",
+      "official_votes": 346647,
+      "previous_archive_votes": 345205,
+      "revised_archive_votes": 346647,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1442
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "08",
+      "official_votes": 336038,
+      "previous_archive_votes": 334979,
+      "revised_archive_votes": 336038,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1059
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "09",
+      "official_votes": 239848,
+      "previous_archive_votes": 239377,
+      "revised_archive_votes": 239848,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 471
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WA",
+      "district": "10",
+      "official_votes": 267748,
+      "previous_archive_votes": 267321,
+      "revised_archive_votes": 267748,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 427
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WI",
+      "district": "06",
+      "official_votes": 251999,
+      "previous_archive_votes": 239571,
+      "revised_archive_votes": 251999,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 12428
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WI",
+      "district": "08",
+      "official_votes": 310196,
+      "previous_archive_votes": 308229,
+      "revised_archive_votes": 310196,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 1967
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "house",
+      "state": "WY",
+      "district": "00",
+      "official_votes": 193902,
+      "previous_archive_votes": 189381,
+      "revised_archive_votes": 193902,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 4521
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "AK",
+      "district": "S",
+      "official_votes": 261705,
+      "previous_archive_votes": 263027,
+      "revised_archive_votes": 263027,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "AL",
+      "district": "S",
+      "official_votes": 1414238,
+      "previous_archive_votes": 1411779,
+      "revised_archive_votes": 1414238,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 2459
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "IA",
+      "district": "S",
+      "official_votes": 1216646,
+      "previous_archive_votes": 1214831,
+      "revised_archive_votes": 1216646,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1815
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "MD",
+      "district": "S",
+      "official_votes": 2002336,
+      "previous_archive_votes": 1999613,
+      "revised_archive_votes": 2002336,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 2723
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "ND",
+      "district": "S",
+      "official_votes": 240140,
+      "previous_archive_votes": 239875,
+      "revised_archive_votes": 240140,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 265
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "NV",
+      "district": "S",
+      "official_votes": 1020850,
+      "previous_archive_votes": 1008409,
+      "revised_archive_votes": 1020850,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "None of these candidates",
+          "votes": 12441
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "OR",
+      "district": "S",
+      "official_votes": 1927949,
+      "previous_archive_votes": 1925752,
+      "revised_archive_votes": 1927949,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 2197
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "PA",
+      "district": "S",
+      "official_votes": 5375885,
+      "previous_archive_votes": 5368021,
+      "revised_archive_votes": 5368021,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "SC",
+      "district": "S",
+      "official_votes": 1695702,
+      "previous_archive_votes": 1693890,
+      "revised_archive_votes": 1695702,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1812
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "VT",
+      "district": "S",
+      "official_votes": 287100,
+      "previous_archive_votes": 286488,
+      "revised_archive_votes": 287100,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 612
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "WA",
+      "district": "S",
+      "official_votes": 3047900,
+      "previous_archive_votes": 3041149,
+      "revised_archive_votes": 3047900,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 6751
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "office": "senate",
+      "state": "WI",
+      "district": "S",
+      "official_votes": 2652477,
+      "previous_archive_votes": 2647719,
+      "revised_archive_votes": 2652477,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 4758
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "AL",
+      "district": "03",
+      "official_votes": 249008,
+      "previous_archive_votes": 243848,
+      "revised_archive_votes": 249008,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 5160
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "AL",
+      "district": "04",
+      "official_votes": 277872,
+      "previous_archive_votes": 274498,
+      "revised_archive_votes": 277872,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 3374
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "AL",
+      "district": "05",
+      "official_votes": 262410,
+      "previous_archive_votes": 250322,
+      "revised_archive_votes": 262410,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 12088
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "AL",
+      "district": "06",
+      "official_votes": 346625,
+      "previous_archive_votes": 346245,
+      "revised_archive_votes": 346625,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 380
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "IA",
+      "district": "01",
+      "official_votes": 414078,
+      "previous_archive_votes": 413111,
+      "revised_archive_votes": 414078,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 967
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "IA",
+      "district": "03",
+      "official_votes": 412905,
+      "previous_archive_votes": 411708,
+      "revised_archive_votes": 412905,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1197
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "IA",
+      "district": "04",
+      "official_votes": 373824,
+      "previous_archive_votes": 372697,
+      "revised_archive_votes": 373824,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1127
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "01",
+      "official_votes": 358058,
+      "previous_archive_votes": 356877,
+      "revised_archive_votes": 358058,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 1181
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "02",
+      "official_votes": 366328,
+      "previous_archive_votes": 365506,
+      "revised_archive_votes": 366328,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 822
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "03",
+      "official_votes": 271559,
+      "previous_archive_votes": 264698,
+      "revised_archive_votes": 271559,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 6861
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "04",
+      "official_votes": 297725,
+      "previous_archive_votes": 290206,
+      "revised_archive_votes": 297179,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 6973
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "05",
+      "official_votes": 291890,
+      "previous_archive_votes": 286689,
+      "revised_archive_votes": 291890,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 5201
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "06",
+      "official_votes": 328377,
+      "previous_archive_votes": 321186,
+      "revised_archive_votes": 328377,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 7191
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "07",
+      "official_votes": 239001,
+      "previous_archive_votes": 232094,
+      "revised_archive_votes": 239001,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 6907
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "08",
+      "official_votes": 376830,
+      "previous_archive_votes": 376070,
+      "revised_archive_votes": 376830,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 760
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MA",
+      "district": "09",
+      "official_votes": 446395,
+      "previous_archive_votes": 445753,
+      "revised_archive_votes": 446395,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 642
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "01",
+      "official_votes": 414680,
+      "previous_archive_votes": 414005,
+      "revised_archive_votes": 414680,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 675
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "02",
+      "official_votes": 384794,
+      "previous_archive_votes": 384045,
+      "revised_archive_votes": 384794,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 749
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "03",
+      "official_votes": 399200,
+      "previous_archive_votes": 398338,
+      "revised_archive_votes": 399200,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 862
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "04",
+      "official_votes": 270970,
+      "previous_archive_votes": 270050,
+      "revised_archive_votes": 270970,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 920
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "05",
+      "official_votes": 418603,
+      "previous_archive_votes": 417604,
+      "revised_archive_votes": 418603,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 999
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "06",
+      "official_votes": 376624,
+      "previous_archive_votes": 375762,
+      "revised_archive_votes": 376624,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 862
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "07",
+      "official_votes": 290137,
+      "previous_archive_votes": 289488,
+      "revised_archive_votes": 290137,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 649
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MD",
+      "district": "08",
+      "official_votes": 380320,
+      "previous_archive_votes": 379534,
+      "revised_archive_votes": 380320,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 786
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "ME",
+      "district": "02",
+      "official_votes": 391596,
+      "previous_archive_votes": 386754,
+      "revised_archive_votes": 387174,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 420
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MN",
+      "district": "02",
+      "official_votes": 417319,
+      "previous_archive_votes": 416864,
+      "revised_archive_votes": 417319,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 455
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MN",
+      "district": "03",
+      "official_votes": 411140,
+      "previous_archive_votes": 410636,
+      "revised_archive_votes": 411140,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 504
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MN",
+      "district": "04",
+      "official_votes": 361043,
+      "previous_archive_votes": 360420,
+      "revised_archive_votes": 361043,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 623
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MN",
+      "district": "05",
+      "official_votes": 351047,
+      "previous_archive_votes": 347279,
+      "revised_archive_votes": 351047,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 3768
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MN",
+      "district": "06",
+      "official_votes": 416496,
+      "previous_archive_votes": 415931,
+      "revised_archive_votes": 416496,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 565
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "MN",
+      "district": "07",
+      "official_votes": 390510,
+      "previous_archive_votes": 390077,
+      "revised_archive_votes": 390510,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 433
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "ND",
+      "district": "00",
+      "official_votes": 359787,
+      "previous_archive_votes": 358332,
+      "revised_archive_votes": 359787,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1455
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "03",
+      "official_votes": 363124,
+      "previous_archive_votes": 362344,
+      "revised_archive_votes": 363124,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 780
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "04",
+      "official_votes": 375518,
+      "previous_archive_votes": 374917,
+      "revised_archive_votes": 375518,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 601
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "05",
+      "official_votes": 231736,
+      "previous_archive_votes": 230954,
+      "revised_archive_votes": 231736,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 782
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "06",
+      "official_votes": 198690,
+      "previous_archive_votes": 198036,
+      "revised_archive_votes": 198690,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 654
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "07",
+      "official_votes": 221779,
+      "previous_archive_votes": 88383,
+      "revised_archive_votes": 88610,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 227
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "08",
+      "official_votes": 223804,
+      "previous_archive_votes": 222899,
+      "revised_archive_votes": 223804,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 905
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "09",
+      "official_votes": 235772,
+      "previous_archive_votes": 233271,
+      "revised_archive_votes": 235772,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 2501
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "10",
+      "official_votes": 254556,
+      "previous_archive_votes": 250508,
+      "revised_archive_votes": 254556,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 4048
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "11",
+      "official_votes": 261728,
+      "previous_archive_votes": 260685,
+      "revised_archive_votes": 261728,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 1043
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "12",
+      "official_votes": 324020,
+      "previous_archive_votes": 323154,
+      "revised_archive_votes": 324020,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 866
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "13",
+      "official_votes": 218973,
+      "previous_archive_votes": 217622,
+      "revised_archive_votes": 218973,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 1351
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "14",
+      "official_votes": 192551,
+      "previous_archive_votes": 191792,
+      "revised_archive_votes": 192551,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 759
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "15",
+      "official_votes": 171095,
+      "previous_archive_votes": 170488,
+      "revised_archive_votes": 171095,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 607
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "16",
+      "official_votes": 305079,
+      "previous_archive_votes": 304076,
+      "revised_archive_votes": 305079,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 1003
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "19",
+      "official_votes": 377343,
+      "previous_archive_votes": 376937,
+      "revised_archive_votes": 377343,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 406
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "20",
+      "official_votes": 363445,
+      "previous_archive_votes": 69782,
+      "revised_archive_votes": 69845,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 63
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "22",
+      "official_votes": 356792,
+      "previous_archive_votes": 356389,
+      "revised_archive_votes": 356792,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 403
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "NY",
+      "district": "26",
+      "official_votes": 321304,
+      "previous_archive_votes": 320903,
+      "revised_archive_votes": 321304,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 401
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "OR",
+      "district": "01",
+      "official_votes": 351991,
+      "previous_archive_votes": 351304,
+      "revised_archive_votes": 351991,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 687
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "OR",
+      "district": "03",
+      "official_votes": 334369,
+      "previous_archive_votes": 333559,
+      "revised_archive_votes": 334369,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 810
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "OR",
+      "district": "04",
+      "official_votes": 378765,
+      "previous_archive_votes": 378311,
+      "revised_archive_votes": 378765,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 454
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "OR",
+      "district": "05",
+      "official_votes": 401293,
+      "previous_archive_votes": 400798,
+      "revised_archive_votes": 401293,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 495
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "OR",
+      "district": "06",
+      "official_votes": 339065,
+      "previous_archive_votes": 338503,
+      "revised_archive_votes": 339065,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 562
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "RI",
+      "district": "01",
+      "official_votes": 221118,
+      "previous_archive_votes": 220557,
+      "revised_archive_votes": 221118,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 561
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "RI",
+      "district": "02",
+      "official_votes": 263480,
+      "previous_archive_votes": 262820,
+      "revised_archive_votes": 263480,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 660
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "SC",
+      "district": "01",
+      "official_votes": 390777,
+      "previous_archive_votes": 390084,
+      "revised_archive_votes": 390777,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 693
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "SC",
+      "district": "02",
+      "official_votes": 355285,
+      "previous_archive_votes": 354499,
+      "revised_archive_votes": 355285,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 786
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "SC",
+      "district": "03",
+      "official_votes": 346713,
+      "previous_archive_votes": 346104,
+      "revised_archive_votes": 346713,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 609
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "SC",
+      "district": "04",
+      "official_votes": 346414,
+      "previous_archive_votes": 345671,
+      "revised_archive_votes": 346414,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 743
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "SC",
+      "district": "05",
+      "official_votes": 359409,
+      "previous_archive_votes": 358852,
+      "revised_archive_votes": 359409,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 557
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "SC",
+      "district": "07",
+      "official_votes": 370329,
+      "previous_archive_votes": 369848,
+      "revised_archive_votes": 370329,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 481
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "TX",
+      "district": "28",
+      "official_votes": 237298,
+      "previous_archive_votes": 237607,
+      "revised_archive_votes": 237607,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "01",
+      "official_votes": 478906,
+      "previous_archive_votes": 478102,
+      "revised_archive_votes": 478906,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 804
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "02",
+      "official_votes": 408702,
+      "previous_archive_votes": 408231,
+      "revised_archive_votes": 408702,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 471
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "03",
+      "official_votes": 314397,
+      "previous_archive_votes": 313727,
+      "revised_archive_votes": 314397,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 670
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "04",
+      "official_votes": 375508,
+      "previous_archive_votes": 374699,
+      "revised_archive_votes": 375508,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 809
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "05",
+      "official_votes": 435839,
+      "previous_archive_votes": 433793,
+      "revised_archive_votes": 435839,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 2046
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "06",
+      "official_votes": 407035,
+      "previous_archive_votes": 403908,
+      "revised_archive_votes": 404415,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 507
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "07",
+      "official_votes": 397299,
+      "previous_archive_votes": 396183,
+      "revised_archive_votes": 397299,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1116
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "08",
+      "official_votes": 383915,
+      "previous_archive_votes": 382881,
+      "revised_archive_votes": 383915,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1034
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "09",
+      "official_votes": 400963,
+      "previous_archive_votes": 400215,
+      "revised_archive_votes": 400963,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 748
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "10",
+      "official_votes": 413012,
+      "previous_archive_votes": 411474,
+      "revised_archive_votes": 413012,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1538
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VA",
+      "district": "11",
+      "official_votes": 410186,
+      "previous_archive_votes": 408331,
+      "revised_archive_votes": 410186,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1855
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "VT",
+      "district": "00",
+      "official_votes": 350616,
+      "previous_archive_votes": 349687,
+      "revised_archive_votes": 350616,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 929
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "01",
+      "official_votes": 360658,
+      "previous_archive_votes": 359751,
+      "revised_archive_votes": 360658,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 907
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "02",
+      "official_votes": 413220,
+      "previous_archive_votes": 411917,
+      "revised_archive_votes": 413220,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1303
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "03",
+      "official_votes": 415904,
+      "previous_archive_votes": 414231,
+      "revised_archive_votes": 415904,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1673
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "04",
+      "official_votes": 295052,
+      "previous_archive_votes": 289652,
+      "revised_archive_votes": 295052,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 5400
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "05",
+      "official_votes": 397286,
+      "previous_archive_votes": 396693,
+      "revised_archive_votes": 397286,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 593
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "06",
+      "official_votes": 422622,
+      "previous_archive_votes": 421869,
+      "revised_archive_votes": 422622,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 753
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "07",
+      "official_votes": 419819,
+      "previous_archive_votes": 418506,
+      "revised_archive_votes": 419819,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1313
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "08",
+      "official_votes": 416277,
+      "previous_archive_votes": 415282,
+      "revised_archive_votes": 416277,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 995
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "09",
+      "official_votes": 279298,
+      "previous_archive_votes": 273381,
+      "revised_archive_votes": 279298,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 5917
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WA",
+      "district": "10",
+      "official_votes": 348044,
+      "previous_archive_votes": 347224,
+      "revised_archive_votes": 348044,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 820
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WI",
+      "district": "02",
+      "official_votes": 457257,
+      "previous_archive_votes": 456674,
+      "revised_archive_votes": 457257,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 583
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WI",
+      "district": "04",
+      "official_votes": 334282,
+      "previous_archive_votes": 333664,
+      "revised_archive_votes": 334282,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 618
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WI",
+      "district": "05",
+      "official_votes": 466682,
+      "previous_archive_votes": 466174,
+      "revised_archive_votes": 466682,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 508
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WI",
+      "district": "06",
+      "official_votes": 411349,
+      "previous_archive_votes": 410931,
+      "revised_archive_votes": 411349,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 418
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "house",
+      "state": "WY",
+      "district": "00",
+      "official_votes": 261548,
+      "previous_archive_votes": 260043,
+      "revised_archive_votes": 261548,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1505
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "CA",
+      "district": "S",
+      "official_votes": 30390534,
+      "previous_archive_votes": 15348846,
+      "revised_archive_votes": 15348846,
+      "classification": "still_mismatch",
+      "omitted_rows": []
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "MA",
+      "district": "S",
+      "official_votes": 3413329,
+      "previous_archive_votes": 3407138,
+      "revised_archive_votes": 3413359,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Other",
+          "votes": 6221
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "MD",
+      "district": "S",
+      "official_votes": 3021378,
+      "previous_archive_votes": 3015623,
+      "revised_archive_votes": 3021378,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 5755
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "MN",
+      "district": "S",
+      "official_votes": 3189323,
+      "previous_archive_votes": 3185745,
+      "revised_archive_votes": 3189323,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 3578
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "ND",
+      "district": "S",
+      "official_votes": 364327,
+      "previous_archive_votes": 363171,
+      "revised_archive_votes": 364327,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1156
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "NE",
+      "district": "S",
+      "official_votes": 1873341,
+      "previous_archive_votes": 935617,
+      "revised_archive_votes": 938336,
+      "classification": "still_mismatch",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 2719
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "NV",
+      "district": "S",
+      "official_votes": 1464728,
+      "previous_archive_votes": 1420348,
+      "revised_archive_votes": 1464728,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "None of these candidates",
+          "votes": 44380
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "NY",
+      "district": "S",
+      "official_votes": 8010317,
+      "previous_archive_votes": 7996825,
+      "revised_archive_votes": 8010317,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Scattering",
+          "votes": 13492
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "RI",
+      "district": "S",
+      "official_votes": 491948,
+      "previous_archive_votes": 490704,
+      "revised_archive_votes": 491948,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 1244
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "VA",
+      "district": "S",
+      "official_votes": 4445535,
+      "previous_archive_votes": 4434421,
+      "revised_archive_votes": 4442926,
+      "classification": "recovered_within_tolerance",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 8505
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "VT",
+      "district": "S",
+      "official_votes": 363253,
+      "previous_archive_votes": 362855,
+      "revised_archive_votes": 363253,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 398
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "WA",
+      "district": "S",
+      "official_votes": 3812391,
+      "previous_archive_votes": 3801764,
+      "revised_archive_votes": 3812391,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 10627
+        }
+      ]
+    },
+    {
+      "cycle": 2024,
+      "office": "senate",
+      "state": "WY",
+      "district": "S",
+      "official_votes": 264162,
+      "previous_archive_votes": 262145,
+      "revised_archive_votes": 264162,
+      "classification": "recovered_exact",
+      "omitted_rows": [
+        {
+          "name": "Write-in",
+          "votes": 2017
+        }
+      ]
+    }
+  ]
+}

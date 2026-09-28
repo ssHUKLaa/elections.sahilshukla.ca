@@ -1,0 +1,16 @@
+{
+  "verified_on": "2026-09-25",
+  "forecast_cutoff": "2026-09-23T22:50:54Z",
+  "status": "2022 map operative under the September 25 US Supreme Court stay; subject to any further order",
+  "current_2022_map_matches_model": true,
+  "current_model_assumption": "All eight Missouri district presidential map shifts are zero, retaining the 2024 district geography.",
+  "state_order": "Missouri Supreme Court ruled on September 3 that the 2025 map could not be used for the November 2026 election; the Missouri Secretary of State directed use of the 2022 map after the US Supreme Court declined a stay on September 10.",
+  "later_federal_order": "An Eighth Circuit panel ordered on September 21 that Missouri must use the 2025 map in the November 2026 general election. On September 25 the US Supreme Court stayed that mandate and the district court injunctions absent further order, directed the lower courts not to prohibit use of the 2022 map, and directed them not to require the 2025 map.",
+  "sources": {
+    "state_secretary": "https://www.sos.mo.gov/default.aspx?PageId=10670",
+    "federal_appellate_opinion": "https://ecf.ca8.uscourts.gov/opndir/26/09/262797P.pdf",
+    "census_warning": "https://www.census.gov/programs-surveys/decennial-census/about/rdo/congressional-districts.html",
+    "supreme_court_2026_09_25_docket": "https://www.supremecourt.gov/docket/docketfiles/html/public/26A388.html"
+  },
+  "model_action": "The frozen forecast already uses the 2022 district geography and needs no map correction under the September 25 stay. Verify the eight candidate rosters against a final state general-election list before public release, and monitor for a further order."
+}

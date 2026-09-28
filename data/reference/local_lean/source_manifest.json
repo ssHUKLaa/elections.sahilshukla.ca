@@ -1,0 +1,22 @@
+{
+  "presidential_results.csv": {
+    "url": "https://raw.githubusercontent.com/fivethirtyeight/election-results/main/election_results_presidential.csv",
+    "bytes": 1690712,
+    "sha256": "d4fed2115322ad70626e672bdf6072043174687c6cdda425fe4198027935a72a"
+  },
+  "senate_results.csv": {
+    "url": "https://raw.githubusercontent.com/fivethirtyeight/election-results/main/election_results_senate.csv",
+    "bytes": 777487,
+    "sha256": "26a7d8cf3baaa1caf5706b9e23586b449fcc78b11bd1f03c72d02ea3f3faac05"
+  },
+  "generic_topline_historical.csv": {
+    "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-generic-ballot/generic_topline_historical.csv",
+    "bytes": 754089,
+    "sha256": "b6d5b398b819e822e910a538974161bcec7e83c7785573ef406a35704e8962b9"
+  },
+  "fec_2024_presidential.xlsx": {
+    "url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "bytes": 21376,
+    "sha256": "68acdee2924d771b92a05cd950dec850b462c633c05563207ac7e206116e7366"
+  }
+}

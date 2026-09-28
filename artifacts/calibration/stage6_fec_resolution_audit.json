@@ -1,0 +1,2167 @@
+{
+  "races": [
+    {
+      "cycle": 2020,
+      "state": "NY",
+      "district": "01",
+      "source_race_ids": [
+        "8092"
+      ],
+      "official_total": 375116,
+      "official_sum": 375116,
+      "archive_total": 357346,
+      "official_candidate_count": 6,
+      "archive_candidate_count": 8,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Zeldin, Lee M.",
+          "party": "R",
+          "votes": 180855,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Zeldin, Lee M.",
+          "party": "CRV",
+          "votes": 21611,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Zeldin, Lee M.",
+          "party": "IDP",
+          "votes": 3249,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Goroff, Nancy S.",
+          "party": "D",
+          "votes": 160978,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Goroff, Nancy S.  #",
+          "party": "WF",
+          "votes": 8316,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 107,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "14739",
+          "candidate_name": "Lee M. Zeldin",
+          "ballot_party": "REP",
+          "votes": 175775
+        },
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "14739",
+          "candidate_name": "Lee M. Zeldin",
+          "ballot_party": "IDP",
+          "votes": 3063
+        },
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "14739",
+          "candidate_name": "Lee M. Zeldin",
+          "ballot_party": "CRV",
+          "votes": 20925
+        },
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "14738",
+          "candidate_name": "Nancy Goroff",
+          "ballot_party": "WFP",
+          "votes": 7760
+        },
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "14738",
+          "candidate_name": "Nancy Goroff",
+          "ballot_party": "DEM",
+          "votes": 149724
+        },
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "",
+          "candidate_name": "Blank",
+          "ballot_party": "",
+          "votes": 12993
+        },
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "",
+          "candidate_name": "Scattering",
+          "ballot_party": "",
+          "votes": 99
+        },
+        {
+          "source_race_id": "8092",
+          "source_candidate_id": "",
+          "candidate_name": "Void",
+          "ballot_party": "",
+          "votes": 102
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "NY",
+      "district": "24",
+      "source_race_ids": [
+        "8115"
+      ],
+      "official_total": 344127,
+      "official_sum": 344127,
+      "archive_total": 343624,
+      "official_candidate_count": 6,
+      "archive_candidate_count": 8,
+      "name_mismatches": [
+        {
+          "candidate": "Williams, Steven",
+          "key": "steven williams",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Katko, John M.",
+          "party": "R",
+          "votes": 156236,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Katko, John M.",
+          "party": "CRV",
+          "votes": 21086,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Katko, John M.",
+          "party": "IDP",
+          "votes": 5487,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Balter, Dana",
+          "party": "D",
+          "votes": 147877,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Williams, Steven",
+          "party": "WF",
+          "votes": 13264,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 177,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "",
+          "candidate_name": "Void",
+          "ballot_party": "",
+          "votes": 200
+        },
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "",
+          "candidate_name": "Scattering",
+          "ballot_party": "",
+          "votes": 187
+        },
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "",
+          "candidate_name": "Blank",
+          "ballot_party": "",
+          "votes": 8315
+        },
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "14654",
+          "candidate_name": "Dana Balter",
+          "ballot_party": "DEM",
+          "votes": 147638
+        },
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "14655",
+          "candidate_name": "John Katko",
+          "ballot_party": "CRV",
+          "votes": 21062
+        },
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "14655",
+          "candidate_name": "John Katko",
+          "ballot_party": "IDP",
+          "votes": 5480
+        },
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "14655",
+          "candidate_name": "John Katko",
+          "ballot_party": "REP",
+          "votes": 156025
+        },
+        {
+          "source_race_id": "8115",
+          "source_candidate_id": "15311",
+          "candidate_name": "Steve Williams",
+          "ballot_party": "WFP",
+          "votes": 13232
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "OH",
+      "district": "14",
+      "source_race_ids": [
+        "8146"
+      ],
+      "official_total": 392450,
+      "official_sum": 392450,
+      "archive_total": 397450,
+      "official_candidate_count": 2,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Joyce, David P.",
+          "party": "R",
+          "votes": 233864,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Mueri, Hillary O'Connor",
+          "party": "D",
+          "votes": 158586,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8146",
+          "source_candidate_id": "15332",
+          "candidate_name": "David P. Joyce",
+          "ballot_party": "REP",
+          "votes": 238864
+        },
+        {
+          "source_race_id": "8146",
+          "source_candidate_id": "15331",
+          "candidate_name": "Hillary O'Connor Mueri",
+          "ballot_party": "DEM",
+          "votes": 158586
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "01",
+      "source_race_ids": [
+        "8159"
+      ],
+      "official_total": 442648,
+      "official_sum": 442648,
+      "archive_total": 441679,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Fitzpatrick, Brian",
+          "party": "R",
+          "votes": 249804,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Finello, Christina M.",
+          "party": "D",
+          "votes": 191875,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 969,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8159",
+          "source_candidate_id": "13608",
+          "candidate_name": "Brian Fitzpatrick",
+          "ballot_party": "REP",
+          "votes": 249804
+        },
+        {
+          "source_race_id": "8159",
+          "source_candidate_id": "14614",
+          "candidate_name": "Christina M. Finello",
+          "ballot_party": "DEM",
+          "votes": 191875
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "03",
+      "source_race_ids": [
+        "8161"
+      ],
+      "official_total": 375898,
+      "official_sum": 375898,
+      "archive_total": 375379,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Evans, Dwight",
+          "party": "D",
+          "votes": 341708,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Harvey, Michael",
+          "party": "R",
+          "votes": 33671,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 519,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8161",
+          "source_candidate_id": "15394",
+          "candidate_name": "Michael Harvey",
+          "ballot_party": "REP",
+          "votes": 33671
+        },
+        {
+          "source_race_id": "8161",
+          "source_candidate_id": "15393",
+          "candidate_name": "Dwight Evans",
+          "ballot_party": "DEM",
+          "votes": 341708
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "05",
+      "source_race_ids": [
+        "8163"
+      ],
+      "official_total": 395769,
+      "official_sum": 395769,
+      "archive_total": 395295,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Scanlon, Mary Gay",
+          "party": "D",
+          "votes": 255743,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Pruett, Dasha",
+          "party": "R",
+          "votes": 139552,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 474,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8163",
+          "source_candidate_id": "15397",
+          "candidate_name": "Mary Gay Scanlon",
+          "ballot_party": "DEM",
+          "votes": 255743
+        },
+        {
+          "source_race_id": "8163",
+          "source_candidate_id": "15398",
+          "candidate_name": "Dasha Yermakova Pruett",
+          "ballot_party": "REP",
+          "votes": 139552
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "06",
+      "source_race_ids": [
+        "8164"
+      ],
+      "official_total": 404418,
+      "official_sum": 404418,
+      "archive_total": 403966,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Houlahan, Chrissy",
+          "party": "D",
+          "votes": 226440,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Emmons, John Willam",
+          "party": "R",
+          "votes": 177526,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 452,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8164",
+          "source_candidate_id": "15401",
+          "candidate_name": "John William Emmons",
+          "ballot_party": "REP",
+          "votes": 177526
+        },
+        {
+          "source_race_id": "8164",
+          "source_candidate_id": "15399",
+          "candidate_name": "Chrissy Houlahan",
+          "ballot_party": "DEM",
+          "votes": 226440
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "07",
+      "source_race_ids": [
+        "8165"
+      ],
+      "official_total": 377404,
+      "official_sum": 377404,
+      "archive_total": 376882,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Wild, Susan",
+          "party": "D",
+          "votes": 195475,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Scheller, Lisa",
+          "party": "R",
+          "votes": 181407,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 522,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8165",
+          "source_candidate_id": "15403",
+          "candidate_name": "Lisa Scheller",
+          "ballot_party": "REP",
+          "votes": 181407
+        },
+        {
+          "source_race_id": "8165",
+          "source_candidate_id": "15402",
+          "candidate_name": "Susan Wild",
+          "ballot_party": "DEM",
+          "votes": 195475
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "08",
+      "source_race_ids": [
+        "8166"
+      ],
+      "official_total": 344231,
+      "official_sum": 344231,
+      "archive_total": 343787,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [
+        {
+          "candidate": "Cartwright, Matthew Alton",
+          "key": "matthew cartwright",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Cartwright, Matthew Alton",
+          "party": "D",
+          "votes": 178004,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Bognet, Jim",
+          "party": "R",
+          "votes": 165783,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 444,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8166",
+          "source_candidate_id": "15405",
+          "candidate_name": "Jim Bognet",
+          "ballot_party": "REP",
+          "votes": 165783
+        },
+        {
+          "source_race_id": "8166",
+          "source_candidate_id": "15404",
+          "candidate_name": "Matt Cartwright",
+          "ballot_party": "DEM",
+          "votes": 178004
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "09",
+      "source_race_ids": [
+        "8167"
+      ],
+      "official_total": 351635,
+      "official_sum": 351635,
+      "archive_total": 381254,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Meuser, Dan",
+          "party": "R",
+          "votes": 232988,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Wegman, Gary",
+          "party": "D",
+          "votes": 118266,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 381,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8167",
+          "source_candidate_id": "15407",
+          "candidate_name": "Dan Meuser",
+          "ballot_party": "REP",
+          "votes": 262988
+        },
+        {
+          "source_race_id": "8167",
+          "source_candidate_id": "15406",
+          "candidate_name": "Gary Steven Wegman",
+          "ballot_party": "DEM",
+          "votes": 118266
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "10",
+      "source_race_ids": [
+        "8168"
+      ],
+      "official_total": 392332,
+      "official_sum": 392332,
+      "archive_total": 391834,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [
+        {
+          "candidate": "DePasquale, Eugenio",
+          "key": "eugenio depasquale",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Perry, Scott",
+          "party": "R",
+          "votes": 208896,
+          "winner": 1
+        },
+        {
+          "candidate_name": "DePasquale, Eugenio",
+          "party": "D",
+          "votes": 182938,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 498,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8168",
+          "source_candidate_id": "14646",
+          "candidate_name": "Eugene A. DePasquale",
+          "ballot_party": "DEM",
+          "votes": 182938
+        },
+        {
+          "source_race_id": "8168",
+          "source_candidate_id": "14647",
+          "candidate_name": "Scott Perry",
+          "ballot_party": "REP",
+          "votes": 208896
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "11",
+      "source_race_ids": [
+        "8169"
+      ],
+      "official_total": 383633,
+      "official_sum": 383633,
+      "archive_total": 383240,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Smucker, Lloyd K.",
+          "party": "R",
+          "votes": 241915,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Hammond, Sarah E.",
+          "party": "D",
+          "votes": 141325,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 393,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8169",
+          "source_candidate_id": "15378",
+          "candidate_name": "Sarah Elizabeth Hammond",
+          "ballot_party": "DEM",
+          "votes": 141325
+        },
+        {
+          "source_race_id": "8169",
+          "source_candidate_id": "15379",
+          "candidate_name": "Lloyd K. Smucker",
+          "ballot_party": "REP",
+          "votes": 241915
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "12",
+      "source_race_ids": [
+        "8170"
+      ],
+      "official_total": 340867,
+      "official_sum": 340867,
+      "archive_total": 340234,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [
+        {
+          "candidate": "Keller, Fred",
+          "key": "fred keller",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Keller, Fred",
+          "party": "R",
+          "votes": 241035,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Griffin, Lee",
+          "party": "D",
+          "votes": 99199,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 633,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8170",
+          "source_candidate_id": "15380",
+          "candidate_name": "Lee Griffin",
+          "ballot_party": "DEM",
+          "votes": 99199
+        },
+        {
+          "source_race_id": "8170",
+          "source_candidate_id": "15381",
+          "candidate_name": "Frederick B. Keller",
+          "ballot_party": "REP",
+          "votes": 241035
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "14",
+      "source_race_ids": [
+        "8172"
+      ],
+      "official_total": 373996,
+      "official_sum": 373996,
+      "archive_total": 373583,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [
+        {
+          "candidate": "Marx, Bill",
+          "key": "bill marx",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Reschenthaler, Guy",
+          "party": "R",
+          "votes": 241688,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Marx, Bill",
+          "party": "D",
+          "votes": 131895,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 413,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8172",
+          "source_candidate_id": "15384",
+          "candidate_name": "William A. Marx",
+          "ballot_party": "DEM",
+          "votes": 131895
+        },
+        {
+          "source_race_id": "8172",
+          "source_candidate_id": "15385",
+          "candidate_name": "Guy Reschenthaler",
+          "ballot_party": "REP",
+          "votes": 241688
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "15",
+      "source_race_ids": [
+        "8173"
+      ],
+      "official_total": 347576,
+      "official_sum": 347576,
+      "archive_total": 347214,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Thompson, Glenn GT",
+          "party": "R",
+          "votes": 255058,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Williams, Robert",
+          "party": "D",
+          "votes": 92156,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 362,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8173",
+          "source_candidate_id": "15386",
+          "candidate_name": "Robert M. Williams",
+          "ballot_party": "DEM",
+          "votes": 92156
+        },
+        {
+          "source_race_id": "8173",
+          "source_candidate_id": "15387",
+          "candidate_name": "Glenn \"G.T.\" Thompson",
+          "ballot_party": "REP",
+          "votes": 255058
+        }
+      ]
+    },
+    {
+      "cycle": 2020,
+      "state": "PA",
+      "district": "18",
+      "source_race_ids": [
+        "8176"
+      ],
+      "official_total": 385060,
+      "official_sum": 385060,
+      "archive_total": 384247,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Doyle, Mike",
+          "party": "D",
+          "votes": 266084,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Negron, Luke Edison",
+          "party": "R",
+          "votes": 118163,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 813,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8176",
+          "source_candidate_id": "15391",
+          "candidate_name": "Luke Edison Negron",
+          "ballot_party": "REP",
+          "votes": 118163
+        },
+        {
+          "source_race_id": "8176",
+          "source_candidate_id": "15390",
+          "candidate_name": "Mike Doyle",
+          "ballot_party": "DEM",
+          "votes": 266084
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "AK",
+      "district": "00",
+      "source_race_ids": [],
+      "official_total": 263610,
+      "official_sum": 263610,
+      "archive_total": 264589,
+      "official_candidate_count": 5,
+      "archive_candidate_count": 4,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Peltola, Mary S.",
+          "party": "D",
+          "votes": 128553,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Palin, Sarah",
+          "party": "R",
+          "votes": 67866,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Begich, Nick",
+          "party": "R",
+          "votes": 61513,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Bye, Chris  #",
+          "party": "LIB",
+          "votes": 4570,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 1108,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "8998",
+          "source_candidate_id": "30760",
+          "candidate_name": "Chris Bye",
+          "ballot_party": "LIB",
+          "votes": 4999
+        },
+        {
+          "source_race_id": "8998",
+          "source_candidate_id": "30406",
+          "candidate_name": "Mary S. Peltola",
+          "ballot_party": "DEM",
+          "votes": 128755
+        },
+        {
+          "source_race_id": "8998",
+          "source_candidate_id": "30150",
+          "candidate_name": "Sarah Palin",
+          "ballot_party": "REP",
+          "votes": 68330
+        },
+        {
+          "source_race_id": "8998",
+          "source_candidate_id": "29358",
+          "candidate_name": "Nick Begich",
+          "ballot_party": "REP",
+          "votes": 62505
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "IN",
+      "district": "02",
+      "source_race_ids": [
+        "9142"
+      ],
+      "official_total": 382418,
+      "official_sum": 382418,
+      "archive_total": 194373,
+      "official_candidate_count": 8,
+      "archive_candidate_count": 4,
+      "name_mismatches": [
+        {
+          "candidate": "Yakym, Rudolph (Rudy), III  #",
+          "key": "yakym rudolph",
+          "archive_ids": []
+        },
+        {
+          "candidate": "Yakym, Rudolph (Rudy), III",
+          "key": "yakym rudolph",
+          "archive_ids": []
+        },
+        {
+          "candidate": "Godette, Marla",
+          "key": "marla godette",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Yakym, Rudolph (Rudy), III  #",
+          "party": "R",
+          "votes": 125537,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Steury, Paul D.",
+          "party": "D",
+          "votes": 62955,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Henry, William E.",
+          "party": "LIB",
+          "votes": 5870,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Hubbard, Mike",
+          "party": "W",
+          "votes": 11,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Yakym, Rudolph (Rudy), III",
+          "party": "R",
+          "votes": 118997,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Steury, Paul",
+          "party": "D",
+          "votes": 62792,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Henry, William E.",
+          "party": "LIB",
+          "votes": 6113,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Godette, Marla",
+          "party": "W",
+          "votes": 143,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9142",
+          "source_candidate_id": "30737",
+          "candidate_name": "Rudy Yakym",
+          "ballot_party": "REP",
+          "votes": 125537
+        },
+        {
+          "source_race_id": "9142",
+          "source_candidate_id": "29605",
+          "candidate_name": "Paul D. Steury",
+          "ballot_party": "DEM",
+          "votes": 62955
+        },
+        {
+          "source_race_id": "9142",
+          "source_candidate_id": "30934",
+          "candidate_name": "Mike Hubbard",
+          "ballot_party": "W",
+          "votes": 11
+        },
+        {
+          "source_race_id": "9142",
+          "source_candidate_id": "30541",
+          "candidate_name": "William E. Henry",
+          "ballot_party": "LIB",
+          "votes": 5870
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "MI",
+      "district": "08",
+      "source_race_ids": [
+        "9202"
+      ],
+      "official_total": 335829,
+      "official_sum": 335829,
+      "archive_total": 340326,
+      "official_candidate_count": 4,
+      "archive_candidate_count": 4,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Kildee, Daniel T.",
+          "party": "D",
+          "votes": 178322,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Junge, Paul",
+          "party": "R",
+          "votes": 143850,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Goodwin, Kathy",
+          "party": "WC",
+          "votes": 9077,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Canny, David",
+          "party": "LIB",
+          "votes": 4580,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9202",
+          "source_candidate_id": "29675",
+          "candidate_name": "Paul Junge",
+          "ballot_party": "REP",
+          "votes": 143850
+        },
+        {
+          "source_race_id": "9202",
+          "source_candidate_id": "30554",
+          "candidate_name": "David Canny",
+          "ballot_party": "LIB",
+          "votes": 9077
+        },
+        {
+          "source_race_id": "9202",
+          "source_candidate_id": "29102",
+          "candidate_name": "Daniel T. Kildee",
+          "ballot_party": "DEM",
+          "votes": 178322
+        },
+        {
+          "source_race_id": "9202",
+          "source_candidate_id": "30721",
+          "candidate_name": "Kathy Goodwin",
+          "ballot_party": "WCP",
+          "votes": 9077
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "NJ",
+      "district": "08",
+      "source_race_ids": [
+        "9246"
+      ],
+      "official_total": 106473,
+      "official_sum": 106473,
+      "archive_total": 97192,
+      "official_candidate_count": 7,
+      "archive_candidate_count": 7,
+      "name_mismatches": [
+        {
+          "candidate": "Menendez, Robert J.",
+          "key": "robert menendez",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Menendez, Robert J.",
+          "party": "D",
+          "votes": 78382,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Arroyo, Marcos",
+          "party": "R",
+          "votes": 24957,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Kuniansky, Joanne",
+          "party": "SWP",
+          "votes": 1016,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Delaney, Dan",
+          "party": "LIB",
+          "votes": 758,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Cook, David W.",
+          "party": "OTH",
+          "votes": 714,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Olivera, Pablo",
+          "party": "LP",
+          "votes": 400,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Salierno, John V.",
+          "party": "TAM",
+          "votes": 246,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9246",
+          "source_candidate_id": "29757",
+          "candidate_name": "Rob Menendez",
+          "ballot_party": "DEM",
+          "votes": 70837
+        },
+        {
+          "source_race_id": "9246",
+          "source_candidate_id": "30292",
+          "candidate_name": "Dan Delaney",
+          "ballot_party": "LIB",
+          "votes": 687
+        },
+        {
+          "source_race_id": "9246",
+          "source_candidate_id": "30083",
+          "candidate_name": "Marcos Arroyo",
+          "ballot_party": "REP",
+          "votes": 23540
+        },
+        {
+          "source_race_id": "9246",
+          "source_candidate_id": "30492",
+          "candidate_name": "Pablo Olivera",
+          "ballot_party": "LBR",
+          "votes": 361
+        },
+        {
+          "source_race_id": "9246",
+          "source_candidate_id": "30493",
+          "candidate_name": "David W. Cook",
+          "ballot_party": "IND",
+          "votes": 647
+        },
+        {
+          "source_race_id": "9246",
+          "source_candidate_id": "29759",
+          "candidate_name": "Joanne Kuniansky",
+          "ballot_party": "SWP",
+          "votes": 894
+        },
+        {
+          "source_race_id": "9246",
+          "source_candidate_id": "30494",
+          "candidate_name": "John V. Salierno",
+          "ballot_party": "IND",
+          "votes": 226
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "NJ",
+      "district": "09",
+      "source_race_ids": [
+        "9247"
+      ],
+      "official_total": 149984,
+      "official_sum": 149984,
+      "archive_total": 149482,
+      "official_candidate_count": 4,
+      "archive_candidate_count": 4,
+      "name_mismatches": [
+        {
+          "candidate": "Pascrell, Bill, Jr.",
+          "key": "pascrell bill",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Pascrell, Bill, Jr.",
+          "party": "D",
+          "votes": 82457,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Prempeh, Billy",
+          "party": "R",
+          "votes": 65365,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Sherman, Lea",
+          "party": "SWP",
+          "votes": 1108,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Armstrong, Sean",
+          "party": "LIB",
+          "votes": 1054,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9247",
+          "source_candidate_id": "29152",
+          "candidate_name": "Bill Pascrell Jr.",
+          "ballot_party": "DEM",
+          "votes": 82115
+        },
+        {
+          "source_race_id": "9247",
+          "source_candidate_id": "30293",
+          "candidate_name": "Sean Armstrong",
+          "ballot_party": "LIB",
+          "votes": 1050
+        },
+        {
+          "source_race_id": "9247",
+          "source_candidate_id": "29761",
+          "candidate_name": "Lea Sherman",
+          "ballot_party": "SWP",
+          "votes": 1103
+        },
+        {
+          "source_race_id": "9247",
+          "source_candidate_id": "29760",
+          "candidate_name": "Billy Prempeh",
+          "ballot_party": "REP",
+          "votes": 65214
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "NJ",
+      "district": "10",
+      "source_race_ids": [
+        "9248"
+      ],
+      "official_total": 129707,
+      "official_sum": 129707,
+      "archive_total": 128362,
+      "official_candidate_count": 5,
+      "archive_candidate_count": 5,
+      "name_mismatches": [
+        {
+          "candidate": "Payne, Donald M., Jr.",
+          "key": "payne m",
+          "archive_ids": []
+        },
+        {
+          "candidate": "Childress, Clenard Howard, Jr.",
+          "key": "childress howard",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Payne, Donald M., Jr.",
+          "party": "D",
+          "votes": 100710,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Pinckney, David H.",
+          "party": "R",
+          "votes": 25993,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Johnson, Cynthia A.",
+          "party": "JAJ",
+          "votes": 1989,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Ludden, Kendal",
+          "party": "LIB",
+          "votes": 634,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Childress, Clenard Howard, Jr.",
+          "party": "TMP",
+          "votes": 381,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9248",
+          "source_candidate_id": "30326",
+          "candidate_name": "David H. Pinckney",
+          "ballot_party": "REP",
+          "votes": 25792
+        },
+        {
+          "source_race_id": "9248",
+          "source_candidate_id": "30496",
+          "candidate_name": "Clenard Howard Childress Jr.",
+          "ballot_party": "IND",
+          "votes": 378
+        },
+        {
+          "source_race_id": "9248",
+          "source_candidate_id": "29153",
+          "candidate_name": "Donald M. Payne Jr.",
+          "ballot_party": "DEM",
+          "votes": 99613
+        },
+        {
+          "source_race_id": "9248",
+          "source_candidate_id": "30294",
+          "candidate_name": "Kendal Ludden",
+          "ballot_party": "LIB",
+          "votes": 624
+        },
+        {
+          "source_race_id": "9248",
+          "source_candidate_id": "30495",
+          "candidate_name": "Cynthia A. Johnson",
+          "ballot_party": "IND",
+          "votes": 1955
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "02",
+      "source_race_ids": [
+        "9322"
+      ],
+      "official_total": 186893,
+      "official_sum": 186893,
+      "archive_total": 186683,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Boyle, Brendan F.",
+          "party": "D",
+          "votes": 141229,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Bashir, Aaron",
+          "party": "R",
+          "votes": 45454,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 210,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9322",
+          "source_candidate_id": "29896",
+          "candidate_name": "Aaron Bashir",
+          "ballot_party": "REP",
+          "votes": 45454
+        },
+        {
+          "source_race_id": "9322",
+          "source_candidate_id": "29206",
+          "candidate_name": "Brendan F. Boyle",
+          "ballot_party": "DEM",
+          "votes": 141229
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "03",
+      "source_race_ids": [
+        "9323"
+      ],
+      "official_total": 264931,
+      "official_sum": 264931,
+      "archive_total": 263935,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Evans, Dwight",
+          "party": "D",
+          "votes": 251115,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Hoeppner, Christopher",
+          "party": "SWP",
+          "votes": 12820,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 996,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9323",
+          "source_candidate_id": "29207",
+          "candidate_name": "Dwight Evans",
+          "ballot_party": "DEM",
+          "votes": 251115
+        },
+        {
+          "source_race_id": "9323",
+          "source_candidate_id": "30669",
+          "candidate_name": "Christopher Hoeppner",
+          "ballot_party": "SWP",
+          "votes": 12820
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "05",
+      "source_race_ids": [
+        "9325"
+      ],
+      "official_total": 315511,
+      "official_sum": 315511,
+      "archive_total": 315186,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Scanlon, Mary Gay",
+          "party": "D",
+          "votes": 205128,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Galluch, David",
+          "party": "R",
+          "votes": 110058,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 325,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9325",
+          "source_candidate_id": "29900",
+          "candidate_name": "David Galluch",
+          "ballot_party": "REP",
+          "votes": 110058
+        },
+        {
+          "source_race_id": "9325",
+          "source_candidate_id": "29209",
+          "candidate_name": "Mary Gay Scanlon",
+          "ballot_party": "DEM",
+          "votes": 205128
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "07",
+      "source_race_ids": [
+        "9327"
+      ],
+      "official_total": 297395,
+      "official_sum": 297395,
+      "archive_total": 296891,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Wild, Susan",
+          "party": "D",
+          "votes": 151364,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Scheller, Lisa",
+          "party": "R",
+          "votes": 145527,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 504,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9327",
+          "source_candidate_id": "29211",
+          "candidate_name": "Susan Wild",
+          "ballot_party": "DEM",
+          "votes": 151364
+        },
+        {
+          "source_race_id": "9327",
+          "source_candidate_id": "29902",
+          "candidate_name": "Lisa Scheller",
+          "ballot_party": "REP",
+          "votes": 145527
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "08",
+      "source_race_ids": [
+        "9328"
+      ],
+      "official_total": 287438,
+      "official_sum": 287438,
+      "archive_total": 286886,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Cartwright, Matt",
+          "party": "D",
+          "votes": 146956,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Bognet, Jim",
+          "party": "R",
+          "votes": 139930,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 552,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9328",
+          "source_candidate_id": "30155",
+          "candidate_name": "Jim Bognet",
+          "ballot_party": "REP",
+          "votes": 139930
+        },
+        {
+          "source_race_id": "9328",
+          "source_candidate_id": "29213",
+          "candidate_name": "Matt Cartwright",
+          "ballot_party": "DEM",
+          "votes": 146956
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "09",
+      "source_race_ids": [
+        "9329"
+      ],
+      "official_total": 302121,
+      "official_sum": 302121,
+      "archive_total": 301807,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Meuser, Dan",
+          "party": "R",
+          "votes": 209185,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Waldman, Amanda R.",
+          "party": "D",
+          "votes": 92622,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 314,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9329",
+          "source_candidate_id": "29904",
+          "candidate_name": "Amanda Waldman",
+          "ballot_party": "DEM",
+          "votes": 92622
+        },
+        {
+          "source_race_id": "9329",
+          "source_candidate_id": "29214",
+          "candidate_name": "Dan Meuser",
+          "ballot_party": "REP",
+          "votes": 209185
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "10",
+      "source_race_ids": [
+        "9330"
+      ],
+      "official_total": 315085,
+      "official_sum": 315085,
+      "archive_total": 314546,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Perry, Scott",
+          "party": "R",
+          "votes": 169331,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Daniels, Shamaine",
+          "party": "D",
+          "votes": 145215,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 539,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9330",
+          "source_candidate_id": "29215",
+          "candidate_name": "Scott Perry",
+          "ballot_party": "REP",
+          "votes": 169331
+        },
+        {
+          "source_race_id": "9330",
+          "source_candidate_id": "30175",
+          "candidate_name": "Shamaine Daniels",
+          "ballot_party": "DEM",
+          "votes": 145215
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "11",
+      "source_race_ids": [
+        "9331"
+      ],
+      "official_total": 317165,
+      "official_sum": 317165,
+      "archive_total": 316826,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Smucker, Lloyd K.",
+          "party": "R",
+          "votes": 194991,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Hollister, Bob",
+          "party": "D",
+          "votes": 121835,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 339,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9331",
+          "source_candidate_id": "29906",
+          "candidate_name": "Bob Hollister",
+          "ballot_party": "DEM",
+          "votes": 121835
+        },
+        {
+          "source_race_id": "9331",
+          "source_candidate_id": "29216",
+          "candidate_name": "Lloyd K. Smucker",
+          "ballot_party": "REP",
+          "votes": 194991
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "12",
+      "source_race_ids": [
+        "9332"
+      ],
+      "official_total": 329972,
+      "official_sum": 329972,
+      "archive_total": 328620,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Lee, Summer",
+          "party": "D",
+          "votes": 184674,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Doyle, Mike",
+          "party": "R",
+          "votes": 143946,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 1352,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9332",
+          "source_candidate_id": "29907",
+          "candidate_name": "Summer Lee",
+          "ballot_party": "DEM",
+          "votes": 184674
+        },
+        {
+          "source_race_id": "9332",
+          "source_candidate_id": "29908",
+          "candidate_name": "Mike Doyle",
+          "ballot_party": "REP",
+          "votes": 143946
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "13",
+      "source_race_ids": [
+        "9333"
+      ],
+      "official_total": 274517,
+      "official_sum": 274517,
+      "archive_total": 260345,
+      "official_candidate_count": 2,
+      "archive_candidate_count": 1,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Joyce, John",
+          "party": "R",
+          "votes": 260345,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 14172,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9333",
+          "source_candidate_id": "29217",
+          "candidate_name": "John Joyce",
+          "ballot_party": "REP",
+          "votes": 260345
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "14",
+      "source_race_ids": [
+        "9334"
+      ],
+      "official_total": 238096,
+      "official_sum": 238096,
+      "archive_total": 230865,
+      "official_candidate_count": 2,
+      "archive_candidate_count": 1,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Reschenthaler, Guy",
+          "party": "R",
+          "votes": 230865,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 7231,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9334",
+          "source_candidate_id": "29218",
+          "candidate_name": "Guy Reschenthaler",
+          "ballot_party": "REP",
+          "votes": 230865
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "15",
+      "source_race_ids": [
+        "9335"
+      ],
+      "official_total": 305720,
+      "official_sum": 305720,
+      "archive_total": 305146,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [
+        {
+          "candidate": "Molesevich, Mike",
+          "key": "mike molesevich",
+          "archive_ids": []
+        }
+      ],
+      "official": [
+        {
+          "candidate_name": "Thompson, Glenn GT",
+          "party": "R",
+          "votes": 213417,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Molesevich, Mike",
+          "party": "W(D)/D",
+          "votes": 91729,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 574,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9335",
+          "source_candidate_id": "30753",
+          "candidate_name": "Michael Molesevich",
+          "ballot_party": "DEM",
+          "votes": 91729
+        },
+        {
+          "source_race_id": "9335",
+          "source_candidate_id": "29219",
+          "candidate_name": "Glenn \"G.T.\" Thompson",
+          "ballot_party": "REP",
+          "votes": 213417
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "16",
+      "source_race_ids": [
+        "9336"
+      ],
+      "official_total": 321323,
+      "official_sum": 321323,
+      "archive_total": 320989,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Kelly, Mike",
+          "party": "R",
+          "votes": 190546,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Pastore, Dan",
+          "party": "D",
+          "votes": 130443,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 334,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9336",
+          "source_candidate_id": "30154",
+          "candidate_name": "Dan Pastore",
+          "ballot_party": "DEM",
+          "votes": 130443
+        },
+        {
+          "source_race_id": "9336",
+          "source_candidate_id": "29220",
+          "candidate_name": "Mike Kelly",
+          "ballot_party": "REP",
+          "votes": 190546
+        }
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "PA",
+      "district": "17",
+      "source_race_ids": [
+        "9337"
+      ],
+      "official_total": 363384,
+      "official_sum": 363384,
+      "archive_total": 362628,
+      "official_candidate_count": 3,
+      "archive_candidate_count": 2,
+      "name_mismatches": [],
+      "official": [
+        {
+          "candidate_name": "Deluzio, Chris",
+          "party": "D",
+          "votes": 193615,
+          "winner": 1
+        },
+        {
+          "candidate_name": "Shaffer, Jeremy",
+          "party": "R",
+          "votes": 169013,
+          "winner": 0
+        },
+        {
+          "candidate_name": "Scattered",
+          "party": "W",
+          "votes": 756,
+          "winner": 0
+        }
+      ],
+      "archive": [
+        {
+          "source_race_id": "9337",
+          "source_candidate_id": "29911",
+          "candidate_name": "Jeremy Shaffer",
+          "ballot_party": "REP",
+          "votes": 169013
+        },
+        {
+          "source_race_id": "9337",
+          "source_candidate_id": "29910",
+          "candidate_name": "Chris Deluzio",
+          "ballot_party": "DEM",
+          "votes": 193615
+        }
+      ]
+    }
+  ]
+}

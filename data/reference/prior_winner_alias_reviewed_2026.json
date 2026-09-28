@@ -1,0 +1,12 @@
+{
+  "S-2026-AK-II-regular:DAN-S-SULLIVAN": {
+    "official_source_race_id": "official:2020:senate:AK:S",
+    "official_winner_name": "Sullivan, Dan",
+    "reason": "Official result abbreviates Daniel Scott Sullivan; distinct from Daniel J. Sullivan Jr."
+  },
+  "S-2026-ME-II-regular:SUSAN-M-COLLINS": {
+    "official_source_race_id": "official:2020:senate:ME:S",
+    "official_winner_name": "Collins, Susan Margaret",
+    "reason": "Official result uses full middle name; 2026 ballot uses middle initial."
+  }
+}

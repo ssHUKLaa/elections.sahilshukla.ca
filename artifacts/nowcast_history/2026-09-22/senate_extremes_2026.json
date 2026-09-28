@@ -1,0 +1,510 @@
+{
+  "information_cutoff_utc": "2026-09-23T03:59:59Z",
+  "random_seed": 20260921,
+  "simulation_draws": 75000,
+  "selection_rule": "First joint draw attaining the most or fewest D-plus-independent caucus seats; all other winners caucus with D",
+  "best_democratic": {
+    "draw_index": 44505,
+    "D_and_independent_seats": 64,
+    "R_seats": 36,
+    "winners": {
+      "AK": {
+        "race_id": "S-2026-AK-II-regular",
+        "candidate_id": "PERSON-AK-MARY-PELTOLA",
+        "name": "Mary Peltola",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "AL": {
+        "race_id": "S-2026-AL-II-regular",
+        "candidate_id": "PERSON-AL-EVERETT-WESS",
+        "name": "Everett Wess",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "AR": {
+        "race_id": "S-2026-AR-II-regular",
+        "candidate_id": "PERSON-AR-HALLIE-SHOFFNER",
+        "name": "Hallie Shoffner",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "CO": {
+        "race_id": "S-2026-CO-II-regular",
+        "candidate_id": "PERSON-CO-JOHN-HICKENLOOPER",
+        "name": "John Hickenlooper",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "DE": {
+        "race_id": "S-2026-DE-II-regular",
+        "candidate_id": "PERSON-DE-CHRIS-COONS",
+        "name": "Chris Coons",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "FL": {
+        "race_id": "S-2026-FL-III-special",
+        "candidate_id": "PERSON-FL-ANGIE-NIXON",
+        "name": "Angie Nixon",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "GA": {
+        "race_id": "S-2026-GA-II-regular",
+        "candidate_id": "PERSON-GA-JON-OSSOFF",
+        "name": "Jon Ossoff",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "IA": {
+        "race_id": "S-2026-IA-II-regular",
+        "candidate_id": "PERSON-IA-JOSH-TUREK",
+        "name": "Josh Turek",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "ID": {
+        "race_id": "S-2026-ID-II-regular",
+        "candidate_id": "PERSON-ID-JIM-RISCH",
+        "name": "Jim Risch",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "IL": {
+        "race_id": "S-2026-IL-II-regular",
+        "candidate_id": "PERSON-IL-SBE-35626",
+        "name": "Juliana Stratton",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "KS": {
+        "race_id": "S-2026-KS-II-regular",
+        "candidate_id": "PERSON-KS-ADAM-HAMILTON",
+        "name": "Adam Hamilton",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "KY": {
+        "race_id": "S-2026-KY-II-regular",
+        "candidate_id": "PERSON-KY-CHARLES-BOOKER",
+        "name": "Charles Booker",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "LA": {
+        "race_id": "S-2026-LA-II-regular",
+        "candidate_id": "PERSON-LA-JAMIE-DAVIS",
+        "name": "Jamie Davis",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "MA": {
+        "race_id": "S-2026-MA-II-regular",
+        "candidate_id": "PERSON-MA-ED-MARKEY",
+        "name": "Ed Markey",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "ME": {
+        "race_id": "S-2026-ME-II-regular",
+        "candidate_id": "PERSON-ME-TROY-D-JACKSON",
+        "name": "Troy D. Jackson",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "MI": {
+        "race_id": "S-2026-MI-II-regular",
+        "candidate_id": "PERSON-MI-ABDUL-EL-SAYED",
+        "name": "Abdul El-Sayed",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "MN": {
+        "race_id": "S-2026-MN-II-regular",
+        "candidate_id": "PERSON-MN-PEGGY-FLANAGAN",
+        "name": "Peggy Flanagan",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "MS": {
+        "race_id": "S-2026-MS-II-regular",
+        "candidate_id": "PERSON-MS-SCOTT-COLOM",
+        "name": "Scott Colom",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "MT": {
+        "race_id": "S-2026-MT-II-regular",
+        "candidate_id": "PERSON-SETH-BODNAR",
+        "name": "Seth Bodnar",
+        "party": "IND",
+        "party_group": "O"
+      },
+      "NC": {
+        "race_id": "S-2026-NC-II-regular",
+        "candidate_id": "PERSON-NC-ROY-COOPER",
+        "name": "Roy Cooper",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "NE": {
+        "race_id": "S-2026-NE-II-regular",
+        "candidate_id": "PERSON-NE-DAN-OSBORN",
+        "name": "Dan Osborn",
+        "party": "IND",
+        "party_group": "O"
+      },
+      "NH": {
+        "race_id": "S-2026-NH-II-regular",
+        "candidate_id": "PERSON-NH-CHRIS-PAPPAS",
+        "name": "Chris Pappas",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "NJ": {
+        "race_id": "S-2026-NJ-II-regular",
+        "candidate_id": "PERSON-NJ-CORY-BOOKER",
+        "name": "Cory Booker",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "NM": {
+        "race_id": "S-2026-NM-II-regular",
+        "candidate_id": "PERSON-NM-BEN-RAY-LUJAN",
+        "name": "Ben Ray Luj\u00e1n",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "OH": {
+        "race_id": "S-2026-OH-III-special",
+        "candidate_id": "PERSON-OH-SHERROD-BROWN",
+        "name": "Sherrod Brown",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "OK": {
+        "race_id": "S-2026-OK-II-regular",
+        "candidate_id": "PERSON-OK-KEVIN-HERN",
+        "name": "Kevin Hern",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "OR": {
+        "race_id": "S-2026-OR-II-regular",
+        "candidate_id": "PERSON-OR-JEFF-MERKLEY",
+        "name": "Jeff Merkley",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "RI": {
+        "race_id": "S-2026-RI-II-regular",
+        "candidate_id": "PERSON-RI-JACK-REED",
+        "name": "Jack Reed",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "SC": {
+        "race_id": "S-2026-SC-II-regular",
+        "candidate_id": "PERSON-SC-ANNIE-ANDREWS",
+        "name": "Annie Andrews",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "SD": {
+        "race_id": "S-2026-SD-II-regular",
+        "candidate_id": "PERSON-BRIAN-BENGS",
+        "name": "Brian L Bengs",
+        "party": "IND",
+        "party_group": "O"
+      },
+      "TN": {
+        "race_id": "S-2026-TN-II-regular",
+        "candidate_id": "PERSON-TN-BILL-HAGERTY",
+        "name": "Bill Hagerty",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "TX": {
+        "race_id": "S-2026-TX-II-regular",
+        "candidate_id": "PERSON-TX-JAMES-TALARICO",
+        "name": "JAMES TALARICO",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "VA": {
+        "race_id": "S-2026-VA-II-regular",
+        "candidate_id": "PERSON-VA-MARK-WARNER",
+        "name": "Mark Warner",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "WV": {
+        "race_id": "S-2026-WV-II-regular",
+        "candidate_id": "PERSON-WV-SHELLEY-MOORE-CAPITO",
+        "name": "Shelley Moore Capito",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "WY": {
+        "race_id": "S-2026-WY-II-regular",
+        "candidate_id": "PERSON-WY-HARRIET-HAGEMAN",
+        "name": "Harriet Hageman",
+        "party": "REP",
+        "party_group": "R"
+      }
+    }
+  },
+  "best_republican": {
+    "draw_index": 10484,
+    "D_and_independent_seats": 39,
+    "R_seats": 61,
+    "winners": {
+      "AK": {
+        "race_id": "S-2026-AK-II-regular",
+        "candidate_id": "PERSON-AK-DAN-S-SULLIVAN",
+        "name": "Dan S. Sullivan",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "AL": {
+        "race_id": "S-2026-AL-II-regular",
+        "candidate_id": "PERSON-AL-BARRY-MOORE",
+        "name": "Barry Moore",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "AR": {
+        "race_id": "S-2026-AR-II-regular",
+        "candidate_id": "PERSON-AR-TOM-COTTON",
+        "name": "Tom Cotton",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "CO": {
+        "race_id": "S-2026-CO-II-regular",
+        "candidate_id": "PERSON-CO-MARK-BAISLEY",
+        "name": "Mark Baisley",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "DE": {
+        "race_id": "S-2026-DE-II-regular",
+        "candidate_id": "PERSON-DE-MICHAEL-KATZ",
+        "name": "Michael Katz",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "FL": {
+        "race_id": "S-2026-FL-III-special",
+        "candidate_id": "PERSON-FL-ASHLEY-MOODY",
+        "name": "Ashley Moody",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "GA": {
+        "race_id": "S-2026-GA-II-regular",
+        "candidate_id": "PERSON-GA-MIKE-COLLINS",
+        "name": "Mike Collins",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "IA": {
+        "race_id": "S-2026-IA-II-regular",
+        "candidate_id": "PERSON-IA-ASHLEY-HINSON",
+        "name": "Ashley Hinson",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "ID": {
+        "race_id": "S-2026-ID-II-regular",
+        "candidate_id": "PERSON-ID-JIM-RISCH",
+        "name": "Jim Risch",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "IL": {
+        "race_id": "S-2026-IL-II-regular",
+        "candidate_id": "PERSON-IL-SBE-35627",
+        "name": "Don Tracy",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "KS": {
+        "race_id": "S-2026-KS-II-regular",
+        "candidate_id": "PERSON-KS-ROGER-MARSHALL",
+        "name": "Roger Marshall",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "KY": {
+        "race_id": "S-2026-KY-II-regular",
+        "candidate_id": "PERSON-KY-ANDY-BARR",
+        "name": "Andy Barr",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "LA": {
+        "race_id": "S-2026-LA-II-regular",
+        "candidate_id": "PERSON-LA-JULIA-LETLOW",
+        "name": "Julia Letlow",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "MA": {
+        "race_id": "S-2026-MA-II-regular",
+        "candidate_id": "PERSON-MA-ED-MARKEY",
+        "name": "Ed Markey",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "ME": {
+        "race_id": "S-2026-ME-II-regular",
+        "candidate_id": "PERSON-ME-SUSAN-M-COLLINS",
+        "name": "Susan M. Collins",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "MI": {
+        "race_id": "S-2026-MI-II-regular",
+        "candidate_id": "PERSON-MI-MIKE-ROGERS",
+        "name": "Mike Rogers",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "MN": {
+        "race_id": "S-2026-MN-II-regular",
+        "candidate_id": "PERSON-MN-MICHELE-TAFOYA",
+        "name": "Michele Tafoya",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "MS": {
+        "race_id": "S-2026-MS-II-regular",
+        "candidate_id": "PERSON-MS-CINDY-HYDE-SMITH",
+        "name": "Cindy Hyde-Smith",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "MT": {
+        "race_id": "S-2026-MT-II-regular",
+        "candidate_id": "PERSON-KURT-ALME",
+        "name": "Kurt Alme",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "NC": {
+        "race_id": "S-2026-NC-II-regular",
+        "candidate_id": "PERSON-NC-MICHAEL-WHATLEY",
+        "name": "Michael Whatley",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "NE": {
+        "race_id": "S-2026-NE-II-regular",
+        "candidate_id": "PERSON-NE-PETE-RICKETTS",
+        "name": "Pete Ricketts",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "NH": {
+        "race_id": "S-2026-NH-II-regular",
+        "candidate_id": "PERSON-NH-JOHN-E-SUNUNU",
+        "name": "John E. Sununu",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "NJ": {
+        "race_id": "S-2026-NJ-II-regular",
+        "candidate_id": "PERSON-NJ-CORY-BOOKER",
+        "name": "Cory Booker",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "NM": {
+        "race_id": "S-2026-NM-II-regular",
+        "candidate_id": "PERSON-NM-BEN-RAY-LUJAN",
+        "name": "Ben Ray Luj\u00e1n",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "OH": {
+        "race_id": "S-2026-OH-III-special",
+        "candidate_id": "PERSON-OH-JON-HUSTED",
+        "name": "Jon Husted",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "OK": {
+        "race_id": "S-2026-OK-II-regular",
+        "candidate_id": "PERSON-OK-KEVIN-HERN",
+        "name": "Kevin Hern",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "OR": {
+        "race_id": "S-2026-OR-II-regular",
+        "candidate_id": "PERSON-OR-JEFF-MERKLEY",
+        "name": "Jeff Merkley",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "RI": {
+        "race_id": "S-2026-RI-II-regular",
+        "candidate_id": "PERSON-RI-JACK-REED",
+        "name": "Jack Reed",
+        "party": "DEM",
+        "party_group": "D"
+      },
+      "SC": {
+        "race_id": "S-2026-SC-II-regular",
+        "candidate_id": "PERSON-SC-DARLINE-GRAHAM",
+        "name": "Darline Graham",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "SD": {
+        "race_id": "S-2026-SD-II-regular",
+        "candidate_id": "PERSON-MIKE-ROUNDS",
+        "name": "Mike Rounds",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "TN": {
+        "race_id": "S-2026-TN-II-regular",
+        "candidate_id": "PERSON-TN-BILL-HAGERTY",
+        "name": "Bill Hagerty",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "TX": {
+        "race_id": "S-2026-TX-II-regular",
+        "candidate_id": "PERSON-TX-KEN-PAXTON",
+        "name": "KEN PAXTON",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "VA": {
+        "race_id": "S-2026-VA-II-regular",
+        "candidate_id": "PERSON-VA-BERT-MIZUSAWA",
+        "name": "Bert Mizusawa",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "WV": {
+        "race_id": "S-2026-WV-II-regular",
+        "candidate_id": "PERSON-WV-SHELLEY-MOORE-CAPITO",
+        "name": "Shelley Moore Capito",
+        "party": "REP",
+        "party_group": "R"
+      },
+      "WY": {
+        "race_id": "S-2026-WY-II-regular",
+        "candidate_id": "PERSON-WY-HARRIET-HAGEMAN",
+        "name": "Harriet Hageman",
+        "party": "REP",
+        "party_group": "R"
+      }
+    }
+  }
+}

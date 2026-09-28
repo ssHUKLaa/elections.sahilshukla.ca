@@ -1,0 +1,6077 @@
+{
+  "design": {
+    "estimand": "governor two-party margin relative to national House two-party margin",
+    "evaluation": "expanding-cycle; tune through 2018; later-cycle check starts in 2020",
+    "target_limitation": "Historical certified results proxy election-held-today support and include later campaign movement.",
+    "feature_cutoff": "Every presidential feature uses the latest presidential result before its governor election.",
+    "uncertainty": "The D/R log-ratio residual SD is floored at later-cycle out-of-fold error; cross-party-incumbent and local-signal-disagreement floors are used when at least five cases support them."
+  },
+  "model_code_sha256": "ca9f51dccdcaed2c6248dd984e5dd4daca69557fd9c88712a5c87383ff926175",
+  "database_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+  "source_hashes": {
+    "presidential_results": "d4fed2115322ad70626e672bdf6072043174687c6cdda425fe4198027935a72a",
+    "house_votes": "bb1f2ae3339a51110d93e7e5ff3c9210bcf6d1c288c3162eb80d4f5e69adb92b"
+  },
+  "training_rows": 234,
+  "training_cycles": [
+    2004,
+    2006,
+    2008,
+    2010,
+    2012,
+    2014,
+    2016,
+    2018,
+    2020,
+    2022,
+    2024
+  ],
+  "selected_specification": "previous_and_presidential",
+  "selected_ridge_alpha": 1.0,
+  "coefficients": {
+    "intercept": -0.021510929475508082,
+    "features": {
+      "prior_governor_lean": 0.40478569259569036,
+      "presidential_lean": 0.360260584556178
+    }
+  },
+  "excluded_missing_major_party_rows": 2,
+  "excluded_missing_major_party_examples": [
+    {
+      "state": "AK",
+      "target_cycle": 2014,
+      "prior_cycle": 2010,
+      "reason": "prior_or_target_missing_democratic_or_republican_candidate",
+      "prior_groups": [
+        "D",
+        "O",
+        "R"
+      ],
+      "target_groups": [
+        "O",
+        "R"
+      ]
+    },
+    {
+      "state": "AK",
+      "target_cycle": 2018,
+      "prior_cycle": 2014,
+      "reason": "prior_or_target_missing_democratic_or_republican_candidate",
+      "prior_groups": [
+        "O",
+        "R"
+      ],
+      "target_groups": [
+        "D",
+        "O",
+        "R"
+      ]
+    }
+  ],
+  "subgroup_scores": {
+    "incumbent_running": {
+      "tuning": {
+        "n": 48,
+        "rmse": 0.16883106595926162,
+        "mae": 0.1263125503541975,
+        "mean_error": 0.04777987029814921
+      },
+      "later_cycles": {
+        "n": 36,
+        "rmse": 0.17462935580079475,
+        "mae": 0.1374469622518916,
+        "mean_error": 0.0291228753276795
+      }
+    },
+    "open_seat": {
+      "tuning": {
+        "n": 43,
+        "rmse": 0.10486974197476415,
+        "mae": 0.07549249730002869,
+        "mean_error": 0.03315194406142499
+      },
+      "later_cycles": {
+        "n": 22,
+        "rmse": 0.16462095526176015,
+        "mae": 0.12210894194317476,
+        "mean_error": -0.06422448888483086
+      }
+    },
+    "cross_party_incumbent": {
+      "tuning": {
+        "n": 14,
+        "rmse": 0.2287688346409734,
+        "mae": 0.17432554787166482,
+        "mean_error": 0.08892899803331655
+      },
+      "later_cycles": {
+        "n": 9,
+        "rmse": 0.25889687588171484,
+        "mae": 0.20603079269902824,
+        "mean_error": 0.07183184633313755
+      }
+    },
+    "local_signals_disagree": {
+      "tuning": {
+        "n": 24,
+        "rmse": 0.14949318917554494,
+        "mae": 0.10790164502183074,
+        "mean_error": 0.01960479442333315
+      },
+      "later_cycles": {
+        "n": 16,
+        "rmse": 0.2594544156218272,
+        "mae": 0.21393301962343175,
+        "mean_error": -0.01660492044802898
+      }
+    },
+    "strongly_partisan_presidential_lean": {
+      "tuning": {
+        "n": 44,
+        "rmse": 0.1710104727554861,
+        "mae": 0.1304197074126451,
+        "mean_error": 0.059029894251239695
+      },
+      "later_cycles": {
+        "n": 34,
+        "rmse": 0.19213151995171535,
+        "mae": 0.14321838945294982,
+        "mean_error": 0.028176275008072724
+      }
+    }
+  },
+  "uncertainty_calibration": {
+    "logratio_residual_sd": 0.36836302777761787,
+    "pooled_logratio_residual_sd": 0.36836302777761787,
+    "n": 58,
+    "components": [
+      {
+        "source": "all_eligible_oof_rows",
+        "n": 58,
+        "sd": 0.36836302777761787
+      }
+    ],
+    "before_year": null,
+    "from_year": 2020,
+    "source": "expanding-cycle out-of-fold residuals from 2020-2024; terminal results proxy held-today outcomes",
+    "minimum_subgroup_rows": 5,
+    "mean_logratio_error": 0.0005365266393638935,
+    "by_cycle": {
+      "2020": {
+        "n": 11,
+        "logratio_residual_sd": 0.4141829953947283
+      },
+      "2022": {
+        "n": 36,
+        "logratio_residual_sd": 0.35989643158021384
+      },
+      "2024": {
+        "n": 11,
+        "logratio_residual_sd": 0.34643083927608215
+      }
+    },
+    "by_subgroup": {
+      "cross_party_incumbent": {
+        "n": 9,
+        "logratio_residual_sd": 0.5691304704330887
+      },
+      "signals_disagree": {
+        "n": 16,
+        "logratio_residual_sd": 0.5545537640074355
+      }
+    }
+  },
+  "specification_scores": {
+    "previous_governor|ridge=0.01": {
+      "specification": "previous_governor",
+      "ridge_alpha": 0.01,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.1532538931495179,
+        "mae": 0.11625083673927414,
+        "mean_error": 0.042976995741185464
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.1904839807302939,
+        "mae": 0.15488646915654614,
+        "mean_error": -0.01338578099551001
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17428664000591854,
+            "mae": 0.1380375431160528,
+            "mean_error": 0.04095706252103357
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.1666124924431655,
+            "mae": 0.14597229224203584,
+            "mean_error": 0.019840003141850165
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.1256846178633391,
+            "mae": 0.09193079241170729,
+            "mean_error": 0.04523180491716898
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.22412765296197543,
+            "mae": 0.16947330410756292,
+            "mean_error": -0.06775524594755393
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.1950449602396228,
+            "mae": 0.15379036635212673,
+            "mean_error": 0.05206206601026403
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.17037982319294578,
+            "mae": 0.1516982638344085,
+            "mean_error": 0.009649319971315136
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.15081973870096366,
+            "mae": 0.11852379671114649,
+            "mean_error": 0.026527635572160094
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2722898621774462,
+            "mae": 0.22771593873991117,
+            "mean_error": -0.0686956569636504
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.18511467865992792,
+            "mae": 0.1482529740777743,
+            "mean_error": 0.07262082489487262
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.215965143232112,
+            "mae": 0.17119936432166172,
+            "mean_error": 0.027321032839717155
+          }
+        }
+      }
+    },
+    "previous_governor|ridge=0.1": {
+      "specification": "previous_governor",
+      "ridge_alpha": 0.1,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.15348271190808405,
+        "mae": 0.11649600069583183,
+        "mean_error": 0.04302400799661842
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.19080572226479428,
+        "mae": 0.1553394334835099,
+        "mean_error": -0.012839887990230484
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17456561920685512,
+            "mae": 0.13840124796426032,
+            "mean_error": 0.0407943552524373
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.16733594217312467,
+            "mae": 0.146583302678592,
+            "mean_error": 0.02045328680778963
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.1258432339782559,
+            "mae": 0.09204363165200474,
+            "mean_error": 0.04551292268779735
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.22396715872224998,
+            "mae": 0.16966764752792107,
+            "mean_error": -0.06731962856880885
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.19489149625501984,
+            "mae": 0.15366444938664478,
+            "mean_error": 0.052171868165048756
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.1711005896538788,
+            "mae": 0.15211401689735382,
+            "mean_error": 0.010468154706521737
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.15012316907363477,
+            "mae": 0.11790990633170499,
+            "mean_error": 0.026187749853584016
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2721231207438298,
+            "mae": 0.22774775762880853,
+            "mean_error": -0.06815145715138256
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.18581784950988597,
+            "mae": 0.14903868457088607,
+            "mean_error": 0.07291297852706399
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.21636516413267443,
+            "mae": 0.17188763907225188,
+            "mean_error": 0.028167809402581522
+          }
+        }
+      }
+    },
+    "previous_governor|ridge=1": {
+      "specification": "previous_governor",
+      "ridge_alpha": 1.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.15625418343685477,
+        "mae": 0.11861394255595344,
+        "mean_error": 0.043432344260001816
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.19399038003768154,
+        "mae": 0.15980386113279252,
+        "mean_error": -0.007927290526783596
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.1774013902791678,
+            "mae": 0.14159734925867612,
+            "mean_error": 0.03950882933429361
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.17403149247208977,
+            "mae": 0.1520678472248821,
+            "mean_error": 0.025966036064149805
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.1286041789688688,
+            "mae": 0.09295804670175137,
+            "mean_error": 0.047812081851490065
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.2228269757152855,
+            "mae": 0.17246279298210043,
+            "mean_error": -0.06338909767558373
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.193782162137914,
+            "mae": 0.15281498631113202,
+            "mean_error": 0.05306921801930344
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.17785927704343388,
+            "mae": 0.15586466653422995,
+            "mean_error": 0.017838122603078845
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.14485961254447666,
+            "mae": 0.11293713370789488,
+            "mean_error": 0.02353877436321818
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.27085090969891445,
+            "mae": 0.22804740570340612,
+            "mean_error": -0.06325026739647742
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.19262841123966548,
+            "mae": 0.1556548556888974,
+            "mean_error": 0.07533474717873385
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.2203380314931869,
+            "mae": 0.17874662946015207,
+            "mean_error": 0.035792697272273515
+          }
+        }
+      }
+    },
+    "previous_governor|ridge=10": {
+      "specification": "previous_governor",
+      "ridge_alpha": 10.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.17506737523033167,
+        "mae": 0.1311315243091398,
+        "mean_error": 0.0452360896925952
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.21552942681403986,
+        "mae": 0.18283571304994486,
+        "mean_error": 0.015494844854571092
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.19322692685803403,
+            "mae": 0.1553544706432334,
+            "mean_error": 0.035901582404447054
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.20942655321662482,
+            "mae": 0.17860236100645543,
+            "mean_error": 0.05208654763494717
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.152259138157,
+            "mae": 0.1040919563082911,
+            "mean_error": 0.05565600480494662
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.22515942218819576,
+            "mae": 0.18976301639383664,
+            "mean_error": -0.04438248696786247
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.1922581703504259,
+            "mae": 0.1507847389009965,
+            "mean_error": 0.05562653278760953
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.21558454332345361,
+            "mae": 0.17400577437837686,
+            "mean_error": 0.053005994863221974
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13392938867582826,
+            "mae": 0.09879868469284526,
+            "mean_error": 0.016490901601945638
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.27054578431289744,
+            "mae": 0.229826032280883,
+            "mean_error": -0.039797267452318444
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.22516377768361787,
+            "mae": 0.18572281074052663,
+            "mean_error": 0.08379529328074344
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.24741134502457882,
+            "mae": 0.21449513555295385,
+            "mean_error": 0.07227154208569556
+          }
+        }
+      }
+    },
+    "presidential|ridge=0.01": {
+      "specification": "presidential",
+      "ridge_alpha": 0.01,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.15867027059202443,
+        "mae": 0.11376873652887386,
+        "mean_error": 0.04218960921655278
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.20173780597488927,
+        "mae": 0.1511266635452722,
+        "mean_error": 0.028838828984836577
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.18247087097341522,
+            "mae": 0.1373248283312183,
+            "mean_error": 0.045908248089581265
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.2316490339317253,
+            "mae": 0.17323543322105522,
+            "mean_error": 0.0686057579670683
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.12693612052732314,
+            "mae": 0.0874735642843964,
+            "mean_error": 0.0380385704745675
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.13959134508214607,
+            "mae": 0.1149486768030819,
+            "mean_error": -0.03623432753154263
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.25078945623850135,
+            "mae": 0.1894779311571792,
+            "mean_error": 0.10928995152671213
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.36800983173296664,
+            "mae": 0.2819919848296491,
+            "mean_error": 0.14976237157547384
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.16211777681386472,
+            "mae": 0.11622675719732296,
+            "mean_error": 0.007582534582918086
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.3011450341833427,
+            "mae": 0.22792148935007972,
+            "mean_error": 0.04120443485861072
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.1980041111075683,
+            "mae": 0.1531722097274505,
+            "mean_error": 0.06437494997002711
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.23195373304274214,
+            "mae": 0.16877149230400887,
+            "mean_error": 0.07777334245857348
+          }
+        }
+      }
+    },
+    "presidential|ridge=0.1": {
+      "specification": "presidential",
+      "ridge_alpha": 0.1,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.15889591579268708,
+        "mae": 0.1141214283216606,
+        "mean_error": 0.042275327977413596
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.2019983723575296,
+        "mae": 0.15180502621826716,
+        "mean_error": 0.02898051182862406
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.18259175893694335,
+            "mae": 0.13769465943966477,
+            "mean_error": 0.04567199932342919
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.23165458761454483,
+            "mae": 0.1736664527212518,
+            "mean_error": 0.06874337407365098
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.12733876958894463,
+            "mae": 0.08780712381784192,
+            "mean_error": 0.038483694846977584
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1405662791859728,
+            "mae": 0.1160317828497469,
+            "mean_error": -0.036085990026874515
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.24963900505275005,
+            "mae": 0.18850292104636246,
+            "mean_error": 0.10825672995931503
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.36685412859707894,
+            "mae": 0.2812040114096048,
+            "mean_error": 0.14912446874568264
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.16133391147547985,
+            "mae": 0.11542987466598477,
+            "mean_error": 0.007712590795968505
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.3006929795464086,
+            "mae": 0.228146891273638,
+            "mean_error": 0.040611012441079015
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.1984293235816676,
+            "mae": 0.1539309059392828,
+            "mean_error": 0.06491256243737697
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.23222142014606748,
+            "mae": 0.1697277937555566,
+            "mean_error": 0.07816695951693872
+          }
+        }
+      }
+    },
+    "presidential|ridge=1": {
+      "specification": "presidential",
+      "ridge_alpha": 1.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.16166310083107302,
+        "mae": 0.11701746413822803,
+        "mean_error": 0.04299124498216626
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.20462816544680443,
+        "mae": 0.15791700091144772,
+        "mean_error": 0.03023761636550956
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.184382462280972,
+            "mae": 0.14065389617709886,
+            "mean_error": 0.04377021584137411
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.23195625066851835,
+            "mae": 0.17763608811432965,
+            "mean_error": 0.0699650104573169
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.13175297167583666,
+            "mae": 0.09063260976925591,
+            "mean_error": 0.04212169611607378
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1494965054909557,
+            "mae": 0.12564940367036825,
+            "mean_error": -0.034770846693811544
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.24024303508313638,
+            "mae": 0.18063581879299462,
+            "mean_error": 0.09986196887140521
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.3565862704018478,
+            "mae": 0.27420325483465513,
+            "mean_error": 0.14345126249796947
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.1552779859638603,
+            "mae": 0.10911616061967684,
+            "mean_error": 0.008735638681074447
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.29690493391654693,
+            "mae": 0.23010821691320266,
+            "mean_error": 0.03531535901341781
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.2032128810634203,
+            "mae": 0.16003067158915074,
+            "mean_error": 0.06923534545557722
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.2350422187735283,
+            "mae": 0.17820592495628418,
+            "mean_error": 0.08166252341391445
+          }
+        }
+      }
+    },
+    "presidential|ridge=10": {
+      "specification": "presidential",
+      "ridge_alpha": 10.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.1789139576394359,
+        "mae": 0.13325741955585896,
+        "mean_error": 0.0454324094832484
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.22265260413214052,
+        "mae": 0.18552317698176524,
+        "mean_error": 0.03584294921192835
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.19702103743163474,
+            "mae": 0.15659748913489882,
+            "mean_error": 0.037815934377119435
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.23856211060201704,
+            "mae": 0.195014976423634,
+            "mean_error": 0.07539282019025732
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.15624211269589705,
+            "mae": 0.10720338839786095,
+            "mean_error": 0.053934521229624895
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.19382218435038118,
+            "mae": 0.16999114153143471,
+            "mean_error": -0.02887502147988268
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.21072485681319872,
+            "mae": 0.15977077738999454,
+            "mean_error": 0.07338997597361836
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.3106305919626652,
+            "mae": 0.24286483141132667,
+            "mean_error": 0.11791457870005259
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13981344867788642,
+            "mae": 0.09840180696703331,
+            "mean_error": 0.011557991622061161
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.28500997652715715,
+            "mae": 0.23792506378704878,
+            "mean_error": 0.011147266543715147
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.2301322861493058,
+            "mae": 0.18992098402468113,
+            "mean_error": 0.08232969733580288
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.25647095845574697,
+            "mae": 0.21664394306227597,
+            "mean_error": 0.09729811879143907
+          }
+        }
+      }
+    },
+    "previous_and_presidential|ridge=0.01": {
+      "specification": "previous_and_presidential",
+      "ridge_alpha": 0.01,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14438317147788246,
+        "mae": 0.10334646581032188,
+        "mean_error": 0.04004330235933351
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.16730093448716254,
+        "mae": 0.1271878780726855,
+        "mean_error": -0.01040856506117246
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17065990916161555,
+            "mae": 0.12664953742527327,
+            "mean_error": 0.0509315164781757
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.17046312735536645,
+            "mae": 0.13204560796895995,
+            "mean_error": 0.024641832051487955
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.10772930095087009,
+            "mae": 0.07733373470525988,
+            "mean_error": 0.027889016831323613
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.16199334373198618,
+            "mae": 0.11923886551514551,
+            "mean_error": -0.06776376033643496
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.23553888660423813,
+            "mae": 0.17891867495897268,
+            "mean_error": 0.09496389278232685
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.25938039183860895,
+            "mae": 0.207449661259984,
+            "mean_error": 0.07041755023015422
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.15368211662983547,
+            "mae": 0.11171230347579945,
+            "mean_error": 0.021573645074213596
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.25802362595771644,
+            "mae": 0.2120704869895798,
+            "mean_error": -0.016723565309062775
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17200557804099129,
+            "mae": 0.1296211972626511,
+            "mean_error": 0.05304120622795705
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.1879825491656945,
+            "mae": 0.13749918756250495,
+            "mean_error": 0.02085333354046611
+          }
+        }
+      }
+    },
+    "previous_and_presidential|ridge=0.1": {
+      "specification": "previous_and_presidential",
+      "ridge_alpha": 0.1,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14389290835319807,
+        "mae": 0.10276711718355393,
+        "mean_error": 0.040130236671826254
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.16762161311959975,
+        "mae": 0.12755744882609968,
+        "mean_error": -0.010004550752557373
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17026626585143734,
+            "mae": 0.12649106578766323,
+            "mean_error": 0.0505787799268958
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.1708413315126668,
+            "mae": 0.1325181712150592,
+            "mean_error": 0.025080563298104264
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.10703417450227372,
+            "mae": 0.07628456990454822,
+            "mean_error": 0.028466746526632346
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1622151938868719,
+            "mae": 0.11943990309871143,
+            "mean_error": -0.06741655556273098
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.23481508427031275,
+            "mae": 0.1784341698229723,
+            "mean_error": 0.09430288737856077
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.25932187475694607,
+            "mae": 0.20730516215644051,
+            "mean_error": 0.07055131100752364
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.15322505258310684,
+            "mae": 0.11125322805955891,
+            "mean_error": 0.021348722767159035
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2581588816031933,
+            "mae": 0.21225385200451952,
+            "mean_error": -0.016713886120598462
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17150232099111462,
+            "mae": 0.12890636011685558,
+            "mean_error": 0.05369474937992673
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.1883445705435816,
+            "mae": 0.13794714551110168,
+            "mean_error": 0.021571084910124553
+          }
+        }
+      }
+    },
+    "previous_and_presidential|ridge=1": {
+      "specification": "previous_and_presidential",
+      "ridge_alpha": 1.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14223831123303923,
+        "mae": 0.10229867913079904,
+        "mean_error": 0.04086777328519161
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.17090207544566616,
+        "mae": 0.13162909247961968,
+        "mean_error": -0.0062847455805140765
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.16883106595926162,
+            "mae": 0.1263125503541975,
+            "mean_error": 0.04777987029814921
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.17462935580079475,
+            "mae": 0.1374469622518916,
+            "mean_error": 0.0291228753276795
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.10486974197476415,
+            "mae": 0.07549249730002869,
+            "mean_error": 0.03315194406142499
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.16462095526176015,
+            "mae": 0.12210894194317476,
+            "mean_error": -0.06422448888483086
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.2287688346409734,
+            "mae": 0.17432554787166482,
+            "mean_error": 0.08892899803331655
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.25889687588171484,
+            "mae": 0.20603079269902824,
+            "mean_error": 0.07183184633313755
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.14949318917554494,
+            "mae": 0.10790164502183074,
+            "mean_error": 0.01960479442333315
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2594544156218272,
+            "mae": 0.21393301962343175,
+            "mean_error": -0.01660492044802898
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.1710104727554861,
+            "mae": 0.1304197074126451,
+            "mean_error": 0.059029894251239695
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.19213151995171535,
+            "mae": 0.14321838945294982,
+            "mean_error": 0.028176275008072724
+          }
+        }
+      }
+    },
+    "previous_and_presidential|ridge=10": {
+      "specification": "previous_and_presidential",
+      "ridge_alpha": 10.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.16275794632240553,
+        "mae": 0.11940888292540083,
+        "mean_error": 0.04393887724400363
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.19707186897665432,
+        "mae": 0.16310008781397753,
+        "mean_error": 0.013742090871270074
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.1842531907001003,
+            "mae": 0.14360691571014683,
+            "mean_error": 0.03940695850684391
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.20242972073914098,
+            "mae": 0.1678328910926013,
+            "mean_error": 0.050883835252344634
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.13477286057081028,
+            "mae": 0.09239712539824253,
+            "mean_error": 0.048997763276181924
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1879753541928298,
+            "mae": 0.15535550063077505,
+            "mean_error": -0.04703530902503374
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.20777817359819684,
+            "mae": 0.1595543434925252,
+            "mean_error": 0.07083504092920224
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.2592900426950504,
+            "mae": 0.20467666504598972,
+            "mean_error": 0.079743572568479
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13818116775122546,
+            "mae": 0.09951276705344159,
+            "mean_error": 0.015100183524505371
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2676513528854917,
+            "mae": 0.2251685120306584,
+            "mean_error": -0.015603221577609874
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.20655276859530486,
+            "mae": 0.1667373769674427,
+            "mean_error": 0.07687683641346786
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.22419513999451238,
+            "mae": 0.18690200853226593,
+            "mean_error": 0.06370394027375263
+          }
+        }
+      }
+    },
+    "previous_presidential_open|ridge=0.01": {
+      "specification": "previous_presidential_open",
+      "ridge_alpha": 0.01,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.15478662409262284,
+        "mae": 0.11476368021219503,
+        "mean_error": 0.0378243502689248
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.16138558190296545,
+        "mae": 0.12732030065076047,
+        "mean_error": -0.026034632271064426
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17928828823149584,
+            "mae": 0.1339604275604026,
+            "mean_error": 0.050383824993883865
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.15519041828345387,
+            "mae": 0.12174925180526817,
+            "mean_error": 0.0049578420150650695
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.12174447836790377,
+            "mae": 0.09333475293977725,
+            "mean_error": 0.0238044715061798
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.17103978501897887,
+            "mae": 0.13643656239792964,
+            "mean_error": -0.07674959019382178
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.23588931054309117,
+            "mae": 0.18244691242713698,
+            "mean_error": 0.08515341204748875
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.23500530200149744,
+            "mae": 0.19810907604595934,
+            "mean_error": 0.04502386142708006
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.16365740974240836,
+            "mae": 0.12244128511954089,
+            "mean_error": 0.011217879280758113
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.24602563944683234,
+            "mae": 0.2118039526227076,
+            "mean_error": -0.043605935480274804
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17827254444534935,
+            "mae": 0.13738759478800044,
+            "mean_error": 0.048745065257069946
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.17414714351352792,
+            "mae": 0.13025369307531603,
+            "mean_error": 0.0036880111277025444
+          }
+        }
+      }
+    },
+    "previous_presidential_open|ridge=0.1": {
+      "specification": "previous_presidential_open",
+      "ridge_alpha": 0.1,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.1533070692168754,
+        "mae": 0.11340950851095093,
+        "mean_error": 0.03807423102415725
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.16177558078394305,
+        "mae": 0.12780250291109793,
+        "mean_error": -0.02514360603886214
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17769313573084336,
+            "mae": 0.13306299775135852,
+            "mean_error": 0.04993989500988318
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.15587182955885864,
+            "mae": 0.1225066706301398,
+            "mean_error": 0.005986484743550553
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.12038556339882868,
+            "mae": 0.09147072982398431,
+            "mean_error": 0.024828838667998065
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1709971629485585,
+            "mae": 0.13646841027993853,
+            "mean_error": -0.0760837545919011
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.2350762164408998,
+            "mae": 0.18178873669824405,
+            "mean_error": 0.08500755372884258
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.2357366092909073,
+            "mae": 0.19833216070225973,
+            "mean_error": 0.04599088501040541
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.1625653334125382,
+            "mae": 0.12161728309767321,
+            "mean_error": 0.011270686586483898
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.24638929802873502,
+            "mae": 0.21203672260152273,
+            "mean_error": -0.04277565566419135
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17701544962618115,
+            "mae": 0.13578501703095014,
+            "mean_error": 0.0497028115690878
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.1747519612683484,
+            "mae": 0.13102625274045496,
+            "mean_error": 0.004994771975477496
+          }
+        }
+      }
+    },
+    "previous_presidential_open|ridge=1": {
+      "specification": "previous_presidential_open",
+      "ridge_alpha": 1.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14659953466377387,
+        "mae": 0.1074013815626499,
+        "mean_error": 0.039753882370250584
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.16596489597351008,
+        "mae": 0.13216911964670516,
+        "mean_error": -0.01746544880718984
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.16960819951556785,
+            "mae": 0.12749966480510916,
+            "mean_error": 0.046735717838055996
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.16251489012164658,
+            "mae": 0.12917151163921042,
+            "mean_error": 0.014840432185974865
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.11562835009160387,
+            "mae": 0.08496608864083492,
+            "mean_error": 0.031960205568979445
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.17146068803795206,
+            "mae": 0.13707429638624194,
+            "mean_error": -0.0703296177050957
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.22864755837925754,
+            "mae": 0.17647658791239157,
+            "mean_error": 0.08314393767859952
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.2416795407752785,
+            "mae": 0.19989577663721483,
+            "mean_error": 0.05392416619678206
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.15484832380468508,
+            "mae": 0.11516040281860614,
+            "mean_error": 0.01162195233200857
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2498153291110044,
+            "mae": 0.21415428897434702,
+            "mean_error": -0.03601178547344123
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17360905074624922,
+            "mae": 0.13215632545790099,
+            "mean_error": 0.056956968884588226
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.18100980212398604,
+            "mae": 0.13796016625245583,
+            "mean_error": 0.0163478480760573
+          }
+        }
+      }
+    },
+    "previous_presidential_open|ridge=10": {
+      "specification": "previous_presidential_open",
+      "ridge_alpha": 10.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.16402648556158594,
+        "mae": 0.12093371626358405,
+        "mean_error": 0.043128777846793406
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.19731765938703888,
+        "mae": 0.16388224200207974,
+        "mean_error": 0.01339842649285885
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.1836371339459487,
+            "mae": 0.14329014233195872,
+            "mean_error": 0.03898829012968866
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.20189553123181678,
+            "mae": 0.16739546689972357,
+            "mean_error": 0.05023561366713634
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.13890283960891003,
+            "mae": 0.09597770576865415,
+            "mean_error": 0.04775071762402663
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1895883106553417,
+            "mae": 0.15813332853320802,
+            "mean_error": -0.04688060706504979
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.20773602963702148,
+            "mae": 0.15986831387187403,
+            "mean_error": 0.07020810581229332
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.2584833661078595,
+            "mae": 0.2041375392736423,
+            "mean_error": 0.07895037155626941
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13877832285489025,
+            "mae": 0.10127716981272415,
+            "mean_error": 0.011750770898888872
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.26765238757011667,
+            "mae": 0.22630301576267536,
+            "mean_error": -0.015968215401385263
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.20845182910793444,
+            "mae": 0.16872799149154918,
+            "mean_error": 0.07635513245328225
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.22406443508480714,
+            "mae": 0.1873723437700161,
+            "mean_error": 0.06370482801558476
+          }
+        }
+      }
+    },
+    "previous_presidential_incumbent|ridge=0.01": {
+      "specification": "previous_presidential_incumbent",
+      "ridge_alpha": 0.01,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14619027054893569,
+        "mae": 0.11201477311661369,
+        "mean_error": 0.01709475257332649
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.14340693935124055,
+        "mae": 0.10754604029177772,
+        "mean_error": -0.0014051398104268603
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.16906753133790467,
+            "mae": 0.14006630743960957,
+            "mean_error": -0.0009867698399824143
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.13107493513472548,
+            "mae": 0.09371356564239824,
+            "mean_error": 0.023966814308529052
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.11541545946178076,
+            "mae": 0.08070143247699041,
+            "mean_error": 0.0372787775928341
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.16156886012930619,
+            "mae": 0.13018099880894415,
+            "mean_error": -0.04292288291417289
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.19601534926655256,
+            "mae": 0.16421515232131062,
+            "mean_error": -0.011961329565412982
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.20360925581601866,
+            "mae": 0.14908564024229476,
+            "mean_error": 0.11735385247427128
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.1381653210000318,
+            "mae": 0.10268985093375071,
+            "mean_error": -0.039343798155497656
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2179169814733061,
+            "mae": 0.17446371278802333,
+            "mean_error": 0.005547616445046908
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.1665321429422419,
+            "mae": 0.13303272271374159,
+            "mean_error": 0.040785714211201904
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.16691318189333626,
+            "mae": 0.1263340007380083,
+            "mean_error": 0.021700855627974053
+          }
+        }
+      }
+    },
+    "previous_presidential_incumbent|ridge=0.1": {
+      "specification": "previous_presidential_incumbent",
+      "ridge_alpha": 0.1,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14593179932436404,
+        "mae": 0.1118129941151927,
+        "mean_error": 0.017082107520273893
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.1435941058030795,
+        "mae": 0.10778210036677136,
+        "mean_error": -0.001183739753039304
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.16824356107464322,
+            "mae": 0.1393175639809874,
+            "mean_error": -0.001361084231666815
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.13093327200288243,
+            "mae": 0.09362788381035146,
+            "mean_error": 0.024179297570109018
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.11606545812004873,
+            "mae": 0.08111021845104975,
+            "mean_error": 0.03766985645267283
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.16219386786618803,
+            "mae": 0.13094354564091304,
+            "mean_error": -0.042686891736372926
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.19592646177420472,
+            "mae": 0.16440573159842806,
+            "mean_error": -0.012888012656837583
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.20311930019384036,
+            "mae": 0.1487741140559289,
+            "mean_error": 0.11726059485426592
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13813946618673084,
+            "mae": 0.10271860187344051,
+            "mean_error": -0.039490329238944286
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.21791310712023856,
+            "mae": 0.1745746821106312,
+            "mean_error": 0.005377165786150848
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.16616216577919923,
+            "mae": 0.13272596872468276,
+            "mean_error": 0.04118603800738963
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.16716447833347503,
+            "mae": 0.12671372931255467,
+            "mean_error": 0.022114990898598703
+          }
+        }
+      }
+    },
+    "previous_presidential_incumbent|ridge=1": {
+      "specification": "previous_presidential_incumbent",
+      "ridge_alpha": 1.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14463837590222756,
+        "mae": 0.1107812771022325,
+        "mean_error": 0.01707304707421747
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.14551372143296937,
+        "mae": 0.10993160801237262,
+        "mean_error": 0.0008583008224342113
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.16209417613401625,
+            "mae": 0.1340766481895802,
+            "mean_error": -0.00419909144612423
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.12992388548404632,
+            "mae": 0.09291023049685032,
+            "mean_error": 0.026157231556220434
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.12224323706556858,
+            "mae": 0.08477714193496061,
+            "mean_error": 0.04081869007366866
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1679310362472952,
+            "mae": 0.13778477121959093,
+            "mean_error": -0.040539949469215956
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.1949681499137624,
+            "mae": 0.16527561254462478,
+            "mean_error": -0.01999416489078443
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.1989357480850894,
+            "mae": 0.1460642158125937,
+            "mean_error": 0.11651243326158396
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13772156544369415,
+            "mae": 0.10285798031443123,
+            "mean_error": -0.04032597984130228
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2179835591871941,
+            "mae": 0.17557075110929776,
+            "mean_error": 0.0039032892041572335
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.16473955893990255,
+            "mae": 0.1313412391223017,
+            "mean_error": 0.04442310452499197
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.16975845611710294,
+            "mae": 0.1301442103074321,
+            "mean_error": 0.025923389707767138
+          }
+        }
+      }
+    },
+    "previous_presidential_incumbent|ridge=10": {
+      "specification": "previous_presidential_incumbent",
+      "ridge_alpha": 10.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.1478785013346667,
+        "mae": 0.11013937495910839,
+        "mean_error": 0.020097723197036427
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.1607605138649397,
+        "mae": 0.12547189105969442,
+        "mean_error": 0.011980291335244548
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.14599878587098558,
+            "mae": 0.11757294239237782,
+            "mean_error": -0.007907760647309055
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.1326667345204897,
+            "mae": 0.09778696998203813,
+            "mean_error": 0.03758140190828125
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.14994895817215478,
+            "mae": 0.10184143921964474,
+            "mean_error": 0.051359658651189515
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1983261816612226,
+            "mae": 0.1707744891867683,
+            "mean_error": -0.029912435056997314
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.18420273788881786,
+            "mae": 0.1542241969073031,
+            "mean_error": -0.03051224657130454
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.1845296565026799,
+            "mae": 0.14044415865448168,
+            "mean_error": 0.11383992456942174
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.12953495830704193,
+            "mae": 0.09554222642293912,
+            "mean_error": -0.03521589648822949
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.22119226337219258,
+            "mae": 0.1813856630777188,
+            "mean_error": -0.0022760639026902924
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17850402523126027,
+            "mae": 0.13935184243605803,
+            "mean_error": 0.05662468884567069
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.19064782068387834,
+            "mae": 0.1539796255867594,
+            "mean_error": 0.0468327529962659
+          }
+        }
+      }
+    },
+    "previous_presidential_open_experience|ridge=0.01": {
+      "specification": "previous_presidential_open_experience",
+      "ridge_alpha": 0.01,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.15734999824175644,
+        "mae": 0.11685415418055618,
+        "mean_error": 0.03692216138069947
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.16146756535195472,
+        "mae": 0.12735128895425246,
+        "mean_error": -0.025665474049104263
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17991081834432737,
+            "mae": 0.1346570530169103,
+            "mean_error": 0.04953456232409655
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.15533579887951207,
+            "mae": 0.12175653145283007,
+            "mean_error": 0.0052676910915643695
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.127535829383976,
+            "mae": 0.09698115082834687,
+            "mean_error": 0.022843202188070157
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.17102782275415498,
+            "mae": 0.1365063466838528,
+            "mean_error": -0.07628338064292563
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.23755269383250036,
+            "mae": 0.1843113552224623,
+            "mean_error": 0.08319065329044298
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.23500278960665202,
+            "mae": 0.19814419258270968,
+            "mean_error": 0.04494718091712675
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.17253744552134154,
+            "mae": 0.12925107590073948,
+            "mean_error": 0.002674811941432882
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.24636349632481772,
+            "mae": 0.2121999576455172,
+            "mean_error": -0.044135162446502965
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17785252073693447,
+            "mae": 0.13693113487217393,
+            "mean_error": 0.04799946181867847
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.17403238361890666,
+            "mae": 0.12992323613758588,
+            "mean_error": 0.003999344346403296
+          }
+        }
+      }
+    },
+    "previous_presidential_open_experience|ridge=0.1": {
+      "specification": "previous_presidential_open_experience",
+      "ridge_alpha": 0.1,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.15562785615665475,
+        "mae": 0.1153591905593229,
+        "mean_error": 0.03716555354082817
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.16185787796292828,
+        "mae": 0.12783599209761837,
+        "mean_error": -0.024753470680179187
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17832397760266827,
+            "mae": 0.1337506706612364,
+            "mean_error": 0.049096785234342265
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.15602083973355788,
+            "mae": 0.12251431250600903,
+            "mean_error": 0.006294444042313562
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.1255360160734594,
+            "mae": 0.09482916625951247,
+            "mean_error": 0.023846969324812447
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1709801060570927,
+            "mae": 0.1365441950657063,
+            "mean_error": -0.07555914931698549
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.23673326858981522,
+            "mae": 0.1836873916396705,
+            "mean_error": 0.0830085408093577
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.23573734936928115,
+            "mae": 0.19836848872326587,
+            "mean_error": 0.04591820968037311
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.17061284823952222,
+            "mae": 0.12800602458563914,
+            "mean_error": 0.003114732644324708
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.24672437990813414,
+            "mae": 0.21246129041944284,
+            "mean_error": -0.04325978734919299
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17660576189891317,
+            "mae": 0.13531751261775662,
+            "mean_error": 0.048941590553044104
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.17463773261925483,
+            "mae": 0.130698341055535,
+            "mean_error": 0.0053359984042596915
+          }
+        }
+      }
+    },
+    "previous_presidential_open_experience|ridge=1": {
+      "specification": "previous_presidential_open_experience",
+      "ridge_alpha": 1.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14780451771833863,
+        "mae": 0.10875103740748075,
+        "mean_error": 0.03883676580996888
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.1660608630095456,
+        "mae": 0.13222749424265992,
+        "mean_error": -0.016908645947930515
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17020421047677886,
+            "mae": 0.1281536199705076,
+            "mean_error": 0.04596032922885163
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.16269118702471877,
+            "mae": 0.12919042148759144,
+            "mean_error": 0.015134149164978941
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.11787530364461886,
+            "mae": 0.08709234059293917,
+            "mean_error": 0.03088488106330906
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1714320682957009,
+            "mae": 0.13719724966004465,
+            "mean_error": -0.06934231067814599
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.23006657578433665,
+            "mae": 0.17845956740130856,
+            "mean_error": 0.08105810455900478
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.2417030162841037,
+            "mae": 0.19993973477543095,
+            "mean_error": 0.05388012630526224
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.15891604440508675,
+            "mae": 0.11932811866185822,
+            "mean_error": 0.005641522174454781
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.25013682431047946,
+            "mae": 0.21480424526452835,
+            "mean_error": -0.03614740034958158
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.1732984852448613,
+            "mae": 0.13169455734530267,
+            "mean_error": 0.056123703120701224
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.1809199953310046,
+            "mae": 0.13765834867077412,
+            "mean_error": 0.016924890720219847
+          }
+        }
+      }
+    },
+    "previous_presidential_open_experience|ridge=10": {
+      "specification": "previous_presidential_open_experience",
+      "ridge_alpha": 10.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.16426102090610653,
+        "mae": 0.1216133972834384,
+        "mean_error": 0.042649826481596646
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.19754317492677187,
+        "mae": 0.16412731111305762,
+        "mean_error": 0.014221752124224567
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.18376259872421755,
+            "mae": 0.1436001515671006,
+            "mean_error": 0.038660099199658765
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.2021183592676482,
+            "mae": 0.16768040848653643,
+            "mean_error": 0.05048459770536064
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.13930357538070515,
+            "mae": 0.09707004366446663,
+            "mean_error": 0.04710347554050405
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1898187920789664,
+            "mae": 0.15831315177463778,
+            "mean_error": -0.04511744973581624
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.20802772787445392,
+            "mae": 0.16084503900417757,
+            "mean_error": 0.06921065284506288
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.25852113338088056,
+            "mae": 0.20416564962193273,
+            "mean_error": 0.07894313813793402
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13918742919815494,
+            "mae": 0.10258566393854612,
+            "mean_error": 0.009801444059931417
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.26792222079479733,
+            "mae": 0.2272911680219248,
+            "mean_error": -0.015519939768165915
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.20849217765890224,
+            "mae": 0.16855257712713342,
+            "mean_error": 0.0758520996022195
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.22422116197802175,
+            "mae": 0.18737183266757923,
+            "mean_error": 0.06466086989599391
+          }
+        }
+      }
+    },
+    "previous_presidential_open_incumbent_experience|ridge=0.01": {
+      "specification": "previous_presidential_open_incumbent_experience",
+      "ridge_alpha": 0.01,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14864244810537916,
+        "mae": 0.1135647317529611,
+        "mean_error": 0.01836504855850069
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.1426792873323435,
+        "mae": 0.10828509538669054,
+        "mean_error": -0.008070877671585512
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17216685243224894,
+            "mae": 0.14156834440110636,
+            "mean_error": 0.0028395267359577875
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.12700025724633274,
+            "mae": 0.09107540225486727,
+            "mean_error": 0.020468573426622356
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.1169195845490889,
+            "mae": 0.08230488507596175,
+            "mean_error": 0.035695863616223
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.16515579857843132,
+            "mae": 0.1364464114205831,
+            "mean_error": -0.05477179765047111
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.19632884222784325,
+            "mae": 0.16157312743464966,
+            "mean_error": -0.007401964790788182
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.1977088904789781,
+            "mae": 0.1456561375232316,
+            "mean_error": 0.10908962561163674
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13859188548371953,
+            "mae": 0.10184804609471033,
+            "mean_error": -0.037081739734950436
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.21552639959465728,
+            "mae": 0.17420153748167544,
+            "mean_error": -0.007816019543541716
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17018580614426324,
+            "mae": 0.1362413158172141,
+            "mean_error": 0.03949339299331897
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.16472463780753827,
+            "mae": 0.1272297524633077,
+            "mean_error": 0.013673234903298387
+          }
+        }
+      }
+    },
+    "previous_presidential_open_incumbent_experience|ridge=0.1": {
+      "specification": "previous_presidential_open_incumbent_experience",
+      "ridge_alpha": 0.1,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.14821782359843252,
+        "mae": 0.11330031159939088,
+        "mean_error": 0.018247728113791734
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.14288603838869876,
+        "mae": 0.10849947433893238,
+        "mean_error": -0.007559963819906022
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.17100523940523318,
+            "mae": 0.1407382538107537,
+            "mean_error": 0.002118354165374622
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.1270161231639876,
+            "mae": 0.09108291746107602,
+            "mean_error": 0.020988800447507464
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.11767926480938515,
+            "mae": 0.08267191099135798,
+            "mean_error": 0.036252610660862016
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.16560645003938415,
+            "mae": 0.13699929468451552,
+            "mean_error": -0.05427612353021902
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.1961725234425384,
+            "mae": 0.16197593574673932,
+            "mean_error": -0.0087086863356579
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.1975749975469714,
+            "mae": 0.14557295100330728,
+            "mean_error": 0.10953906760223299
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13852736407238694,
+            "mae": 0.10178807314876293,
+            "mean_error": -0.03765062765105538
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2156295219637017,
+            "mae": 0.17427579458473255,
+            "mean_error": -0.007459911857742925
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.16966410725935316,
+            "mae": 0.1359086437219509,
+            "mean_error": 0.03996105723489716
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.16508784841255297,
+            "mae": 0.1276512494992939,
+            "mean_error": 0.01440332019961412
+          }
+        }
+      }
+    },
+    "previous_presidential_open_incumbent_experience|ridge=1": {
+      "specification": "previous_presidential_open_incumbent_experience",
+      "ridge_alpha": 1.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.1461063540535903,
+        "mae": 0.11135221112799223,
+        "mean_error": 0.017381722462654087
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.1449939632406681,
+        "mae": 0.11036711084191266,
+        "mean_error": -0.003299651540442886
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.16307257261834696,
+            "mae": 0.13434254398381787,
+            "mean_error": -0.002786331913805678
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.12729973443074183,
+            "mae": 0.09103056019536121,
+            "mean_error": 0.025296852126309385
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.12446491988192858,
+            "mae": 0.08568858375404736,
+            "mean_error": 0.039894899441027774
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1700214502404107,
+            "mae": 0.1420087391726332,
+            "mean_error": -0.0500939302678557
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.19491636034889318,
+            "mae": 0.16406021475106738,
+            "mean_error": -0.01822149056629698
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.19605900901131323,
+            "mae": 0.1445304576872644,
+            "mean_error": 0.11283318298943484
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.13794576921580803,
+            "mae": 0.1017609842910539,
+            "mean_error": -0.04101287065029869
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2166731370843079,
+            "mae": 0.17504215032588127,
+            "mean_error": -0.004845471607416663
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.1673399443083212,
+            "mae": 0.133267321233258,
+            "mean_error": 0.043390986380972954
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.1686135036131968,
+            "mae": 0.1312923898639642,
+            "mean_error": 0.020602244602987468
+          }
+        }
+      }
+    },
+    "previous_presidential_open_incumbent_experience|ridge=10": {
+      "specification": "previous_presidential_open_incumbent_experience",
+      "ridge_alpha": 10.0,
+      "tuning": {
+        "n": 91,
+        "rmse": 0.1473098565542287,
+        "mae": 0.10976050086846859,
+        "mean_error": 0.018632649025724198
+      },
+      "later_cycles": {
+        "n": 58,
+        "rmse": 0.1600201307013813,
+        "mae": 0.12396903728210935,
+        "mean_error": 0.012559626434878698
+      },
+      "subgroups": {
+        "incumbent_running": {
+          "tuning": {
+            "n": 48,
+            "rmse": 0.14600726807459313,
+            "mae": 0.11758574482435032,
+            "mean_error": -0.008243792996857293
+          },
+          "later_cycles": {
+            "n": 36,
+            "rmse": 0.13365045059022496,
+            "mae": 0.09798081529360367,
+            "mean_error": 0.041052668797017515
+          }
+        },
+        "open_seat": {
+          "tuning": {
+            "n": 43,
+            "rmse": 0.14875043618395334,
+            "mae": 0.10102534482469362,
+            "mean_error": 0.04863425872535005
+          },
+          "later_cycles": {
+            "n": 22,
+            "rmse": 0.1956487696421748,
+            "mae": 0.16649521871784598,
+            "mean_error": -0.0340653519758939
+          }
+        },
+        "cross_party_incumbent": {
+          "tuning": {
+            "n": 14,
+            "rmse": 0.18419310623793317,
+            "mae": 0.15409432327849557,
+            "mean_error": -0.031171793165721915
+          },
+          "later_cycles": {
+            "n": 9,
+            "rmse": 0.18648798930618474,
+            "mae": 0.14247442785772502,
+            "mean_error": 0.11725154530346603
+          }
+        },
+        "local_signals_disagree": {
+          "tuning": {
+            "n": 24,
+            "rmse": 0.1298103437591192,
+            "mae": 0.09657947706598947,
+            "mean_error": -0.03833127138548426
+          },
+          "later_cycles": {
+            "n": 16,
+            "rmse": 0.2244060607223853,
+            "mae": 0.18173734749524645,
+            "mean_error": -0.0007790896836348295
+          }
+        },
+        "strongly_partisan_presidential_lean": {
+          "tuning": {
+            "n": 44,
+            "rmse": 0.17750756184537006,
+            "mae": 0.13836104011580422,
+            "mean_error": 0.0550074667263889
+          },
+          "later_cycles": {
+            "n": 34,
+            "rmse": 0.1910640254360532,
+            "mae": 0.153748358533,
+            "mean_error": 0.04599527706926567
+          }
+        }
+      }
+    }
+  },
+  "selected_expanding_predictions": [
+    {
+      "year": 2012,
+      "state": "VT",
+      "predicted_lean": 0.12193519434025782,
+      "actual_lean": 0.19761617380808694,
+      "predicted_margin": 0.13664107669319897,
+      "actual_margin": 0.2123220561610281,
+      "error_logratio": 0.15620128693051533,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.07568097946782912
+    },
+    {
+      "year": 2012,
+      "state": "NH",
+      "predicted_lean": 0.05237734206694229,
+      "actual_lean": 0.10979390324296122,
+      "predicted_margin": 0.06708322441988346,
+      "actual_margin": 0.12449978559590238,
+      "error_logratio": 0.11592993332481749,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.057416561176018927
+    },
+    {
+      "year": 2012,
+      "state": "MT",
+      "predicted_lean": 0.0397995555528632,
+      "actual_lean": 0.0015642915021723772,
+      "predicted_margin": 0.054505437905804366,
+      "actual_margin": 0.01627017385511354,
+      "error_logratio": -0.07657580052427895,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.038235264050690825
+    },
+    {
+      "year": 2012,
+      "state": "DE",
+      "predicted_lean": 0.1339773637820587,
+      "actual_lean": 0.4014188216520667,
+      "predicted_margin": 0.14868324613499986,
+      "actual_margin": 0.4161247040050079,
+      "error_logratio": 0.5864046234518505,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.267441457870008
+    },
+    {
+      "year": 2012,
+      "state": "IN",
+      "predicted_lean": -0.11944770140936026,
+      "actual_lean": -0.045168333285926406,
+      "predicted_margin": -0.10474181905641909,
+      "actual_margin": -0.030462450932985243,
+      "error_logratio": 0.14931103406104929,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.07427936812343386
+    },
+    {
+      "year": 2012,
+      "state": "MO",
+      "predicted_lean": -0.00014867594617580093,
+      "actual_lean": 0.11104788828980673,
+      "predicted_margin": 0.014557206406765364,
+      "actual_margin": 0.1257537706427479,
+      "error_logratio": 0.22372957605217336,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.11119656423598254
+    },
+    {
+      "year": 2012,
+      "state": "NC",
+      "predicted_lean": -0.0505679617613694,
+      "actual_lean": -0.13114995008132505,
+      "predicted_margin": -0.035862079408428234,
+      "actual_margin": -0.11644406772838388,
+      "error_logratio": -0.1621944461399958,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.08058198831995564
+    },
+    {
+      "year": 2012,
+      "state": "ND",
+      "predicted_lean": -0.26152623382891965,
+      "actual_lean": -0.3101990439233573,
+      "predicted_margin": -0.2468203514759785,
+      "actual_margin": -0.2954931615704161,
+      "error_logratio": -0.10510058898421348,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.048672810094437635
+    },
+    {
+      "year": 2012,
+      "state": "UT",
+      "predicted_lean": -0.3503829226964145,
+      "actual_lean": -0.44004599816567436,
+      "predicted_margin": -0.33567704034347334,
+      "actual_margin": -0.4253401158127332,
+      "error_logratio": -0.20996220961019363,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.08966307546925983
+    },
+    {
+      "year": 2012,
+      "state": "WA",
+      "predicted_lean": 0.01371474117512027,
+      "actual_lean": 0.01608393271995901,
+      "predicted_margin": 0.028420623528061434,
+      "actual_margin": 0.030789815072900177,
+      "error_logratio": 0.004742542006910412,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.0023691915448387415
+    },
+    {
+      "year": 2012,
+      "state": "WV",
+      "predicted_lean": 0.04587209586263781,
+      "actual_lean": 0.03566828008678582,
+      "predicted_margin": 0.060577978215578976,
+      "actual_margin": 0.050374162439726984,
+      "error_logratio": -0.020470812217632126,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.010203815775851992
+    },
+    {
+      "year": 2014,
+      "state": "AL",
+      "predicted_lean": -0.12067652954323385,
+      "actual_lean": -0.2206474281340793,
+      "predicted_margin": -0.17374624858589777,
+      "actual_margin": -0.2737171471767432,
+      "error_logratio": -0.21070134562974835,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.09997089859084546
+    },
+    {
+      "year": 2014,
+      "state": "AZ",
+      "predicted_lean": -0.06267475199719044,
+      "actual_lean": -0.07133181058336549,
+      "predicted_margin": -0.11574447103985436,
+      "actual_margin": -0.12440152962602939,
+      "error_logratio": -0.017567513379403044,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.008657058586175048
+    },
+    {
+      "year": 2014,
+      "state": "ID",
+      "predicted_lean": -0.20179933465363323,
+      "actual_lean": -0.10953566121523686,
+      "predicted_margin": -0.25486905369629714,
+      "actual_margin": -0.16260538025790078,
+      "error_logratio": 0.19310318222432404,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.09226367343839637
+    },
+    {
+      "year": 2014,
+      "state": "ME",
+      "predicted_lean": -0.09311864617999543,
+      "actual_lean": 0.0005264496916237496,
+      "predicted_margin": -0.14618836522265935,
+      "actual_margin": -0.05254326935104016,
+      "error_logratio": 0.18930324336213616,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.09364509587161918
+    },
+    {
+      "year": 2014,
+      "state": "CT",
+      "predicted_lean": 0.07496487636917804,
+      "actual_lean": 0.07899859254929437,
+      "predicted_margin": 0.021895157326514127,
+      "actual_margin": 0.025928873506630454,
+      "error_logratio": 0.008072058808199188,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.004033716180116331
+    },
+    {
+      "year": 2014,
+      "state": "IA",
+      "predicted_lean": -0.0025685933560459714,
+      "actual_lean": -0.17258402306734513,
+      "predicted_margin": -0.05563831239870988,
+      "actual_margin": -0.22565374211000905,
+      "error_logratio": -0.3478188505005944,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.17001542971129915
+    },
+    {
+      "year": 2014,
+      "state": "HI",
+      "predicted_lean": 0.22306540560727325,
+      "actual_lean": 0.1961229691483815,
+      "predicted_margin": 0.16999568656460934,
+      "actual_margin": 0.1430532501057176,
+      "error_logratio": -0.05524197386025925,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.026942436458891744
+    },
+    {
+      "year": 2014,
+      "state": "KS",
+      "predicted_lean": -0.17947341769291936,
+      "actual_lean": 0.014599006574562014,
+      "predicted_margin": -0.23254313673558327,
+      "actual_margin": -0.038470712468101895,
+      "error_logratio": 0.3967732146800817,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.19407242426748136
+    },
+    {
+      "year": 2014,
+      "state": "SD",
+      "predicted_lean": -0.1326324755935776,
+      "actual_lean": -0.4165367494736897,
+      "predicted_margin": -0.18570219463624152,
+      "actual_margin": -0.46960646851635357,
+      "error_logratio": -0.6433663981533324,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.2839042738801121
+    },
+    {
+      "year": 2014,
+      "state": "VT",
+      "predicted_lean": 0.18396722494395162,
+      "actual_lean": 0.06685344925757453,
+      "predicted_margin": 0.1308975059012877,
+      "actual_margin": 0.013783730214910613,
+      "error_logratio": -0.23573657978890333,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.1171137756863771
+    },
+    {
+      "year": 2014,
+      "state": "WY",
+      "predicted_lean": -0.3043278525538222,
+      "actual_lean": -0.31782672173201937,
+      "predicted_margin": -0.3573975715964861,
+      "actual_margin": -0.37089644077468326,
+      "error_logratio": -0.031125887408787967,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.013498869178197148
+    },
+    {
+      "year": 2014,
+      "state": "AR",
+      "predicted_lean": 0.04062969442015177,
+      "actual_lean": -0.09076921986037484,
+      "predicted_margin": -0.01244002462251214,
+      "actual_margin": -0.14383893890303875,
+      "error_logratio": -0.26480552763121945,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.1313989142805266
+    },
+    {
+      "year": 2014,
+      "state": "NE",
+      "predicted_lean": -0.2338706278190115,
+      "actual_lean": -0.13293757558700595,
+      "predicted_margin": -0.2869403468616754,
+      "actual_margin": -0.18600729462966986,
+      "error_logratio": 0.2140614484287488,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.10093305223200555
+    },
+    {
+      "year": 2014,
+      "state": "NH",
+      "predicted_lean": 0.046742644530788115,
+      "actual_lean": 0.10264140696523183,
+      "predicted_margin": -0.006327074511875794,
+      "actual_margin": 0.049571687922567914,
+      "error_logratio": 0.1118790237426677,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.055898762434443715
+    },
+    {
+      "year": 2014,
+      "state": "NM",
+      "predicted_lean": 0.02504890022946399,
+      "actual_lean": -0.09139231923301927,
+      "predicted_margin": -0.02802081881319992,
+      "actual_margin": -0.14446203827568319,
+      "error_logratio": -0.2349031920632601,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.11644121946248326
+    },
+    {
+      "year": 2014,
+      "state": "NV",
+      "predicted_lean": -0.007920666247077966,
+      "actual_lean": -0.4412955710670519,
+      "predicted_margin": -0.06099038528974188,
+      "actual_margin": -0.4943652901097158,
+      "error_logratio": -0.9615099910216646,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.4333749048199739
+    },
+    {
+      "year": 2014,
+      "state": "NY",
+      "predicted_lean": 0.2194591168807407,
+      "actual_lean": 0.20069052536270646,
+      "predicted_margin": 0.1663893978380768,
+      "actual_margin": 0.14762080632004254,
+      "error_logratio": -0.03848715871608743,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.018768591518034256
+    },
+    {
+      "year": 2014,
+      "state": "MN",
+      "predicted_lean": 0.04142293208573865,
+      "actual_lean": 0.11186746317378136,
+      "predicted_margin": -0.01164678695692526,
+      "actual_margin": 0.058797744131117456,
+      "error_logratio": 0.14102591334846698,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.07044453108804272
+    },
+    {
+      "year": 2014,
+      "state": "OR",
+      "predicted_lean": 0.061346417274694635,
+      "actual_lean": 0.11435909146490691,
+      "predicted_margin": 0.008276698232030727,
+      "actual_margin": 0.061289372422243006,
+      "error_logratio": 0.10617880164230337,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.05301267419021228
+    },
+    {
+      "year": 2014,
+      "state": "MD",
+      "predicted_lean": 0.15666488444229446,
+      "actual_lean": 0.014608880583469375,
+      "predicted_margin": 0.10359516539963054,
+      "actual_margin": -0.038460838459194534,
+      "error_logratio": -0.2848959653728791,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.14205600385882508
+    },
+    {
+      "year": 2014,
+      "state": "OK",
+      "predicted_lean": -0.17702303862399196,
+      "actual_lean": -0.09978336997752052,
+      "predicted_margin": -0.23009275766665588,
+      "actual_margin": -0.15285308902018443,
+      "error_logratio": 0.1604538475379247,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.07723966864647144
+    },
+    {
+      "year": 2014,
+      "state": "OH",
+      "predicted_lean": 0.01561906237744506,
+      "actual_lean": -0.26359349492195877,
+      "predicted_margin": -0.03745065666521885,
+      "actual_margin": -0.31666321396462266,
+      "error_logratio": -0.5809317502491597,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.2792125572994038
+    },
+    {
+      "year": 2014,
+      "state": "SC",
+      "predicted_lean": -0.040036567660757284,
+      "actual_lean": -0.0957406489286293,
+      "predicted_margin": -0.09310628670342119,
+      "actual_margin": -0.1488103679712932,
+      "error_logratio": -0.11309381700723556,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.05570408126787201
+    },
+    {
+      "year": 2014,
+      "state": "WI",
+      "predicted_lean": 0.015664905998517116,
+      "actual_lean": -0.004343128998567994,
+      "predicted_margin": -0.03740481304414679,
+      "actual_margin": -0.0574128480412319,
+      "error_logratio": -0.04010756573378002,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.02000803499708511
+    },
+    {
+      "year": 2014,
+      "state": "TN",
+      "predicted_lean": -0.17432498057690954,
+      "actual_lean": -0.45647958732020977,
+      "predicted_margin": -0.22739469961957345,
+      "actual_margin": -0.5095493063628737,
+      "error_logratio": -0.6613609004427674,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.28215460674330023
+    },
+    {
+      "year": 2014,
+      "state": "CO",
+      "predicted_lean": 0.2596108764273625,
+      "actual_lean": 0.0881602170245412,
+      "predicted_margin": 0.2065411573846986,
+      "actual_margin": 0.03509049798187729,
+      "error_logratio": -0.34890150417183224,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.17145065940282134
+    },
+    {
+      "year": 2014,
+      "state": "MI",
+      "predicted_lean": -0.020413455032045315,
+      "actual_lean": 0.011487412857934962,
+      "predicted_margin": -0.07348317407470922,
+      "actual_margin": -0.04158230618472895,
+      "error_logratio": 0.06401914185962698,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.031900867889980276
+    },
+    {
+      "year": 2014,
+      "state": "GA",
+      "predicted_lean": -0.05180316276107951,
+      "actual_lean": -0.02742844322994948,
+      "predicted_margin": -0.10487288180374342,
+      "actual_margin": -0.08049816227261339,
+      "error_logratio": 0.04917439607405663,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.024374719531130032
+    },
+    {
+      "year": 2014,
+      "state": "PA",
+      "predicted_lean": -0.0005084336705383622,
+      "actual_lean": 0.15171305987914313,
+      "predicted_margin": -0.05357815271320227,
+      "actual_margin": 0.09864334083647922,
+      "error_logratio": 0.3051893610400638,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.15222149354968148
+    },
+    {
+      "year": 2014,
+      "state": "MA",
+      "predicted_lean": 0.11889708995375328,
+      "actual_lean": 0.033467301842317616,
+      "predicted_margin": 0.06582737091108937,
+      "actual_margin": -0.019602417200346292,
+      "error_logratio": -0.17105525886616202,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.08542978811143567
+    },
+    {
+      "year": 2014,
+      "state": "IL",
+      "predicted_lean": 0.0748773487795136,
+      "actual_lean": 0.01247480399201159,
+      "predicted_margin": 0.021807629736849694,
+      "actual_margin": -0.04059491505065232,
+      "error_logratio": -0.12485664862335955,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.06240254478750201
+    },
+    {
+      "year": 2014,
+      "state": "FL",
+      "predicted_lean": 0.011428748419045134,
+      "actual_lean": 0.041749764121302685,
+      "predicted_margin": -0.041640970623618774,
+      "actual_margin": -0.011319954921361224,
+      "error_logratio": 0.06068925057711284,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.03032101570225755
+    },
+    {
+      "year": 2014,
+      "state": "TX",
+      "predicted_lean": -0.08877273133375543,
+      "actual_lean": -0.15438302854031272,
+      "predicted_margin": -0.14184245037641935,
+      "actual_margin": -0.20745274758297663,
+      "error_logratio": -0.13540540944212337,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.06561029720655728
+    },
+    {
+      "year": 2014,
+      "state": "CA",
+      "predicted_lean": 0.1426563141479099,
+      "actual_lean": 0.25247370248965495,
+      "predicted_margin": 0.089586595105246,
+      "actual_margin": 0.19940398344699106,
+      "error_logratio": 0.22456871566840986,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.10981738834174504
+    },
+    {
+      "year": 2016,
+      "state": "VT",
+      "predicted_lean": 0.12226656334546075,
+      "actual_lean": -0.08063345190019464,
+      "predicted_margin": 0.11284247957582719,
+      "actual_margin": -0.0900575356698282,
+      "error_logratio": -0.4072546464279721,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.20290001524565537
+    },
+    {
+      "year": 2016,
+      "state": "NH",
+      "predicted_lean": 0.028743452551824415,
+      "actual_lean": -0.014361755479676075,
+      "predicted_margin": 0.01931936878219085,
+      "actual_margin": -0.023785839249309642,
+      "error_logratio": -0.08622419881678833,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.04310520803150049
+    },
+    {
+      "year": 2016,
+      "state": "MT",
+      "predicted_lean": -0.07111413037057882,
+      "actual_lean": 0.04970056029941011,
+      "predicted_margin": -0.08053821414021238,
+      "actual_margin": 0.04027647652977655,
+      "error_logratio": 0.2420226119508127,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": -0.12081469066998893
+    },
+    {
+      "year": 2016,
+      "state": "DE",
+      "predicted_lean": 0.1701673762023649,
+      "actual_lean": 0.2058133077923472,
+      "predicted_margin": 0.16074329243273133,
+      "actual_margin": 0.1963892240227136,
+      "error_logratio": 0.07364905716339437,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.03564593158998228
+    },
+    {
+      "year": 2016,
+      "state": "IN",
+      "predicted_lean": -0.07368372359453354,
+      "actual_lean": -0.05206438901702753,
+      "predicted_margin": -0.0831078073641671,
+      "actual_margin": -0.06148847278666109,
+      "error_logratio": 0.043467603925595524,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.021619334577506012
+    },
+    {
+      "year": 2016,
+      "state": "MO",
+      "predicted_lean": -0.02043450003142737,
+      "actual_lean": -0.04813804460921842,
+      "predicted_margin": -0.029858583801060934,
+      "actual_margin": -0.05756212837885198,
+      "error_logratio": -0.05551673723957833,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.027703544577791048
+    },
+    {
+      "year": 2016,
+      "state": "NC",
+      "predicted_lean": -0.07301088377380005,
+      "actual_lean": 0.011654317114063447,
+      "predicted_margin": -0.08243496754343362,
+      "actual_margin": 0.0022302333444298808,
+      "error_logratio": 0.16970539850539404,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.0846652008878635
+    },
+    {
+      "year": 2016,
+      "state": "ND",
+      "predicted_lean": -0.19262150320105248,
+      "actual_lean": -0.5862058917614223,
+      "predicted_margin": -0.20204558697068606,
+      "actual_margin": -0.5956299755310559,
+      "error_logratio": -0.9629649742746658,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.39358438856036987
+    },
+    {
+      "year": 2016,
+      "state": "UT",
+      "predicted_lean": -0.3334319093969937,
+      "actual_lean": -0.38854742991496893,
+      "predicted_margin": -0.34285599316662724,
+      "actual_margin": -0.3979715136846025,
+      "error_logratio": -0.12782200235815822,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.05511552051797525
+    },
+    {
+      "year": 2016,
+      "state": "WA",
+      "predicted_lean": 0.03351266153541334,
+      "actual_lean": 0.09721700204523767,
+      "predicted_margin": 0.024088577765779773,
+      "actual_margin": 0.0877929182756041,
+      "error_logratio": 0.1278525720436083,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.06370434050982433
+    },
+    {
+      "year": 2016,
+      "state": "WV",
+      "predicted_lean": -0.10537758016292172,
+      "actual_lean": 0.08364434263081605,
+      "predicted_margin": -0.11480166393255528,
+      "actual_margin": 0.07422025886118248,
+      "error_logratio": 0.3793340507095665,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": -0.18902192279373775
+    },
+    {
+      "year": 2018,
+      "state": "AL",
+      "predicted_lean": -0.18985547140164497,
+      "actual_lean": -0.28006207130349353,
+      "predicted_margin": -0.10080736495333378,
+      "actual_margin": -0.19101396485518235,
+      "error_logratio": -0.18447677041011057,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.09020659990184857
+    },
+    {
+      "year": 2018,
+      "state": "AZ",
+      "predicted_lean": -0.05589042264317435,
+      "actual_lean": -0.23377599065637025,
+      "predicted_margin": 0.03315768380513683,
+      "actual_margin": -0.14472788420805907,
+      "error_logratio": -0.3578422363782303,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.1778855680131959
+    },
+    {
+      "year": 2018,
+      "state": "ID",
+      "predicted_lean": -0.17818471916912162,
+      "actual_lean": -0.3093459421038989,
+      "predicted_margin": -0.08913661272081044,
+      "actual_margin": -0.2202978356555877,
+      "error_logratio": -0.26919059334963086,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.13116122293477725
+    },
+    {
+      "year": 2018,
+      "state": "ME",
+      "predicted_lean": -0.008197926459563513,
+      "actual_lean": -0.007043838605796604,
+      "predicted_margin": 0.08085017998874766,
+      "actual_margin": 0.08200426784251458,
+      "error_logratio": 0.002323582235231547,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.0011540878537669094
+    },
+    {
+      "year": 2018,
+      "state": "CT",
+      "predicted_lean": 0.055443937362298905,
+      "actual_lean": -0.056049160254917914,
+      "predicted_margin": 0.1444920438106101,
+      "actual_margin": 0.03299894619339327,
+      "error_logratio": -0.22499893060521436,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.11149309761721682
+    },
+    {
+      "year": 2018,
+      "state": "IA",
+      "predicted_lean": -0.1115149024752777,
+      "actual_lean": -0.11700009148677024,
+      "predicted_margin": -0.022466796026966523,
+      "actual_margin": -0.027951985038459057,
+      "error_logratio": -0.01097738188933451,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.005485189011492531
+    },
+    {
+      "year": 2018,
+      "state": "HI",
+      "predicted_lean": 0.16390222478009767,
+      "actual_lean": 0.2115327980422823,
+      "predicted_margin": 0.2529503312284088,
+      "actual_margin": 0.3005809044905935,
+      "error_logratio": 0.10319152597850945,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.047630573262184644
+    },
+    {
+      "year": 2018,
+      "state": "KS",
+      "predicted_lean": -0.08797498101225043,
+      "actual_lean": -0.03331410890782304,
+      "predicted_margin": 0.0010731254360607512,
+      "actual_margin": 0.05573399754048814,
+      "error_logratio": 0.10943737585177461,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": -0.05466087210442739
+    },
+    {
+      "year": 2018,
+      "state": "SD",
+      "predicted_lean": -0.2672435910467594,
+      "actual_lean": -0.123315842199746,
+      "predicted_margin": -0.1781954845984482,
+      "actual_margin": -0.034267735751434825,
+      "error_logratio": 0.2916744286835587,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.14392774884701337
+    },
+    {
+      "year": 2018,
+      "state": "VT",
+      "predicted_lean": 0.054582502240712004,
+      "actual_lean": -0.24549485469083684,
+      "predicted_margin": 0.1436306086890232,
+      "actual_margin": -0.15644674824252566,
+      "error_logratio": -0.6047458134315717,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.30007735693154886
+    },
+    {
+      "year": 2018,
+      "state": "WY",
+      "predicted_lean": -0.29838065947754894,
+      "actual_lean": -0.507219622941881,
+      "predicted_margin": -0.20933255302923776,
+      "actual_margin": -0.41817151649356993,
+      "error_logratio": -0.46600153499372166,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.20883896346433212
+    },
+    {
+      "year": 2018,
+      "state": "AR",
+      "predicted_lean": -0.14500307260485545,
+      "actual_lean": -0.43468045301870833,
+      "predicted_margin": -0.05595496615654427,
+      "actual_margin": -0.34563234657039715,
+      "error_logratio": -0.6089230256682535,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.2896773804138529
+    },
+    {
+      "year": 2018,
+      "state": "NE",
+      "predicted_lean": -0.15446548541297495,
+      "actual_lean": -0.2690570465069374,
+      "predicted_margin": -0.06541737896466376,
+      "actual_margin": -0.1800089400586262,
+      "error_logratio": -0.2329619845739629,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.11459156109396246
+    },
+    {
+      "year": 2018,
+      "state": "NH",
+      "predicted_lean": -0.022586885852568874,
+      "actual_lean": -0.16054568927968976,
+      "predicted_margin": 0.0664612205957423,
+      "actual_margin": -0.07149758283137858,
+      "error_logratio": -0.2763582467580601,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.13795880342712089
+    },
+    {
+      "year": 2018,
+      "state": "NM",
+      "predicted_lean": -0.01919791518877488,
+      "actual_lean": 0.05493288312754388,
+      "predicted_margin": 0.0698501912595363,
+      "actual_margin": 0.14398098957585506,
+      "error_logratio": 0.15004871831997715,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.07413079831631876
+    },
+    {
+      "year": 2018,
+      "state": "NV",
+      "predicted_lean": -0.16077961729922693,
+      "actual_lean": -0.04592543713910839,
+      "predicted_margin": -0.07173151085091575,
+      "actual_margin": 0.04312266930920279,
+      "error_logratio": 0.23000870075840535,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.11485418016011854
+    },
+    {
+      "year": 2018,
+      "state": "NY",
+      "predicted_lean": 0.12773259741046603,
+      "actual_lean": 0.1553044398626831,
+      "predicted_margin": 0.2167807038587772,
+      "actual_margin": 0.2443525463109943,
+      "error_logratio": 0.058244539954699415,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.027571842452217082
+    },
+    {
+      "year": 2018,
+      "state": "MN",
+      "predicted_lean": 0.024653335752493816,
+      "actual_lean": 0.02954461991050812,
+      "predicted_margin": 0.113701442200805,
+      "actual_margin": 0.1185927263588193,
+      "error_logratio": 0.009916362335580381,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.004891284158014306
+    },
+    {
+      "year": 2018,
+      "state": "RI",
+      "predicted_lean": 0.07424814305390731,
+      "actual_lean": 0.08308364726040485,
+      "predicted_margin": 0.1632962495022185,
+      "actual_margin": 0.17213175370871603,
+      "error_logratio": 0.01818257974952514,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.008835504206497535
+    },
+    {
+      "year": 2018,
+      "state": "OR",
+      "predicted_lean": 0.06093430401968417,
+      "actual_lean": -0.020736652862202803,
+      "predicted_margin": 0.14998241046799535,
+      "actual_margin": 0.06831145358610838,
+      "error_logratio": -0.16540886411175237,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.08167095688188697
+    },
+    {
+      "year": 2018,
+      "state": "MD",
+      "predicted_lean": 0.07925185643190791,
+      "actual_lean": -0.2088773287928477,
+      "predicted_margin": 0.1682999628802191,
+      "actual_margin": -0.11982922234453652,
+      "error_logratio": -0.5806486228965806,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.2881291852247556
+    },
+    {
+      "year": 2018,
+      "state": "OK",
+      "predicted_lean": -0.18148006126766603,
+      "actual_lean": -0.21440764895747494,
+      "predicted_margin": -0.09243195481935484,
+      "actual_margin": -0.12535954250916376,
+      "error_logratio": -0.066651863864539,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.03292758768980891
+    },
+    {
+      "year": 2018,
+      "state": "OH",
+      "predicted_lean": -0.13723280982691308,
+      "actual_lean": -0.12720600577536745,
+      "predicted_margin": -0.048184703378601895,
+      "actual_margin": -0.03815789932705626,
+      "error_logratio": 0.020091222930052957,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.01002680405154563
+    },
+    {
+      "year": 2018,
+      "state": "SC",
+      "predicted_lean": -0.10127806617415583,
+      "actual_lean": -0.16946909118908016,
+      "predicted_margin": -0.012229959725844647,
+      "actual_margin": -0.08042098474076897,
+      "error_logratio": -0.13672893257846963,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.06819102501492433
+    },
+    {
+      "year": 2018,
+      "state": "WI",
+      "predicted_lean": -0.023199080010984842,
+      "actual_lean": -0.07789015657605095,
+      "predicted_margin": 0.06584902643732635,
+      "actual_margin": 0.011157949872260231,
+      "error_logratio": -0.10957207544580015,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.0546910765650661
+    },
+    {
+      "year": 2018,
+      "state": "TN",
+      "predicted_lean": -0.26523279282187856,
+      "actual_lean": -0.30315506837873274,
+      "predicted_margin": -0.17618468637356738,
+      "actual_margin": -0.21410696193042159,
+      "error_logratio": -0.07885858395201284,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.03792227555685418
+    },
+    {
+      "year": 2018,
+      "state": "CO",
+      "predicted_lean": 0.028896899775209484,
+      "actual_lean": 0.02128983789849849,
+      "predicted_margin": 0.11794500622352067,
+      "actual_margin": 0.11033794434680967,
+      "error_logratio": -0.015415033329043759,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.007607061876710994
+    },
+    {
+      "year": 2018,
+      "state": "MI",
+      "predicted_lean": -0.015872259061821277,
+      "actual_lean": 0.009518498039430084,
+      "predicted_margin": 0.07317584738648991,
+      "actual_margin": 0.09856660448774127,
+      "error_logratio": 0.05116160351000487,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.02539075710125136
+    },
+    {
+      "year": 2018,
+      "state": "GA",
+      "predicted_lean": -0.04606092604393104,
+      "actual_lean": -0.10307211509597572,
+      "predicted_margin": 0.04298718040438014,
+      "actual_margin": -0.014024008647664536,
+      "error_logratio": -0.11407723314929277,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.05701118905204468
+    },
+    {
+      "year": 2018,
+      "state": "PA",
+      "predicted_lean": 0.030197931432804782,
+      "actual_lean": 0.08434140451655889,
+      "predicted_margin": 0.11924603788111596,
+      "actual_margin": 0.17338951096487007,
+      "error_logratio": 0.11068602471861835,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.054143473083754105
+    },
+    {
+      "year": 2018,
+      "state": "MA",
+      "predicted_lean": 0.08990453450863398,
+      "actual_lean": -0.4248311556790897,
+      "predicted_margin": 0.17895264095694516,
+      "actual_margin": -0.3357830492307785,
+      "error_logratio": -1.0604650619476061,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.5147356901877237
+    },
+    {
+      "year": 2018,
+      "state": "IL",
+      "predicted_lean": 0.04527520239126369,
+      "actual_lean": 0.079128865958695,
+      "predicted_margin": 0.13432330883957488,
+      "actual_margin": 0.1681769724070062,
+      "error_logratio": 0.06929991296939442,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.033853663567431316
+    },
+    {
+      "year": 2018,
+      "state": "FL",
+      "predicted_lean": -0.00889465253750533,
+      "actual_lean": -0.09304605716451367,
+      "predicted_margin": 0.08015345391080585,
+      "actual_margin": -0.003997950716202488,
+      "error_logratio": -0.16864748261159582,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.08415140462700833
+    },
+    {
+      "year": 2018,
+      "state": "TX",
+      "predicted_lean": -0.10298096945719698,
+      "actual_lean": -0.2243164753930097,
+      "predicted_margin": -0.013932863008885799,
+      "actual_margin": -0.1352683689446985,
+      "error_logratio": -0.2443376153277845,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.12133550593581272
+    },
+    {
+      "year": 2018,
+      "state": "CA",
+      "predicted_lean": 0.17436672390986263,
+      "actual_lean": 0.1499224168954381,
+      "predicted_margin": 0.2634148303581738,
+      "actual_margin": 0.23897052334374927,
+      "error_logratio": -0.05218464712423415,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.024444307014424543
+    },
+    {
+      "year": 2020,
+      "state": "VT",
+      "predicted_lean": -0.019671350300621643,
+      "actual_lean": -0.4601177426248937,
+      "predicted_margin": 0.01125648475092475,
+      "actual_margin": -0.4291899075733473,
+      "error_logratio": -0.9403204183257305,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.4404463923242721
+    },
+    {
+      "year": 2020,
+      "state": "NH",
+      "predicted_lean": -0.08685820002943498,
+      "actual_lean": -0.3534498478797228,
+      "predicted_margin": -0.055930364977888586,
+      "actual_margin": -0.3225220128281764,
+      "error_logratio": -0.5569411569899022,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.26659164785028777
+    },
+    {
+      "year": 2020,
+      "state": "MT",
+      "predicted_lean": -0.08673335412715584,
+      "actual_lean": -0.16500928701380452,
+      "predicted_margin": -0.05580551907560945,
+      "actual_margin": -0.13408145196225812,
+      "error_logratio": -0.15806034317203954,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.07827593288664868
+    },
+    {
+      "year": 2020,
+      "state": "DE",
+      "predicted_lean": 0.07791253502440049,
+      "actual_lean": 0.1813809461146402,
+      "predicted_margin": 0.10884037007594688,
+      "actual_margin": 0.2123087811661866,
+      "error_logratio": 0.21262927834520112,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.10346841109023971
+    },
+    {
+      "year": 2020,
+      "state": "IN",
+      "predicted_lean": -0.11570179259097092,
+      "actual_lean": -0.3070706961466025,
+      "predicted_margin": -0.08477395753942453,
+      "actual_margin": -0.2761428610950561,
+      "error_logratio": -0.39704753228432776,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.19136890355563158
+    },
+    {
+      "year": 2020,
+      "state": "MO",
+      "predicted_lean": -0.11240952384546211,
+      "actual_lean": -0.1987606129375698,
+      "predicted_margin": -0.08148168879391572,
+      "actual_margin": -0.1678327778860234,
+      "error_logratio": -0.17554610127736614,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.08635108909210769
+    },
+    {
+      "year": 2020,
+      "state": "NC",
+      "predicted_lean": -0.040559756087774304,
+      "actual_lean": 0.014851157255784127,
+      "predicted_margin": -0.009631921036227911,
+      "actual_margin": 0.04577899230733052,
+      "error_logratio": 0.11088646284175033,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.05541091334355843
+    },
+    {
+      "year": 2020,
+      "state": "ND",
+      "predicted_lean": -0.36389089279187586,
+      "actual_lean": -0.4743962614113906,
+      "predicted_margin": -0.33296305774032947,
+      "actual_margin": -0.4434684263598442,
+      "error_logratio": -0.26076604458821073,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.11050536861951471
+    },
+    {
+      "year": 2020,
+      "state": "UT",
+      "predicted_lean": -0.24727361567979383,
+      "actual_lean": -0.3805399198780147,
+      "predicted_margin": -0.21634578062824744,
+      "actual_margin": -0.34961208482646833,
+      "error_logratio": -0.29036500328162407,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.1332663041982209
+    },
+    {
+      "year": 2020,
+      "state": "WA",
+      "predicted_lean": 0.05815737321071077,
+      "actual_lean": 0.10390649622654013,
+      "predicted_margin": 0.08908520826225716,
+      "actual_margin": 0.13483433127808653,
+      "error_logratio": 0.09267693834472893,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.04574912301582937
+    },
+    {
+      "year": 2020,
+      "state": "WV",
+      "predicted_lean": -0.1462400523272392,
+      "actual_lean": -0.385936005464176,
+      "predicted_margin": -0.1153122172756928,
+      "actual_margin": -0.3550081704126296,
+      "error_logratio": -0.5106702484017153,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.2396959531369368
+    },
+    {
+      "year": 2022,
+      "state": "AL",
+      "predicted_lean": -0.23534459367929686,
+      "actual_lean": -0.36596229421662035,
+      "predicted_margin": -0.2620386388538349,
+      "actual_margin": -0.39265633939115835,
+      "error_logratio": -0.29328125191834553,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.1306177005373235
+    },
+    {
+      "year": 2022,
+      "state": "AK",
+      "predicted_lean": -0.14140711766430114,
+      "actual_lean": -0.36023640643155125,
+      "predicted_margin": -0.16810116283883914,
+      "actual_margin": -0.38693045160608924,
+      "error_logratio": -0.4769459625585328,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.2188292887672501
+    },
+    {
+      "year": 2022,
+      "state": "AZ",
+      "predicted_lean": -0.13247537202783807,
+      "actual_lean": 0.033383859319877765,
+      "predicted_margin": -0.15916941720237607,
+      "actual_margin": 0.006689814145339766,
+      "error_logratio": 0.3344486435221232,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.16585923134771585
+    },
+    {
+      "year": 2022,
+      "state": "ID",
+      "predicted_lean": -0.2656788394258889,
+      "actual_lean": -0.4713394121599455,
+      "predicted_margin": -0.2923728846004269,
+      "actual_margin": -0.4980334573344835,
+      "error_logratio": -0.4910570578167922,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.20566057273405663
+    },
+    {
+      "year": 2022,
+      "state": "ME",
+      "predicted_lean": -0.018519274482779995,
+      "actual_lean": 0.16163041596878522,
+      "predicted_margin": -0.045213319657317994,
+      "actual_margin": 0.13493637079424722,
+      "error_logratio": 0.3620171364169977,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.1801496904515652
+    },
+    {
+      "year": 2022,
+      "state": "CT",
+      "predicted_lean": -0.0005494745751440586,
+      "actual_lean": 0.15648819934741465,
+      "predicted_margin": -0.02724351974968206,
+      "actual_margin": 0.12979415417287665,
+      "error_logratio": 0.31556146837180943,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": -0.1570376739225587
+    },
+    {
+      "year": 2022,
+      "state": "IA",
+      "predicted_lean": -0.11746201841987705,
+      "actual_lean": -0.163087601247176,
+      "predicted_margin": -0.14415606359441505,
+      "actual_margin": -0.189781646421714,
+      "error_logratio": -0.09388675558532034,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.04562558282729895
+    },
+    {
+      "year": 2022,
+      "state": "HI",
+      "predicted_lean": 0.13073206525971082,
+      "actual_lean": 0.28993561289291586,
+      "predicted_margin": 0.10403802008517282,
+      "actual_margin": 0.26324156771837787,
+      "error_logratio": 0.33034461650329383,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.15920354763320504
+    },
+    {
+      "year": 2022,
+      "state": "KS",
+      "predicted_lean": -0.10801289995709851,
+      "actual_lean": 0.049465752111325034,
+      "predicted_margin": -0.1347069451316365,
+      "actual_margin": 0.02277170693678703,
+      "error_logratio": 0.3166127456569924,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.15747865206842354
+    },
+    {
+      "year": 2022,
+      "state": "SD",
+      "predicted_lean": -0.18044351365649247,
+      "actual_lean": -0.24929483143341535,
+      "predicted_margin": -0.20713755883103047,
+      "actual_margin": -0.27598887660795335,
+      "error_logratio": -0.1463125484720681,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.06885131777692288
+    },
+    {
+      "year": 2022,
+      "state": "VT",
+      "predicted_lean": -0.0978072661910879,
+      "actual_lean": -0.4685018896765693,
+      "predicted_margin": -0.1245013113656259,
+      "actual_margin": -0.4951959348511073,
+      "error_logratio": -0.8355408894563687,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.37069462348548143
+    },
+    {
+      "year": 2022,
+      "state": "WY",
+      "predicted_lean": -0.38259086632312006,
+      "actual_lean": -0.6213622447161049,
+      "predicted_margin": -0.40928491149765805,
+      "actual_margin": -0.6480562898906429,
+      "error_logratio": -0.6743767356793229,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.23877137839298485
+    },
+    {
+      "year": 2022,
+      "state": "AR",
+      "predicted_lean": -0.3014107069193891,
+      "actual_lean": -0.2561874798022127,
+      "predicted_margin": -0.3281047520939271,
+      "actual_margin": -0.2828815249767507,
+      "error_logratio": 0.09978280514807458,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.04522322711717641
+    },
+    {
+      "year": 2022,
+      "state": "NE",
+      "predicted_lean": -0.21075383755763413,
+      "actual_lean": -0.21743837801872942,
+      "predicted_margin": -0.23744788273217213,
+      "actual_margin": -0.24413242319326742,
+      "error_logratio": -0.014191997332273387,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.00668454046109529
+    },
+    {
+      "year": 2022,
+      "state": "NH",
+      "predicted_lean": -0.15346962556337432,
+      "actual_lean": -0.1308685388997426,
+      "predicted_margin": -0.1801636707379123,
+      "actual_margin": -0.1575625840742806,
+      "error_logratio": 0.04653121286755679,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.022601086663631725
+    },
+    {
+      "year": 2022,
+      "state": "NM",
+      "predicted_lean": 0.010102695873099504,
+      "actual_lean": 0.09212642821021369,
+      "predicted_margin": -0.016591349301438497,
+      "actual_margin": 0.0654323830356757,
+      "error_logratio": 0.16423775250250794,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.08202373233711419
+    },
+    {
+      "year": 2022,
+      "state": "NV",
+      "predicted_lean": -0.055580909123101485,
+      "actual_lean": 0.010983929783914034,
+      "predicted_margin": -0.08227495429763948,
+      "actual_margin": -0.015710115390623967,
+      "error_logratio": 0.1334998964960496,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.06656483890701552
+    },
+    {
+      "year": 2022,
+      "state": "NY",
+      "predicted_lean": 0.0880765610076264,
+      "actual_lean": 0.09070119273026267,
+      "predicted_margin": 0.061382515833088395,
+      "actual_margin": 0.06400714755572466,
+      "error_logratio": 0.00526998092625218,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.0026246317226362725
+    },
+    {
+      "year": 2022,
+      "state": "MN",
+      "predicted_lean": -0.011659397825488155,
+      "actual_lean": 0.10579971139621952,
+      "predicted_margin": -0.03835344300002616,
+      "actual_margin": 0.07910566622168153,
+      "error_logratio": 0.2352871212731381,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.11745910922170767
+    },
+    {
+      "year": 2022,
+      "state": "RI",
+      "predicted_lean": 0.053876895595216336,
+      "actual_lean": 0.22360710472943615,
+      "predicted_margin": 0.027182850420678334,
+      "actual_margin": 0.19691305955489816,
+      "error_logratio": 0.3446589961512382,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.16973020913421982
+    },
+    {
+      "year": 2022,
+      "state": "OR",
+      "predicted_lean": 0.00021908976233152994,
+      "actual_lean": 0.06444790361921057,
+      "predicted_margin": -0.026474955412206472,
+      "actual_margin": 0.037753858444672564,
+      "error_logratio": 0.1285059099770922,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.06422881385687904
+    },
+    {
+      "year": 2022,
+      "state": "MD",
+      "predicted_lean": -0.012635104451865359,
+      "actual_lean": 0.36207198417693487,
+      "predicted_margin": -0.03932914962640336,
+      "actual_margin": 0.3353779390023969,
+      "error_logratio": 0.776449974057111,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": -0.3747070886288002
+    },
+    {
+      "year": 2022,
+      "state": "OK",
+      "predicted_lean": -0.23731450221989217,
+      "actual_lean": -0.11382811083020253,
+      "predicted_margin": -0.2640085473944302,
+      "actual_margin": -0.14052215600474052,
+      "error_logratio": 0.2579084101094427,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.12348639138968964
+    },
+    {
+      "year": 2022,
+      "state": "OH",
+      "predicted_lean": -0.1205616389413263,
+      "actual_lean": -0.22414370859347554,
+      "predicted_margin": -0.1472556841158643,
+      "actual_margin": -0.25083775376801354,
+      "error_logratio": -0.21594497946044577,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.10358206965214925
+    },
+    {
+      "year": 2022,
+      "state": "SC",
+      "predicted_lean": -0.14841301765152803,
+      "actual_lean": -0.1492583886031425,
+      "predicted_margin": -0.17510706282606603,
+      "actual_margin": -0.1759524337776805,
+      "error_logratio": -0.0017444909960480648,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.0008453709516144658
+    },
+    {
+      "year": 2022,
+      "state": "WI",
+      "predicted_lean": -0.0734010586696496,
+      "actual_lean": 0.06104058212678192,
+      "predicted_margin": -0.1000951038441876,
+      "actual_margin": 0.03434653695224392,
+      "error_logratio": 0.2695829313804474,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.13444164079643153
+    },
+    {
+      "year": 2022,
+      "state": "TN",
+      "predicted_lean": -0.23683682511711723,
+      "actual_lean": -0.30027637972628207,
+      "predicted_margin": -0.26353087029165523,
+      "actual_margin": -0.32697042490082007,
+      "error_logratio": -0.13906643432085597,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.06343955460916484
+    },
+    {
+      "year": 2022,
+      "state": "CO",
+      "predicted_lean": 0.006887885072611545,
+      "actual_lean": 0.2247102163530956,
+      "predicted_margin": -0.019806160101926457,
+      "actual_margin": 0.1980161711785576,
+      "error_logratio": 0.4409513341478198,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.21782233128048406
+    },
+    {
+      "year": 2022,
+      "state": "MI",
+      "predicted_lean": -0.03370000234314589,
+      "actual_lean": 0.13369812452430155,
+      "predicted_margin": -0.060394047517683895,
+      "actual_margin": 0.10700407934976354,
+      "error_logratio": 0.3357658781056369,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.16739812686744743
+    },
+    {
+      "year": 2022,
+      "state": "GA",
+      "predicted_lean": -0.08408121569258778,
+      "actual_lean": -0.049199032609631425,
+      "predicted_margin": -0.11077526086712577,
+      "actual_margin": -0.07589307778416943,
+      "error_logratio": 0.0703848961748477,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.034882183082956354
+    },
+    {
+      "year": 2022,
+      "state": "PA",
+      "predicted_lean": -0.011258050058352925,
+      "actual_lean": 0.17711490134714267,
+      "predicted_margin": -0.03795209523289093,
+      "actual_margin": 0.15042085617260467,
+      "error_logratio": 0.3790826794899129,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.1883729514054956
+    },
+    {
+      "year": 2022,
+      "state": "MA",
+      "predicted_lean": -0.09243290960252612,
+      "actual_lean": 0.3224273914006222,
+      "predicted_margin": -0.11912695477706411,
+      "actual_margin": 0.2957333462260842,
+      "error_logratio": 0.8490656935059564,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": -0.4148603010031483
+    },
+    {
+      "year": 2022,
+      "state": "IL",
+      "predicted_lean": 0.03968902527289784,
+      "actual_lean": 0.15558788625623315,
+      "predicted_margin": 0.012994980098359837,
+      "actual_margin": 0.12889384108169516,
+      "error_logratio": 0.23323825617917082,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.11589886098333532
+    },
+    {
+      "year": 2022,
+      "state": "FL",
+      "predicted_lean": -0.09223900021095394,
+      "actual_lean": -0.16861614361575658,
+      "predicted_margin": -0.11893304538549193,
+      "actual_margin": -0.19531018879029458,
+      "error_logratio": -0.15670687670440792,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": 0.07637714340480264
+    },
+    {
+      "year": 2022,
+      "state": "TX",
+      "predicted_lean": -0.14853448605112007,
+      "actual_lean": -0.08386407973879931,
+      "predicted_margin": -0.17522853122565807,
+      "actual_margin": -0.11055812491333732,
+      "error_logratio": 0.13208773810598023,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.06467040631232077
+    },
+    {
+      "year": 2022,
+      "state": "CA",
+      "predicted_lean": 0.10699344136130393,
+      "actual_lean": 0.21028383426281286,
+      "predicted_margin": 0.08029939618676593,
+      "actual_margin": 0.18358978908827486,
+      "error_logratio": 0.21044504144432302,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.10329039290150893
+    },
+    {
+      "year": 2024,
+      "state": "VT",
+      "predicted_lean": -0.07660033748788547,
+      "actual_lean": -0.515841197322878,
+      "predicted_margin": -0.10240013108953666,
+      "actual_margin": -0.5416409909245292,
+      "error_logratio": -1.00742933649143,
+      "incumbent_running": true,
+      "cross_party_incumbent": true,
+      "signals_disagree": true,
+      "strongly_partisan": true,
+      "error": 0.43924085983499256
+    },
+    {
+      "year": 2024,
+      "state": "NH",
+      "predicted_lean": -0.059339258188409634,
+      "actual_lean": -0.06961028992330014,
+      "predicted_margin": -0.08513905179006082,
+      "actual_margin": -0.09541008352495133,
+      "error_logratio": -0.020711036067625366,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": 0.010271031734890503
+    },
+    {
+      "year": 2024,
+      "state": "MT",
+      "predicted_lean": -0.1650275267583973,
+      "actual_lean": -0.18183319879975618,
+      "predicted_margin": -0.19082732036004849,
+      "actual_margin": -0.20763299240140737,
+      "error_logratio": -0.035001610981487685,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.016805672041358882
+    },
+    {
+      "year": 2024,
+      "state": "DE",
+      "predicted_lean": 0.10420482022283939,
+      "actual_lean": 0.1472009760273084,
+      "predicted_margin": 0.0784050266211882,
+      "actual_margin": 0.12140118242565721,
+      "error_logratio": 0.08687328673616485,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": false,
+      "error": -0.042996155804469
+    },
+    {
+      "year": 2024,
+      "state": "IN",
+      "predicted_lean": -0.21747833963146043,
+      "actual_lean": -0.1132418828989818,
+      "predicted_margin": -0.24327813323311162,
+      "actual_margin": -0.13904167650063298,
+      "error_logratio": 0.21661460058495224,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.10423645673247864
+    },
+    {
+      "year": 2024,
+      "state": "MO",
+      "predicted_lean": -0.17357057220387181,
+      "actual_lean": -0.18291059958075698,
+      "predicted_margin": -0.199370365805523,
+      "actual_margin": -0.20871039318240817,
+      "error_logratio": -0.019491709200329332,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.009340027376885163
+    },
+    {
+      "year": 2024,
+      "state": "NC",
+      "predicted_lean": -0.03779333142243387,
+      "actual_lean": 0.1817435430061672,
+      "predicted_margin": -0.06359312502408505,
+      "actual_margin": 0.15594374940451602,
+      "error_logratio": 0.44181136632609186,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": true,
+      "strongly_partisan": false,
+      "error": -0.2195368744286011
+    },
+    {
+      "year": 2024,
+      "state": "ND",
+      "predicted_lean": -0.3499430262988773,
+      "actual_lean": -0.422787131053875,
+      "predicted_margin": -0.3757428199005285,
+      "actual_margin": -0.4485869246555262,
+      "error_logratio": -0.1756729483975744,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.0728441047549977
+    },
+    {
+      "year": 2024,
+      "state": "UT",
+      "predicted_lean": -0.26447379444409097,
+      "actual_lean": -0.27447742351126403,
+      "predicted_margin": -0.29027358804574216,
+      "actual_margin": -0.3002772171129152,
+      "error_logratio": -0.02191853436481883,
+      "incumbent_running": true,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": 0.010003629067173059
+    },
+    {
+      "year": 2024,
+      "state": "WA",
+      "predicted_lean": 0.07703933396462193,
+      "actual_lean": 0.13831704231031758,
+      "predicted_margin": 0.05123954036297074,
+      "actual_margin": 0.11251724870866639,
+      "error_logratio": 0.12342252415736707,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.06127770834569565
+    },
+    {
+      "year": 2024,
+      "state": "WV",
+      "predicted_lean": -0.336023694109271,
+      "actual_lean": -0.29921315216173056,
+      "predicted_margin": -0.3618234877109222,
+      "actual_margin": -0.32501294576338174,
+      "error_logratio": 0.0834809733580375,
+      "incumbent_running": false,
+      "cross_party_incumbent": false,
+      "signals_disagree": false,
+      "strongly_partisan": true,
+      "error": -0.036810541947540465
+    }
+  ],
+  "current_race_predictions": {
+    "G-2026-AK": {
+      "predicted_lean": -0.21210631370739363,
+      "inputs": {
+        "year": 2026,
+        "state": "AK",
+        "prior_race_id": "8953",
+        "prior_cycle": 2022,
+        "prior_margin": -0.3869323091694671,
+        "prior_governor_lean": -0.3602382639949291,
+        "presidential_lean": -0.12428805970098233,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-AL": {
+      "predicted_lean": -0.2763453812427929,
+      "inputs": {
+        "year": 2026,
+        "state": "AL",
+        "prior_race_id": "8952",
+        "prior_cycle": 2022,
+        "prior_margin": -0.3926566281317721,
+        "prior_governor_lean": -0.3659625829572341,
+        "presidential_lean": -0.29616904744736183,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": -1.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-AR": {
+      "predicted_lean": -0.2335628595621415,
+      "inputs": {
+        "year": 2026,
+        "state": "AR",
+        "prior_race_id": "8955",
+        "prior_cycle": 2022,
+        "prior_margin": -0.2828818426972854,
+        "prior_governor_lean": -0.2561877975227474,
+        "presidential_lean": -0.3007566735764504,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": -1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-AZ": {
+      "predicted_lean": -0.02357528317944742,
+      "inputs": {
+        "year": 2026,
+        "state": "AZ",
+        "prior_race_id": "8954",
+        "prior_cycle": 2022,
+        "prior_margin": 0.006689816759911924,
+        "prior_governor_lean": 0.03338386193444993,
+        "presidential_lean": -0.043239988070816616,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": 1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": true,
+        "signals_disagree": true,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": -1.0
+      },
+      "uncertainty_logratio_sd": 0.5691304704330887,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-CA": {
+      "predicted_lean": 0.14309903709627636,
+      "inputs": {
+        "year": 2026,
+        "state": "CA",
+        "prior_race_id": "8956",
+        "prior_cycle": 2022,
+        "prior_margin": 0.18358980588052204,
+        "prior_governor_lean": 0.21028385105506003,
+        "presidential_lean": 0.22064604258248388,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 1.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-CO": {
+      "predicted_lean": 0.1146879557081705,
+      "inputs": {
+        "year": 2026,
+        "state": "CO",
+        "prior_race_id": "8957",
+        "prior_cycle": 2022,
+        "prior_margin": 0.1980162519513396,
+        "prior_governor_lean": 0.2247102971258776,
+        "presidential_lean": 0.1255740257678463,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-CT": {
+      "predicted_lean": 0.09414704245634153,
+      "inputs": {
+        "year": 2026,
+        "state": "CT",
+        "prior_race_id": "8958",
+        "prior_cycle": 2022,
+        "prior_margin": 0.1164468873949363,
+        "prior_governor_lean": 0.1431409325694743,
+        "presidential_lean": 0.16020784087170042,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-FL": {
+      "predicted_lean": -0.13284365353183464,
+      "inputs": {
+        "year": 2026,
+        "state": "FL",
+        "prior_race_id": "8959",
+        "prior_cycle": 2022,
+        "prior_margin": -0.19531021408782798,
+        "prior_governor_lean": -0.16861616891328998,
+        "presidential_lean": -0.11957819752332882,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": -1.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-GA": {
+      "predicted_lean": -0.044828350264044144,
+      "inputs": {
+        "year": 2026,
+        "state": "GA",
+        "prior_race_id": "8960",
+        "prior_cycle": 2022,
+        "prior_margin": -0.0758930971187786,
+        "prior_governor_lean": -0.0491990519442406,
+        "presidential_lean": -0.009444131881445751,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-HI": {
+      "predicted_lean": 0.18528570107286307,
+      "inputs": {
+        "year": 2026,
+        "state": "HI",
+        "prior_race_id": "8961",
+        "prior_cycle": 2022,
+        "prior_margin": 0.26324220470306975,
+        "prior_governor_lean": 0.28993624987760774,
+        "presidential_lean": 0.24824970775874708,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": 1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-IA": {
+      "predicted_lean": -0.13141086701173865,
+      "inputs": {
+        "year": 2026,
+        "state": "IA",
+        "prior_race_id": "8964",
+        "prior_cycle": 2022,
+        "prior_margin": -0.18978180561473906,
+        "prior_governor_lean": -0.16308776044020107,
+        "presidential_lean": -0.12181278594944528,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-ID": {
+      "predicted_lean": -0.3429243618963607,
+      "inputs": {
+        "year": 2026,
+        "state": "ID",
+        "prior_race_id": "8962",
+        "prior_cycle": 2022,
+        "prior_margin": -0.49803449759586266,
+        "prior_governor_lean": -0.47134045242132466,
+        "presidential_lean": -0.36257522065601366,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": -1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-IL": {
+      "predicted_lean": 0.08614060573540894,
+      "inputs": {
+        "year": 2026,
+        "state": "IL",
+        "prior_race_id": "8963",
+        "prior_cycle": 2022,
+        "prior_margin": 0.1288938733629146,
+        "prior_governor_lean": 0.1555879185374526,
+        "presidential_lean": 0.12399849931195131,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-KS": {
+      "predicted_lean": -0.056057119670639234,
+      "inputs": {
+        "year": 2026,
+        "state": "KS",
+        "prior_race_id": "8965",
+        "prior_cycle": 2022,
+        "prior_margin": 0.02277173023408086,
+        "prior_governor_lean": 0.049465775408618864,
+        "presidential_lean": -0.15147154779898614,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": true,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.5545537640074355,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5545537640074355,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-MA": {
+      "predicted_lean": 0.2069052389683657,
+      "inputs": {
+        "year": 2026,
+        "state": "MA",
+        "prior_race_id": "8968",
+        "prior_cycle": 2022,
+        "prior_margin": 0.29573346739614537,
+        "prior_governor_lean": 0.32242751257068336,
+        "presidential_lean": 0.2717536379303173,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": 1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-MD": {
+      "predicted_lean": 0.235916690725738,
+      "inputs": {
+        "year": 2026,
+        "state": "MD",
+        "prior_race_id": "8967",
+        "prior_cycle": 2022,
+        "prior_margin": 0.3353781120610296,
+        "prior_governor_lean": 0.36207215723556757,
+        "presidential_lean": 0.30773833169013554,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": 1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-ME": {
+      "predicted_lean": 0.07400714979107562,
+      "inputs": {
+        "year": 2026,
+        "state": "ME",
+        "prior_race_id": "8966",
+        "prior_cycle": 2022,
+        "prior_margin": 0.1349365739388592,
+        "prior_governor_lean": 0.16163061911339718,
+        "presidential_lean": 0.08352930754600627,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-MI": {
+      "predicted_lean": 0.03196634772401412,
+      "inputs": {
+        "year": 2026,
+        "state": "MI",
+        "prior_race_id": "8969",
+        "prior_cycle": 2022,
+        "prior_margin": 0.10700410371794107,
+        "prior_governor_lean": 0.13369814889247908,
+        "presidential_lean": -0.0017815454318222557,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": true,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": -1.0
+      },
+      "uncertainty_logratio_sd": 0.5545537640074355,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5545537640074355,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-MN": {
+      "predicted_lean": 0.041517710485263724,
+      "inputs": {
+        "year": 2026,
+        "state": "MN",
+        "prior_race_id": "8970",
+        "prior_cycle": 2022,
+        "prior_margin": 0.07910569874480432,
+        "prior_governor_lean": 0.10579974391934233,
+        "presidential_lean": 0.05607723466840663,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 1.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-NE": {
+      "predicted_lean": -0.18005295230804136,
+      "inputs": {
+        "year": 2026,
+        "state": "NE",
+        "prior_race_id": "8971",
+        "prior_cycle": 2022,
+        "prior_margin": -0.2441328044476372,
+        "prior_governor_lean": -0.2174387592730992,
+        "presidential_lean": -0.19576364189246087,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": -1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-NH": {
+      "predicted_lean": -0.034969858274734984,
+      "inputs": {
+        "year": 2026,
+        "state": "NH",
+        "prior_race_id": "9542",
+        "prior_cycle": 2024,
+        "prior_margin": -0.09541020334351388,
+        "prior_governor_lean": -0.0696104097418627,
+        "presidential_lean": 0.04085478609361341,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": -1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": true,
+        "signals_disagree": true,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.5691304704330887,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-NM": {
+      "predicted_lean": 0.042461940760967924,
+      "inputs": {
+        "year": 2026,
+        "state": "NM",
+        "prior_race_id": "8974",
+        "prior_cycle": 2022,
+        "prior_margin": 0.0654324772007385,
+        "prior_governor_lean": 0.09212652237527649,
+        "presidential_lean": 0.07406131343299013,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-NV": {
+      "predicted_lean": -0.02389065129405961,
+      "inputs": {
+        "year": 2026,
+        "state": "NV",
+        "prior_race_id": "8972",
+        "prior_cycle": 2022,
+        "prior_margin": -0.01571013143169879,
+        "prior_governor_lean": 0.010983913742839212,
+        "presidential_lean": -0.018946987938653098,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": -1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": true,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.5545537640074355,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5545537640074355,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-NY": {
+      "predicted_lean": 0.07220709189739075,
+      "inputs": {
+        "year": 2026,
+        "state": "NY",
+        "prior_race_id": "8975",
+        "prior_cycle": 2022,
+        "prior_margin": 0.08064166819618178,
+        "prior_governor_lean": 0.10733571337071979,
+        "presidential_lean": 0.13953805231790642,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": 1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-OH": {
+      "predicted_lean": -0.14844338344249208,
+      "inputs": {
+        "year": 2026,
+        "state": "OH",
+        "prior_race_id": "8976",
+        "prior_cycle": 2022,
+        "prior_margin": -0.25083781456370985,
+        "prior_governor_lean": -0.22414376938917185,
+        "presidential_lean": -0.10048910312622364,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-OK": {
+      "predicted_lean": -0.18890747763249668,
+      "inputs": {
+        "year": 2026,
+        "state": "OK",
+        "prior_race_id": "8977",
+        "prior_cycle": 2022,
+        "prior_margin": -0.1405222813156552,
+        "prior_governor_lean": -0.1138282361411172,
+        "presidential_lean": -0.3367576469768991,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-OR": {
+      "predicted_lean": 0.06268826856082835,
+      "inputs": {
+        "year": 2026,
+        "state": "OR",
+        "prior_race_id": "8978",
+        "prior_cycle": 2022,
+        "prior_margin": 0.03775387980566031,
+        "prior_governor_lean": 0.06444792498019832,
+        "presidential_lean": 0.161304351844269,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": 1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-PA": {
+      "predicted_lean": 0.04851801993945292,
+      "inputs": {
+        "year": 2026,
+        "state": "PA",
+        "prior_race_id": "8979",
+        "prior_cycle": 2022,
+        "prior_margin": 0.15042088471755236,
+        "prior_governor_lean": 0.17711492989209035,
+        "presidential_lean": -0.004620655774754474,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": 1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": true,
+        "signals_disagree": true,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.5691304704330887,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-RI": {
+      "predicted_lean": 0.1245786685803563,
+      "inputs": {
+        "year": 2026,
+        "state": "RI",
+        "prior_race_id": "8980",
+        "prior_cycle": 2022,
+        "prior_margin": 0.19691362839323223,
+        "prior_governor_lean": 0.22360767356777023,
+        "presidential_lean": 0.1542672538254238,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-SC": {
+      "predicted_lean": -0.1426651301216275,
+      "inputs": {
+        "year": 2026,
+        "state": "SC",
+        "prior_race_id": "8981",
+        "prior_cycle": 2022,
+        "prior_margin": -0.17595253843701375,
+        "prior_governor_lean": -0.14925849326247576,
+        "presidential_lean": -0.16859046112386436,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-SD": {
+      "predicted_lean": -0.2255500013539165,
+      "inputs": {
+        "year": 2026,
+        "state": "SD",
+        "prior_race_id": "8982",
+        "prior_cycle": 2022,
+        "prior_margin": -0.27598968790327555,
+        "prior_governor_lean": -0.24929564272873755,
+        "presidential_lean": -0.2862587995920135,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-TN": {
+      "predicted_lean": -0.24701819582555395,
+      "inputs": {
+        "year": 2026,
+        "state": "TN",
+        "prior_race_id": "8983",
+        "prior_cycle": 2022,
+        "prior_margin": -0.32697061698687824,
+        "prior_governor_lean": -0.30027657181234024,
+        "presidential_lean": -0.28856780540341626,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": -1.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-TX": {
+      "predicted_lean": -0.10090027943110733,
+      "inputs": {
+        "year": 2026,
+        "state": "TX",
+        "prior_race_id": "8984",
+        "prior_cycle": 2022,
+        "prior_margin": -0.11055813874909191,
+        "prior_governor_lean": -0.0838640935745539,
+        "presidential_lean": -0.1261374868696675,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": -1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-VT": {
+      "predicted_lean": -0.10770289319436155,
+      "inputs": {
+        "year": 2026,
+        "state": "VT",
+        "prior_race_id": "9545",
+        "prior_cycle": 2024,
+        "prior_margin": -0.5416425579188557,
+        "prior_governor_lean": -0.5158427643172045,
+        "presidential_lean": 0.34034754886331897,
+        "presidential_year": 2024,
+        "open_seat_signed": 0.0,
+        "incumbent_signed": -1.0,
+        "incumbent_running": true,
+        "cross_party_incumbent": true,
+        "signals_disagree": true,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.5691304704330887,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.5691304704330887,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          },
+          {
+            "source": "cross_party_incumbent",
+            "n": 9,
+            "sd": 0.5691304704330887,
+            "used": true,
+            "minimum_rows": 5
+          },
+          {
+            "source": "signals_disagree",
+            "n": 16,
+            "sd": 0.5545537640074355,
+            "used": true,
+            "minimum_rows": 5
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-WI": {
+      "predicted_lean": 0.004605798029222022,
+      "inputs": {
+        "year": 2026,
+        "state": "WI",
+        "prior_race_id": "8986",
+        "prior_cycle": 2022,
+        "prior_margin": 0.03434655002513976,
+        "prior_governor_lean": 0.061040595199677763,
+        "presidential_lean": 0.0039093033230665625,
+        "presidential_year": 2024,
+        "open_seat_signed": 1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": false,
+        "other_prior_elected_winner_signed": -1.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    },
+    "G-2026-WY": {
+      "predicted_lean": -0.4376485488999863,
+      "inputs": {
+        "year": 2026,
+        "state": "WY",
+        "prior_race_id": "8987",
+        "prior_cycle": 2022,
+        "prior_margin": -0.6480600061932998,
+        "prior_governor_lean": -0.6213659610187618,
+        "presidential_lean": -0.45694026933563126,
+        "presidential_year": 2024,
+        "open_seat_signed": -1.0,
+        "incumbent_signed": 0.0,
+        "incumbent_running": false,
+        "cross_party_incumbent": false,
+        "signals_disagree": false,
+        "strongly_partisan": true,
+        "other_prior_elected_winner_signed": 0.0
+      },
+      "uncertainty_logratio_sd": 0.36836302777761787,
+      "uncertainty_calibration": {
+        "logratio_residual_sd": 0.36836302777761787,
+        "pooled_logratio_residual_sd": 0.36836302777761787,
+        "n": 58,
+        "components": [
+          {
+            "source": "all_eligible_oof_rows",
+            "n": 58,
+            "sd": 0.36836302777761787
+          }
+        ],
+        "before_year": null,
+        "from_year": 2020
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "design": "2024 untouched-cycle seven-day sensitivity; filter chosen from 2022 candidate-move evidence; identical polls and random seed",
+  "removed_house_2022_transitions": 71,
+  "strata": {
+    "all": {
+      "n_races": 350,
+      "all_training": {
+        "log_score": 0.173517,
+        "brier": 0.091252,
+        "share_mae": 0.025403,
+        "coverage80": 0.887793,
+        "coverage95": 0.960401
+      },
+      "filtered_training": {
+        "log_score": 0.170185,
+        "brier": 0.089726,
+        "share_mae": 0.025549,
+        "coverage80": 0.886126,
+        "coverage95": 0.960401
+      }
+    },
+    "office:house": {
+      "n_races": 322,
+      "all_training": {
+        "log_score": 0.171768,
+        "brier": 0.089035,
+        "share_mae": 0.025819,
+        "coverage80": 0.892465,
+        "coverage95": 0.961749
+      },
+      "filtered_training": {
+        "log_score": 0.168146,
+        "brier": 0.087377,
+        "share_mae": 0.025978,
+        "coverage80": 0.890654,
+        "coverage95": 0.961749
+      }
+    },
+    "district_continuity:documented_candidate_move": {
+      "n_races": 21,
+      "all_training": {
+        "log_score": 0.558624,
+        "brier": 0.361403,
+        "share_mae": 0.076332,
+        "coverage80": 0.556349,
+        "coverage95": 0.789683
+      },
+      "filtered_training": {
+        "log_score": 0.576618,
+        "brier": 0.36641,
+        "share_mae": 0.076705,
+        "coverage80": 0.564286,
+        "coverage95": 0.789683
+      }
+    },
+    "district_continuity:same_district_candidate": {
+      "n_races": 277,
+      "all_training": {
+        "log_score": 0.141503,
+        "brier": 0.066518,
+        "share_mae": 0.019117,
+        "coverage80": 0.924875,
+        "coverage95": 0.975812
+      },
+      "filtered_training": {
+        "log_score": 0.135754,
+        "brier": 0.063862,
+        "share_mae": 0.019266,
+        "coverage80": 0.925778,
+        "coverage95": 0.975812
+      }
+    }
+  }
+}

@@ -1,0 +1,2181 @@
+{
+  "meaning": "Prior winner of the same numbered House seat; a flip is a change from this group. District boundaries may differ after redistricting.",
+  "stage2_database_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+  "seats": {
+    "H-2026-AK-00": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AL-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AL-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AL-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AL-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AL-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AL-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AL-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AR-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AR-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AR-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AR-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-AZ-09": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-10": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-11": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-12": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-13": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-14": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-15": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-16": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-17": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-18": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-19": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-20": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-21": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-22": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-23": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-24": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-25": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-26": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-27": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-28": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-29": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-30": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-31": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-32": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-33": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-34": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-35": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-36": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-37": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-38": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-39": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-40": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-41": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-42": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-43": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-44": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-45": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-46": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-47": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-48": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-49": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-50": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-51": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CA-52": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CO-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CT-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CT-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CT-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CT-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-CT-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-DE-00": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-10": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-11": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-12": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-13": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-14": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-15": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-16": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-17": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-18": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-19": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-20": {
+      "prior_winner_party": "D",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2022
+    },
+    "H-2026-FL-21": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-22": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-23": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-24": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-25": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-26": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-27": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-FL-28": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-09": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-10": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-11": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-12": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-13": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-GA-14": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-HI-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-HI-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IA-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IA-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IA-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IA-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-ID-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-ID-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-10": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-11": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-12": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-13": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-14": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-15": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-16": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IL-17": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-IN-09": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KS-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KS-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KS-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KS-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KY-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KY-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KY-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KY-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KY-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-KY-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-LA-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-LA-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-LA-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-LA-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-LA-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-LA-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MA-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MD-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-ME-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-ME-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-09": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-10": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-11": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-12": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MI-13": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MN-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MO-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MS-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MS-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MS-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MS-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MT-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-MT-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-09": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-10": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-11": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-12": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-13": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NC-14": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-ND-00": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NE-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NE-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NE-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NH-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NH-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-10": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-11": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NJ-12": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NM-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NM-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NM-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NV-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NV-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NV-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NV-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-10": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-11": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-12": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-13": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-14": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-15": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-16": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-17": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-18": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-19": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-20": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-21": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-22": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-23": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-24": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-25": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-NY-26": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-10": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-11": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-12": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-13": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-14": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OH-15": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OK-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OK-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OK-03": {
+      "prior_winner_party": "R",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2022
+    },
+    "H-2026-OK-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OK-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OR-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OR-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OR-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OR-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OR-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-OR-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-05": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-09": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-10": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-11": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-12": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-13": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-14": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-15": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-16": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-PA-17": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-RI-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-RI-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SC-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SC-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SC-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SC-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SC-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SC-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SC-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-SD-00": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TN-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-10": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-11": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-12": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-13": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-14": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-15": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-16": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-17": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-18": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-19": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-20": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-21": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-22": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-23": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-24": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-25": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-26": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-27": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-28": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-29": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-30": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-31": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-32": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-33": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-34": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-35": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-36": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-37": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-TX-38": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-UT-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-UT-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-UT-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-UT-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-09": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-10": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VA-11": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-VT-00": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-01": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-03": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-04": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-06": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-07": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-08": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-09": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WA-10": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-02": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-03": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-04": {
+      "prior_winner_party": "DEM",
+      "prior_winner_group": "D",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-05": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-06": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-07": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WI-08": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WV-01": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WV-02": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    },
+    "H-2026-WY-00": {
+      "prior_winner_party": "REP",
+      "prior_winner_group": "R",
+      "baseline_cycle": 2024
+    }
+  }
+}

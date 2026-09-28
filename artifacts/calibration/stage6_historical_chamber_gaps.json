@@ -1,0 +1,75 @@
+{
+  "source_database_sha256": "a57ddd1344c9b71542cca1fc2d57aa4d19d018fdb61c327322f10951259b2767",
+  "source_crosswalk_sha256": "1215616c8e1a2c6495db99ef31f6cf1b7a2c8969dbe9437bb821891c69619e3c",
+  "cycles": {
+    "2020": {
+      "seat_universe": 435,
+      "modeled_seats": 434,
+      "missing_seats": [
+        {
+          "state": "FL",
+          "district": "25",
+          "reason": "unopposed_without_numeric_vote_total",
+          "archive_rows": [
+            {
+              "source_race_id": "7940",
+              "stage": "general",
+              "special": 0,
+              "candidate_name": "Mario Diaz-Balart",
+              "ballot_party": "REP",
+              "votes": null,
+              "result_round": "",
+              "winner": 1
+            }
+          ],
+          "reconciliation": [],
+          "numeric_result_available": false
+        }
+      ]
+    },
+    "2022": {
+      "seat_universe": 435,
+      "modeled_seats": 433,
+      "missing_seats": [
+        {
+          "state": "FL",
+          "district": "05",
+          "reason": "unopposed_without_numeric_vote_total",
+          "archive_rows": [
+            {
+              "source_race_id": "9082",
+              "stage": "general",
+              "special": 0,
+              "candidate_name": "John H. Rutherford",
+              "ballot_party": "REP",
+              "votes": null,
+              "result_round": "",
+              "winner": 1
+            }
+          ],
+          "reconciliation": [],
+          "numeric_result_available": false
+        },
+        {
+          "state": "LA",
+          "district": "04",
+          "reason": "unopposed_without_numeric_vote_total",
+          "archive_rows": [
+            {
+              "source_race_id": "9170",
+              "stage": "jungle primary",
+              "special": 0,
+              "candidate_name": "Mike Johnson",
+              "ballot_party": "REP",
+              "votes": null,
+              "result_round": "",
+              "winner": 1
+            }
+          ],
+          "reconciliation": [],
+          "numeric_result_available": false
+        }
+      ]
+    }
+  }
+}

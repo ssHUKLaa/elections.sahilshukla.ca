@@ -1,0 +1,298 @@
+{
+  "design": "Compare D/R log-ratio forecasts at each cutoff with independent archived poll questions released and fielded within the next seven days. The measurement variance is included in predictive intervals; movement during the next week and shared poll errors remain possible.",
+  "draws_per_race": 1500,
+  "source_database_sha256": "faad9d4e29058c283d1684cabf88a31a3a546659a58c0ae3dea17feedd944f2f",
+  "stage3_code_sha256": "7d95bcb0294205e8ae07d17c84bc28177c8bbbbcfe1caf9f0df843c26f772ac9",
+  "stage4_code_sha256": "866ebf8ff4d642d8c3c1817295811ff90fd073e1b502f49e0370e3cfdea87e04",
+  "audit_code_sha256": "13bff141dd0d0d56b36dc68b18268173562a4aaab5aea8ab736802b22033e746",
+  "cells": [
+    {
+      "cycle": 2020,
+      "lead_days": 30,
+      "scores": {
+        "results_only:all": {
+          "n_questions": 14,
+          "n_races": 7,
+          "mean_standardized_error": 0.3382,
+          "standardized_error_sd": 0.7284,
+          "coverage80": 0.8571,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.0774
+        },
+        "results_only:past_polls": {
+          "n_questions": 14,
+          "n_races": 7,
+          "mean_standardized_error": 0.3382,
+          "standardized_error_sd": 0.7284,
+          "coverage80": 0.8571,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.0774
+        },
+        "combined:all": {
+          "n_questions": 14,
+          "n_races": 7,
+          "mean_standardized_error": 0.1249,
+          "standardized_error_sd": 0.4235,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.5089
+        },
+        "combined:past_polls": {
+          "n_questions": 14,
+          "n_races": 7,
+          "mean_standardized_error": 0.1249,
+          "standardized_error_sd": 0.4235,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.5089
+        }
+      }
+    },
+    {
+      "cycle": 2020,
+      "lead_days": 14,
+      "scores": {
+        "results_only:all": {
+          "n_questions": 13,
+          "n_races": 8,
+          "mean_standardized_error": 0.2856,
+          "standardized_error_sd": 0.7836,
+          "coverage80": 0.8462,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.1039
+        },
+        "results_only:no_past_polls": {
+          "n_questions": 2,
+          "n_races": 2,
+          "mean_standardized_error": -0.3464,
+          "standardized_error_sd": 1.0766,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.1333
+        },
+        "combined:all": {
+          "n_questions": 13,
+          "n_races": 8,
+          "mean_standardized_error": 0.0841,
+          "standardized_error_sd": 0.8578,
+          "coverage80": 0.9231,
+          "coverage95": 0.9231,
+          "mean_log_predictive_density": 0.1892
+        },
+        "combined:no_past_polls": {
+          "n_questions": 2,
+          "n_races": 2,
+          "mean_standardized_error": -0.3464,
+          "standardized_error_sd": 1.0766,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.1333
+        },
+        "results_only:past_polls": {
+          "n_questions": 11,
+          "n_races": 6,
+          "mean_standardized_error": 0.4005,
+          "standardized_error_sd": 0.7256,
+          "coverage80": 0.8182,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.0985
+        },
+        "combined:past_polls": {
+          "n_questions": 11,
+          "n_races": 6,
+          "mean_standardized_error": 0.1624,
+          "standardized_error_sd": 0.8504,
+          "coverage80": 0.9091,
+          "coverage95": 0.9091,
+          "mean_log_predictive_density": 0.2478
+        }
+      }
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 30,
+      "scores": {
+        "results_only:all": {
+          "n_questions": 11,
+          "n_races": 7,
+          "mean_standardized_error": 0.5134,
+          "standardized_error_sd": 0.8894,
+          "coverage80": 0.9091,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.2393
+        },
+        "results_only:past_polls": {
+          "n_questions": 11,
+          "n_races": 7,
+          "mean_standardized_error": 0.5134,
+          "standardized_error_sd": 0.8894,
+          "coverage80": 0.9091,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.2393
+        },
+        "combined:all": {
+          "n_questions": 11,
+          "n_races": 7,
+          "mean_standardized_error": -0.1735,
+          "standardized_error_sd": 0.4976,
+          "coverage80": 0.9091,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.4793
+        },
+        "combined:past_polls": {
+          "n_questions": 11,
+          "n_races": 7,
+          "mean_standardized_error": -0.1735,
+          "standardized_error_sd": 0.4976,
+          "coverage80": 0.9091,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.4793
+        }
+      }
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 14,
+      "scores": {
+        "results_only:all": {
+          "n_questions": 19,
+          "n_races": 8,
+          "mean_standardized_error": 0.4577,
+          "standardized_error_sd": 0.8105,
+          "coverage80": 0.8947,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.1737
+        },
+        "results_only:past_polls": {
+          "n_questions": 18,
+          "n_races": 7,
+          "mean_standardized_error": 0.5212,
+          "standardized_error_sd": 0.7837,
+          "coverage80": 0.8889,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": -0.1836
+        },
+        "combined:all": {
+          "n_questions": 19,
+          "n_races": 8,
+          "mean_standardized_error": -0.1183,
+          "standardized_error_sd": 0.4186,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.5041
+        },
+        "combined:past_polls": {
+          "n_questions": 18,
+          "n_races": 7,
+          "mean_standardized_error": -0.0867,
+          "standardized_error_sd": 0.4068,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.5318
+        },
+        "results_only:no_past_polls": {
+          "n_questions": 1,
+          "n_races": 1,
+          "mean_standardized_error": -0.6862,
+          "standardized_error_sd": null,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.0042
+        },
+        "combined:no_past_polls": {
+          "n_questions": 1,
+          "n_races": 1,
+          "mean_standardized_error": -0.6862,
+          "standardized_error_sd": null,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.0042
+        }
+      }
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 30,
+      "scores": {
+        "results_only:all": {
+          "n_questions": 22,
+          "n_races": 8,
+          "mean_standardized_error": -0.3624,
+          "standardized_error_sd": 0.4299,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.1018
+        },
+        "results_only:past_polls": {
+          "n_questions": 22,
+          "n_races": 8,
+          "mean_standardized_error": -0.3624,
+          "standardized_error_sd": 0.4299,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.1018
+        },
+        "combined:all": {
+          "n_questions": 22,
+          "n_races": 8,
+          "mean_standardized_error": -0.2151,
+          "standardized_error_sd": 0.298,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.558
+        },
+        "combined:past_polls": {
+          "n_questions": 22,
+          "n_races": 8,
+          "mean_standardized_error": -0.2151,
+          "standardized_error_sd": 0.298,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.558
+        }
+      }
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 14,
+      "scores": {
+        "results_only:all": {
+          "n_questions": 15,
+          "n_races": 10,
+          "mean_standardized_error": -0.4968,
+          "standardized_error_sd": 0.3258,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.0761
+        },
+        "results_only:past_polls": {
+          "n_questions": 15,
+          "n_races": 10,
+          "mean_standardized_error": -0.4968,
+          "standardized_error_sd": 0.3258,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.0761
+        },
+        "combined:all": {
+          "n_questions": 15,
+          "n_races": 10,
+          "mean_standardized_error": -0.2904,
+          "standardized_error_sd": 0.302,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.5251
+        },
+        "combined:past_polls": {
+          "n_questions": 15,
+          "n_races": 10,
+          "mean_standardized_error": -0.2904,
+          "standardized_error_sd": 0.302,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_log_predictive_density": 0.5251
+        }
+      }
+    }
+  ]
+}

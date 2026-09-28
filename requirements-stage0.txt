@@ -1,0 +1,5 @@
+requests>=2.31
+pandas>=2.0
+lxml>=5.0
+pypdf>=5.0
+PyMuPDF>=1.24

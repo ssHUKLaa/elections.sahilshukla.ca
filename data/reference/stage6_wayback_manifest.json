@@ -1,0 +1,21 @@
+{
+  "source": "FiveThirtyEight race poll CSVs, preserved by the Internet Archive",
+  "source_index": "https://github.com/fivethirtyeight/data/blob/master/polls/README.md",
+  "license": "CC BY 4.0 (FiveThirtyEight poll data); archive capture is provenance, not a new license",
+  "retrieved_on": "2026-09-24",
+  "as_of_warning": "2024 current files were originally last modified November 5, 2024; historical files were last modified September 24, 2024. Source-created dates, not archive capture dates, determine poll availability; post-publication revisions remain possible.",
+  "files": {
+    "house_polls.csv": {"cycle_use": [2024], "capture": "20241129175737", "source_last_modified": "2024-11-05T05:08:34Z", "sha256": "0b7e5f2d293dd1343c052a4a1263f68fbb2629f97181f4a774bf7dcf84167225"},
+    "senate_polls.csv": {"cycle_use": [2024], "capture": "20241129175751", "source_last_modified": "2024-11-05T05:07:37Z", "sha256": "eabff005edb5068b61bb074c42f9a1e833bcf09539f5755ce2299354c8ed1429"},
+    "governor_polls.csv": {"cycle_use": [2024], "capture": "20241129175913", "source_last_modified": "2024-11-05T05:09:28Z", "sha256": "09dc4eb4a2d2652d367085d3041e1292d1a3367c52e2f5840eaaf4a9adf8f448"},
+    "house_polls_historical.csv": {"cycle_use": [2020, 2022], "capture": "20241129175909", "source_last_modified": "2024-09-24T16:05:55Z", "sha256": "a08a26c33087392ca340d04faacdcb4af6261146d20b3414973cad24aa70dc2c"},
+    "senate_polls_historical.csv": {"cycle_use": [2020, 2022], "capture": "20241129175756", "source_last_modified": "2024-09-24T16:02:30Z", "sha256": "0ac54cbdac66e3e10ebbcba86c914ba3751ce3fe800a49f9596eb548a029eccc"},
+    "governor_polls_historical.csv": {"cycle_use": [2020, 2022], "capture": "20241129175817", "source_last_modified": "2024-09-24T16:04:19Z", "sha256": "bbb50ee2d91c52bc288a87a1ed6a247317785d66984e864cf337940146728c7d"}
+  },
+  "national_files": {
+    "generic_ballot_polls.csv": {"cycle_use": [2024], "capture": "20241129175749", "source_last_modified": "2024-11-05T05:10:11Z", "sha256": "587127abc9e4d658ab9c3cc1df365a8c3039f411d433445090704d461b046ffc"},
+    "generic_ballot_polls_historical.csv": {"cycle_use": [2020, 2022], "capture": "20241129175753", "source_last_modified": "2024-09-05T17:45:56Z", "sha256": "670ffa8b84c9d9a88b7bb07887b740eeed6cf74ff29440418f56d5c5b1343428"},
+    "president_approval_polls.csv": {"cycle_use": [2022, 2024], "capture": "20241129175748", "source_last_modified": "2024-11-27T15:12:36Z", "sha256": "e16909073b63bbbc7f1fcddfc276cd5606ad5c4c5adcdb86f9baf4c86991ec2c"},
+    "president_approval_polls_historical.csv": {"cycle_use": [2020], "capture": "20241129175754", "source_last_modified": "2024-09-05T17:50:42Z", "sha256": "faa0af9861570dc4d1bf6a8259f7633b8656167a7b6af01da65d8c18a08f0b5d"}
+  }
+}

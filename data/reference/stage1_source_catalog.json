@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "updated_on": "2026-09-21",
+  "sources": [
+    {
+      "id": "538_archive_senate_polls",
+      "kind": "historical_polls",
+      "office": "senate",
+      "url": "https://raw.githubusercontent.com/simonw/fivethirtyeight-polls/main/senate_polls.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight data mirrored with Git history by Simon Willison",
+      "license": "CC BY 4.0",
+      "note": "The original FiveThirtyEight historical download now redirects to ABC News. This archive preserves the source files and their change history."
+    },
+    {
+      "id": "538_archive_house_polls",
+      "kind": "historical_polls",
+      "office": "house",
+      "url": "https://raw.githubusercontent.com/simonw/fivethirtyeight-polls/main/house_polls.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight data mirrored with Git history by Simon Willison",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "538_archive_governor_polls",
+      "kind": "historical_polls",
+      "office": "governor",
+      "url": "https://raw.githubusercontent.com/simonw/fivethirtyeight-polls/main/governor_polls.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight data mirrored with Git history by Simon Willison",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "538_archive_generic_ballot_polls",
+      "kind": "historical_polls",
+      "office": "generic_ballot",
+      "url": "https://raw.githubusercontent.com/simonw/fivethirtyeight-polls/main/generic_ballot_polls.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight data mirrored with Git history by Simon Willison",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "538_archive_president_approval_polls",
+      "kind": "historical_polls",
+      "office": "president_approval",
+      "url": "https://raw.githubusercontent.com/simonw/fivethirtyeight-polls/main/president_approval_polls.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight data mirrored with Git history by Simon Willison",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "538_results_races",
+      "kind": "structured_results_crosscheck",
+      "office": "all",
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/election-results/main/races.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight election-results archive; each result row carries its original source",
+      "license": "repository terms"
+    },
+    {
+      "id": "538_results_senate",
+      "kind": "structured_results_crosscheck",
+      "office": "senate",
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/election-results/main/election_results_senate.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight election-results archive; each result row carries its original source",
+      "license": "repository terms"
+    },
+    {
+      "id": "538_results_house",
+      "kind": "structured_results_crosscheck",
+      "office": "house",
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/election-results/main/election_results_house.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight election-results archive; each result row carries its original source",
+      "license": "repository terms"
+    },
+    {
+      "id": "538_results_governor",
+      "kind": "structured_results_crosscheck",
+      "office": "governor",
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/election-results/main/election_results_gubernatorial.csv",
+      "format": "csv",
+      "authority": "FiveThirtyEight election-results archive; each result row carries its original source",
+      "license": "repository terms"
+    },
+    {
+      "id": "fec_federal_elections_2022",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://www.fec.gov/documents/5676/federalelections2022.xlsx",
+      "format": "xlsx",
+      "authority": "Federal Election Commission compilation of official state-certified results",
+      "license": "United States government work"
+    },
+    {
+      "id": "house_clerk_federal_elections_2024",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://clerk.house.gov/member_info/electionInfo/2024/statistics2024.pdf",
+      "format": "pdf",
+      "authority": "Office of the Clerk, U.S. House of Representatives compilation of official state and territory results",
+      "license": "United States government work"
+    },
+    {
+      "id": "fec_federal_elections_2020",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://www.fec.gov/documents/4228/federalelections2020.xlsx",
+      "format": "xlsx",
+      "authority": "Federal Election Commission compilation of official state-certified results",
+      "license": "United States government work"
+    },
+    {
+      "id": "fec_federal_elections_2018",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://www.fec.gov/documents/2706/federalelections2018.xlsx",
+      "format": "xlsx",
+      "authority": "Federal Election Commission compilation of official state-certified results",
+      "license": "United States government work"
+    },
+    {
+      "id": "fec_federal_elections_2016",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://www.fec.gov/documents/1890/federalelections2016.xlsx",
+      "format": "xlsx",
+      "authority": "Federal Election Commission compilation of official state-certified results",
+      "license": "United States government work"
+    },
+    {
+      "id": "fec_federal_elections_2014",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://www.fec.gov/documents/1700/federalelections2014.xls",
+      "format": "xls",
+      "authority": "Federal Election Commission compilation of official state-certified results",
+      "license": "United States government work"
+    },
+    {
+      "id": "fec_federal_elections_2012",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://www.fec.gov/documents/1691/federalelections2012.xls",
+      "format": "xls",
+      "authority": "Federal Election Commission compilation of official state-certified results",
+      "license": "United States government work"
+    },
+    {
+      "id": "fec_federal_elections_2010",
+      "kind": "certified_federal_results",
+      "office": "house_senate",
+      "url": "https://www.fec.gov/documents/1675/federalelections2010.xls",
+      "format": "xls",
+      "authority": "Federal Election Commission compilation of official state-certified results",
+      "license": "United States government work"
+    }
+  ]
+}

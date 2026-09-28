@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/pollster-ratings/raw_polls.csv",
+  "retrieved_at_utc": "2026-09-23T22:16:08.085781+00:00",
+  "sha256": "9f0b185506e59117c150fb988e73b612346effe8e3a8f0d90fdafcad07f54756",
+  "bytes": 4961378,
+  "rows": 20466,
+  "generic_rows": 883,
+  "notes": "FiveThirtyEight pollster-ratings raw_polls.csv; polldate is median field date, not guaranteed publication date; source predates 2024."
+}

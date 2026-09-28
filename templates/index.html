@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <div class="usa-flag">Canadian Elections</div>
-        <h1>Canadian Federal 2025</h1>
-        <p>Analytics for the Canadian Federal election, which is set to take place in 2025.</p>
-        <form action="/redirect-to-can2025" method="get">
-            <button type="submit" class="btn">View Prediction</button>
-        </form>
-        <div class="status">Status: WIP</div>
-    </div>                        
-    <div class="container">
-        <div class="usa-flag">US Elections</div>
-        <h1>US General 2024</h1>
-        <p>My prediction for the United States general election which took place in 2024.</p>
-        <form action="/redirect-to-us2024" method="get">
-            <button type="submit" class="btn">View Prediction</button>
-        </form>
-        <div class="status">Status: Finished</div>
-    </div>
+    <main>
+        <section class="container" aria-labelledby="us2026-title">
+            <div class="usa-flag">US Elections</div>
+            <h1 id="us2026-title">2026 U.S. Elections</h1>
+            <p>A nowcast for the U.S. Senate, House, and governor elections: what the model predicts if voting occurred at its latest information cutoff.</p>
+            <a class="btn" href="{{ url_for('us2026') }}">View preview</a>
+            <div class="status">Status: In development</div>
+        </section>
+        <section class="container" aria-labelledby="us2024-title">
+            <div class="usa-flag">US Elections</div>
+            <h1 id="us2024-title">2024 U.S. General Election</h1>
+            <p>My prediction for the 2024 United States general election.</p>
+            <form action="/redirect-to-us2024" method="get">
+                <button type="submit" class="btn">View Prediction</button>
+            </form>
+            <div class="status">Status: Finished</div>
+        </section>
+    </main>
 </body>
 </html>
 

@@ -1,0 +1,9 @@
+{
+  "source": "North Carolina General Assembly 2019 enacted congressional plan used for the 2020 election",
+  "source_page": "https://www.ncleg.gov/redistricting",
+  "feature_service": "https://services5.arcgis.com/gRcZqepTaRC6tVZL/ArcGIS/rest/services/NCGA_Congress_2019/FeatureServer/0",
+  "query_url": "https://services5.arcgis.com/gRcZqepTaRC6tVZL/ArcGIS/rest/services/NCGA_Congress_2019/FeatureServer/0/query?where=1%3D1&outFields=District&outSR=4326&f=geojson",
+  "filename": "nc_2020_congress_arcgis.geojson",
+  "sha256": "baedee6edf68608aba4dcc30b60360ac778d079ecfffe2e45e9bb8058696a662",
+  "district_count": 13
+}

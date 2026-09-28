@@ -3,8 +3,50 @@
 
 ignore
 *.csv
+!data/reference/pollster_ratings/ratings.csv
+!data/reference/pollster_ratings/silver_2026.csv
+!data/reference/house_presidential_2026/downballot_2024_current_maps.csv
+!data/reference/house_presidential_2026/downballot_2024_old_maps.csv
+!data/reference/governor_approval/sead_governor_quarterly_v1.csv
+!data/reference/governor_approval/morning_consult_2025q4_net.csv
 *.log
+data/raw/
+data/processed/
+data/reference/national_environment/*.html
+data/reference/local_lean/*.xlsx
+artifacts/stage3/.validation/
+artifacts/stage4/.validation/
+artifacts/.nowcast_pending/
+artifacts/nowcast/.validation/
 .DS_Store
+
+# Local research outputs and superseded forecasts; keep them on disk, not in deployment.
+/FED_CA_2023_EN.geojson
+/load_data_ca2025.py
+/2026_loadpollingdata.py
+/2026_schema.sql
+/test_db_init.py
+/data_quality_report.py
+/data/reference/pollster_ratings/silver_2026.xlsx
+/artifacts/stage3/
+/artifacts/stage4/
+/artifacts/national_environment_before.json
+/artifacts/national_environment_research.json
+/artifacts/recency_trial_report.txt
+/artifacts/senate_local_lean_before.json
+/artifacts/senate_local_lean_research.json
+/artifacts/calibration/frozen_2026-09-23*/
+/artifacts/calibration/frozen_2026-09-26_v018/
+/artifacts/calibration/pre_governor_lean_revision_2026-09-27/
+/artifacts/calibration/pre_stage6_*
+/artifacts/calibration/stage3_*/
+/artifacts/calibration/governor_local_lean_replay_comparison.json
+/artifacts/calibration/senate_candidate_repair_impact.json
+/artifacts/calibration/stage6_governor_2020_approval_*.json
+/artifacts/calibration/stage6_governor_approval_live_impact_before_removal.json
+/artifacts/calibration/stage6_house_crosswalk_expanded_sensitivity.json
+/artifacts/calibration/stage6_joint_replay_smoke.json
+/artifacts/calibration/stage6_omission_repair_*.json
 
 # Environments
 .env

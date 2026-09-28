@@ -1,0 +1,524 @@
+{
+  "design": "Seven-day, same-race named D/R poll log-ratio averages against eventual D/R vote margins. Ignores third-party vote-share error; excludes O-won races. A terminal proxy with real late movement, not direct held-today calibration.",
+  "cycles": {
+    "2020": {
+      "n_races": 21,
+      "mean_poll_minus_result_D_margin_points": 7.16,
+      "sd_across_races_margin_points": 5.358,
+      "mae_margin_points": 7.253,
+      "races": [
+        {
+          "race_id": "6297",
+          "state": "WV",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": -23.26,
+          "D_margin_result_pct": -44.49,
+          "poll_minus_result_margin_points": 21.24
+        },
+        {
+          "race_id": "6279",
+          "state": "ME",
+          "poll_questions": 24,
+          "pollsters": 14,
+          "D_margin_poll_pct": 5.34,
+          "D_margin_result_pct": -9.21,
+          "poll_minus_result_margin_points": 14.54
+        },
+        {
+          "race_id": "6270",
+          "state": "DE",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": 35.71,
+          "D_margin_result_pct": 22.13,
+          "poll_minus_result_margin_points": 13.58
+        },
+        {
+          "race_id": "6287",
+          "state": "NJ",
+          "poll_questions": 3,
+          "pollsters": 3,
+          "D_margin_poll_pct": 28.86,
+          "D_margin_result_pct": 16.62,
+          "poll_minus_result_margin_points": 12.25
+        },
+        {
+          "race_id": "6289",
+          "state": "OK",
+          "poll_questions": 5,
+          "pollsters": 3,
+          "D_margin_poll_pct": -21.41,
+          "D_margin_result_pct": -31.53,
+          "poll_minus_result_margin_points": 10.12
+        },
+        {
+          "race_id": "6276",
+          "state": "KY",
+          "poll_questions": 17,
+          "pollsters": 12,
+          "D_margin_poll_pct": -11.21,
+          "D_margin_result_pct": -20.35,
+          "poll_minus_result_margin_points": 9.14
+        },
+        {
+          "race_id": "6272",
+          "state": "IA",
+          "poll_questions": 30,
+          "pollsters": 17,
+          "D_margin_poll_pct": 2.08,
+          "D_margin_result_pct": -6.8,
+          "poll_minus_result_margin_points": 8.88
+        },
+        {
+          "race_id": "6292",
+          "state": "SC",
+          "poll_questions": 29,
+          "pollsters": 17,
+          "D_margin_poll_pct": -1.73,
+          "D_margin_result_pct": -10.42,
+          "poll_minus_result_margin_points": 8.68
+        },
+        {
+          "race_id": "6275",
+          "state": "KS",
+          "poll_questions": 13,
+          "pollsters": 9,
+          "D_margin_poll_pct": -3.89,
+          "D_margin_result_pct": -12.04,
+          "poll_minus_result_margin_points": 8.14
+        },
+        {
+          "race_id": "6283",
+          "state": "MT",
+          "poll_questions": 14,
+          "pollsters": 11,
+          "D_margin_poll_pct": -1.95,
+          "D_margin_result_pct": -10.02,
+          "poll_minus_result_margin_points": 8.07
+        },
+        {
+          "race_id": "6284",
+          "state": "NC",
+          "poll_questions": 95,
+          "pollsters": 37,
+          "D_margin_poll_pct": 5.66,
+          "D_margin_result_pct": -1.83,
+          "poll_minus_result_margin_points": 7.49
+        },
+        {
+          "race_id": "6282",
+          "state": "MS",
+          "poll_questions": 7,
+          "pollsters": 6,
+          "D_margin_poll_pct": -4.85,
+          "D_margin_result_pct": -10.16,
+          "poll_minus_result_margin_points": 5.31
+        },
+        {
+          "race_id": "6294",
+          "state": "TN",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": -22.52,
+          "D_margin_result_pct": -27.77,
+          "poll_minus_result_margin_points": 5.25
+        },
+        {
+          "race_id": "6288",
+          "state": "NM",
+          "poll_questions": 4,
+          "pollsters": 3,
+          "D_margin_poll_pct": 11.28,
+          "D_margin_result_pct": 6.27,
+          "poll_minus_result_margin_points": 5.01
+        },
+        {
+          "race_id": "6280",
+          "state": "MI",
+          "poll_questions": 96,
+          "pollsters": 33,
+          "D_margin_poll_pct": 6.57,
+          "D_margin_result_pct": 1.72,
+          "poll_minus_result_margin_points": 4.85
+        },
+        {
+          "race_id": "6295",
+          "state": "TX",
+          "poll_questions": 38,
+          "pollsters": 19,
+          "D_margin_poll_pct": -7.16,
+          "D_margin_result_pct": -9.9,
+          "poll_minus_result_margin_points": 2.74
+        },
+        {
+          "race_id": "6281",
+          "state": "MN",
+          "poll_questions": 15,
+          "pollsters": 11,
+          "D_margin_poll_pct": 8.27,
+          "D_margin_result_pct": 5.68,
+          "poll_minus_result_margin_points": 2.59
+        },
+        {
+          "race_id": "6296",
+          "state": "VA",
+          "poll_questions": 8,
+          "pollsters": 7,
+          "D_margin_poll_pct": 14.49,
+          "D_margin_result_pct": 12.1,
+          "poll_minus_result_margin_points": 2.4
+        },
+        {
+          "race_id": "6273",
+          "state": "ID",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": -31.62,
+          "D_margin_result_pct": -30.64,
+          "poll_minus_result_margin_points": -0.98
+        },
+        {
+          "race_id": "6286",
+          "state": "NH",
+          "poll_questions": 12,
+          "pollsters": 6,
+          "D_margin_poll_pct": 16.69,
+          "D_margin_result_pct": 16.03,
+          "poll_minus_result_margin_points": 0.66
+        },
+        {
+          "race_id": "6269",
+          "state": "CO",
+          "poll_questions": 21,
+          "pollsters": 13,
+          "D_margin_poll_pct": 9.93,
+          "D_margin_result_pct": 9.54,
+          "poll_minus_result_margin_points": 0.39
+        }
+      ]
+    },
+    "2022": {
+      "n_races": 16,
+      "mean_poll_minus_result_D_margin_points": 4.546,
+      "sd_across_races_margin_points": 6.55,
+      "mae_margin_points": 5.791,
+      "races": [
+        {
+          "race_id": "8929",
+          "state": "IN",
+          "poll_questions": 2,
+          "pollsters": 2,
+          "D_margin_poll_pct": -3.01,
+          "D_margin_result_pct": -21.5,
+          "poll_minus_result_margin_points": 18.49
+        },
+        {
+          "race_id": "8920",
+          "state": "AR",
+          "poll_questions": 2,
+          "pollsters": 1,
+          "D_margin_poll_pct": -22.03,
+          "D_margin_result_pct": -35.78,
+          "poll_minus_result_margin_points": 13.75
+        },
+        {
+          "race_id": "8947",
+          "state": "SD",
+          "poll_questions": 4,
+          "pollsters": 4,
+          "D_margin_poll_pct": -32.59,
+          "D_margin_result_pct": -45.39,
+          "poll_minus_result_margin_points": 12.8
+        },
+        {
+          "race_id": "8924",
+          "state": "FL",
+          "poll_questions": 42,
+          "pollsters": 26,
+          "D_margin_poll_pct": -5.26,
+          "D_margin_result_pct": -16.59,
+          "poll_minus_result_margin_points": 11.33
+        },
+        {
+          "race_id": "8932",
+          "state": "KY",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": -17.02,
+          "D_margin_result_pct": -23.62,
+          "poll_minus_result_margin_points": 6.6
+        },
+        {
+          "race_id": "8931",
+          "state": "KS",
+          "poll_questions": 3,
+          "pollsters": 3,
+          "D_margin_poll_pct": -18.46,
+          "D_margin_result_pct": -23.66,
+          "poll_minus_result_margin_points": 5.2
+        },
+        {
+          "race_id": "8942",
+          "state": "OH",
+          "poll_questions": 43,
+          "pollsters": 18,
+          "D_margin_poll_pct": -1.47,
+          "D_margin_result_pct": -6.11,
+          "poll_minus_result_margin_points": 4.65
+        },
+        {
+          "race_id": "8922",
+          "state": "CO",
+          "poll_questions": 14,
+          "pollsters": 12,
+          "D_margin_poll_pct": 10.87,
+          "D_margin_result_pct": 15.05,
+          "poll_minus_result_margin_points": -4.17
+        },
+        {
+          "race_id": "8938",
+          "state": "NH",
+          "poll_questions": 23,
+          "pollsters": 13,
+          "D_margin_poll_pct": 5.17,
+          "D_margin_result_pct": 9.25,
+          "poll_minus_result_margin_points": -4.08
+        },
+        {
+          "race_id": "8939",
+          "state": "NY",
+          "poll_questions": 12,
+          "pollsters": 8,
+          "D_margin_poll_pct": 17.29,
+          "D_margin_result_pct": 14.08,
+          "poll_minus_result_margin_points": 3.21
+        },
+        {
+          "race_id": "8928",
+          "state": "IL",
+          "poll_questions": 7,
+          "pollsters": 6,
+          "D_margin_poll_pct": 18.02,
+          "D_margin_result_pct": 15.58,
+          "poll_minus_result_margin_points": 2.43
+        },
+        {
+          "race_id": "8936",
+          "state": "MO",
+          "poll_questions": 7,
+          "pollsters": 4,
+          "D_margin_poll_pct": -11.65,
+          "D_margin_result_pct": -13.58,
+          "poll_minus_result_margin_points": 1.93
+        },
+        {
+          "race_id": "8923",
+          "state": "CT",
+          "poll_questions": 8,
+          "pollsters": 5,
+          "D_margin_poll_pct": 13.21,
+          "D_margin_result_pct": 14.92,
+          "poll_minus_result_margin_points": -1.71
+        },
+        {
+          "race_id": "8940",
+          "state": "NC",
+          "poll_questions": 29,
+          "pollsters": 15,
+          "D_margin_poll_pct": -2.24,
+          "D_margin_result_pct": -3.3,
+          "poll_minus_result_margin_points": 1.06
+        },
+        {
+          "race_id": "8919",
+          "state": "AZ",
+          "poll_questions": 42,
+          "pollsters": 26,
+          "D_margin_poll_pct": 5.71,
+          "D_margin_result_pct": 4.99,
+          "poll_minus_result_margin_points": 0.72
+        },
+        {
+          "race_id": "8925",
+          "state": "GA",
+          "poll_questions": 57,
+          "pollsters": 33,
+          "D_margin_poll_pct": 1.5,
+          "D_margin_result_pct": 0.98,
+          "poll_minus_result_margin_points": 0.52
+        }
+      ]
+    },
+    "2024": {
+      "n_races": 18,
+      "mean_poll_minus_result_D_margin_points": 3.751,
+      "sd_across_races_margin_points": 3.904,
+      "mae_margin_points": 4.742,
+      "races": [
+        {
+          "race_id": "9517",
+          "state": "MS",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": -15.66,
+          "D_margin_result_pct": -25.62,
+          "poll_minus_result_margin_points": 9.96
+        },
+        {
+          "race_id": "9509",
+          "state": "FL",
+          "poll_questions": 40,
+          "pollsters": 21,
+          "D_margin_poll_pct": -4.93,
+          "D_margin_result_pct": -12.99,
+          "poll_minus_result_margin_points": 8.06
+        },
+        {
+          "race_id": "9531",
+          "state": "UT",
+          "poll_questions": 4,
+          "pollsters": 3,
+          "D_margin_poll_pct": -40.51,
+          "D_margin_result_pct": -32.64,
+          "poll_minus_result_margin_points": -7.87
+        },
+        {
+          "race_id": "9508",
+          "state": "DE",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": 24.49,
+          "D_margin_result_pct": 17.78,
+          "poll_minus_result_margin_points": 6.71
+        },
+        {
+          "race_id": "9529",
+          "state": "TN",
+          "poll_questions": 9,
+          "pollsters": 4,
+          "D_margin_poll_pct": -24.16,
+          "D_margin_result_pct": -30.25,
+          "poll_minus_result_margin_points": 6.09
+        },
+        {
+          "race_id": "9511",
+          "state": "IN",
+          "poll_questions": 4,
+          "pollsters": 3,
+          "D_margin_poll_pct": -15.14,
+          "D_margin_result_pct": -20.4,
+          "poll_minus_result_margin_points": 5.26
+        },
+        {
+          "race_id": "9505",
+          "state": "AZ",
+          "poll_questions": 76,
+          "pollsters": 34,
+          "D_margin_poll_pct": 7.72,
+          "D_margin_result_pct": 2.46,
+          "poll_minus_result_margin_points": 5.25
+        },
+        {
+          "race_id": "9527",
+          "state": "PA",
+          "poll_questions": 95,
+          "pollsters": 43,
+          "D_margin_poll_pct": 4.99,
+          "D_margin_result_pct": -0.22,
+          "poll_minus_result_margin_points": 5.21
+        },
+        {
+          "race_id": "9530",
+          "state": "TX",
+          "poll_questions": 43,
+          "pollsters": 20,
+          "D_margin_poll_pct": -3.79,
+          "D_margin_result_pct": -8.71,
+          "poll_minus_result_margin_points": 4.92
+        },
+        {
+          "race_id": "9526",
+          "state": "OH",
+          "poll_questions": 31,
+          "pollsters": 19,
+          "D_margin_poll_pct": 1.08,
+          "D_margin_result_pct": -3.75,
+          "poll_minus_result_margin_points": 4.82
+        },
+        {
+          "race_id": "9479",
+          "state": "WV",
+          "poll_questions": 2,
+          "pollsters": 2,
+          "D_margin_poll_pct": -37.8,
+          "D_margin_result_pct": -42.48,
+          "poll_minus_result_margin_points": 4.68
+        },
+        {
+          "race_id": "9515",
+          "state": "MI",
+          "poll_questions": 76,
+          "pollsters": 36,
+          "D_margin_poll_pct": 4.87,
+          "D_margin_result_pct": 0.35,
+          "poll_minus_result_margin_points": 4.51
+        },
+        {
+          "race_id": "9518",
+          "state": "MO",
+          "poll_questions": 13,
+          "pollsters": 7,
+          "D_margin_poll_pct": -10.47,
+          "D_margin_result_pct": -14.1,
+          "poll_minus_result_margin_points": 3.63
+        },
+        {
+          "race_id": "9534",
+          "state": "WI",
+          "poll_questions": 66,
+          "pollsters": 34,
+          "D_margin_poll_pct": 3.8,
+          "D_margin_result_pct": 0.87,
+          "poll_minus_result_margin_points": 2.93
+        },
+        {
+          "race_id": "9519",
+          "state": "MT",
+          "poll_questions": 17,
+          "pollsters": 11,
+          "D_margin_poll_pct": -5.08,
+          "D_margin_result_pct": -7.28,
+          "poll_minus_result_margin_points": 2.2
+        },
+        {
+          "race_id": "9523",
+          "state": "NM",
+          "poll_questions": 11,
+          "pollsters": 7,
+          "D_margin_poll_pct": 12.31,
+          "D_margin_result_pct": 10.11,
+          "poll_minus_result_margin_points": 2.2
+        },
+        {
+          "race_id": "9507",
+          "state": "CT",
+          "poll_questions": 1,
+          "pollsters": 1,
+          "D_margin_poll_pct": 18.6,
+          "D_margin_result_pct": 19.2,
+          "poll_minus_result_margin_points": -0.6
+        },
+        {
+          "race_id": "9522",
+          "state": "NJ",
+          "poll_questions": 4,
+          "pollsters": 4,
+          "D_margin_poll_pct": 9.41,
+          "D_margin_result_pct": 9.86,
+          "poll_minus_result_margin_points": -0.45
+        }
+      ]
+    }
+  }
+}

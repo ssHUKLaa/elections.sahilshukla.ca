@@ -1,0 +1,37 @@
+{
+  "training_cycles": [
+    2020,
+    2022,
+    2024
+  ],
+  "cutoff_days_before_election": 7,
+  "estimand_warning": "Terminal House vote includes changes after the cutoff and is only a noisy proxy for current generic-ballot survey error.",
+  "use": "RMS magnitude enters 2026 national generic-ballot variance; historical mean signed error is not subtracted.",
+  "snapshot_sha256": "b9584eb2c39013e21d948511a06635243d1578685ac7990434c2b3c98b324ca9",
+  "source_manifest_sha256": "8bf82a6c2549573a93dad7a8c75b2a1315639d6f32367006914f651930b6fcfc",
+  "rows": [
+    {
+      "cycle": 2020,
+      "poll_count": 346,
+      "generic_mean_logratio": 0.14342917112453915,
+      "terminal_house_logratio": 0.06187540371808745,
+      "terminal_proxy_error_logratio": 0.0815537674064517
+    },
+    {
+      "cycle": 2022,
+      "poll_count": 444,
+      "generic_mean_logratio": 0.03546112065115757,
+      "terminal_house_logratio": -0.053400776727115414,
+      "terminal_proxy_error_logratio": 0.08886189737827299
+    },
+    {
+      "cycle": 2024,
+      "poll_count": 144,
+      "generic_mean_logratio": 0.015401761495160244,
+      "terminal_house_logratio": -0.05161104051107335,
+      "terminal_proxy_error_logratio": 0.0670128020062336
+    }
+  ],
+  "rms_error_logratio": 0.07966213951553777,
+  "mean_signed_error_logratio_diagnostic_only": 0.07914282226365277
+}

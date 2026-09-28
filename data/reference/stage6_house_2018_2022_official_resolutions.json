@@ -1,0 +1,32 @@
+{
+  "method": "Reviewed FEC candidate rows for two archived House races whose totals differ from the FEC. The Alaska rows are first-choice votes; later ranked-choice rounds are retained in the archive separately.",
+  "races": [
+    {
+      "cycle": 2018,
+      "state": "PA",
+      "district": "18",
+      "source_race_id": "508",
+      "official_total": 240924,
+      "source_sha256": "f2c42311862b4927df2ca5908c5f9c8f8da6221a8db88fd00434a22ec1e0e303",
+      "candidates": [
+        {"candidate_id": "11988", "name": "Mike Doyle", "party": "D", "votes": 231472, "winner": true},
+        {"candidate_id": "official:fec:2018:PA:18:scattered", "name": "Scattered", "party": "W", "votes": 9452, "winner": false}
+      ]
+    },
+    {
+      "cycle": 2022,
+      "state": "AK",
+      "district": "00",
+      "source_race_id": "8998",
+      "official_total": 263610,
+      "source_sha256": "cdb258ea23803e50d752bcea19faa39b3c201eb960094bcb556c3a38c2350897",
+      "candidates": [
+        {"candidate_id": "30406", "name": "Mary S. Peltola", "party": "D", "votes": 128553, "winner": true},
+        {"candidate_id": "30150", "name": "Sarah Palin", "party": "R", "votes": 67866, "winner": false},
+        {"candidate_id": "29358", "name": "Nick Begich", "party": "R", "votes": 61513, "winner": false},
+        {"candidate_id": "30760", "name": "Chris Bye", "party": "LIB", "votes": 4570, "winner": false},
+        {"candidate_id": "official:fec:2022:AK:00:scattered", "name": "Scattered", "party": "W", "votes": 1108, "winner": false}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+-r requirements-stage2.txt
+numpy>=2.0
+scipy>=1.13
+scikit-learn>=1.5

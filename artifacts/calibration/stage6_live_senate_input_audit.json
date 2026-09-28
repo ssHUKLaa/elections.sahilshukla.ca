@@ -1,0 +1,1516 @@
+{
+  "design": "For all current Senate races, join the frozen NYT Senate feed to reviewed Stage 2 question maps and the validated Stage 5 forecast. Rank races by runner-up win probability as an impact triage, not an independent probability estimate.",
+  "source_hashes": {
+    "stage1": "45b515db04678bdf5b75b490df305b9330e7c55ad6d147b075c278dea57fae32",
+    "stage2": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+    "forecast": "d6c560b71a87ed7f94989858eb8c3615e761e7fefa654dc40f4aeec1de5f5165"
+  },
+  "counts": {
+    "senate_races": 35,
+    "races_with_source_polls_but_no_eligible_polls": 2,
+    "races_with_quarantined_general_questions": 24
+  },
+  "races": [
+    {
+      "race_id": "S-2026-SC-II-regular",
+      "state": "SC",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 18,
+      "source_poll_count": 8,
+      "eligible_question_count": 5,
+      "eligible_poll_count": 4,
+      "latest_eligible_poll_end_date": "9/25/26",
+      "mapping_statuses": {
+        "quarantined_options": 13,
+        "mapped": 5
+      },
+      "unmapped_candidate_names": {
+        "Generic Democrat": 1,
+        "Generic Republican": 1,
+        "John Warren": 1,
+        "Lindsey Graham": 4,
+        "Mark Lynch": 1,
+        "Mark Sanford": 1,
+        "Nancy Mace": 1,
+        "Pamela Evette": 1,
+        "Ralph Norman": 1,
+        "Russell Fry": 1,
+        "Trey Gowdy": 1
+      },
+      "modeled_poll_count": 4,
+      "runner_up_win_probability": 0.4991466666666667,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Annie Andrews",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.4991466666666667
+        },
+        {
+          "name": "Catherine Fleming Bruce",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Darline Graham",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.5008533333333334
+        },
+        {
+          "name": "Kasie Whitener",
+          "party": "LIB",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Mark Hackett",
+          "party": "OTH",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-NE-II-regular",
+      "state": "NE",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 10,
+      "source_poll_count": 7,
+      "eligible_question_count": 7,
+      "eligible_poll_count": 7,
+      "latest_eligible_poll_end_date": "9/16/26",
+      "mapping_statuses": {
+        "mapped": 7,
+        "quarantined_options": 3
+      },
+      "unmapped_candidate_names": {
+        "Cindy Burbank": 1,
+        "Generic Democrat": 1,
+        "William J. Forbes": 1
+      },
+      "modeled_poll_count": 7,
+      "runner_up_win_probability": 0.4924,
+      "other_win_probability": 0.5076,
+      "candidates": [
+        {
+          "name": "Dan Osborn",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.5076
+        },
+        {
+          "name": "Mike Marvin",
+          "party": "OTH",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Pete Ricketts",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.4924
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-IA-II-regular",
+      "state": "IA",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 34,
+      "source_poll_count": 22,
+      "eligible_question_count": 23,
+      "eligible_poll_count": 20,
+      "latest_eligible_poll_end_date": "9/23/26",
+      "mapping_statuses": {
+        "mapped": 23,
+        "quarantined_options": 11
+      },
+      "unmapped_candidate_names": {
+        "Generic Democrat": 3,
+        "Generic Republican": 2,
+        "Jackie Norris": 1,
+        "Joni Ernst": 5,
+        "Nathan Sage": 2,
+        "Zach Wahls": 4
+      },
+      "modeled_poll_count": 20,
+      "runner_up_win_probability": 0.49108,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Ashley Hinson",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.49108
+        },
+        {
+          "name": "Josh Turek",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.50892
+        },
+        {
+          "name": "Thomas Laehn",
+          "party": "LIB",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-SD-II-regular",
+      "state": "SD",
+      "counting_rule": "plurality",
+      "ballot_status": "official_list_reviewed",
+      "source_question_count": 11,
+      "source_poll_count": 7,
+      "eligible_question_count": 7,
+      "eligible_poll_count": 7,
+      "latest_eligible_poll_end_date": "9/9/26",
+      "mapping_statuses": {
+        "mapped": 7,
+        "quarantined_options": 4
+      },
+      "unmapped_candidate_names": {
+        "Julian Beaudion": 4
+      },
+      "modeled_poll_count": 7,
+      "runner_up_win_probability": 0.45864,
+      "other_win_probability": 0.45864,
+      "candidates": [
+        {
+          "name": "Brian L Bengs",
+          "party": "IND",
+          "status": "active_general_listed",
+          "win_probability": 0.45864
+        },
+        {
+          "name": "Mike Rounds",
+          "party": "REP",
+          "status": "active_general_listed",
+          "win_probability": 0.54136
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-MI-II-regular",
+      "state": "MI",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 85,
+      "source_poll_count": 40,
+      "eligible_question_count": 38,
+      "eligible_poll_count": 33,
+      "latest_eligible_poll_end_date": "9/24/26",
+      "mapping_statuses": {
+        "mapped": 38,
+        "quarantined_options": 47
+      },
+      "unmapped_candidate_names": {
+        "Bill Huizenga": 3,
+        "Generic Democrat": 1,
+        "Generic Republican": 1,
+        "Gretchen Whitmer": 1,
+        "Haley Stevens": 22,
+        "Mallory McMorrow": 16,
+        "Pete Buttigieg": 1,
+        "Timothy Long": 5,
+        "Walter Kristy": 3
+      },
+      "modeled_poll_count": 32,
+      "runner_up_win_probability": 0.45629333333333333,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Abdul El-Sayed",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.45629333333333333
+        },
+        {
+          "name": "Douglas P. Marsh",
+          "party": "GRE",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Lydia Christensen",
+          "party": "LIB",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Mike Rogers",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.5437066666666667
+        },
+        {
+          "name": "Tim Long",
+          "party": "OTH",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-ME-II-regular",
+      "state": "ME",
+      "counting_rule": "ranked_choice",
+      "ballot_status": "official_list_reviewed",
+      "source_question_count": 62,
+      "source_poll_count": 39,
+      "eligible_question_count": 15,
+      "eligible_poll_count": 13,
+      "latest_eligible_poll_end_date": "9/23/26",
+      "mapping_statuses": {
+        "quarantined_options": 47,
+        "mapped": 15
+      },
+      "unmapped_candidate_names": {
+        "Dan Kleban": 1,
+        "Generic Democrat": 2,
+        "Graham Platner": 25,
+        "Janet Mills": 15,
+        "Jordan Wood": 2,
+        "Nirav Shah": 1,
+        "Shenna Bellows": 1
+      },
+      "modeled_poll_count": 13,
+      "runner_up_win_probability": 0.43208,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Susan M. Collins",
+          "party": "REP",
+          "status": "general_listed",
+          "win_probability": 0.43208
+        },
+        {
+          "name": "Troy D. Jackson",
+          "party": "DEM",
+          "status": "general_listed",
+          "win_probability": 0.56792
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-AK-II-regular",
+      "state": "AK",
+      "counting_rule": "ranked_choice",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 29,
+      "source_poll_count": 20,
+      "eligible_question_count": 22,
+      "eligible_poll_count": 16,
+      "latest_eligible_poll_end_date": "9/24/26",
+      "mapping_statuses": {
+        "quarantined_options": 7,
+        "mapped": 22
+      },
+      "unmapped_candidate_names": {
+        "Ann Diener": 1,
+        "Christopher Miklos": 1,
+        "Dustin Darden": 2,
+        "Generic Democrat": 2,
+        "Generic Republican": 1,
+        "James Ryan": 2,
+        "Sidney Hill": 1
+      },
+      "modeled_poll_count": 16,
+      "runner_up_win_probability": 0.4048933333333333,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Daniel J. Sullivan Jr.",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Dan S. Sullivan",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.4048933333333333
+        },
+        {
+          "name": "Gerald Heikes",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Mary Peltola",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.5951066666666667
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-TX-II-regular",
+      "state": "TX",
+      "counting_rule": "plurality",
+      "ballot_status": "certified_list_ingested",
+      "source_question_count": 90,
+      "source_poll_count": 46,
+      "eligible_question_count": 38,
+      "eligible_poll_count": 38,
+      "latest_eligible_poll_end_date": "9/22/26",
+      "mapping_statuses": {
+        "mapped": 38,
+        "quarantined_options": 52
+      },
+      "unmapped_candidate_names": {
+        "Beto O\u2019Rourke": 6,
+        "Camencia Ford": 1,
+        "Colin Allred": 14,
+        "Generic Democrat": 2,
+        "Generic Republican": 1,
+        "Hans Truelson": 1,
+        "Jasmine Crockett": 12,
+        "Joaquin Castro": 3,
+        "John Cornyn": 23,
+        "Joshua Cain": 1,
+        "Wesley Hunt": 13
+      },
+      "modeled_poll_count": 38,
+      "runner_up_win_probability": 0.28516,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "JAMES TALARICO",
+          "party": "DEM",
+          "status": "certified_general",
+          "win_probability": 0.71484
+        },
+        {
+          "name": "KEN PAXTON",
+          "party": "REP",
+          "status": "certified_general",
+          "win_probability": 0.28516
+        },
+        {
+          "name": "TED BROWN",
+          "party": "LIB",
+          "status": "certified_general",
+          "win_probability": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-MN-II-regular",
+      "state": "MN",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 16,
+      "source_poll_count": 10,
+      "eligible_question_count": 4,
+      "eligible_poll_count": 4,
+      "latest_eligible_poll_end_date": "9/10/26",
+      "mapping_statuses": {
+        "mapped": 4,
+        "quarantined_options": 12
+      },
+      "unmapped_candidate_names": {
+        "Angie Craig": 4,
+        "Generic Democrat": 2,
+        "Generic Republican": 4,
+        "Marisa Simonetti": 5,
+        "Rebecca Whiting": 5
+      },
+      "modeled_poll_count": 4,
+      "runner_up_win_probability": 0.2786133333333333,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Michele Tafoya",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.2786133333333333
+        },
+        {
+          "name": "Peggy Flanagan",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.7213866666666666
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-FL-III-special",
+      "state": "FL",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 25,
+      "source_poll_count": 18,
+      "eligible_question_count": 9,
+      "eligible_poll_count": 9,
+      "latest_eligible_poll_end_date": "9/21/26",
+      "mapping_statuses": {
+        "quarantined_options": 16,
+        "mapped": 9
+      },
+      "unmapped_candidate_names": {
+        "Alexander Vindman": 13,
+        "Hector Mujica": 1,
+        "Jennifer Jenkins": 2
+      },
+      "modeled_poll_count": 9,
+      "runner_up_win_probability": 0.18444,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Angie Nixon",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.18444
+        },
+        {
+          "name": "Ashley Moody",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.81556
+        },
+        {
+          "name": "Neil Gillespie",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-KS-II-regular",
+      "state": "KS",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 15,
+      "source_poll_count": 8,
+      "eligible_question_count": 4,
+      "eligible_poll_count": 3,
+      "latest_eligible_poll_end_date": "8/8/26",
+      "mapping_statuses": {
+        "quarantined_options": 11,
+        "mapped": 4
+      },
+      "unmapped_candidate_names": {
+        "David Graham": 4,
+        "Generic Candidate": 2,
+        "Generic Democrat": 3,
+        "Generic Republican": 1,
+        "Noah Taylor": 1,
+        "Patrick Schmidt": 2
+      },
+      "modeled_poll_count": 3,
+      "runner_up_win_probability": 0.16822666666666666,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Adam Hamilton",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.16822666666666666
+        },
+        {
+          "name": "Roger Marshall",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.8317733333333334
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-OH-III-special",
+      "state": "OH",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 26,
+      "source_poll_count": 22,
+      "eligible_question_count": 20,
+      "eligible_poll_count": 19,
+      "latest_eligible_poll_end_date": "9/23/26",
+      "mapping_statuses": {
+        "quarantined_options": 6,
+        "mapped": 20
+      },
+      "unmapped_candidate_names": {
+        "Bill Redpath": 4,
+        "Gregory Levy": 3,
+        "Tim Ryan": 2
+      },
+      "modeled_poll_count": 19,
+      "runner_up_win_probability": 0.13078666666666666,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Greg Levy",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Jon Husted",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.13078666666666666
+        },
+        {
+          "name": "Sherrod Brown",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.8692133333333333
+        },
+        {
+          "name": "William Redpath",
+          "party": "LIB",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-IL-II-regular",
+      "state": "IL",
+      "counting_rule": "plurality",
+      "ballot_status": "official_list_reviewed",
+      "source_question_count": 0,
+      "source_poll_count": 0,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {},
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.12221333333333333,
+      "other_win_probability": 0.018,
+      "candidates": [
+        {
+          "name": "Don Tracy",
+          "party": "REP",
+          "status": "active_general_listed",
+          "win_probability": 0.12221333333333333
+        },
+        {
+          "name": "Juliana Stratton",
+          "party": "DEM",
+          "status": "active_general_listed",
+          "win_probability": 0.8597866666666667
+        },
+        {
+          "name": "Whitfield Harrington Jr",
+          "party": "ACP",
+          "status": "active_general_listed",
+          "win_probability": 0.018
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-MT-II-regular",
+      "state": "MT",
+      "counting_rule": "plurality",
+      "ballot_status": "official_filing_list_reviewed",
+      "source_question_count": 28,
+      "source_poll_count": 14,
+      "eligible_question_count": 20,
+      "eligible_poll_count": 12,
+      "latest_eligible_poll_end_date": "9/15/26",
+      "mapping_statuses": {
+        "mapped": 20,
+        "quarantined_options": 8
+      },
+      "unmapped_candidate_names": {
+        "Generic Democrat": 1,
+        "Reilly Neill": 5,
+        "Steve Daines": 5,
+        "Tom Jandron": 1
+      },
+      "modeled_poll_count": 12,
+      "runner_up_win_probability": 0.10552,
+      "other_win_probability": 0.10552,
+      "candidates": [
+        {
+          "name": "Alani Bankhead",
+          "party": "DEM",
+          "status": "filed_on_state_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Jami Dee Woodman",
+          "party": "NON",
+          "status": "filed_on_state_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Kurt Alme",
+          "party": "REP",
+          "status": "filed_on_state_general_list",
+          "win_probability": 0.89448
+        },
+        {
+          "name": "Kyle Austin",
+          "party": "LIB",
+          "status": "filed_on_state_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Seth Bodnar",
+          "party": "IND",
+          "status": "filed_on_state_general_list",
+          "win_probability": 0.10552
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-GA-II-regular",
+      "state": "GA",
+      "counting_rule": "majority_then_top_two_runoff",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 51,
+      "source_poll_count": 21,
+      "eligible_question_count": 19,
+      "eligible_poll_count": 15,
+      "latest_eligible_poll_end_date": "9/23/26",
+      "mapping_statuses": {
+        "quarantined_options": 32,
+        "mapped": 19
+      },
+      "unmapped_candidate_names": {
+        "Allen Buckley": 1,
+        "Brad Raffensperger": 4,
+        "Brian Kemp": 4,
+        "Buddy Carter": 9,
+        "Derek Dooley": 5,
+        "Generic Republican": 1,
+        "John King": 4,
+        "Kelly Loeffler": 1,
+        "Marjorie Taylor Greene": 3,
+        "Rich McCormick": 1
+      },
+      "modeled_poll_count": 14,
+      "runner_up_win_probability": 0.10408,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Jon Ossoff",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.89592
+        },
+        {
+          "name": "Mike Collins",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.10408
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-NH-II-regular",
+      "state": "NH",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 45,
+      "source_poll_count": 25,
+      "eligible_question_count": 18,
+      "eligible_poll_count": 18,
+      "latest_eligible_poll_end_date": "9/22/26",
+      "mapping_statuses": {
+        "quarantined_options": 27,
+        "mapped": 18
+      },
+      "unmapped_candidate_names": {
+        "Aaron Day": 1,
+        "Chris Sununu": 4,
+        "Christine Lopez": 1,
+        "Dan Innis": 2,
+        "Frank Edelblut": 1,
+        "Generic Democrat": 1,
+        "Generic Republican": 2,
+        "Jeanne Logan Morrow": 1,
+        "Jeanne Shaheen": 3,
+        "Matt Giovonizzi": 1,
+        "Scott Brown": 16,
+        "Tim Harris": 2
+      },
+      "modeled_poll_count": 18,
+      "runner_up_win_probability": 0.09632,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Chris Pappas",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.90368
+        },
+        {
+          "name": "Edmond LaPlante",
+          "party": "OTH",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "John E. Sununu",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.09632
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-ID-II-regular",
+      "state": "ID",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 10,
+      "source_poll_count": 6,
+      "eligible_question_count": 6,
+      "eligible_poll_count": 5,
+      "latest_eligible_poll_end_date": "8/13/26",
+      "mapping_statuses": {
+        "mapped": 6,
+        "quarantined_options": 4
+      },
+      "unmapped_candidate_names": {
+        "David Roth": 4
+      },
+      "modeled_poll_count": 5,
+      "runner_up_win_probability": 0.09125333333333334,
+      "other_win_probability": 0.09125333333333334,
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9087466666666667
+        },
+        {
+          "name": "Matt Loesby",
+          "party": "LIB",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Natalie Fleming",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Todd Achilles",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.09125333333333334
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-MS-II-regular",
+      "state": "MS",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 5,
+      "source_poll_count": 3,
+      "eligible_question_count": 3,
+      "eligible_poll_count": 2,
+      "latest_eligible_poll_end_date": "8/15/26",
+      "mapping_statuses": {
+        "mapped": 3,
+        "quarantined_options": 1,
+        "insufficient_candidate_contrast": 1
+      },
+      "unmapped_candidate_names": {
+        "Generic Candidate": 1
+      },
+      "modeled_poll_count": 2,
+      "runner_up_win_probability": 0.08788,
+      "other_win_probability": 0.0006666666666666666,
+      "candidates": [
+        {
+          "name": "Cindy Hyde-Smith",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9114533333333333
+        },
+        {
+          "name": "Scott Colom",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.08788
+        },
+        {
+          "name": "Ty Pinkins",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0006666666666666666
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-VA-II-regular",
+      "state": "VA",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 1,
+      "source_poll_count": 1,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {
+        "quarantined_options": 1
+      },
+      "unmapped_candidate_names": {
+        "Glenn Youngkin": 1
+      },
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.08713333333333333,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Bert Mizusawa",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.08713333333333333
+        },
+        {
+          "name": "Mark Warner",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9128666666666667
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-DE-II-regular",
+      "state": "DE",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 0,
+      "source_poll_count": 0,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {},
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.06945333333333334,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Chris Coons",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9305466666666666
+        },
+        {
+          "name": "Michael Katz",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.06945333333333334
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-CO-II-regular",
+      "state": "CO",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 0,
+      "source_poll_count": 0,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {},
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.06848,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "John Hickenlooper",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.93152
+        },
+        {
+          "name": "Mark Baisley",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.06848
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-NJ-II-regular",
+      "state": "NJ",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 0,
+      "source_poll_count": 0,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {},
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.06309333333333333,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Cory Booker",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9369066666666667
+        },
+        {
+          "name": "Justin Murphy",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.06309333333333333
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-KY-II-regular",
+      "state": "KY",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 6,
+      "source_poll_count": 2,
+      "eligible_question_count": 2,
+      "eligible_poll_count": 2,
+      "latest_eligible_poll_end_date": "8/27/26",
+      "mapping_statuses": {
+        "quarantined_options": 4,
+        "mapped": 2
+      },
+      "unmapped_candidate_names": {
+        "Amy McGrath": 1,
+        "Daniel Cameron": 1,
+        "Generic Republican": 2,
+        "Nate Morris": 1
+      },
+      "modeled_poll_count": 2,
+      "runner_up_win_probability": 0.05093333333333333,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Andy Barr",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9490666666666666
+        },
+        {
+          "name": "Charles Booker",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.05093333333333333
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-LA-II-regular",
+      "state": "LA",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 2,
+      "source_poll_count": 2,
+      "eligible_question_count": 1,
+      "eligible_poll_count": 1,
+      "latest_eligible_poll_end_date": "9/19/26",
+      "mapping_statuses": {
+        "mapped": 1,
+        "quarantined_options": 1
+      },
+      "unmapped_candidate_names": {
+        "James Davis": 1
+      },
+      "modeled_poll_count": 1,
+      "runner_up_win_probability": 0.04458666666666666,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Jamie Davis",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.04458666666666666
+        },
+        {
+          "name": "Julia Letlow",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9554133333333333
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-AL-II-regular",
+      "state": "AL",
+      "counting_rule": "plurality",
+      "ballot_status": "certified_list_ingested",
+      "source_question_count": 1,
+      "source_poll_count": 1,
+      "eligible_question_count": 1,
+      "eligible_poll_count": 1,
+      "latest_eligible_poll_end_date": "7/11/26",
+      "mapping_statuses": {
+        "mapped": 1
+      },
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 1,
+      "runner_up_win_probability": 0.03156,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Barry Moore",
+          "party": "REP",
+          "status": "certified_general",
+          "win_probability": 0.96844
+        },
+        {
+          "name": "Everett Wess",
+          "party": "DEM",
+          "status": "certified_general",
+          "win_probability": 0.03156
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-NC-II-regular",
+      "state": "NC",
+      "counting_rule": "plurality",
+      "ballot_status": "official_list_unfinalized",
+      "source_question_count": 49,
+      "source_poll_count": 39,
+      "eligible_question_count": 44,
+      "eligible_poll_count": 36,
+      "latest_eligible_poll_end_date": "9/22/26",
+      "mapping_statuses": {
+        "mapped": 44,
+        "quarantined_options": 5
+      },
+      "unmapped_candidate_names": {
+        "Don Brown": 1,
+        "Lara Trump": 1,
+        "Thom Tillis": 3
+      },
+      "modeled_poll_count": 36,
+      "runner_up_win_probability": 0.017946666666666666,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Michael Dublin",
+          "party": "GRE",
+          "status": "listed_general_unfinalized",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Michael Whatley",
+          "party": "REP",
+          "status": "listed_general_unfinalized",
+          "win_probability": 0.017946666666666666
+        },
+        {
+          "name": "Roy Cooper",
+          "party": "DEM",
+          "status": "listed_general_unfinalized",
+          "win_probability": 0.9820533333333333
+        },
+        {
+          "name": "Shannon W. Bray",
+          "party": "LIB",
+          "status": "listed_general_unfinalized",
+          "win_probability": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-TN-II-regular",
+      "state": "TN",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 2,
+      "source_poll_count": 1,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {
+        "quarantined_options": 2
+      },
+      "unmapped_candidate_names": {
+        "Generic Candidate": 2
+      },
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.00948,
+      "other_win_probability": 0.0006533333333333333,
+      "candidates": [
+        {
+          "name": "Andrew Gerena",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 6.666666666666667e-05
+        },
+        {
+          "name": "Bill Hagerty",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9898666666666667
+        },
+        {
+          "name": "Catherine Whitson",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00012
+        },
+        {
+          "name": "David Sutman Jr.",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 8e-05
+        },
+        {
+          "name": "James Macon III",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 6.666666666666667e-05
+        },
+        {
+          "name": "Jeremy Hearn",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00013333333333333334
+        },
+        {
+          "name": "Marquita Bradshaw",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00948
+        },
+        {
+          "name": "Robert Jones",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 6.666666666666667e-05
+        },
+        {
+          "name": "Tharon Chandler",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 4e-05
+        },
+        {
+          "name": "Yoshi Matthews",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 8e-05
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-AR-II-regular",
+      "state": "AR",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 4,
+      "source_poll_count": 4,
+      "eligible_question_count": 4,
+      "eligible_poll_count": 4,
+      "latest_eligible_poll_end_date": "8/18/26",
+      "mapping_statuses": {
+        "mapped": 4
+      },
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 4,
+      "runner_up_win_probability": 0.00912,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Hallie Shoffner",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00912
+        },
+        {
+          "name": "Jeff Wadlin",
+          "party": "LIB",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Tom Cotton",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.99088
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-NM-II-regular",
+      "state": "NM",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 1,
+      "source_poll_count": 1,
+      "eligible_question_count": 1,
+      "eligible_poll_count": 1,
+      "latest_eligible_poll_end_date": "8/28/26",
+      "mapping_statuses": {
+        "mapped": 1
+      },
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 1,
+      "runner_up_win_probability": 0.007026666666666666,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Ben Ray Luj\u00e1n",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9929733333333334
+        },
+        {
+          "name": "Larry Marker",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.007026666666666666
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-OR-II-regular",
+      "state": "OR",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 0,
+      "source_poll_count": 0,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {},
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.0037733333333333334,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0037733333333333334
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9962266666666667
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-WV-II-regular",
+      "state": "WV",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 0,
+      "source_poll_count": 0,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {},
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.00272,
+      "other_win_probability": 0.00272,
+      "candidates": [
+        {
+          "name": "Rachel Fetty Anderson",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00012
+        },
+        {
+          "name": "Rio Phillips",
+          "party": "OTH",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "S. Marshall Wilson",
+          "party": "OTH",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00272
+        },
+        {
+          "name": "Shelley Moore Capito",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.99716
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-OK-II-regular",
+      "state": "OK",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 2,
+      "source_poll_count": 1,
+      "eligible_question_count": 1,
+      "eligible_poll_count": 1,
+      "latest_eligible_poll_end_date": "8/6/26",
+      "mapping_statuses": {
+        "quarantined_options": 1,
+        "mapped": 1
+      },
+      "unmapped_candidate_names": {
+        "Jim Priest": 1
+      },
+      "modeled_poll_count": 1,
+      "runner_up_win_probability": 0.0016133333333333334,
+      "other_win_probability": 0.00010666666666666667,
+      "candidates": [
+        {
+          "name": "Curtis Stinnett",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 8e-05
+        },
+        {
+          "name": "Kevin Hern",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.99828
+        },
+        {
+          "name": "N'Kiyla Jasmine Thomas",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0016133333333333334
+        },
+        {
+          "name": "Ron Meinhardt",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Sevier White",
+          "party": "LIB",
+          "status": "secondary_source_general_list",
+          "win_probability": 2.6666666666666667e-05
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-WY-II-regular",
+      "state": "WY",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 0,
+      "source_poll_count": 0,
+      "eligible_question_count": 0,
+      "eligible_poll_count": 0,
+      "latest_eligible_poll_end_date": null,
+      "mapping_statuses": {},
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 0,
+      "runner_up_win_probability": 0.00088,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.99912
+        },
+        {
+          "name": "James W. Byrd",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00088
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-MA-II-regular",
+      "state": "MA",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 19,
+      "source_poll_count": 12,
+      "eligible_question_count": 8,
+      "eligible_poll_count": 8,
+      "latest_eligible_poll_end_date": "8/12/26",
+      "mapping_statuses": {
+        "mapped": 8,
+        "quarantined_options": 11
+      },
+      "unmapped_candidate_names": {
+        "Charles D. Baker": 2,
+        "Joe Tache": 3,
+        "Seth Moulton": 7
+      },
+      "modeled_poll_count": 8,
+      "runner_up_win_probability": 0.00025333333333333333,
+      "other_win_probability": 0,
+      "candidates": [
+        {
+          "name": "Ed Markey",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9997466666666667
+        },
+        {
+          "name": "John Deaton",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.00025333333333333333
+        }
+      ]
+    },
+    {
+      "race_id": "S-2026-RI-II-regular",
+      "state": "RI",
+      "counting_rule": "plurality",
+      "ballot_status": "secondary_source_snapshot",
+      "source_question_count": 4,
+      "source_poll_count": 4,
+      "eligible_question_count": 4,
+      "eligible_poll_count": 4,
+      "latest_eligible_poll_end_date": "9/21/26",
+      "mapping_statuses": {
+        "mapped": 4
+      },
+      "unmapped_candidate_names": {},
+      "modeled_poll_count": 4,
+      "runner_up_win_probability": 2.6666666666666667e-05,
+      "other_win_probability": 0.0,
+      "candidates": [
+        {
+          "name": "Jack Reed",
+          "party": "DEM",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.9999733333333334
+        },
+        {
+          "name": "Michael Bahry",
+          "party": "IND",
+          "status": "secondary_source_general_list",
+          "win_probability": 0.0
+        },
+        {
+          "name": "Raymond McKay",
+          "party": "REP",
+          "status": "secondary_source_general_list",
+          "win_probability": 2.6666666666666667e-05
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "design": {
+    "comparison": "Old governor fundamentals versus revised local-lean prior, rerun in-process with identical seeds and sorted state draw order.",
+    "old_governor_method": "Legacy fitted open-seat/candidate-experience shift.",
+    "new_governor_method": "Selected local-lean model and historical out-of-fold uncertainty floor.",
+    "non_governor_check": "All non-governor race winner probabilities must match exactly within each paired cell."
+  },
+  "source_database_sha256": "27299b21c412650c67beada6417cda4ffa0df97305f7fa7a4cc3946a96e36959",
+  "source_code_sha256": "5d6a897c153a562f282e5e4e0f6c711f3cd7129d878cf3379625b8c19fe4505d",
+  "cells": [
+    {
+      "cycle": 2020,
+      "lead_days": 90,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.30334064691477935,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.12450155952466492,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.8181818181818182,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.33788351515436515
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 2,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.23636196013839786
+        }
+      },
+      "revised_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.16652486963804047,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.8181818181818182,
+          "coverage95": 0.9090909090909091,
+          "mean_interval80_width": 0.35917084604022714
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 2,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.24253032872454833
+        }
+      }
+    },
+    {
+      "cycle": 2020,
+      "lead_days": 30,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.30334064691477935,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.08180439211991165,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.7272727272727273,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.231791405048933
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 2,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.182754331735511
+        }
+      },
+      "revised_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.08731787214380046,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.7272727272727273,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.23322403307133358
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 2,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.18483667737925702
+        }
+      }
+    },
+    {
+      "cycle": 2020,
+      "lead_days": 7,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.30334064691477935,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.042386833033096157,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.6363636363636364,
+          "coverage95": 0.9090909090909091,
+          "mean_interval80_width": 0.18375052770856684
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 2,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.1993281844682737
+        }
+      },
+      "revised_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.04388091213798144,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.6363636363636364,
+          "coverage95": 0.9090909090909091,
+          "mean_interval80_width": 0.1858993541628059
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 2,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.20267579130658728
+        }
+      }
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 90,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.3171632530214208,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 36,
+        "winner_log_loss": 0.2634129083759041,
+        "margin_intervals": {
+          "n": 36,
+          "coverage80": 0.8611111111111112,
+          "coverage95": 0.9444444444444444,
+          "mean_interval80_width": 0.30392873084001554
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 6,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.25760670274430403
+        }
+      },
+      "revised_model": {
+        "race_count": 36,
+        "winner_log_loss": 0.268072305049899,
+        "margin_intervals": {
+          "n": 36,
+          "coverage80": 0.8333333333333334,
+          "coverage95": 0.9722222222222222,
+          "mean_interval80_width": 0.31482873156505475
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 6,
+          "coverage80": 0.8333333333333334,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.32138167688716995
+        }
+      }
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 30,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.3171632530214208,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 36,
+        "winner_log_loss": 0.17560730618504158,
+        "margin_intervals": {
+          "n": 36,
+          "coverage80": 0.8611111111111112,
+          "coverage95": 0.9722222222222222,
+          "mean_interval80_width": 0.2236310994961
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 6,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.15942263052873915
+        }
+      },
+      "revised_model": {
+        "race_count": 36,
+        "winner_log_loss": 0.16027430256081085,
+        "margin_intervals": {
+          "n": 36,
+          "coverage80": 0.8333333333333334,
+          "coverage95": 0.9722222222222222,
+          "mean_interval80_width": 0.22577028815512218
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 6,
+          "coverage80": 0.8333333333333334,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.17058999114381554
+        }
+      }
+    },
+    {
+      "cycle": 2022,
+      "lead_days": 7,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.3171632530214208,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 36,
+        "winner_log_loss": 0.1570786425517842,
+        "margin_intervals": {
+          "n": 36,
+          "coverage80": 0.8055555555555556,
+          "coverage95": 0.9444444444444444,
+          "mean_interval80_width": 0.19120387027431024
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 6,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.16253586299532083
+        }
+      },
+      "revised_model": {
+        "race_count": 36,
+        "winner_log_loss": 0.15686624928566817,
+        "margin_intervals": {
+          "n": 36,
+          "coverage80": 0.7777777777777778,
+          "coverage95": 0.9722222222222222,
+          "mean_interval80_width": 0.19420479979665806
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 6,
+          "coverage80": 0.8333333333333334,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.1750237945006429
+        }
+      }
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 90,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.3288468417738248,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.2864673366373965,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.9090909090909091,
+          "coverage95": 0.9090909090909091,
+          "mean_interval80_width": 0.4096646432757433
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 1,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.4323659462701285
+        }
+      },
+      "revised_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.26123613592135664,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.8181818181818182,
+          "coverage95": 0.8181818181818182,
+          "mean_interval80_width": 0.42454984565664106
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 1,
+          "coverage80": 0.0,
+          "coverage95": 0.0,
+          "mean_interval80_width": 0.6230756361487758
+        }
+      }
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 30,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.3288468417738248,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.12851458967268828,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.9090909090909091,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.24399877261458405
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 1,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.4429797366474001
+        }
+      },
+      "revised_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.15999707315134357,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.9090909090909091,
+          "coverage95": 0.9090909090909091,
+          "mean_interval80_width": 0.2599334052206336
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 1,
+          "coverage80": 0.0,
+          "coverage95": 0.0,
+          "mean_interval80_width": 0.6207492882452279
+        }
+      }
+    },
+    {
+      "cycle": 2024,
+      "lead_days": 7,
+      "governor_uncertainty_logratio_sd_from_prior_oof": 0.3288468417738248,
+      "non_governor_winner_probabilities_exactly_equal": true,
+      "old_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.12388947260444594,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.9090909090909091,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.24455356350426613
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 1,
+          "coverage80": 1.0,
+          "coverage95": 1.0,
+          "mean_interval80_width": 0.452798427386062
+        }
+      },
+      "revised_model": {
+        "race_count": 11,
+        "winner_log_loss": 0.1541829795087448,
+        "margin_intervals": {
+          "n": 11,
+          "coverage80": 0.9090909090909091,
+          "coverage95": 0.9090909090909091,
+          "mean_interval80_width": 0.2595575902821139
+        },
+        "cross_party_incumbent_margin_intervals": {
+          "n": 1,
+          "coverage80": 0.0,
+          "coverage95": 0.0,
+          "mean_interval80_width": 0.6249094612554361
+        }
+      }
+    }
+  ],
+  "all_non_governor_probabilities_equal": true,
+  "summary": {
+    "old_model": {
+      "race_cutoffs": 174,
+      "winner_log_loss": 0.17311933836535928,
+      "margin_intervals": {
+        "n": 174,
+        "coverage80": 0.8333333333333334,
+        "coverage95": 0.9597701149425287,
+        "mean_interval80_width": 0.2531239075996918
+      },
+      "cross_party_incumbent_margin_intervals": {
+        "n": 27,
+        "coverage80": 1.0,
+        "coverage95": 1.0,
+        "mean_interval80_width": 0.22379349039252366
+      }
+    },
+    "revised_model": {
+      "race_cutoffs": 174,
+      "winner_log_loss": 0.17627701790680203,
+      "margin_intervals": {
+        "n": 174,
+        "coverage80": 0.8103448275862069,
+        "coverage95": 0.9482758620689655,
+        "mean_interval80_width": 0.26091162828377795
+      },
+      "cross_party_incumbent_margin_intervals": {
+        "n": 27,
+        "coverage80": 0.7777777777777778,
+        "coverage95": 0.8888888888888888,
+        "mean_interval80_width": 0.2641034353948146
+      }
+    }
+  }
+}

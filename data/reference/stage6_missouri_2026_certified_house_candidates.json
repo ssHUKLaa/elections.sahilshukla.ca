@@ -1,0 +1,16 @@
+{
+  "source_url": "https://www.sos.mo.gov/CMSImages/ElectionCandidates/2026GeneralElectionCertifiedCandidates.pdf",
+  "source_date": "2026-08-25",
+  "reviewed_on": "2026-09-27",
+  "note": "Official names are compared with forecast display names; the differences below are abbreviations or omitted suffixes.",
+  "districts": {
+    "01": {"R": ["Paul Berry III", "Paul Berry"], "D": ["Wesley Bell", "Wesley Bell"], "O": ["Tom Schmitz", "Tom Schmitz"]},
+    "02": {"R": ["Ann Wagner", "Ann Wagner"], "D": ["Fred Wellman", "Fred Wellman"], "O": ["Brandon Coulter Daugherty", "Brandon Daugherty"]},
+    "03": {"R": ["Bob Onder", "Bob Onder"], "D": ["Bethany E Mann", "Bethany Mann"], "O": ["Jim Higgins", "Jim Higgins"]},
+    "04": {"R": ["Mark Alford", "Mark Alford"], "D": ["Jordan Herrera", "Jordan Herrera"], "O": ["Thomas Holbrook", "Thomas Holbrook"]},
+    "05": {"R": ["Rick Brattin", "Rick Brattin"], "D": ["Emanuel Cleaver, II", "Emanuel Cleaver"], "O": ["Randall (Randy) Langkraehr", "Randy Langkraehr"]},
+    "06": {"R": ["Chris Stigall", "Chris Stigall"], "D": ["Josh Smead", "Josh Smead"], "O": ["Andy Maidment", "Andy Maidment"]},
+    "07": {"R": ["Eric W. Burlison", "Eric Burlison"], "D": ["Missi Hesketh", "Missi Hesketh"], "O": ["Kevin Craig", "Kevin Craig"]},
+    "08": {"R": ["Jason T. Smith", "Jason Smith"], "D": ["Chris Reichard", "Chris Reichard"], "O": ["Rebecca Sharpe Lombard", "Rebecca Sharpe Lombard"]}
+  }
+}

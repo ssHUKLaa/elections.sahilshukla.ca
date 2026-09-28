@@ -1,0 +1,30 @@
+{
+  "house_presidential_votes": {
+    "publisher": "The Downballot",
+    "description": "2024 presidential candidate votes tabulated on the 2024 and 2026 House maps",
+    "old_map_url": "https://docs.google.com/spreadsheets/d/1ng1i_Dm_RMDnEvauH44pgE6JCUsapcuu8F2pCfeLWFo/edit?gid=1491069057",
+    "new_map_url": "https://docs.google.com/spreadsheets/d/1eZfaFI-c-PFOoKx1-zZA2MP0_dxRq_LVK0re3BOQqy0/edit?gid=1491069057",
+    "old_map_sha256": "938410ae6b42104eb6ee73ff1fcb4de13f39c2aefa607c73b5664eec9ade974e",
+    "new_map_sha256": "cc1d51ab58dfbdeb0f7ddaa8daf9e15f32e15845f2c3cc6c28bd2c84c79d9348",
+    "retrieved_date": "2026-09-23"
+  },
+  "historical_governor_approval": {
+    "publisher": "Matthew M. Singer, State Executive Approval Dataset v1, UNC Dataverse",
+    "url": "https://dataverse.unc.edu/dataset.xhtml?persistentId=doi:10.15139/S3/QHHQEF",
+    "source_datafile_id": 7526983,
+    "source_stata_sha256": "d99f3893f1190fb41cc4f3d935a40d5074989660bdfa976fbb63530c8f02fe7d",
+    "derived_csv_sha256": "5264cb92de01f67ababa7658626d56f00b4511127f11b804f262d717a9700741",
+    "transform": "Selected state, year, quarter, smoothed approval, smoothed disapproval, and three-quarter validity columns from the public Stata file. The model uses quarter 3 of each historical election year.",
+    "retrieved_date": "2026-09-23"
+  },
+  "current_governor_approval": {
+    "publisher": "Morning Consult",
+    "url": "https://pro.morningconsult.com/trackers/governor-approval-ratings",
+    "public_chart_url": "https://app.everviz.com/inject/gcrNiJmv0",
+    "survey_window": "October-December 2025",
+    "derived_csv_sha256": "7eb8f45b4426768fbedbaef889db5d3e0b2f55f3a096c95e5af66de01d53cb5a",
+    "transform": "Extracted state and net approval from the publisher's publicly embedded chart and recorded the survey end date. No values were imputed.",
+    "retrieved_date": "2026-09-23",
+    "limitation": "This public chart was the latest complete state table accessible at the retrieval date; it is older than the September 2026 nowcast."
+  }
+}

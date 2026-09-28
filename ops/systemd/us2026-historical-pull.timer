@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly 2026 election forecast historical data refresh
+
+[Timer]
+OnCalendar=Sun *-*-* 08:20:00 UTC
+Persistent=true
+RandomizedDelaySec=30m
+Unit=us2026-historical-pull.service
+
+[Install]
+WantedBy=timers.target

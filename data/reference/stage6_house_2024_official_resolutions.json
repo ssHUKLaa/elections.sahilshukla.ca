@@ -1,0 +1,33 @@
+{
+  "source_pdf": "https://clerk.house.gov/member_info/electionInfo/2024/statistics2024.pdf",
+  "source_sha256": "d4ba800fc17135b616ae556c92861080ab962d95916ace34b546c5aac824aec4",
+  "method": "Reviewed candidate rows from the Clerk compilation replace only seven discrepant 2024 House archive races. Raw archive rows remain unchanged. New York fusion lines are combined by candidate; Maine uses the final ranked-choice round; excluded ballot accounting rows are omitted.",
+  "races": [
+    {"state":"GA","district":"11","source_race_id":"9665","official_total":400913,"candidates":[
+      {"candidate_id":"36649","name":"Barry Loudermilk","party":"REP","votes":269849,"winner":true},
+      {"candidate_id":"36543","name":"Katy Kate L. Stamper","party":"DEM","votes":131064,"winner":false}]},
+    {"state":"MA","district":"04","source_race_id":"9731","official_total":297725,"candidates":[
+      {"candidate_id":"37058","name":"Jake Auchincloss","party":"DEM","votes":289347,"winner":true},
+      {"candidate_id":"37648","name":"Sana A. Fadel","party":"W","votes":1099,"winner":false},
+      {"candidate_id":"official:MA04:others","name":"All Others","party":"OTHER","votes":7279,"winner":false}]},
+    {"state":"ME","district":"02","source_race_id":"9993","official_total":391596,"candidates":[
+      {"candidate_id":"31626","name":"Jared F. Golden","party":"DEM","votes":197151,"winner":true},
+      {"candidate_id":"31738","name":"Austin Theriault","party":"REP","votes":194445,"winner":false}]},
+    {"state":"NY","district":"07","source_race_id":"9804","official_total":221779,"candidates":[
+      {"candidate_id":"36821","name":"Nydia M. Velazquez","party":"DEM","votes":172795,"winner":true},
+      {"candidate_id":"36822","name":"William Kregler","party":"REP","votes":48435,"winner":false},
+      {"candidate_id":"official:NY07:scattering","name":"Scattering","party":"W","votes":549,"winner":false}]},
+    {"state":"NY","district":"20","source_race_id":"9817","official_total":363445,"candidates":[
+      {"candidate_id":"36839","name":"Paul D. Tonko","party":"DEM","votes":221997,"winner":true},
+      {"candidate_id":"36840","name":"Kevin M. Waltz","party":"REP","votes":141151,"winner":false},
+      {"candidate_id":"official:NY20:scattering","name":"Scattering","party":"W","votes":297,"winner":false}]},
+    {"state":"TX","district":"28","source_race_id":"9929","official_total":237298,"candidates":[
+      {"candidate_id":"36476","name":"Henry Cuellar","party":"DEM","votes":125280,"winner":true},
+      {"candidate_id":"36740","name":"Jay Furman","party":"REP","votes":112018,"winner":false}]},
+    {"state":"VA","district":"06","source_race_id":"9951","official_total":407035,"candidates":[
+      {"candidate_id":"36884","name":"Ben L. Cline","party":"REP","votes":256933,"winner":true},
+      {"candidate_id":"36883","name":"Ken L. Mitchell","party":"DEM","votes":141612,"winner":false},
+      {"candidate_id":"37269","name":"Robert C. Wells Jr.","party":"IND","votes":7980,"winner":false},
+      {"candidate_id":"official:VA06:writein","name":"Write-in","party":"W","votes":510,"winner":false}]}
+  ]
+}

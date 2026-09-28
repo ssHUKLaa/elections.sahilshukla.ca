@@ -1,0 +1,20 @@
+{
+  "2020": {
+    "url": "https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_cd116_500k.zip",
+    "filename": "cb_2020_us_cd116_500k.zip",
+    "bytes": 7856204,
+    "sha256": "35113ca7612b14333bfbf24ec074d01278bc8ea13d836213b1c7390ba945c830"
+  },
+  "2022": {
+    "url": "https://www2.census.gov/geo/tiger/GENZ2022/shp/cb_2022_us_cd118_500k.zip",
+    "filename": "cb_2022_us_cd118_500k.zip",
+    "bytes": 6966121,
+    "sha256": "7d16875ca4d56f63402b122e37a47690a0b3edb30129b475b7d3e79191dcf774"
+  },
+  "2024": {
+    "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cd119_500k.zip",
+    "filename": "cb_2024_us_cd119_500k.zip",
+    "bytes": 7045981,
+    "sha256": "2b4238aed7e865df75d0c9cfcd8dffa1b79007b24519ecc4b213e683078b031a"
+  }
+}
